@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Conferences"
-permalink: /conferences/
+title: "Events"
+permalink: /events/
 author_profile: true
 classes: wide
 ---
