@@ -58,28 +58,28 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Niels Holtgrefe"
-  avatar : "/assets/images/bio_pic.jpg"
-  bio    : "PhD candidate in applied mathematics, working on algorithmic and mathematical phylogenetics."
+  name   : "Leo van Iersel"
+  avatar : ""
+  bio    : ""
   links: &social_links
-    - label: "n.a.l.holtgrefe@tudelft.nl"
+    - label: "l.j.j.vaniersel@tudelft.nl"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:n.a.l.holtgrefe@tudelft.nl"
+      url: "mailto:l.j.j.vaniersel@tudelft.nl"
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google-scholar"
-      url: "https://scholar.google.com/citations?user=wJh7R3UAAAAJ"
+      url: ""
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/niels-holtgrefe/"
+      url: ""
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/nholtgrefe"
+      url: "https://github.com/leovaniersel"
     - label: "ORCID"
       icon: "fab fa-fw fa-orcid"
-      url: "https://orcid.org/0009-0001-6162-9668"
+      url: ""
     - label: "TU Delft"
       icon: "fas fa-fw fa-university"
-      url: "https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/nal-niels-holtgrefe-msc"
+      url: ""
 
 footer:
   links:
