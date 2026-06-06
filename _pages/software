@@ -1,4 +1,12 @@
+---
+layout: single
+title: "Software"
+permalink: /software/
+author_profile: true
+classes: wide
+---
 
+---
 
 <strong><a href="https://github.com/nholtgrefe/panda">PaNDA</a></strong>: Efficient Optimization of Phylogenetic Diversity in Networks. By Niels Holtgrefe (<a href="https://doi.org/10.1101/2025.11.14.688467">paper</a>)
 
