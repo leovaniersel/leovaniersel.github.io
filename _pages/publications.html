@@ -1,61 +1,379 @@
----
-layout: single
-title: "Publications"
-permalink: /publications/
-author_profile: true
-classes: wide
----
+<!-- wp:paragraph -->
+<p>[92] Leo van Iersel, Mark Jones, Mathias Weller. Tree Containment Parameterized by Scanwidth (2026). (<a href="https://doi.org/10.48550/arXiv.2605.31071">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>[91] Leo van Iersel, Mark Jones, Jannik Schestag, Celine Scornavacca, Mathias Weller. Average-Tree Phylogenetic Diversity Parameterized by Scanwidth and Invisibility (2026). (<a href="https://doi.org/10.48550/arXiv.2604.27745">arXiv</a>)<br><br>[90] Martin Frohn, Niels Holtgrefe, Leo van Iersel, Mark Jones and Steven Kelk. Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the CFN model, <em>Annals of Combinatorics</em>, to appear. (<a href="https://arxiv.org/abs/2511.22736">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-<link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
-<script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
-<script
-  type="text/javascript"
-  async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+<!-- wp:paragraph -->
+<p>[89] Leo van Iersel, Mark Jones, Simone Linz, Norbert Zeh. A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks (2026). (<a href="https://arxiv.org/abs/2603.07000">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>[88] Steven Kelk, Ruben Meuwese and Leo van Iersel. A kernel for the maximum agreement forest problem on multiple binary phylogenetic trees (2026). (<a href="https://arxiv.org/abs/2602.22281">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>[87] Luca Forte, Leo van Iersel, Steven Kelk, Ruben Meuwese. Computational support for case-heavy proofs in mathematical phylogenetics (2025). (<a href="https://doi.org/10.48550/arXiv.2512.16691">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>[86] Niels Holtgrefe, Katharina Huber, Leo van Iersel, Mark Jones and Vincent Moulton. <a href="https://doi.org/10.1007/s12064-025-00453-8">Characterizing semi-directed phylogenetic networks and their multi-rootable variants</a>. <em>Theory in Biosciences </em>145:4&nbsp;(2026). (<a href="https://arxiv.org/abs/2507.18772">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-<p>Below you can find my publications and preprints, with links and toggleable abstracts. MSc and BSc theses are listed at the <a href="#theses">bottom</a>. See also the <a href="{{ '/coauthors/' | relative_url }}">co-authors list</a> and my <a href="https://scholar.google.com/citations?user=wJh7R3UAAAAJ" target="_blank">Google Scholar profile</a>.</p>
+<!-- wp:paragraph -->
+<p>[85] Niels Holtgrefe, Leo van Iersel, Ruben Meuwese, Yukihiro Murakami and Jannik Schestag. PaNDA: Efficient Optimization of Phylogenetic Diversity in Networks (2025). RECOMB 2026. (<a href="https://doi.org/10.1101/2025.11.14.688467">bioRxiv</a>) (<a href="https://github.com/nholtgrefe/panda">software</a>)</p>
+<!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>[84] Niels Holtgrefe, Leo van Iersel and Mark Jones. <a href="https://doi.org/10.1016/j.jcss.2026.103802">Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs</a>. <em>Journal of Computer and System Sciences</em>, 160:103802 (2026). (<a href="https://arxiv.org/abs/2403.12734">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-{% assign all_pubs = site.data.pubs %}
+<!-- wp:paragraph -->
+<p>[83] Christopher Reichling, Leo van Iersel and Yukihiro Murakami. <a href="https://doi.org/10.1016/j.aam.2025.102953">Metrics for classes of semi-binary phylogenetic networks using μ-representations</a>. <em>Advances in Applied Mathematics</em>, 172:102953 (2026). (<a href="https://arxiv.org/abs/2412.05107">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-{%- comment -%}
-Separate non-theses and theses
-{%- endcomment -%}
-{% assign normal_pubs = all_pubs | where_exp: "p", "p.type != 'thesis'" %}
-{% assign theses = all_pubs | where: "type", "thesis" %}
+<!-- wp:paragraph -->
+<p>[82] Leo van Iersel, Mark Jones, Jannik Schestag, Celine Scornavacca and Mathias Weller. <a href="https://doi.org/10.4230/LIPIcs.WABI.2025.15">Average-Tree Phylogenetic Diversity of Networks</a>, WABI 2025. LIPIcs 344:15 (2025).</p>
+<!-- /wp:paragraph -->
 
-{%- comment -%}
-Sort non-theses and theses by release-date descending
-{%- endcomment -%}
-{% assign normal_pubs = normal_pubs | sort: "release-date" | reverse %}
-{% assign theses = theses | sort: "release-date" | reverse %}
+<!-- wp:paragraph -->
+<p>[81] Niels Holtgrefe, Elizabeth S. Allman, Hector Baños, Leo van Iersel, Vincent Moulton, John A. Rhodes and Kristina Wicke.&nbsp;<a href="https://doi.org/10.1007/s11538-025-01549-4">Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances</a>,&nbsp;<em>Bulletin of Mathematical Biology</em>, 87:168 (2025). (<a href="https://doi.org/10.48550/arXiv.2507.17308">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-{%- comment -%}
-Group non-theses by pub.year, assign reverse numbering
-{%- endcomment -%}
-{% assign total = normal_pubs | size %}
-{% assign current_year = "" %}
+<!-- wp:paragraph -->
+<p>[80] Aviva Englander, Martin Frohn, Elizabeth Gross, Niels Holtgrefe, Leo van Iersel, Mark Jones and Seth Sullivant. Identifiability of Phylogenetic Level-2 Networks under the Jukes-Cantor Model (2025). (<a href="https://doi.org/10.1101/2025.04.18.649493">bioRxiv</a>)</p>
+<!-- /wp:paragraph -->
 
-{% for pub in normal_pubs %}
-  {% assign pubnum = total | minus: forloop.index0 %}
+<!-- wp:paragraph -->
+<p>[79] Niels Holtgrefe, Katharina T Huber, Leo van Iersel, Mark Jones, Samuel Martin and Vincent Moulton. <a href="https://doi.org/10.1093/molbev/msaf067">Squirrel: Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments</a>. <em>Molecular Biology and Evolution,</em> 42(4):msaf067 (2025). (<a href="https://doi.org/10.1101/2024.11.01.621567">bioRxiv</a>)(<a href="https://github.com/nholtgrefe/squirrel">software</a>)</p>
+<!-- /wp:paragraph -->
 
-  {% if pub.year != current_year %}
-    <div class="year-label"><span>{{ pub.year }}</span></div>
-    {% assign current_year = pub.year %}
-  {% endif %}
+<!-- wp:paragraph -->
+<p>[78] Katharina Huber, Leo van Iersel, Vincent Moulton and Guillaume Scholz. <a href="https://doi.org/10.1016/j.ipl.2024.106500">Is this network proper forest-based</a>? <em>Information Processing Letters</em>, 187:106500 (2025)<em>.</em> (<a href="https://doi.org/10.48550/arXiv.2308.11176">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-  {% include pub_entry.html pub=pub pubnum=pubnum%}
-{% endfor %}
+<!-- wp:paragraph -->
+<p>[77] Leo van Iersel, Mark Jones, Jannik Schestag, Celine Scornavacca and Mathias Weller. <a href="https://doi.org/10.1007/978-3-031-94928-9_7">Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond</a>. RECOMB-CG&nbsp;(2025). (<a href="https://arxiv.org/abs/2405.01091">arXiv</a>)</p>
+<!-- /wp:paragraph -->
 
-{%- comment -%}
-Render theses under a separate header, still sorted by release-date
-{%- endcomment -%}
-<h2 id="theses">Theses</h2>
-{% for pub in theses %}
-  {% include pub_entry.html pub=pub pubnum="&bull;" %}
-{% endfor %}
+<!-- wp:paragraph -->
+<p>[76] Jordan Dempsey, Leo van Iersel, Mark Jones and Norbert Zeh. <a href="https://doi.org/10.1016/j.ipl.2025.106572">A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple Unrooted Binary Trees</a>. <em>Information Processing Letters</em>, 190:106572 (2025). (<a href="https://arxiv.org/abs/2409.08440">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[75] Martin Frohn, Niels Holtgrefe, Leo van Iersel, Mark Jones and Steven Kelk. <a href="https://doi.org/10.1016/j.jcss.2025.103655">Reconstructing semi-directed level-1 networks using few quarnets</a>. <em>Journal of Computer and System Sciences</em>, 152:103655 (2025). (<a href="https://arxiv.org/abs/2409.06034">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[74] Katharina T. Huber, Leo van Iersel, Mark Jones, Vincent Moulton and Leonie Veenema - Nipius. <a href="https://doi.org/10.1007/s11538-025-01510-5">When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?</a> <em>Bulletin of Mathematical Biology</em>, 87:136 (2025). (<a href="https://arxiv.org/abs/2408.12997">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[73] Jordan Dempsey, Leo van Iersel, Mark Jones, Yukihiro Murakami and Norbert Zeh. A Wild Sheep Chase Through an Orchard, <a href="https://arxiv.org/abs/2408.10769">arXiv:2408.10769</a> (2024).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[72] Giulia Bernardini, Leo van Iersel, Esther Julien and Leen Stougie. <a href="https://doi.org/10.1016/j.ympev.2024.108137">Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning</a>. <em>Molecular Phylogenetics and Evolution, 199:108137</em> (2024).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[71] Joan Carles Pons, Pau Vives López, Yukihiro Murakami and Leo van Iersel. Fence decompositions and cherry covers in non-binary phylogenetic networks. <em>IEEE Transactions on Computational Biology and Bioinformatics</em> (2025). (<a href="https://arxiv.org/abs/2407.08812">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[70] Martin Frohn, Niels Holtgrefe, Leo van Iersel, Mark Jones and Steven Kelk. Invariants for level-1 phylogenetic networks under the random walk 4-state Markov model. <a href="https://arxiv.org/abs/2407.11720">arXiv:2407.11720</a> (2024).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[69] Arkadiy Dushatskiy, Esther Julien, Leo van Iersel and Leen Stougie. <a href="https://openreview.net/pdf?id=nK5MazeIpn">Solving the Tree Containment Problem Using Graph Neural Networks</a>. <em>Transactions on Machine Learning Research</em> (2024). (<a href="https://arxiv.org/abs/2404.09812">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[68] Elise Deen, Leo van Iersel, Remie Janssen, Mark Jones, Yukihiro Murakami and Norbert Zeh. <a href="https://doi.org/10.1016/j.jcss.2023.103477">A near-linear kernel for bounded-state parsimony distance</a>. <em>Journal of Computer and System Sciences, </em>140: 103477 (2024). (<a href="https://arxiv.org/abs/2211.00378">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[67] Katharina T. Huber, Leo van Iersel, Remie Janssen, Mark Jones, Vincent Moulton, Yukihiro Murakami and Charles Semple. <a href="https://doi.org/10.1016/j.jcss.2023.103480">Orienting undirected phylogenetic networks</a>. <em>Journal of Computer and System Sciences, </em>140: 103480 (2024). (<a href="https://arxiv.org/abs/1906.07430">arXiv</a> with additional appendix)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[66] Leo van Iersel, Mark Jones, Mathias Weller. <a href="http://doi.org/10.24072/pcjournal.419">When Three Trees Go to War</a>. <em>Peer Community Journal</em>, 4:e54 (2024).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[65] Leo van Iersel, Mark Jones, Esther Julien, Yukihiro Murakami. <a href="https://doi.org/10.4230/LIPIcs.WABI.2023.7">Making a Network Orchard by Adding Leaves</a>. International Workshop on Algorithms in Bioinformatics (WABI 2023). LIPIcs, 273, pp. 7:1-7:20, https://doi.org/10.4230/LIPIcs.WABI.2023.7 (2023). (<a href="https://doi.org/10.48550/arXiv.2305.03106">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[64] Leo van Iersel, Vincent Moulton and Yukihiro Murakami. <a href="https://doi.org/10.1016/j.ipl.2023.106394">Polynomial invariants for cactuses</a>. <em>Information Processing Letters,</em> 182:106394 (2023).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[63] Mark Jones, Mathias Weller and Leo van Iersel. <a href="https://doi.org/10.46298/dmtcs.10116">Embedding phylogenetic trees in networks of low treewidth</a>, <em>Discrete Mathematics &amp; Theoretical Computer Science, </em>25:2 (2023). <a href="http://doi.org/10.4230/LIPIcs.ESA.2022.69">Preliminary version</a> in ESA 2022.&nbsp;<a href="https://arxiv.org/abs/2207.00574">arXiv:2207.00574</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[62] Giulia Bernardini, Leo van Iersel, Esther Julien and Leen Stougie. <a href="https://doi.org/10.1186/s13015-023-00233-3">Constructing Phylogenetic Networks via Cherry Picking and Machine Learning</a>, <em>Algorithms for Molecular Biology, </em>18:13 (2023) &nbsp;(<a href="https://doi.org/10.48550/arXiv.2304.02729">arXiv</a>). Preliminary version in WABI 2022, <a href="https://doi.org/10.4230/LIPIcs.WABI.2022.16">10.4230/LIPIcs.WABI.2022.16</a> (<a href="https://doi.org/10.48550/arXiv.2304.02729">arXiv</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[61] Leo van Iersel, Remie Janssen, Mark Jones and Yukihiro Murakami. <a href="http://dx.doi.org/10.1007/s11538-022-01037-z">Orchard Networks are Trees with Additional Horizontal Arcs</a>. <em>Bulletin of Mathematical Biology</em>, 84:76 (2022).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[60] Katharina T. Huber, Leo van Iersel, Remie Janssen, Mark Jones, Vincent Moulton and Yukihiro Murakami. <a href="https://doi.org/10.1016/j.dam.2021.09.026">Level-2 networks from shortest and longest distances</a>.<em> Discrete Applied Mathematics </em>306:138-165 (2022). (<a href="https://arxiv.org/abs/2101.08580">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[59] Sander Borst, Leo van Iersel, Mark Jones and Steven Kelk. <a href="http://dx.doi.org/10.1007/s00453-022-00946-8">New FPT algorithms for finding the temporal hybridization number for sets of phylogenetic trees</a>. <em>Algorithmica</em>, 84:2050–2087 (2022).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[58] Leo van Iersel, Remie Janssen, Mark Jones, Yukihiro Murakami and Norbert Zeh. <a href="https://dx.doi.org/10.1007/s00453-021-00914-8">A Practical Fixed-Parameter Algorithm for Constructing Tree-Child Networks from Multiple Binary Trees</a>. <em>Algorithmica</em>, 84: 917–960 (2022).&nbsp;(<a href="https://arxiv.org/abs/1907.08474">arXiv</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[57] Leo van Iersel, Sjors Kole, Vincent Moulton and Leonie Nipius. <a href="https://doi.org/10.1016/j.ipl.2022.106300">An algorithm for reconstructing level-2 phylogenetic networks from trinets</a>. <em>Information Processing Letters</em>,&nbsp; 178:106300 (2022). (<a href="https://arxiv.org/abs/2109.11244">arXiv</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[56] Rosanne Wallin, Leo van Iersel, Steven Kelk and Leen Stougie. <a href="http://dx.doi.org/10.1186/s12862-021-01946-y">Applicability of several rooted phylogenetic network algorithms for representing the evolutionary history of SARS-CoV-2</a>. <em>BMC Ecology and Evolution</em>, 21:220 (2021).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[55] Leo van Iersel, Remie Janssen, Mark Jones, Yukihiro Murakami and Norbert Zeh. <a href="https://dx.doi.org/10.1016/j.aam.2021.102222">A Unifying Characterization of Tree-based Networks and Orchard Networks using Cherry Covers</a>.&nbsp;<em>Advances in Applied Mathematics,&nbsp;</em>129:102222 (2021). (<a href="https://arxiv.org/abs/2004.07677">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[54] Elizabeth Gross, Leo van Iersel, Remie Janssen, Mark Jones, Colby Long and Yukihiro Murakami. <a href="https://dx.doi.org/10.1007/s00285-021-01653-8">Distinguishing level-1 phylogenetic networks on the basis of data generated by Markov processes</a>. <em>Journal of Mathematical Biology</em>, 83:32 (2021). (<a href="https://arxiv.org/abs/2007.08782">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[53] Leo van Iersel, Vincent Moulton and Yukihiro Murakami. <a href="https://doi.org/10.1016/j.aam.2020.102075">Reconstructibility of unrooted level-k phylogenetic networks from distances</a>. <em>Advances in Applied Mathematics, </em>120:102075 (2020). (<a href="https://arxiv.org/abs/1910.13853">arXiv</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[52] Mark Jones, Philippe Gambette, Leo van Iersel, Remie Janssen, Steven Kelk, Fabio Pardi and Celine Scornavacca. <a href="https://arxiv.org/abs/1910.11041">Cutting an alignment with Ockham's razor</a>. arXiv:1910.11041 [q-bio.PE] (2019).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[51] Leo van Iersel, Mark Jones and Steven Kelk.&nbsp;<a href="https://doi.org/10.1093/sysbio/syz009">A third strike against perfect phylogeny</a>. <em>Systematic Biology,</em> 68(5):814–827 (2019). (<a href="https://arxiv.org/abs/1804.07232">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[50]&nbsp;Janosch Döcker, Leo van Iersel, Steven Kelk, Simone Linz.&nbsp;<a href="https://doi.org/10.1016/j.dam.2019.01.031">Deciding the existence of a cherry-picking sequence is hard on two trees</a>. <em>Discrete Applied Mathematics,</em>&nbsp;260: 131-143&nbsp;(2019). (<a href="https://arxiv.org/abs/1712.02965">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[49] Yukihiro Murakami, Leo van Iersel, Remie Janssen, Mark Jones and Vincent Moulton. <a href="https://doi.org/10.1007/s11538-019-00641-w">Reconstructing Tree-Child Networks from Reticulate-Edge-Deleted Subnetworks</a>. <em>Bulletin of Mathematical Biology, </em>81(10):3823–3863 (2019). (<a href="https://arxiv.org/abs/1811.06777">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[48] Péter L. Erdős, Leo van Iersel and Mark Jones. <a href="https://doi.org/10.1007/s00285-019-01405-9">Not all phylogenetic networks are leaf-reconstructible</a>. <em>Journal of Mathematical Biology, </em>79(5):1623–1638&nbsp;(2019). (<a href="https://arxiv.org/abs/1803.03197">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[47]&nbsp;Steven Kelk, Fabio Pardi, Celine Scornavacca and Leo van Iersel.&nbsp;<a href="https://doi.org/10.1007/s00285-018-1282-2">Finding a most parsimonious or likely tree in a network with respect to an alignment</a>. <em>Journal of Mathematical Biology</em>,&nbsp;78(1-2):527 - 547 (2019). (<a href="https://arxiv.org/abs/1707.03648">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[46] Leo van Iersel, Remie Janssen, Mark Jones, Yukihiro Murakami and Norbert Zeh. <a href="https://doi.org/10.1109/TCBB.2019.2934957">Polynomial-Time Algorithms for Phylogenetic Inference Problems involving duplication and reticulation</a>.&nbsp;<em> IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>, 17(1): 14 - 26 (2020). Preliminary version in <a href="http://grammars.grlmc.com/AlCoB2018/">AlCoB 201</a><a href="http://grammars.grlmc.com/AlCoB2018/">8</a>, LNBI 10849: 37–49 (2018). (<a href="https://arxiv.org/abs/1802.00317">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[45] Teun Janssen, Céline Swennenhuis, Abdoul Bitar, Thomas Bosman, Dion Gijswijt, Leo van Iersel, Stèphane Dauzére-Pérès and Claude Yugma. <a href="https://arxiv.org/abs/1809.05009">Parallel Machine Scheduling with a Single Resource per Job</a>. arXiv:1809.05009 [cs.DM] (2018).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[44]&nbsp;Leo van Iersel and Vincent Moulton.&nbsp;<a href="http://dx.doi.org/10.1137/17M1111930">Leaf-reconstructibility of phylogenetic networks</a>. S<em>IAM Journal on Discrete Mathematics</em>&nbsp;32(3): 2047–2066 (2018). (<a href="https://arxiv.org/abs/1701.08982">arXiv</a>) (<a title="M111193" href="https://leovaniersel.files.wordpress.com/2018/08/m111193.pdf">PDF</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[43]&nbsp;Remie Janssen, Mark Jones, Péter L. Erdős, Leo van Iersel, Celine Scornavacca. <a href="https://dx.doi.org/10.1007/s11538-018-0452-0">Exploring the tiers of rooted phylogenetic network space using tail moves</a>. <em>Bulletin of Mathematical Biology</em>,&nbsp;<span class="ArticleCitation_Volume">80 (8):</span><span class="ArticleCitation_Pages">&nbsp;2177–2208</span> (2018).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[42] Leo van Iersel, Mark Jones and Celine Scornavacca. <a title="improved_parsimony_networks" href="https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syx094/4767820?guestAccessKey=2c661567-32c0-4eee-a0c5-ba302774c992">Improved maximum parsimony modsels for phylogenetic networks</a>. <em>Systematic Biology</em>, 67(3):518-542 (2018) (<a href="https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syx094/4767820?guestAccessKey=2c661567-32c0-4eee-a0c5-ba302774c992">free-access link</a>) (<a href="https://leovaniersel.files.wordpress.com/2017/12/improved_parsimony_networks.pdf">preprint</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[41] Laura Jetten and Leo van Iersel.&nbsp;<a href="http://dx.doi.org/10.1109/TCBB.2016.2615918">Nonbinary tree-based phylogenetic networks</a>.&nbsp;<em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>. 14(1):205&nbsp;<span class="ng-binding ng-scope">- 217 (2018)</span>. (<a href="http://arxiv.org/abs/1601.04974">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[40] Leo van Iersel, Steven Kelk, Georgios Stamoulis, Leen Stougie and Olivier Boes. <a href="http://dx.doi.org/10.1007/s00453-017-0366-5">On unrooted and root-uncertain variants of several well-known phylogenetic network problems</a>. <em>Algorithmica</em>,&nbsp;80 (11): 2993–3022 (2018).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[39] Martijn van Ee, Leo van Iersel, Teun Janssen and Rene Sitters. <a href="http://dx.doi.org/10.1016/j.dam.2018.04.002">A Priori TSP in the Scenario Model</a>. <em>Discrete Applied Mathematics</em>, 250:313-341 (2018). (<a title="a_priori_TSP_postprint" href="https://leovaniersel.files.wordpress.com/2018/09/a_priori_tsp_postprint.pdf">postprint</a>) Preliminary version in&nbsp;<a href="http://conferences.au.dk/algo16/waoa/">WAOA2016</a>, LNCS 10138: 183-196 (2017).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[38] Philippe Gambette, Leo van Iersel, Mark Jones, Manuel Lafond, Fabio Pardi and Celine Scornavacca. <a href="https://doi.org/10.1371/journal.pcbi.1005611">Rearrangement moves on rooted phylogenetic networks</a>.&nbsp;<em>PLoS Computational Biology</em>, 13(8):e1005611 (2017).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[37] Péter L. Erdős, Stephen G. Hartke, Leo van Iersel and István Miklós.&nbsp;<a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i2p47/0">Graph realizations constrained by skeleton graphs</a>. <em>The Electronic Journal of Combinatorics</em>, 24 (2), #P2.47 (2017).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[36] Leo van Iersel, Vincent Moulton, Eveline de Swart and Taoyang Wu. <a href="http://dx.doi.org/10.1007/s11538-017-0275-4">Binets: fundamental building blocks for phylogenetic networks</a>. <em>Bulletin of Mathematical Biology,&nbsp;</em>79 (5): 1135–1154&nbsp;(2017).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[35] Katharina Huber, Leo van Iersel, Vincent Moulton, Celine Scornavacca and Taoyang Wu.&nbsp;<a href="http://dx.doi.org/10.1007/s00453-015-0069-8">Reconstructing phylogenetic level-1 networks from nondense binet and trinet sets</a>. <em>Algorithmica,</em>&nbsp;77 (1): 173-200 (2017). (<a href="http://arxiv.org/abs/1411.6804">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[34] Philippe Gambette, Leo van Iersel, Steven Kelk, Fabio Pardi and Celine Scornavacca. <a href="http://dx.doi.org/10.1007/s11538-016-0199-4">Do branch lengths help to locate a tree in a phylogenetic network?</a>&nbsp;<em>Bulletin of Mathematical Biology,&nbsp;</em>78 (9): 1773–1795 (2016). (<a href="http://arxiv.org/abs/1607.06285">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[33] Leo van Iersel, Steven Kelk, Nela Lekic, Chris Whidden and Norbert Zeh, <a href="http://dx.doi.org/10.1137/15M1036579">Hybridization Number on Three Rooted Binary Trees is EPT</a>, <em>SIAM Journal on Discrete Mathematics,</em>&nbsp;30(3): 1607–1631 (2016). (<a href="http://arxiv.org/abs/1402.2136">arXiv</a>)&nbsp;(<a title="hybridization3trees" href="https://leovaniersel.files.wordpress.com/2014/09/hybridization3trees.pdf">PDF</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[32] James Oldman, Taoyang Wu, Leo van Iersel and Vincent Moulton.<a href="http://dx.doi.org/10.1093/molbev/msw068"> TriLoNet: Piecing together small networks to reconstruct reticulate evolutionary histories</a>. <em>Molecular Biology and Evolution</em>, 33 (8): 2151-2162 (2016). (<a title="trilonet_postprint" href="https://leovaniersel.files.wordpress.com/2014/09/trilonet_postprint.pdf">postprint</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[31] Leo van Iersel, Steven Kelk and Celine Scornavacca, <a href="http://dx.doi.org/10.1016/j.jcss.2016.03.006">Kernelizations for the hybridization number problem on multiple nonbinary trees</a>.&nbsp;<em>Journal of Computer and System Sciences,</em> 82(6):&nbsp;1075–1089 (2016).&nbsp;(<em><a href="http://arxiv.org/abs/1311.4045">arXiv</a>)&nbsp;</em>Preliminary version in&nbsp;<a href="http://www.univ-orleans.fr/lifo/evenements/WG2014/">WG 2014</a>. LNCS 8747, 299-311 (2014).&nbsp;<strong>Software: <a href="http://leovaniersel.wordpress.com/software/treeduce/">Treeduce</a>.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[30] Steven Kelk, Leo van Iersel, Celine Scornavacca and Mathias Weller. <a href="http://dx.doi.org/10.7155/jgaa.00390">Phylogenetic incongruence through the lens of Monadic Second Order logic</a>.&nbsp;<em>Journal of Graph Algorithms and Applications</em>, 20(2): 189-215 (2016).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[29] Leo van Iersel, Steven Kelk, Nela Lekic and Simone Linz. <a href="http://www.sciencedirect.com/science/article/pii/S0304397515005319">Satisfying ternary permutation constraints by multiple linear orders or phylogenetic trees</a>.&nbsp;<em>Theoretical Computer Science,</em>&nbsp;609 (1): 1-21 (2016). (<a href="http://arxiv.org/abs/1410.2371">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[28] Leo van Iersel. <a href="https://leovaniersel.files.wordpress.com/2014/09/naw5-2015-16-3-174.pdf">Hoe zijn ze verwant?</a>&nbsp;<em>Nieuw Archief voor Wiskunde,</em> 5/16 (3): 174-178 (2015).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[27] Mareike Fischer, Leo van Iersel, Steven Kelk and Celine Scornavacca.&nbsp;<a href="http://dx.doi.org/10.1137/140959948">On Computing the Maximum Parsimony Score of a Phylogenetic Network</a>. <em>SIAM Journal on Discrete Mathematics</em>, 29 (1):&nbsp;559-585 (2015). (<a href="http://arxiv.org/abs/1302.2430">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[26] Katharina Huber, Leo van Iersel, Vincent Moulton and Taoyang Wu. <a href="http://dx.doi.org/10.1093/sysbio/syu076">How much information is needed to infer reticulate evolutionary histories?</a> <i>Systematic Biology,&nbsp;</i>64 (1): 102-111 (2015).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[25] Murray Patterson, Tobias Marschall, Nadia Pisanti, Leo van Iersel, Leen Stougie, Gunnar W. Klau and Alexander Schoenhuth, <a href="http://dx.doi.org/10.1089/cmb.2014.0157">WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads</a>. <em>Journal of Computational Biology</em>, 22 (6): 498-509 (2015).&nbsp;Preliminary version in proc. of RECOMB 2014. LNCS 8394, pp. 237-249 (2014).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[24] Leo van Iersel, Celine Scornavacca and Steven Kelk. <a href="http://arxiv.org/abs/1410.7004">Exact Reconciliation of undated trees</a>.&nbsp;arXiv:1410.7004 [q-bio.PE] (2014).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[23] Celine Scornavacca, Leo van Iersel, Steven Kelk and David Bryant. <a href="http://dx.doi.org/10.7155/jgaa.00327">The agreement problem for unrooted phylogenetic trees is FPT</a>. <i>Journal of Graph Algorithms and Applications</i>, 18(3), pp. 385-392 (2014).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[22] Leo van Iersel and Vincent Moulton, <a href="http://dx.doi.org/10.1007/s00285-013-0683-5">Trinets encode tree-child and level-2 phylogenetic networks</a>, <i>Journal of Mathematical Biology</i>, 68(7), pp. 1707-1729 (2014). (<a href="http://arxiv.org/abs/1210.0362">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[21] Leo van Iersel, Steven Kelk, Nela Lekic and Celine Scornavacca, <a href="http://www.biomedcentral.com/1471-2105/15/127">A practical approximation algorithm for solving massive instances of hybridization number for binary and nonbinary trees.</a> <i>BMC Bioinformatics</i> 15:127 (2014). <a href="http://dx.doi.org/10.1007/978-3-642-33122-0_34">Preliminary version</a> in proc. of WABI 2012, LNCS 7534, pp. 430-440.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[20] Leo van Iersel, Steven Kelk, Nela Lekic and Leen Stougie, <a href="http://dx.doi.org/10.1137/120903567">Approximation algorithms for nonbinary agreement forests</a>, <i>SIAM Journal on Discrete Mathematics</i>, 28(1), pp. 49-66 (2014). (<a href="http://arxiv.org/abs/1210.3211">arXiv</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[19] Eric Bapteste, Leo van Iersel, Axel Janke, Scot Kelchner, Steven Kelk, James O. McInerney, David A. Morrison, Luay Nakhleh, Mike Steel, Leen Stougie and James Whitfield, <a href="http://authors.elsevier.com/sd/article/S0168952513000863">Networks: expanding evolutionary thinking</a>. <i>Trends in Genetics</i>, 29 (8), pp. 439–441 (2013).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[18] Kantarawee Khayhan et al., <a href="http://dx.doi.org/10.1371/journal.pone.0072222">Geographically Structured Populations of Cryptococcus neoformans Variety grubii in Asia Correlate with HIV Status and Show a Clonal Population Structure.</a> <i>PLoS ONE</i>, 8(9): e72222. doi:10.1371/journal.pone.0072222 (2013).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[17] Ferry Hagen et al., <a href="http://dx.doi.org/10.1371/journal.pone.0071148">Ancient dispersal of the human fungal pathogen Cryptococcus gattii from the Amazon rainforest</a>, <i>PLoS ONE</i> 8(8): e71148. doi:10.1371/journal.pone.0071148 (2013). <a href="http://www.cwi.nl/news/2013/origin-of-tropical-pathogen-c-gattii-traced-amazon">Press release.</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[16] Leo van Iersel and Simone Linz, <a href="http://dx.doi.org/10.1016/j.ipl.2013.02.010">A quadratic kernel for computing the hybridization number of multiple trees</a>, <i>Information Processing Letters</i> 113 (9), pp. 318–323 (2013). (<a href="http://arxiv.org/abs/1203.4067">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[15] Leo van Iersel, Book Review: Basic Phylogenetic Combinatorics. -- Andreas Dress, Katharina T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner. <i>Systematic Biology</i> 62 (2), pp. 346–348 (2013). (<a href="http://sysbio.oxfordjournals.org/cgi/reprint/sys082?ijkey=SdEpFGYZCSpsUvz&amp;keytype=ref">free-access link</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[14] Steven Kelk, Leo van Iersel, Nela Lekic, Simone Linz, Celine Scornavacca and Leen Stougie, <a href="http://dx.doi.org/10.1137/120864350">Cycle killer... qu'est-ce que c'est? On the comparative approximability of hybridization number and directed feedback vertex set</a>, <i>SIAM Journal on Discrete Mathematics</i>, 26(4), pp. 1635–1656 (2012). (<a href="http://arxiv.org/abs/1112.5359">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[13] Steven Kelk, Celine Scornavacca and Leo van Iersel, <a href="http://dx.doi.org/10.1109/TCBB.2011.128">On the elusiveness of clusters</a>, <i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>, 9 (2), pp. 517-534 (2012). (<a href="http://arxiv.org/abs/1103.1834">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[12] Gregory Gutin, Leo van Iersel, Matthias Mnich and Anders Yeo, <a href="http://dx.doi.org/10.1016/j.jcss.2011.01.004">Every Ternary Permutation Constraint Satisfaction Problem Parameterized Above Average Has a Kernel with a Quadratic Number of Variables</a>, <i>Journal of Computer and System Sciences</i>, 78, pp. 151-163 (2012). Preliminary version in proc. of ESA 2010, LNCS 6346, pp. 326-337. (<a href="http://arxiv.org/abs/1004.1956">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[11] Leo van Iersel and Steven Kelk, <a href="http://dx.doi.org/10.1016/j.jtbi.2010.10.032">When Two Trees Go to War</a>, <i>Journal of Theoretical Biology</i>, 269, pp. 245-255 (2011). (<a href="http://arxiv.org/abs/1004.5332">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[10] Katharina Huber, Leo van Iersel, Steven Kelk and Radoslaw Suchecki, <a href="https://www.dropbox.com/s/ur4jt9btcy68y8j/PracticalLevel1.pdf?dl=1">A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks</a>, <i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>, 8 (3), pp. 635-649 (2011).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[9] Leo van Iersel and Steven Kelk, <a href="http://dx.doi.org/10.1007/s00453-009-9333-0">Constructing the Simplest Possible Phylogenetic Network from Triplets</a>, <i>Algorithmica</i>, 60, pp. 207-235 (2011). <a href="https://www.dropbox.com/s/hyk273xieeihfyj/ISAAC2008.pdf?dl=1">Preliminary verion</a> in proc. of <a href="http://www-or.amp.i.kyoto-u.ac.jp/isaac08/">ISAAC 2008</a>, LNCS 5369, pp. 472-483.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[8] Leo van Iersel, Charles Semple and Mike Steel, <a href="http://dx.doi.org/10.1016/j.ipl.2010.07.027">Locating a Tree in a Phylogenetic Network</a>, <i>Information Processing Letters</i>, 110 (23), pp. 1037-1043 (2010). (<a href="http://arxiv.org/abs/1006.3122">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[7] Leo van Iersel, Charles Semple and Mike Steel, <a href="https://www.dropbox.com/s/ary6t62830y8rzg/GenomeOfEden.pdf?dl=1">Quantifying the Extent of Lateral Gene Transfer Required to Avert a 'Genome of Eden'</a>, <i>Bulletin of Mathematical Biology</i>, 72(7), pp. 1783-1798 (2010).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[6] Leo van Iersel, Steven Kelk, Regula Rupp and Daniel Huson, <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations to Represent Conflicting Clusters</a>, <i>Bioinformatics</i>, 26, pp. i124-i131 (2010) (proceedings of <a href="http://www.iscb.org/ismb2010">ISMB 2010</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[5] Leo van Iersel, Steven Kelk and Matthias Mnich, <a href="https://www.dropbox.com/s/u33hl2in19ymo95/reflections.pdf?dl=1">Uniqueness, Intractability and Exact Algorithms: Reflections on Level-k Phylogenetic Networks</a>, <i>Journal of Bioinformatics and Computational Biology</i>, 7 (4), pp. 597-623 (2009).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[4] Leo van Iersel, Judith Keijsper, Steven Kelk, Leen Stougie, Ferry Hagen and Teun Boekhout, <a href="https://www.dropbox.com/s/asmh0w5q478tteh/level2full.pdf?dl=1">Constructing Level-2 Phylogenetic Networks from Triplets</a>, <i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>, 6 (4), pp. 667-681 (2009). <a href="https://www.dropbox.com/s/ayhnxhtyfcnkxpw/RECOMB2008.pdf?dl=1">Preliminary version</a> in proc. of RECOMB 2008, LNBI 4955, pp. 450-462. <a href="https://arxiv.org/abs/0707.2890">https://arxiv.org/abs/0707.2890</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[3] Leo van Iersel, Judith Keijsper, Steven Kelk and Leen Stougie, <a href="https://www.dropbox.com/s/log6mxad60v3nl0/shorelines.pdf?dl=1">Shorelines of Islands of Tractability: Algorithms for Parsimony and Minimum Perfect Phylogeny Haplotyping Problems</a>, <i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>, 5 (2), pp. 301-312 (2008). <a href="https://www.dropbox.com/s/0oznd17krqvx1tg/WABI2006.pdf?dl=1">Preliminary version</a> in proc. of WABI 2006, LNCS 4175, pp. 80-91.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[2] Cor Hurkens, Leo van Iersel, Judith Keijsper, Steven Kelk, Leen Stougie and John Tromp, <a href="https://doi.org/10.1137/060664252">Prefix reversals on binary and ternary strings</a>, <i>SIAM Journal on Discrete Mathematics</i>, 21 (3), pp. 592-611 (2007). <a href="https://www.dropbox.com/s/ptu5xceuovc4qix/AB2007.pdf?dl=1">Preliminary version</a> in proc. of AB 2007, LNCS 4545, pp. 292-306. (<a href="https://arxiv.org/abs/math/0602456">arXiv</a>)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>[1] Rudi Cilibrasi, Leo van Iersel, Steven Kelk and John Tromp, <a href="https://www.dropbox.com/s/dv56msno8zml3b1/algorithmica.pdf?dl=1">The Complexity of the Single Individual SNP Haplotyping Problem</a>, <i>Algorithmica</i>, 49 (1), pp. 13-36 (2007). <a href="https://www.dropbox.com/s/c96dnpzhu31b19u/WABI2005.pdf?dl=1">Preliminary version</a> in proc. of WABI 2005, LNCS 3692, pp. 128-139.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><span style="color: #101073;font-family: verdana">Short Notes</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Leo van Iersel, Steven Kelk, Nela Lekic and Leen Stougie, <a href="http://arxiv.org/abs/1312.1255">A short note on exponential-time algorithms for hybridization number</a>, arXiv:1312.1255 [q-bio.PE] (2013).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><span style="color: #101073;font-family: verdana">Thesis</span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Leo van Iersel, <a href="https://leovaniersel.files.wordpress.com/2014/09/thesis_vaniersel_viewing2.pdf">Algorithms, Haplotypes and Phylogenetic Networks</a>, Ph.D. Thesis, Eindhoven University of Technology, 2009 (<a href="https://leovaniersel.files.wordpress.com/2014/09/thesis_vaniersel_viewing2.pdf">pdf for viewing</a>, <a href="https://leovaniersel.files.wordpress.com/2014/09/thesis_vaniersel_printing_greyscale2.pdf">pdf for printing</a>).</p>
+<!-- /wp:paragraph -->
