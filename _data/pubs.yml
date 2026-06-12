@@ -1,550 +1,3078 @@
-- title: "Tractable Maximization of Budgeted Phylogenetic Diversity on Networks Utilizing Node Scanwidth"
-  release-date: 2026-05-22
+- title: Tree Containment Parameterized by Scanwidth
+  release-date:
   authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Jannik
-      last: Schestag
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Mathias
+    last: Weller
   year: 2026
-  type: "preprint"
+  type: preprint
   journal:
   volume:
   issue:
   pages:
-  note:
+  note: (2026). arXiv.
   doi-identifier:
   doi-url:
-  preprint-server: "arXiv"
-  preprint-identifier: 2605.23319
-  preprint-url: "https://arxiv.org/abs/2605.23319"
-  software-url: "https://github.com/nholtgrefe/panda"
-  abstract: |
-    Identifying a subset of taxa that maximizes Phylogenetic Diversity (PD) is a cornerstone of quantitative conservation planning. Traditionally, PD is defined over a phylogenetic tree in which leaves represent present-day taxa and branch lengths capture the estimated evolutionary distinctiveness. While PD maximization is computationally tractable on trees with unit costs, the problem becomes NP-hard when transitioning to phylogenetic networks or to budgeted versions in which protecting taxa incurs non-homogeneous costs.
-    In this paper, we address these two challenges by providing definitions and a comprehensive analysis of three distinct variants of budgeted PD on networks. We conduct our study through the lens of a small structural parameter, node scanwidth (nsw), which measures the tree-likeness of a phylogenetic network. We show that two of the considered variants can be optimized in \(\mathcal{O}^*(2^{\mathsf{nsw}} \cdot B^2)\) time, where \(B\) is the budget. For the computationally harder, third variant, we provide an algorithm to compute PD scores in \(\mathcal{O}^*(3^{\mathsf{nsw}})\) time.
-    We further contribute the first exact algorithms to compute node scanwidth, recognizing that the utility of algorithms based on nsw depends on the ability to compute nsw and its corresponding decomposition. Our approaches integrate data reduction rules, dynamic programming, and an Integer Linear Programming formulation.
-    We validate our theoretical results through extensive experiments on highly reticulated, simulated networks containing several hundred taxa, using heterogeneous costs. Our implementation computes PD scores and optimal nsw in fractions of a second, even on the most challenging instances. Furthermore, our budgeted optimization algorithms significantly outperform existing benchmarks for computing PD on networks, which were previously limited to unit-cost scenarios. The software makes analyses even on networks with a thousand taxa tractable in practice.
-  bibtex: |
-    @misc{holtgrefe2026tractable,
-      author = {Holtgrefe, Niels and Schestag, Jannik},
-      title = {Tractable Maximization of Budgeted Phylogenetic Diversity on Networks Utilizing Node Scanwidth},
-      year={2026},
-      archivePrefix={arXiv},
-      eprint={2605.23319}
-    }
-
-- title: "Limits of Kernelization and Parametrization for Phylogenetic Diversity with Dependencies"
-  release-date: 2026-02-13
-  authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Jannik
-      last: Schestag
-    - first: Norbert
-      last: Zeh
-  year: 2026
-  type: "preprint"
-  journal:
-  volume:
-  issue:
-  pages:
-  note:
-  doi-identifier:
-  doi-url:
-  preprint-server: "arXiv"
-  preprint-identifier: 2602.12959
-  preprint-url: "https://arxiv.org/abs/2602.12959"
-  abstract: | 
-    In the <em>Maximize Phylogenetic Diversity</em> problem, we are given a phylogenetic tree that represents the genetic proximity of species, and we are asked to select a subset of species of maximum phylogenetic diversity to be preserved through conservation efforts, subject to budgetary constraints that allow only \( k \) species to be saved. This neglects that it is futile to preserve a predatory species if we do not also preserve at least a subset of the prey it feeds on. Thus, in the <em>Optimizing PD with Dependencies</em> (\( \varepsilon \)-PDD) problem, we are additionally given a food web that represents the predator–prey relationships between species. The goal is to save a set of \( k \) species of maximum phylogenetic diversity such that for every saved species, at least one of its prey is also saved. This problem is NP-hard even when the phylogenetic tree is a star.<br>
-    The \( \alpha \)-PDD problem alters \( \varepsilon \)-PDD by requiring that at least some fraction \( \alpha \) of the prey of every saved species are also saved. In this paper, we study the parameterized complexity of \( \alpha \)-PDD. We prove that the problem is W[1]-hard and in XP when parameterized by the solution size \( k \), the diversity threshold \( D \), or their complements. When parameterized by the vertex cover number of the food web, \( \alpha \)-PDD is fixed-parameter tractable (FPT). A key measure of the computational difficulty of a problem that is FPT is the size of the smallest kernel that can be obtained. We prove that, when parameterized by the distance to clique, 1-PDD admits a linear kernel. Our main contribution is to prove that \( \alpha \)-PDD does not admit a polynomial kernel when parameterized by the vertex cover number plus the diversity threshold \( D \), even if the phylogenetic tree is a star. This implies the non-existence of a polynomial kernel for \( \alpha \)-PDD also when parameterized by a range of structural parameters of the food web, such as its distance to cluster, treewidth, pathwidth, feedback vertex set, and others.
-  bibtex: |
-    @misc{holtgrefe2026limits,
-      author = {Holtgrefe, Niels and Schestag, Jannik and Zeh, Norbert},
-      title = {Limits of Kernelization and Parametrization for Phylogenetic Diversity with Dependencies},
-      year={2026},
-      archivePrefix={arXiv},
-      eprint={2602.12959}
-    }
-
-- title: "Bounds on the Sequence Length Sufficient to Reconstruct Binary Level-1 Phylogenetic Networks Under the CFN Model"
-  release-date: 2026-05-21
-  authors:
-    - first: Martin
-      last: Frohn
-    - first: Niels
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Steven
-      last: Kelk
-  year: 2026
-  type: "journal"
-  journal: "Annals of Combinatorics"
-  volume:
-  issue:
-  pages:
-  note:
-  doi-identifier: "10.1007/s00026-026-00830-0"
-  doi-url: "https://doi.org/10.1007/s00026-026-00830-0"
-  preprint-server: "arXiv"
-  preprint-identifier: 2511.22736
-  preprint-url: "https://arxiv.org/abs/2511.22736"
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
   software-url:
-  abstract: |
-    Phylogenetic trees and networks are graphs used to model evolutionary relationships, with trees representing strictly branching histories and networks allowing for 
-    events in which lineages merge, called <em>reticulation</em> events.
-    While the question of data sufficiency has been studied extensively in the context of trees, it remains largely unexplored for networks. In this work we take a first step in this direction
-    by establishing bounds on the amount of genomic data required to reconstruct binary level-1 semi-directed phylogenetic networks, which are binary networks in which reticulation events are indicated by directed edges, all other edges are undirected, and cycles are vertex-disjoint. For this class, methods have been developed recently that are statistically consistent. Roughly speaking, such methods are guaranteed to reconstruct the correct network assuming infinitely long genomic sequences. Here we consider the question whether networks from this class can be uniquely and correctly reconstructed from finite sequences.
-    Specifically, we present an inference algorithm that takes as input genetic sequence data, and demonstrate that the sequence length sufficient to reconstruct the correct network with high probability,
-    under the CFN model of evolution, scales logarithmically, polynomially, or polylogarithmically with the number of taxa, depending on the parameter regime. As part of our contribution, we also present novel inference rules for quartet data in the semi-directed phylogenetic network setting.
-  bibtex: |
-    @article{frohn2026bounds,
-      author = {Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
-      title = {Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the {CFN} model},
-      journal = {Annals of Combinatorics},
-      doi = {10.1007/s00026-026-00830-0},
+  abstract:
+  bibtex: |-
+    @misc{iersel2026tree,
+      author = {Leo van Iersel and Mark Jones and Mathias Weller},
+      title = {Tree Containment Parameterized by Scanwidth},
       year = {2026}
     }
-    
-- title: "PaNDA: Efficient Optimization of Phylogenetic Diversity in Networks"
-  release-date: 2025-11-17
+- title: Average-Tree Phylogenetic Diversity Parameterized by Scanwidth and Invisibility
+  release-date:
   authors:
-    - first: Niels
-      middle:
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Ruben
-      last: Meuwese
-    - first: Yukihiro
-      last: Murakami
-    - first: Jannik
-      last: Schestag
-  year: 2025
-  type: "preprint"
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Jannik
+    last: Schestag
+  - first: Celine
+    last: Scornavacca
+  - first: Mathias
+    last: Weller
+  year: 2026
+  type: preprint
   journal:
   volume:
   issue:
   pages:
-  note:
-  doi-identifier: "10.1101/2025.11.14.688467"
-  doi-url: "https://www.biorxiv.org/content/10.1101/2025.11.14.688467"
-  preprint-server: "bioRxiv"
-  preprint-identifier: "10.1101/2025.11.14.688467"
-  preprint-url: "https://www.biorxiv.org/content/10.1101/2025.11.14.688467"
-  software-url: "https://github.com/nholtgrefe/panda"
-  abstract: |
-    Phylogenetic diversity plays an important role in biodiversity, conservation, and evolutionary studies by measuring the diversity of a set of taxa based on their phylogenetic relationships. In phylogenetic trees, a subset of \( k \) taxa with maximum phylogenetic diversity can be found by a simple and efficient greedy algorithm. However, this algorithmic tractability is lost when considering phylogenetic networks, which incorporate reticulate evolutionary events such as hybridization and horizontal gene transfer. To address this challenge, we introduce PaNDA (Phylogenetic Network Diversity Algorithms), the first software package and interactive graphical user-interface for exploring, visualizing and maximizing diversity in phylogenetic networks. PaNDA includes a novel algorithm to find a subset of \( k \) taxa with maximum diversity, running in polynomial time for networks of bounded <i>scanwidth</i>, a measure of tree-likeness of a network that grows slower than the well-known <i>level</i> measure. This algorithm considers the variant of phylogenetic diversity on networks in which the branch lengths of all paths from the root to the selected taxa contribute towards their diversity. We demonstrate the scalability of this algorithm on simulated networks, successfully analyzing level-15 networks with up to 200 taxa in seconds. We also provide a proof-of-concept analysis using a phylogenetic network on Xiphophorus species, illustrating how the tool can support diversity studies based on real genomic data. The software is easily installable and freely available at <a href="https://github.com/nholtgrefe/panda" target="_blank">https://github.com/nholtgrefe/panda</a>. Additionally, we extend the definition of phylogene- tic diversity to semi-directed phylogenetic networks, which are mixed graphs increasingly used in phylogenetic analysis to model uncertainty of the root location. We prove that finding a subset of k taxa with maximum diversity remains NP-hard on semi-directed networks, but do present a polynomial-time algorithm for networks with bounded level.
-  bibtex: |
-    @misc{holtgrefe2025panda,
-      author = {Holtgrefe, Niels and van Iersel, Leo and Meuwese, Ruben and Murakami, Yukihiro and Schestag, Jannik},
-      title = {{PaNDA}: Efficient Optimization of Phylogenetic Diversity in Networks},
-      year={2025},
-      archivePrefix={bioRxiv},
-      eprint={10.1101/2025.11.14.688467}
-    }
-    
-- title: "Characterizing semi-directed phylogenetic networks and their multi-rootable variants"
-  release-date: 2025-12-10
-  authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Katharina
-      middle: ["T"]
-      last: Huber
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Vincent
-      last: Moulton
-  year: 2026
-  type: "journal"
-  journal: "Theory in Biosciences"
-  volume: 145
-  issue: 1
-  pages: 4
-  note:
-  doi-identifier: "10.1007/s12064-025-00453-8"
-  doi-url: "https://doi.org/10.1007/s12064-025-00453-8"
-  preprint-server: "arXiv"
-  preprint-identifier: 2507.18772
-  preprint-url: "https://arxiv.org/abs/2507.18772"
+  note: (2026). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
   software-url:
-  abstract: |
-    In evolutionary biology, phylogenetic networks are graphs that provide a flexible framework for representing complex evolutionary histories that involve reticulate evolutionary events. Recently phylogenetic studies have started to focus on a special class of such networks called semi-directed networks. These graphs are defined as mixed graphs that can be obtained by de-orienting some of the arcs in some rooted phylogenetic network, that is, a directed acyclic graph whose leaves correspond to a collection of species and that has a single source or root vertex. However, this definition of semi-directed networks is implicit in nature since it is not clear when a mixed-graph enjoys this property or not. In this paper, we introduce novel, explicit mathematical characterizations of semi-directed networks, and also multi-semi-directed networks, that is, mixed graphs that can be obtained from directed phylogenetic networks that may have more than one root. In addition, through extending foundational tools from the theory of rooted networks into the semi-directed setting---such as cherry picking sequences, omnians, and path partitions---we characterize when a (multi-)semi-directed network can be obtained by de-orienting some rooted network that is contained in one of the well-known classes of tree-child, orchard, tree-based or forest-based networks. These results address structural aspects of (multi-)semi-directed networks and pave the way to improved theoretical and computational analyses of such networks, for example, within the development of algebraic evolutionary models that are based on such networks.
-  bibtex: |  
-    @article{holtgrefe2025charachterizing,
-      author = {Holtgrefe, Niels and Huber, Katharina T and van Iersel, Leo and Jones, Mark and Moulton, Vincent},
+  abstract:
+  bibtex: |-
+    @misc{iersel2026averagetree,
+      author = {Leo van Iersel and Mark Jones and Jannik Schestag and Celine Scornavacca and Mathias Weller},
+      title = {Average-Tree Phylogenetic Diversity Parameterized by Scanwidth and Invisibility},
+      year = {2026}
+    }
+- title: Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the CFN model
+  release-date:
+  authors:
+  - first: Martin
+    last: Frohn
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2026
+  type: journal
+  journal: Annals of Combinatorics
+  volume:
+  issue:
+  pages:
+  note: Annals of Combinatorics, to appear. arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{frohn2026bounds,
+      author = {Martin Frohn and Niels Holtgrefe and Leo van Iersel and Mark Jones and Steven Kelk},
+      title = {Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the CFN model},
+      year = {2026}
+    }
+- title: A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Simone
+    last: Linz
+  - first: Norbert
+    last: Zeh
+  year: 2026
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: (2026). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2026class,
+      author = {Leo van Iersel and Mark Jones and Simone Linz and Norbert Zeh},
+      title = {A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks},
+      year = {2026}
+    }
+- title: A kernel for the maximum agreement forest problem on multiple binary phylogenetic trees
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Ruben
+    last: Meuwese
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2026
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: (2026). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{kelk2026kernel,
+      author = {Steven Kelk and Ruben Meuwese and Leo van Iersel},
+      title = {A kernel for the maximum agreement forest problem on multiple binary phylogenetic trees},
+      year = {2026}
+    }
+- title: Computational support for case-heavy proofs in mathematical phylogenetics
+  release-date:
+  authors:
+  - first: Luca
+    last: Forte
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Ruben
+    last: Meuwese
+  year: 2025
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{forte2025computational,
+      author = {Luca Forte and Leo van Iersel and Steven Kelk and Ruben Meuwese},
+      title = {Computational support for case-heavy proofs in mathematical phylogenetics},
+      year = {2025}
+    }
+- title: Characterizing semi-directed phylogenetic networks and their multi-rootable variants
+  release-date:
+  authors:
+  - first: Niels
+    last: Holtgrefe
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  year: 2026
+  type: journal
+  journal: Theory in Biosciences 145:4 (2026)
+  volume:
+  issue:
+  pages:
+  note: Theory in Biosciences 145:4 (2026). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{holtgrefe2026characterizing,
+      author = {Niels Holtgrefe and Katharina Huber and Leo van Iersel and Mark Jones and Vincent Moulton},
       title = {Characterizing semi-directed phylogenetic networks and their multi-rootable variants},
-      journal={Theory in Biosciences},
-      doi={10.1007/s12064-025-00453-8},
-      volume = {145},
-      pages = {4},
-      number = {1},
       year = {2026}
     }
-
-- title: "Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances"
-  release-date: 2025-10-23
+- title: 'PaNDA: Efficient Optimization of Phylogenetic Diversity in Networks'
+  release-date:
   authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Elizabeth
-      middle: ["S"]
-      last: Allman
-    - first: Hector
-      last: Baños
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Vincent
-      last: Moulton
-    - first: John
-      middle: ["A"]
-      last: Rhodes
-    - first: Kristina
-      last: Wicke
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Ruben
+    last: Meuwese
+  - first: Yukihiro
+    last: Murakami
+  - first: Jannik
+    last: Schestag
   year: 2025
-  type: "journal"
-  journal: "Bulletin of Mathematical Biology"
-  volume: 87
-  issue: 12
-  pages: 168
-  note:
-  doi-identifier: "10.1007/s11538-025-01549-4"
-  doi-url: "https://doi.org/10.1007/s11538-025-01549-4"
-  preprint-server: "arXiv"
-  preprint-identifier: 2507.17308
-  preprint-url: "https://arxiv.org/abs/2507.17308"
-  software-url:
-  abstract: |
-    The inference of phylogenetic networks, which model complex evolutionary processes including hybridization and gene flow, remains a central challenge in evolutionary biology. Until now, statistically consistent inference methods have been limited to phylogenetic level-1 networks, which allow no interdependence between reticulate events. In this work, we establish the theoretical foundations for a statistically consistent inference method for a much broader class: semi-directed level-2 networks that are outer-labeled planar and galled. We precisely characterize the features of these networks that are distinguishable from the topologies of their displayed quartet trees. Moreover, we prove that an inter-taxon distance derived from these quartets is circular decomposable, enabling future robust inference of these networks from quartet data, such as concordance factors obtained from gene tree distributions under the Network Multispecies Coalescent model. Our results also have novel identifiability implications across different data types and evolutionary models, applying to any setting in which displayed quartets can be distinguished.  
-  bibtex: |
-    @article{holtgrefe2025distinguishing,
-      author = {Holtgrefe, Niels and Allman, Elizabeth S and Baños, Hector and van Iersel, Leo and Moulton, Vincent and Rhodes, John A and Wicke, Kristina},
-      title = {Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances},
-      journal={Bulletin of Mathematical Biology},
-      doi={10.1007/s11538-025-01549-4},
-      volume = {87},
-      pages = {168},
-      number = {12},
-      year = {2025}
-    }
-
-- title: "Algebraic Invariants for Inferring 4-leaf Semi-Directed Phylogenetic Networks"
-  release-date: 2025-10-14
-  authors:
-    - first: Samuel
-      last: Martin
-    - first: Niels
-      last: Holtgrefe
-    - first: Vincent
-      last: Moulton
-    - first: Richard
-      middle: ["M"]
-      last: Legget
-  year: 2025
-  type: "journal"
-  journal: "Systematic Biology"
-  volume:
-  issue:
-  pages: "syaf071"
-  note:
-  doi-identifier: "10.1093/sysbio/syaf071"
-  doi-url: "https://doi.org/10.1093/sysbio/syaf071"
-  preprint-server: "bioRxiv"
-  preprint-identifier: "10.1101/2023.09.11.557152"
-  preprint-url: "https://www.biorxiv.org/content/10.1101/2023.09.11.557152v4"
-  software-url: "https://github.com/SR-Martin/4cycle_invariants"
-  abstract: |
-    A core goal of phylogenomics is to determine the evolutionary history of a set of species from biological sequence data. Phylogenetic networks are able to describe more complex evolutionary phenomena than phylogenetic trees but are more difficult to accurately reconstruct. Recently, there has been growing interest in developing methods to infer semi-directed phylogenetic networks. As computing such networks can be computationally intensive, one approach to building such networks is to puzzle together smaller networks. Thus, it is essential to have robust methods for inferring semi-directed phylogenetic networks on small numbers of taxa. In this paper, we investigate an algebraic method for performing phylogenetic network inference from nucleotide sequence data on 4-leaf semi-directed phylogenetic networks by analysing the distribution of leaf-pattern probabilities. On simulated data, we found that we can correctly identify with high accuracy the undirected phylogenetic network for sequences of length at least 10kbp. We found that identifying the semi-directed network is more challenging and requires sequences of length approaching 10Mbp. We are also able to use our approach to identify tree-like evolution and determine the underlying tree. Finally, we employ our method on a real dataset from Xiphophorus species and use the results to build a phylogenetic network.  
-  bibtex: |
-    @article{martin2025algebraic,
-      title={Algebraic Invariants for Inferring 4-leaf Semi-Directed Phylogenetic Networks},
-      author={Martin, Samuel and Holtgrefe, Niels and Moulton, Vincent and Legget, Richard M},
-      journal={Systematic Biology},
-      doi={10.1093/sysbio/syaf071},
-      pages = {syaf071},
-      year = {2025}
-    }
-
-- title: "Identifiability of Phylogenetic Level-2 Networks under the Jukes-Cantor Model"
-  release-date: 2025-04-24
-  authors:
-    - first: Aviva
-      middle: ["K"]
-      last: Englander
-    - first: Martin
-      last: Frohn
-    - first: Elizabeth
-      last: Gross
-    - first: Niels
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Seth
-      last: Sullivant
-  year: 2025
-  type: "preprint"
-  journal:
+  type: conference
+  journal: RECOMB 2026
   volume:
   issue:
   pages:
-  note:
-  doi-identifier: "10.1101/2025.04.18.649493"
-  doi-url: "https://www.biorxiv.org/content/10.1101/2025.04.18.649493"
-  preprint-server: "bioRxiv"
-  preprint-identifier: "10.1101/2025.04.18.649493"
-  preprint-url: "https://www.biorxiv.org/content/10.1101/2025.04.18.649493"
-  software-url:
-  abstract: |
-    We consider the fundamental question of which evolutionary histories can potentially be reconstructed from sufficiently long DNA sequences, by studying the identifiability of phylogenetic networks from data generated under Markov models of DNA evolution. This topic has previously been studied for phylogenetic trees and for phylogenetic networks that are level-1, which means that reticulate evolutionary events were restricted to be independent in the sense that the corresponding cycles in the network are non-overlapping.<br>
-    In this paper, we study the identifiability of phylogenetic networks from DNA sequence data under Markov models of DNA evolution for more general classes of networks that may contain pairs of tangled reticulations. Our main result is generic identifiability, under the Jukes-Cantor model, of binary semi-directed level-2 phylogenetic networks that satisfy two additional conditions called triangle-free and strongly tree-child.<br>
-    We also consider level-1 networks and show stronger identifiability results for this class than what was known previously. In particular, we show that the number of reticulations in a level-1 network is identifiable under the Jukes-Cantor model.<br>
-    Moreover, we prove general identifiability results that do not restrict the network level at all and hold for the Jukes-Cantor as well as for the Kimura-2-Parameter model. We show that any two binary semi-directed phylogenetic networks are distinguishable if they do not display exactly the same 4-leaf subtrees, called quartets. This has direct consequences regarding the blobs of a network, which are its reticulated components. We show that the tree-of-blobs of a network, the global branching structure of the network, is always identifiable, as well as the circular ordering of the subnetworks around each blob, for networks in which edges do not cross and taxa are on the outside.
-  bibtex: |
-    @misc{englander2025identifiability,
-      author = {Englander, Aviva K and Frohn, Martin and Gross, Elizabeth and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Sullivant, Seth},
-      title = {Identifiability of Phylogenetic Level-2 Networks under the {Jukes-Cantor} Model},
-      year={2025},
-      archivePrefix={bioRxiv},
-      eprint={10.1101/2025.04.18.649493}
-    }
-
-- title: "Reconstructing semi-directed level-1 networks using few quarnets"
-  release-date: 2025-03-28
-  authors:
-    - first: Martin
-      last: Frohn
-    - first: Niels
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Steven
-      last: Kelk
-  year: 2025
-  type: "journal"
-  journal: "Journal of Computer and System Sciences"
-  volume: 152
-  issue:
-  pages: "103655"
-  note:
-  doi-identifier: "10.1016/j.jcss.2025.103655"
-  doi-url: "https://doi.org/10.1016/j.jcss.2025.103655"
-  preprint-server: "arXiv"
-  preprint-identifier: "2409.06034"
-  preprint-url: "https://arxiv.org/abs/2409.06034"
-  software-url:
-  abstract: |
-    Semi-directed networks are partially directed graphs that model evolution where the directed edges represent reticulate evolutionary events. We present an algorithm that reconstructs binary \(n\)-leaf semi-directed level-1 networks in \( O( n^2) \) time from its quarnets (4-leaf subnetworks). Our method assumes we have direct access to all quarnets, yet uses only an asymptotically optimal number of \( O(n \log n) \) quarnets. When the network is assumed to contain no triangles, our method instead relies only on four-cycle quarnets and the splits of the other quarnets. A variant of our algorithm works with quartets rather than quarnets and we show that it reconstructs most of a semi-directed level-1 network from an asymptotically optimal \( O(n \log n) \) of the quartets it displays. Additionally, we provide an \( O(n^3) \) time algorithm that reconstructs the tree-of-blobs of any binary \( n\)-leaf semi-directed network with unbounded level from \( O(n^3) \) splits of its quarnets.
-  bibtex: |
-    @article{frohn2025reconstructing,
-      title={Reconstructing semi-directed level-1 networks using few quarnets},
-      author={Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
-      journal={Journal of Computer and System Sciences},
-      doi={10.1016/j.jcss.2025.103655},
-      volume = {152},
-      pages = {103655},
-      year = {2025}
-    }
-
-- title: "Squirrel: Reconstructing Semi-directed Phylogenetic Level-1 Networks from Four-Leaved Networks or Sequence Alignments"
-  release-date: 2025-03-27
-  authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Katharina
-      middle: ["T"]
-      last: Huber
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Samuel
-      last: Martin
-    - first: Vincent
-      last: Moulton
-  year: 2025
-  type: "journal"
-  journal: "Molecular Biology and Evolution"
-  volume: 42
-  issue: 4
-  pages: "msaf067"
-  note:
-  doi-identifier: "10.1093/molbev/msaf067"
-  doi-url: "https://doi.org/10.1093/molbev/msaf067"
-  preprint-server: "bioRxiv"
-  preprint-identifier: "10.1101/2024.11.01.621567"
-  preprint-url: "https://www.biorxiv.org/content/10.1101/2024.11.01.621567v2"
-  software-url: "https://github.com/nholtgrefe/squirrel"
-  abstract: |
-    With the increasing availability of genomic data, biologists aim to find more accurate descriptions of evolutionary histories influenced by secondary contact, where diverging lineages reconnect before diverging again. Such reticulate evolutionary events can be more accurately represented in phylogenetic networks than in phylogenetic trees. Since the root location of phylogenetic networks cannot be inferred from biological data under several evolutionary models, we consider semi-directed (phylogenetic) networks: partially directed graphs without a root in which the directed edges represent reticulate evolutionary events. By specifying a known outgroup, the rooted topology can be recovered from such networks. We introduce the algorithm <span style="font-variant: small-caps;">Squirrel</span> (<u>S</u>emi-directed <u>Qu</u>arnet-based <u>I</u>nfe<u>r</u>ence to <u>Re</u>construct <u>L</u>evel-1 Networks), which constructs a semi-directed level-1 network from a full set of quarnets (four-leaf semi-directed networks). Our method also includes a heuristic to construct such a quarnet set directly from sequence alignments. We demonstrate <span style="font-variant: small-caps;">Squirrel</span>'s performance through simulations and on real sequence datasets, the largest of which contains 29 aligned sequences close to 1.7 Mbp long. The resulting networks are obtained on a standard laptop within a few minutes. Lastly, we prove that <span style="font-variant: small-caps;">Squirrel</span> is combinatorially consistent: given a full set of quarnets coming from a triangle-free semi-directed level-1 network, it is guaranteed to reconstruct the original network. <span style="font-variant: small-caps;">Squirrel</span> is implemented in Python, has an easy-to-use graphical user interface that takes sequence alignments or quarnets as input, and is freely available at <a href="https://github.com/nholtgrefe/squirrel" target="_blank">https://github.com/nholtgrefe/squirrel</a>.
-  bibtex: |
-    @article{holtgrefe2025squirrel,
-      title={Squirrel: Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments},
-      author={Holtgrefe, Niels and Huber, Katharina T and van Iersel, Leo and Jones, Mark and Martin, Samuel and Moulton, Vincent},
-      journal={Molecular Biology and Evolution},
-      doi={10.1093/molbev/msaf067},
-      volume = {42},
-      number = {4},
-      pages = {msaf067},
-      year = {2025}
-    }
-
-- title: "Invariants for level-1 phylogenetic networks under the random walk 4-state Markov model"
-  release-date: 2024-07-16
-  authors:
-    - first: Martin
-      last: Frohn
-    - first: Niels
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
-    - first: Steven
-      last: Kelk
-  year: 2024
-  type: "preprint"
-  journal:
-  volume:
-  issue:
-  pages:
-  note:
+  note: RECOMB 2026. bioRxiv. Software available.
   doi-identifier:
   doi-url:
-  preprint-server: "arXiv"
-  preprint-identifier: 2407.11720
-  preprint-url: "https://arxiv.org/abs/2407.11720"
-  software-url:
-  abstract: |
-    Phylogenetic networks can represent evolutionary events that cannot be described by phylogenetic trees, such as hybridization, introgression, and lateral gene transfer. Studying phylogenetic networks under a statistical model of DNA sequence evolution can aid the inference of phylogenetic networks. Most notably Markov models like the Jukes-Cantor or Kimura-3 model can been employed to infer a phylogenetic network using phylogenetic invariants. In this article we determine all quadratic invariants for sunlet networks under the random walk 4-state Markov model, which includes the aforementioned models. Taking toric fiber products of trees and sunlet networks, we obtain a new class of invariants for level-1 phylogenetic networks under the same model. Furthermore, we apply our results to the identifiability problem of a network parameter. In particular, we prove that our new class of invariants of the studied model is not sufficient to derive identifiability of quarnets (4-leaf networks). Moreover, we provide an efficient method that is faster and more reliable than the state-of-the-art in finding a significant number of invariants for many level-1 phylogenetic networks.
-  bibtex: |
-    @misc{frohn2024invariants,
-      author = {Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
-      title = {Invariants for level-1 phylogenetic networks under the random walk 4-state {Markov} model},
-      year={2024},
-      archivePrefix={arXiv},
-      eprint={2407.11720}
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url: https://github.com/nholtgrefe/panda
+  abstract:
+  bibtex: |-
+    @misc{holtgrefe2025panda,
+      author = {Niels Holtgrefe and Leo van Iersel and Ruben Meuwese and Yukihiro Murakami and Jannik Schestag},
+      title = {PaNDA: Efficient Optimization of Phylogenetic Diversity in Networks},
+      year = {2025}
     }
-
-- title: "Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs"
-  release-date: 2026-04-08
+- title: Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs
+  release-date:
   authors:
-    - first: Niels
-      last: Holtgrefe
-    - first: Leo
-      tussenvoegsel: van
-      last: Iersel
-    - first: Mark
-      last: Jones
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
   year: 2026
-  type: "journal"
-  journal: "Journal of Computer and System Sciences"
-  volume: 160
-  issue:
-  pages: "103802"
-  note:
-  doi-identifier: "10.1016/j.jcss.2026.103802"
-  doi-url: "https://doi.org/10.1016/j.jcss.2026.103802"
-  preprint-server: "arXiv"
-  preprint-identifier: 2403.12734
-  preprint-url: "https://arxiv.org/abs/2403.12734"
-  software-url: "https://github.com/nholtgrefe/scanwidth"
-  abstract: |
-    To measure the tree-likeness of a directed acyclic graph (DAG), a new width parameter that considers the directions of the arcs was recently introduced: <em>scanwidth</em>. We present the first algorithm that efficiently computes the exact scanwidth of general DAGs. For DAGs with one root and scanwidth \( k \), it runs in \( O(k \cdot n^k \cdot m) \) time. The algorithm also functions as an FPT algorithm with complexity \( O(2^{4\ell - 1} \cdot \ell \cdot n + n^2) \) for phylogenetic networks of level-\( \ell \), a type of DAG used to depict evolutionary relationships among species. Our algorithm performs well in practice, being able to compute the scanwidth of synthetic networks up to 30 reticulations and 100 leaves within 500 seconds. Furthermore, we propose a heuristic that obtains an average practical approximation ratio of 1.5 on these networks. While we prove that the scanwidth is bounded from below by the treewidth of the underlying undirected graph, experiments suggest that for networks the parameters are close in practice.
-  bibtex: |
-    @article{holtgrefe2026exact,
-      author = {Holtgrefe, Niels and van Iersel, Leo and Jones, Mark},
-      title = {Exact and heuristic computation of the scanwidth of directed acyclic graphs},
-      journal={Journal of Computer and System Sciences},
-      doi={10.1016/j.jcss.2026.103802},
-      volume = {160},
-      pages = {103802},
-      year = {2026}
-    }
-
-- title: "Computing the Scanwidth of Directed Acyclic Graphs"
-  release-date: 2023-07-12
-  authors:
-    - first: Niels
-      last: Holtgrefe
-  supervisors:
-    - Leo van Iersel
-    - Mark Jones
-  year: 2023
-  type: "thesis"
-  journal:
+  type: journal
+  journal: Journal of Computer and System Sciences
   volume:
   issue:
   pages:
-  note: MSc Thesis, Delft University of Technology, Delft, The Netherlands
-  doi-identifier:
-  doi-url:
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  software-url: "https://github.com/nholtgrefe/scanwidth"
-  repository-url: "http://resolver.tudelft.nl/uuid:9c82fd2a-5841-4aac-8e40-d4d22542cdf5"
-  abstract: |
-    Phylogenetic networks are a specific type of directed acyclic graph (DAG), used to depict evolutionary relationships among, for example, species or other groups of organisms. To solve computationally hard problems, treewidth has been used to parametrize algorithms in phylogenetics. In the hope of simplifying the algorithmic design process, Berry, Scornavacca and Weller [BSW20] recently proposed a new measure of tree-likeness that takes into account the directions of the arcs: <i>scanwidth</i>. They showed that the corresponding decision problem of this parameter - which can be seen as a variant of directed cutwidth, using a tree instead of a linear ordering - is NP-complete. This thesis aims to widen the structural knowledge of scanwidth and to find efficient ways of computing it on general DAGs, both by exact and heuristic algorithms.<br>
-    With the help of reduction rules, we construct an explicit dynamic programming algorithm that computes scanwidth exactly, along with its corresponding <i>tree extension</i>, in \( O(k \cdot n^k \cdot m) \) time for rooted DAGs of scanwidth \( k \). This slicewise polynomial algorithm proves that computing the scanwidth is in the complexity class XP. The algorithm also functions as an FPT algorithm for networks of level-\(\ell\), with the complexity bounded by \(O(2^{4 \ell - 1} \cdot \ell \cdot n + n^2) \). It performs well in practice, being able to compute the scanwidth of networks up to 30 reticulations and 100 leaves within 500 seconds.<br>
-    On the heuristic side, an algorithm that repeatedly splits at a specific type of smallest cut is proposed. Enhanced with simulated annealing, this heuristic shows promising results, obtaining an average approximation ratio of 1.5 for large synthetic networks of 30 reticulations and 100 leaves. Applied to a real-world dataset of networks, the heuristic performs near-optimal. Although we prove that the scanwidth is always greater than or equal to the treewidth, experiments show that they are close to each other in practice. This further motivates the use of scanwidth over treewidth as a parameter in algorithms.
-  bibtex: |
-    @masterthesis{holtgrefe2023computing,
-      title={Computing the Scanwidth of Directed Acyclic Graphs},
-      author={Niels Holtgrefe},
-      year={2023},
-      address={Delft, The Netherlands},
-      note={Available at \url{http://resolver.tudelft.nl/uuid:9c82fd2a-5841-4aac-8e40-d4d22542cdf5}},
-      school={Delft University of Technology},
-      type= {MSc thesis}
-    }
-
-- title: "Maximum Coverage Problems: Theory and Application in Optimal Sensor Selection"
-  release-date: 2021-07-12
-  authors:
-    - first: Niels
-      last: Holtgrefe
-  supervisors:
-    - Teun Janssen
-  year: 2021
-  type: "thesis"
-  journal:
-  volume:
-  issue:
-  pages:
-  note: BSc Thesis, Delft University of Technology, Delft, The Netherlands
+  note: Journal of Computer and System Sciences, 160:103802 (2026). arXiv.
   doi-identifier:
   doi-url:
   preprint-server:
   preprint-identifier:
   preprint-url:
   software-url:
-  repository-url: "https://resolver.tudelft.nl/uuid:9d222076-f3e6-4a36-9325-40de3dde0e9d"
-  abstract: |
-    In this thesis we analyse the class of <i>maximum coverage</i> problems. For all discussed problems, linear programs are formulated. Using the notion of <i>submodularity</i>, we prove that for the weighted version of the basic <i>Maximum Coverage</i> problem, where the weights differ per set, a polynomial-time greedy algorithm guarantees a \((1 - 1/e)\)-approximation of the optimal solution. This improves the already known bound of \((1 - 1/e - \varepsilon)\), for all \(\varepsilon > 0) \). We then show that the same result holds true, if we allow elements to be covered by multiple sets. Furthermore, a completely novel extension is introduced, where weights differ per combination of sets. It is proved that, under the assumption that the weights are submodular and increasing, a greedy algorithm still provides a \((1 – 1/e)\)-approximation.<br>
-    The latter algorithm is tested in the framework of optimal sensor selection. To this end, we consider all official weather stations in the Netherlands as our sensor group. We test the performance of the approximation algorithm, if some of the assumptions do not hold and no theoretical bounds exists. Corresponding weights are calculated, using two approaches: <i>inverse distance weighting</i> and <i>multiple linear regression</i>. For both approaches the in practice performance of the greedy algorithm is shown to be even higher than \((1 – 1/e)\), even though not all assumptions hold. Finally, the corresponding selection of weather stations is shown.
-  bibtex: |
-    @bachelorthesis{holtgrefe2021maximum,
-      title={Maximum Coverage Problems: Theory and Application in Optimal Sensor Selection},
-      author={Niels Holtgrefe},
-      year={2021},
-      address={Delft, The Netherlands},
-      note={Available at \url{https://resolver.tudelft.nl/uuid:9d222076-f3e6-4a36-9325-40de3dde0e9d}},
-      school={Delft University of Technology},
-      type= {BSc thesis}
+  abstract:
+  bibtex: |-
+    @misc{holtgrefe2026exact,
+      author = {Niels Holtgrefe and Leo van Iersel and Mark Jones},
+      title = {Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs},
+      year = {2026}
+    }
+- title: Metrics for classes of semi-binary phylogenetic networks using μ-representations
+  release-date:
+  authors:
+  - first: Christopher
+    last: Reichling
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Yukihiro
+    last: Murakami
+  year: 2026
+  type: journal
+  journal: Advances in Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Advances in Applied Mathematics, 172:102953 (2026). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{reichling2026metrics,
+      author = {Christopher Reichling and Leo van Iersel and Yukihiro Murakami},
+      title = {Metrics for classes of semi-binary phylogenetic networks using μ-representations},
+      year = {2026}
+    }
+- title: Average-Tree Phylogenetic Diversity of Networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Jannik
+    last: Schestag
+  - first: Celine
+    last: Scornavacca
+  - first: Mathias
+    last: Weller
+  year: 2025
+  type: conference
+  journal: WABI 2025
+  volume:
+  issue:
+  pages:
+  note: WABI 2025. LIPIcs 344:15 (2025).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2025averagetree,
+      author = {Leo van Iersel and Mark Jones and Jannik Schestag and Celine Scornavacca and Mathias Weller},
+      title = {Average-Tree Phylogenetic Diversity of Networks},
+      year = {2025}
+    }
+- title: Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances
+  release-date:
+  authors:
+  - first: Niels
+    last: Holtgrefe
+  - first: Elizabeth
+    middle:
+    - S
+    last: Allman
+  - first: Hector
+    last: Baños
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: John
+    middle:
+    - A
+    last: Rhodes
+  - first: Kristina
+    last: Wicke
+  year: 2025
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 87:168 (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{holtgrefe2025distinguishing,
+      author = {Niels Holtgrefe and Elizabeth S. Allman and Hector Baños and Leo van Iersel and Vincent Moulton and John A. Rhodes and Kristina Wicke},
+      title = {Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon Quartet Distances},
+      year = {2025}
+    }
+- title: Identifiability of Phylogenetic Level-2 Networks under the Jukes-Cantor Model
+  release-date:
+  authors:
+  - first: Aviva
+    last: Englander
+  - first: Martin
+    last: Frohn
+  - first: Elizabeth
+    last: Gross
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Seth
+    last: Sullivant
+  year: 2025
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: (2025). bioRxiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{englander2025identifiability,
+      author = {Aviva Englander and Martin Frohn and Elizabeth Gross and Niels Holtgrefe and Leo van Iersel and Mark Jones and Seth Sullivant},
+      title = {Identifiability of Phylogenetic Level-2 Networks under the Jukes-Cantor Model},
+      year = {2025}
+    }
+- title: 'Squirrel: Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments'
+  release-date:
+  authors:
+  - first: Niels
+    last: Holtgrefe
+  - first: Katharina
+    middle:
+    - T
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Samuel
+    last: Martin
+  - first: Vincent
+    last: Moulton
+  year: 2025
+  type: journal
+  journal: Molecular Biology and Evolution
+  volume:
+  issue:
+  pages:
+  note: Molecular Biology and Evolution, 42(4):msaf067 (2025). bioRxiv. Software available.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url: https://github.com/nholtgrefe/squirrel
+  abstract:
+  bibtex: |-
+    @misc{holtgrefe2025squirrel,
+      author = {Niels Holtgrefe and Katharina T Huber and Leo van Iersel and Mark Jones and Samuel Martin and Vincent Moulton},
+      title = {Squirrel: Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments},
+      year = {2025}
+    }
+- title: Is this network proper forest-based?
+  release-date:
+  authors:
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Guillaume
+    last: Scholz
+  year: 2025
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 187:106500 (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2025is,
+      author = {Katharina Huber and Leo van Iersel and Vincent Moulton and Guillaume Scholz},
+      title = {Is this network proper forest-based?},
+      year = {2025}
+    }
+- title: Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Jannik
+    last: Schestag
+  - first: Celine
+    last: Scornavacca
+  - first: Mathias
+    last: Weller
+  year: 2025
+  type: conference
+  journal: RECOMB-CG (2025)
+  volume:
+  issue:
+  pages:
+  note: RECOMB-CG (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2025phylogenetic,
+      author = {Leo van Iersel and Mark Jones and Jannik Schestag and Celine Scornavacca and Mathias Weller},
+      title = {Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond},
+      year = {2025}
+    }
+- title: A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple Unrooted Binary Trees
+  release-date:
+  authors:
+  - first: Jordan
+    last: Dempsey
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Norbert
+    last: Zeh
+  year: 2025
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 190:106572 (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{dempsey2025simple,
+      author = {Jordan Dempsey and Leo van Iersel and Mark Jones and Norbert Zeh},
+      title = {A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple Unrooted Binary Trees},
+      year = {2025}
+    }
+- title: Reconstructing semi-directed level-1 networks using few quarnets
+  release-date:
+  authors:
+  - first: Martin
+    last: Frohn
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2025
+  type: journal
+  journal: Journal of Computer and System Sciences
+  volume:
+  issue:
+  pages:
+  note: Journal of Computer and System Sciences, 152:103655 (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{frohn2025reconstructing,
+      author = {Martin Frohn and Niels Holtgrefe and Leo van Iersel and Mark Jones and Steven Kelk},
+      title = {Reconstructing semi-directed level-1 networks using few quarnets},
+      year = {2025}
+    }
+- title: When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?
+  release-date:
+  authors:
+  - first: Katharina
+    middle:
+    - T
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  - first: Leonie
+    last: Veenema-Nipius
+  year: 2025
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 87:136 (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2025when,
+      author = {Katharina T. Huber and Leo van Iersel and Mark Jones and Vincent Moulton and Leonie Veenema-Nipius},
+      title = {When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?},
+      year = {2025}
+    }
+- title: A Wild Sheep Chase Through an Orchard
+  release-date:
+  authors:
+  - first: Jordan
+    last: Dempsey
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2024
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:2408.10769 (2024).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '2408.10769'
+  preprint-url: https://arxiv.org/abs/2408.10769
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{dempsey2024wild,
+      author = {Jordan Dempsey and Leo van Iersel and Mark Jones and Yukihiro Murakami and Norbert Zeh},
+      title = {A Wild Sheep Chase Through an Orchard},
+      year = {2024}
+    }
+- title: Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning
+  release-date:
+  authors:
+  - first: Giulia
+    last: Bernardini
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Esther
+    last: Julien
+  - first: Leen
+    last: Stougie
+  year: 2024
+  type: journal
+  journal: Molecular Phylogenetics and Evolution
+  volume:
+  issue:
+  pages:
+  note: Molecular Phylogenetics and Evolution, 199:108137 (2024).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{bernardini2024inferring,
+      author = {Giulia Bernardini and Leo van Iersel and Esther Julien and Leen Stougie},
+      title = {Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning},
+      year = {2024}
+    }
+- title: Fence decompositions and cherry covers in non-binary phylogenetic networks
+  release-date:
+  authors:
+  - first: Joan
+    last: Carles Pons
+  - first: Pau
+    last: Vives López
+  - first: Yukihiro
+    last: Murakami
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2025
+  type: journal
+  journal: IEEE Transactions on Computational Biology and Bioinformatics (2025)
+  volume:
+  issue:
+  pages:
+  note: IEEE Transactions on Computational Biology and Bioinformatics (2025). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{carlespons2025fence,
+      author = {Joan Carles Pons and Pau Vives López and Yukihiro Murakami and Leo van Iersel},
+      title = {Fence decompositions and cherry covers in non-binary phylogenetic networks},
+      year = {2025}
+    }
+- title: Invariants for level-1 phylogenetic networks under the random walk 4-state Markov model
+  release-date:
+  authors:
+  - first: Martin
+    last: Frohn
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2024
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:2407.11720 (2024).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '2407.11720'
+  preprint-url: https://arxiv.org/abs/2407.11720
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{frohn2024invariants,
+      author = {Martin Frohn and Niels Holtgrefe and Leo van Iersel and Mark Jones and Steven Kelk},
+      title = {Invariants for level-1 phylogenetic networks under the random walk 4-state Markov model},
+      year = {2024}
+    }
+- title: Solving the Tree Containment Problem Using Graph Neural Networks
+  release-date:
+  authors:
+  - first: Arkadiy
+    last: Dushatskiy
+  - first: Esther
+    last: Julien
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Leen
+    last: Stougie
+  year: 2024
+  type: journal
+  journal: Transactions on Machine Learning Research (2024)
+  volume:
+  issue:
+  pages:
+  note: Transactions on Machine Learning Research (2024). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{dushatskiy2024solving,
+      author = {Arkadiy Dushatskiy and Esther Julien and Leo van Iersel and Leen Stougie},
+      title = {Solving the Tree Containment Problem Using Graph Neural Networks},
+      year = {2024}
+    }
+- title: A near-linear kernel for bounded-state parsimony distance
+  release-date:
+  authors:
+  - first: Elise
+    last: Deen
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2024
+  type: journal
+  journal: Journal of Computer and System Sciences
+  volume:
+  issue:
+  pages:
+  note: Journal of Computer and System Sciences, 140:103477 (2024). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{deen2024nearlinear,
+      author = {Elise Deen and Leo van Iersel and Remie Janssen and Mark Jones and Yukihiro Murakami and Norbert Zeh},
+      title = {A near-linear kernel for bounded-state parsimony distance},
+      year = {2024}
+    }
+- title: Orienting undirected phylogenetic networks
+  release-date:
+  authors:
+  - first: Katharina
+    middle:
+    - T
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  - first: Yukihiro
+    last: Murakami
+  - first: Charles
+    last: Semple
+  year: 2024
+  type: journal
+  journal: Journal of Computer and System Sciences
+  volume:
+  issue:
+  pages:
+  note: Journal of Computer and System Sciences, 140:103480 (2024). arXiv with additional appendix.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2024orienting,
+      author = {Katharina T. Huber and Leo van Iersel and Remie Janssen and Mark Jones and Vincent Moulton and Yukihiro Murakami and Charles Semple},
+      title = {Orienting undirected phylogenetic networks},
+      year = {2024}
+    }
+- title: When Three Trees Go to War
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Mathias
+    last: Weller
+  year: 2024
+  type: journal
+  journal: Peer Community Journal
+  volume:
+  issue:
+  pages:
+  note: Peer Community Journal, 4:e54 (2024).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2024when,
+      author = {Leo van Iersel and Mark Jones and Mathias Weller},
+      title = {When Three Trees Go to War},
+      year = {2024}
+    }
+- title: Making a Network Orchard by Adding Leaves
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Esther
+    last: Julien
+  - first: Yukihiro
+    last: Murakami
+  year: 2023
+  type: conference
+  journal: International Workshop on Algorithms in Bioinformatics (WABI 2023)
+  volume:
+  issue:
+  pages:
+  note: International Workshop on Algorithms in Bioinformatics (WABI 2023). LIPIcs, 273, pp. 7:1-7:20, https://doi.org/10.4230/LIPIcs.WABI.2023.7
+    (2023). arXiv.
+  doi-identifier: 10.4230/LIPIcs.WABI.2023.7
+  doi-url: https://doi.org/10.4230/LIPIcs.WABI.2023.7
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2023making,
+      author = {Leo van Iersel and Mark Jones and Esther Julien and Yukihiro Murakami},
+      title = {Making a Network Orchard by Adding Leaves},
+      year = {2023}
+    }
+- title: Polynomial invariants for cactuses
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Yukihiro
+    last: Murakami
+  year: 2023
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 182:106394 (2023).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2023polynomial,
+      author = {Leo van Iersel and Vincent Moulton and Yukihiro Murakami},
+      title = {Polynomial invariants for cactuses},
+      year = {2023}
+    }
+- title: Embedding phylogenetic trees in networks of low treewidth
+  release-date:
+  authors:
+  - first: Mark
+    last: Jones
+  - first: Mathias
+    last: Weller
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2023
+  type: journal
+  journal: Discrete Mathematics & Theoretical Computer Science
+  volume:
+  issue:
+  pages:
+  note: Discrete Mathematics & Theoretical Computer Science, 25:2 (2023). Preliminary version in ESA 2022. arXiv:2207.00574.
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '2207.00574'
+  preprint-url: https://arxiv.org/abs/2207.00574
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{jones2023embedding,
+      author = {Mark Jones and Mathias Weller and Leo van Iersel},
+      title = {Embedding phylogenetic trees in networks of low treewidth},
+      year = {2023}
+    }
+- title: Constructing Phylogenetic Networks via Cherry Picking and Machine Learning
+  release-date:
+  authors:
+  - first: Giulia
+    last: Bernardini
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Esther
+    last: Julien
+  - first: Leen
+    last: Stougie
+  year: 2023
+  type: journal
+  journal: Algorithms for Molecular Biology
+  volume:
+  issue:
+  pages:
+  note: Algorithms for Molecular Biology, 18:13 (2023). Preliminary version in WABI 2022, 10.4230/LIPIcs.WABI.2022.16. arXiv.
+  doi-identifier: 10.4230/LIPIcs.WABI.2022.16
+  doi-url: https://doi.org/10.4230/LIPIcs.WABI.2022.16
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{bernardini2023constructing,
+      author = {Giulia Bernardini and Leo van Iersel and Esther Julien and Leen Stougie},
+      title = {Constructing Phylogenetic Networks via Cherry Picking and Machine Learning},
+      year = {2023}
+    }
+- title: Orchard Networks are Trees with Additional Horizontal Arcs
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  year: 2022
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 84:76 (2022).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2022orchard,
+      author = {Leo van Iersel and Remie Janssen and Mark Jones and Yukihiro Murakami},
+      title = {Orchard Networks are Trees with Additional Horizontal Arcs},
+      year = {2022}
+    }
+- title: Level-2 networks from shortest and longest distances
+  release-date:
+  authors:
+  - first: Katharina
+    middle:
+    - T
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  - first: Yukihiro
+    last: Murakami
+  year: 2022
+  type: journal
+  journal: Discrete Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Discrete Applied Mathematics, 306:138-165 (2022). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2022level2,
+      author = {Katharina T. Huber and Leo van Iersel and Remie Janssen and Mark Jones and Vincent Moulton and Yukihiro Murakami},
+      title = {Level-2 networks from shortest and longest distances},
+      year = {2022}
+    }
+- title: New FPT algorithms for finding the temporal hybridization number for sets of phylogenetic trees
+  release-date:
+  authors:
+  - first: Sander
+    last: Borst
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2022
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 84:2050–2087 (2022).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{borst2022new,
+      author = {Sander Borst and Leo van Iersel and Mark Jones and Steven Kelk},
+      title = {New FPT algorithms for finding the temporal hybridization number for sets of phylogenetic trees},
+      year = {2022}
+    }
+- title: A Practical Fixed-Parameter Algorithm for Constructing Tree-Child Networks from Multiple Binary Trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2022
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 84:917–960 (2022). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2022practical,
+      author = {Leo van Iersel and Remie Janssen and Mark Jones and Yukihiro Murakami and Norbert Zeh},
+      title = {A Practical Fixed-Parameter Algorithm for Constructing Tree-Child Networks from Multiple Binary Trees},
+      year = {2022}
+    }
+- title: An algorithm for reconstructing level-2 phylogenetic networks from trinets
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Sjors
+    last: Kole
+  - first: Vincent
+    last: Moulton
+  - first: Leonie
+    last: Nipius
+  year: 2022
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 178:106300 (2022). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2022algorithm,
+      author = {Leo van Iersel and Sjors Kole and Vincent Moulton and Leonie Nipius},
+      title = {An algorithm for reconstructing level-2 phylogenetic networks from trinets},
+      year = {2022}
+    }
+- title: Applicability of several rooted phylogenetic network algorithms for representing the evolutionary history of SARS-CoV-2
+  release-date:
+  authors:
+  - first: Rosanne
+    last: Wallin
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Leen
+    last: Stougie
+  year: 2021
+  type: journal
+  journal: BMC Ecology and Evolution
+  volume:
+  issue:
+  pages:
+  note: BMC Ecology and Evolution, 21:220 (2021).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{wallin2021applicability,
+      author = {Rosanne Wallin and Leo van Iersel and Steven Kelk and Leen Stougie},
+      title = {Applicability of several rooted phylogenetic network algorithms for representing the evolutionary history of SARS-CoV-2},
+      year = {2021}
+    }
+- title: A Unifying Characterization of Tree-based Networks and Orchard Networks using Cherry Covers
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2021
+  type: journal
+  journal: Advances in Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Advances in Applied Mathematics, 129:102222 (2021). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2021unifying,
+      author = {Leo van Iersel and Remie Janssen and Mark Jones and Yukihiro Murakami and Norbert Zeh},
+      title = {A Unifying Characterization of Tree-based Networks and Orchard Networks using Cherry Covers},
+      year = {2021}
+    }
+- title: Distinguishing level-1 phylogenetic networks on the basis of data generated by Markov processes
+  release-date:
+  authors:
+  - first: Elizabeth
+    last: Gross
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Colby
+    last: Long
+  - first: Yukihiro
+    last: Murakami
+  year: 2021
+  type: journal
+  journal: Journal of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Mathematical Biology, 83:32 (2021). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{gross2021distinguishing,
+      author = {Elizabeth Gross and Leo van Iersel and Remie Janssen and Mark Jones and Colby Long and Yukihiro Murakami},
+      title = {Distinguishing level-1 phylogenetic networks on the basis of data generated by Markov processes},
+      year = {2021}
+    }
+- title: Reconstructibility of unrooted level-k phylogenetic networks from distances
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Yukihiro
+    last: Murakami
+  year: 2020
+  type: journal
+  journal: Advances in Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Advances in Applied Mathematics, 120:102075 (2020). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2020reconstructibility,
+      author = {Leo van Iersel and Vincent Moulton and Yukihiro Murakami},
+      title = {Reconstructibility of unrooted level-k phylogenetic networks from distances},
+      year = {2020}
+    }
+- title: Cutting an alignment with Ockham’s razor
+  release-date:
+  authors:
+  - first: Mark
+    last: Jones
+  - first: Philippe
+    last: Gambette
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Steven
+    last: Kelk
+  - first: Fabio
+    last: Pardi
+  - first: Celine
+    last: Scornavacca
+  year: 2019
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:1910.11041 [q-bio.PE] (2019).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '1910.11041'
+  preprint-url: https://arxiv.org/abs/1910.11041
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{jones2019cutting,
+      author = {Mark Jones and Philippe Gambette and Leo van Iersel and Remie Janssen and Steven Kelk and Fabio Pardi and Celine Scornavacca},
+      title = {Cutting an alignment with Ockham’s razor},
+      year = {2019}
+    }
+- title: A third strike against perfect phylogeny
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2019
+  type: journal
+  journal: Systematic Biology
+  volume:
+  issue:
+  pages:
+  note: Systematic Biology, 68(5):814–827 (2019). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2019third,
+      author = {Leo van Iersel and Mark Jones and Steven Kelk},
+      title = {A third strike against perfect phylogeny},
+      year = {2019}
+    }
+- title: Deciding the existence of a cherry-picking sequence is hard on two trees
+  release-date:
+  authors:
+  - first: Janosch
+    last: Döcker
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Simone
+    last: Linz
+  year: 2019
+  type: journal
+  journal: Discrete Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Discrete Applied Mathematics, 260:131-143 (2019). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{dcker2019deciding,
+      author = {Janosch Döcker and Leo van Iersel and Steven Kelk and Simone Linz},
+      title = {Deciding the existence of a cherry-picking sequence is hard on two trees},
+      year = {2019}
+    }
+- title: Reconstructing Tree-Child Networks from Reticulate-Edge-Deleted Subnetworks
+  release-date:
+  authors:
+  - first: Yukihiro
+    last: Murakami
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  year: 2019
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 81(10):3823–3863 (2019). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{murakami2019reconstructing,
+      author = {Yukihiro Murakami and Leo van Iersel and Remie Janssen and Mark Jones and Vincent Moulton},
+      title = {Reconstructing Tree-Child Networks from Reticulate-Edge-Deleted Subnetworks},
+      year = {2019}
+    }
+- title: Not all phylogenetic networks are leaf-reconstructible
+  release-date:
+  authors:
+  - first: Péter
+    middle:
+    - L
+    last: Erdős
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  year: 2019
+  type: journal
+  journal: Journal of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Mathematical Biology, 79(5):1623–1638 (2019). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{erds2019not,
+      author = {Péter L. Erdős and Leo van Iersel and Mark Jones},
+      title = {Not all phylogenetic networks are leaf-reconstructible},
+      year = {2019}
+    }
+- title: Finding a most parsimonious or likely tree in a network with respect to an alignment
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Fabio
+    last: Pardi
+  - first: Celine
+    last: Scornavacca
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2019
+  type: journal
+  journal: Journal of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Mathematical Biology, 78(1-2):527–547 (2019). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{kelk2019finding,
+      author = {Steven Kelk and Fabio Pardi and Celine Scornavacca and Leo van Iersel},
+      title = {Finding a most parsimonious or likely tree in a network with respect to an alignment},
+      year = {2019}
+    }
+- title: Polynomial-Time Algorithms for Phylogenetic Inference Problems involving duplication and reticulation
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2020
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 17(1):14–26 (2020). Preliminary version in AlCoB
+    2018, LNBI 10849:37–49 (2018). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2020polynomialtime,
+      author = {Leo van Iersel and Remie Janssen and Mark Jones and Yukihiro Murakami and Norbert Zeh},
+      title = {Polynomial-Time Algorithms for Phylogenetic Inference Problems involving duplication and reticulation},
+      year = {2020}
+    }
+- title: Parallel Machine Scheduling with a Single Resource per Job
+  release-date:
+  authors:
+  - first: Teun
+    last: Janssen
+  - first: Céline
+    last: Swennenhuis
+  - first: Abdoul
+    last: Bitar
+  - first: Thomas
+    last: Bosman
+  - first: Dion
+    last: Gijswijt
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Stèphane
+    last: Dauzére-Pérès
+  - first: Claude
+    last: Yugma
+  year: 2018
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:1809.05009 [cs.DM] (2018).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '1809.05009'
+  preprint-url: https://arxiv.org/abs/1809.05009
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{janssen2018parallel,
+      author = {Teun Janssen and Céline Swennenhuis and Abdoul Bitar and Thomas Bosman and Dion Gijswijt and Leo van Iersel and Stèphane Dauzére-Pérès and Claude Yugma},
+      title = {Parallel Machine Scheduling with a Single Resource per Job},
+      year = {2018}
+    }
+- title: Leaf-reconstructibility of phylogenetic networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  year: 2018
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 32(3):2047–2066 (2018). arXiv. PDF.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2018leafreconstructibility,
+      author = {Leo van Iersel and Vincent Moulton},
+      title = {Leaf-reconstructibility of phylogenetic networks},
+      year = {2018}
+    }
+- title: Exploring the tiers of rooted phylogenetic network space using tail moves
+  release-date:
+  authors:
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Péter
+    middle:
+    - L
+    last: Erdős
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Celine
+    last: Scornavacca
+  year: 2018
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 80(8):2177–2208 (2018).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{janssen2018exploring,
+      author = {Remie Janssen and Mark Jones and Péter L. Erdős and Leo van Iersel and Celine Scornavacca},
+      title = {Exploring the tiers of rooted phylogenetic network space using tail moves},
+      year = {2018}
+    }
+- title: Improved maximum parsimony models for phylogenetic networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Celine
+    last: Scornavacca
+  year: 2018
+  type: journal
+  journal: Systematic Biology
+  volume:
+  issue:
+  pages:
+  note: Systematic Biology, 67(3):518-542 (2018). Free-access link. Preprint.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2018improved,
+      author = {Leo van Iersel and Mark Jones and Celine Scornavacca},
+      title = {Improved maximum parsimony models for phylogenetic networks},
+      year = {2018}
+    }
+- title: Nonbinary tree-based phylogenetic networks
+  release-date:
+  authors:
+  - first: Laura
+    last: Jetten
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2018
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 14(1):205–217 (2018). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{jetten2018nonbinary,
+      author = {Laura Jetten and Leo van Iersel},
+      title = {Nonbinary tree-based phylogenetic networks},
+      year = {2018}
+    }
+- title: On unrooted and root-uncertain variants of several well-known phylogenetic network problems
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Georgios
+    last: Stamoulis
+  - first: Leen
+    last: Stougie
+  - first: Olivier
+    last: Boes
+  year: 2018
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 80(11):2993–3022 (2018).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2018unrooted,
+      author = {Leo van Iersel and Steven Kelk and Georgios Stamoulis and Leen Stougie and Olivier Boes},
+      title = {On unrooted and root-uncertain variants of several well-known phylogenetic network problems},
+      year = {2018}
+    }
+- title: A Priori TSP in the Scenario Model
+  release-date:
+  authors:
+  - first: Martijn
+    tussenvoegsel: van
+    last: Ee
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Teun
+    last: Janssen
+  - first: Rene
+    last: Sitters
+  year: 2018
+  type: journal
+  journal: Discrete Applied Mathematics
+  volume:
+  issue:
+  pages:
+  note: Discrete Applied Mathematics, 250:313-341 (2018). Postprint. Preliminary version in WAOA2016, LNCS 10138:183-196 (2017).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{ee2018priori,
+      author = {Martijn van Ee and Leo van Iersel and Teun Janssen and Rene Sitters},
+      title = {A Priori TSP in the Scenario Model},
+      year = {2018}
+    }
+- title: Rearrangement moves on rooted phylogenetic networks
+  release-date:
+  authors:
+  - first: Philippe
+    last: Gambette
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Manuel
+    last: Lafond
+  - first: Fabio
+    last: Pardi
+  - first: Celine
+    last: Scornavacca
+  year: 2017
+  type: journal
+  journal: PLoS Computational Biology
+  volume:
+  issue:
+  pages:
+  note: PLoS Computational Biology, 13(8):e1005611 (2017).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{gambette2017rearrangement,
+      author = {Philippe Gambette and Leo van Iersel and Mark Jones and Manuel Lafond and Fabio Pardi and Celine Scornavacca},
+      title = {Rearrangement moves on rooted phylogenetic networks},
+      year = {2017}
+    }
+- title: Graph realizations constrained by skeleton graphs
+  release-date:
+  authors:
+  - first: Péter
+    middle:
+    - L
+    last: Erdős
+  - first: Stephen
+    middle:
+    - G
+    last: Hartke
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: István
+    last: Miklós
+  year: 2017
+  type: journal
+  journal: The Electronic Journal of Combinatorics
+  volume:
+  issue:
+  pages:
+  note: 'The Electronic Journal of Combinatorics, 24(2), #P2.47 (2017).'
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{erds2017graph,
+      author = {Péter L. Erdős and Stephen G. Hartke and Leo van Iersel and István Miklós},
+      title = {Graph realizations constrained by skeleton graphs},
+      year = {2017}
+    }
+- title: 'Binets: fundamental building blocks for phylogenetic networks'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Eveline
+    tussenvoegsel: de
+    last: Swart
+  - first: Taoyang
+    last: Wu
+  year: 2017
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 79(5):1135–1154 (2017).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2017binets,
+      author = {Leo van Iersel and Vincent Moulton and Eveline de Swart and Taoyang Wu},
+      title = {Binets: fundamental building blocks for phylogenetic networks},
+      year = {2017}
+    }
+- title: Reconstructing phylogenetic level-1 networks from nondense binet and trinet sets
+  release-date:
+  authors:
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Celine
+    last: Scornavacca
+  - first: Taoyang
+    last: Wu
+  year: 2017
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 77(1):173-200 (2017). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2017reconstructing,
+      author = {Katharina Huber and Leo van Iersel and Vincent Moulton and Celine Scornavacca and Taoyang Wu},
+      title = {Reconstructing phylogenetic level-1 networks from nondense binet and trinet sets},
+      year = {2017}
+    }
+- title: Do branch lengths help to locate a tree in a phylogenetic network?
+  release-date:
+  authors:
+  - first: Philippe
+    last: Gambette
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Fabio
+    last: Pardi
+  - first: Celine
+    last: Scornavacca
+  year: 2016
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 78(9):1773–1795 (2016). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{gambette2016do,
+      author = {Philippe Gambette and Leo van Iersel and Steven Kelk and Fabio Pardi and Celine Scornavacca},
+      title = {Do branch lengths help to locate a tree in a phylogenetic network?},
+      year = {2016}
+    }
+- title: Hybridization Number on Three Rooted Binary Trees is EPT
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Chris
+    last: Whidden
+  - first: Norbert
+    last: Zeh
+  year: 2016
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 30(3):1607–1631 (2016). arXiv. PDF.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2016hybridization,
+      author = {Leo van Iersel and Steven Kelk and Nela Lekic and Chris Whidden and Norbert Zeh},
+      title = {Hybridization Number on Three Rooted Binary Trees is EPT},
+      year = {2016}
+    }
+- title: 'TriLoNet: Piecing together small networks to reconstruct reticulate evolutionary histories'
+  release-date:
+  authors:
+  - first: James
+    last: Oldman
+  - first: Taoyang
+    last: Wu
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  year: 2016
+  type: journal
+  journal: Molecular Biology and Evolution
+  volume:
+  issue:
+  pages:
+  note: Molecular Biology and Evolution, 33(8):2151-2162 (2016). Postprint.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{oldman2016trilonet,
+      author = {James Oldman and Taoyang Wu and Leo van Iersel and Vincent Moulton},
+      title = {TriLoNet: Piecing together small networks to reconstruct reticulate evolutionary histories},
+      year = {2016}
+    }
+- title: Kernelizations for the hybridization number problem on multiple nonbinary trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Celine
+    last: Scornavacca
+  year: 2016
+  type: journal
+  journal: Journal of Computer and System Sciences
+  volume:
+  issue:
+  pages:
+  note: 'Journal of Computer and System Sciences, 82(6):1075–1089 (2016). arXiv. Preliminary version in WG 2014, LNCS 8747:299-311
+    (2014). Software: Treeduce.'
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url: Treeduce
+  abstract:
+  bibtex: |-
+    @misc{iersel2016kernelizations,
+      author = {Leo van Iersel and Steven Kelk and Celine Scornavacca},
+      title = {Kernelizations for the hybridization number problem on multiple nonbinary trees},
+      year = {2016}
+    }
+- title: Phylogenetic incongruence through the lens of Monadic Second Order logic
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Celine
+    last: Scornavacca
+  - first: Mathias
+    last: Weller
+  year: 2016
+  type: journal
+  journal: Journal of Graph Algorithms and Applications
+  volume:
+  issue:
+  pages:
+  note: Journal of Graph Algorithms and Applications, 20(2):189-215 (2016).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{kelk2016phylogenetic,
+      author = {Steven Kelk and Leo van Iersel and Celine Scornavacca and Mathias Weller},
+      title = {Phylogenetic incongruence through the lens of Monadic Second Order logic},
+      year = {2016}
+    }
+- title: Satisfying ternary permutation constraints by multiple linear orders or phylogenetic trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Simone
+    last: Linz
+  year: 2016
+  type: journal
+  journal: Theoretical Computer Science
+  volume:
+  issue:
+  pages:
+  note: Theoretical Computer Science, 609(1):1-21 (2016). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2016satisfying,
+      author = {Leo van Iersel and Steven Kelk and Nela Lekic and Simone Linz},
+      title = {Satisfying ternary permutation constraints by multiple linear orders or phylogenetic trees},
+      year = {2016}
+    }
+- title: Hoe zijn ze verwant?
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2015
+  type: article
+  journal: Nieuw Archief voor Wiskunde
+  volume:
+  issue:
+  pages:
+  note: Nieuw Archief voor Wiskunde, 5/16(3):174-178 (2015).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2015hoe,
+      author = {Leo van Iersel},
+      title = {Hoe zijn ze verwant?},
+      year = {2015}
+    }
+- title: On Computing the Maximum Parsimony Score of a Phylogenetic Network
+  release-date:
+  authors:
+  - first: Mareike
+    last: Fischer
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Celine
+    last: Scornavacca
+  year: 2015
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 29(1):559-585 (2015). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{fischer2015computing,
+      author = {Mareike Fischer and Leo van Iersel and Steven Kelk and Celine Scornavacca},
+      title = {On Computing the Maximum Parsimony Score of a Phylogenetic Network},
+      year = {2015}
+    }
+- title: How much information is needed to infer reticulate evolutionary histories?
+  release-date:
+  authors:
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  - first: Taoyang
+    last: Wu
+  year: 2015
+  type: journal
+  journal: Systematic Biology
+  volume:
+  issue:
+  pages:
+  note: Systematic Biology, 64(1):102-111 (2015).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2015how,
+      author = {Katharina Huber and Leo van Iersel and Vincent Moulton and Taoyang Wu},
+      title = {How much information is needed to infer reticulate evolutionary histories?},
+      year = {2015}
+    }
+- title: 'WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads'
+  release-date:
+  authors:
+  - first: Murray
+    last: Patterson
+  - first: Tobias
+    last: Marschall
+  - first: Nadia
+    last: Pisanti
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Leen
+    last: Stougie
+  - first: Gunnar
+    middle:
+    - W
+    last: Klau
+  - first: Alexander
+    last: Schoenhuth
+  year: 2015
+  type: journal
+  journal: Journal of Computational Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Computational Biology, 22(6):498-509 (2015). Preliminary version in RECOMB 2014, LNCS 8394:237-249 (2014).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{patterson2015whatshap,
+      author = {Murray Patterson and Tobias Marschall and Nadia Pisanti and Leo van Iersel and Leen Stougie and Gunnar W. Klau and Alexander Schoenhuth},
+      title = {WhatsHap: Weighted Haplotype Assembly for Future-Generation Sequencing Reads},
+      year = {2015}
+    }
+- title: Exact Reconciliation of undated trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Celine
+    last: Scornavacca
+  - first: Steven
+    last: Kelk
+  year: 2014
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:1410.7004 [q-bio.PE] (2014).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '1410.7004'
+  preprint-url: https://arxiv.org/abs/1410.7004
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2014exact,
+      author = {Leo van Iersel and Celine Scornavacca and Steven Kelk},
+      title = {Exact Reconciliation of undated trees},
+      year = {2014}
+    }
+- title: The agreement problem for unrooted phylogenetic trees is FPT
+  release-date:
+  authors:
+  - first: Celine
+    last: Scornavacca
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: David
+    last: Bryant
+  year: 2014
+  type: journal
+  journal: Journal of Graph Algorithms and Applications
+  volume:
+  issue:
+  pages:
+  note: Journal of Graph Algorithms and Applications, 18(3):385-392 (2014).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{scornavacca2014agreement,
+      author = {Celine Scornavacca and Leo van Iersel and Steven Kelk and David Bryant},
+      title = {The agreement problem for unrooted phylogenetic trees is FPT},
+      year = {2014}
+    }
+- title: Trinets encode tree-child and level-2 phylogenetic networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Vincent
+    last: Moulton
+  year: 2014
+  type: journal
+  journal: Journal of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Mathematical Biology, 68(7):1707-1729 (2014). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2014trinets,
+      author = {Leo van Iersel and Vincent Moulton},
+      title = {Trinets encode tree-child and level-2 phylogenetic networks},
+      year = {2014}
+    }
+- title: A practical approximation algorithm for solving massive instances of hybridization number for binary and nonbinary
+    trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Celine
+    last: Scornavacca
+  year: 2014
+  type: journal
+  journal: BMC Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: BMC Bioinformatics, 15:127 (2014). Preliminary version in WABI 2012, LNCS 7534:430-440.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2014practical,
+      author = {Leo van Iersel and Steven Kelk and Nela Lekic and Celine Scornavacca},
+      title = {A practical approximation algorithm for solving massive instances of hybridization number for binary and nonbinary trees},
+      year = {2014}
+    }
+- title: Approximation algorithms for nonbinary agreement forests
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Leen
+    last: Stougie
+  year: 2014
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 28(1):49-66 (2014). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2014approximation,
+      author = {Leo van Iersel and Steven Kelk and Nela Lekic and Leen Stougie},
+      title = {Approximation algorithms for nonbinary agreement forests},
+      year = {2014}
+    }
+- title: 'Networks: expanding evolutionary thinking'
+  release-date:
+  authors:
+  - first: Eric
+    last: Bapteste
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Axel
+    last: Janke
+  - first: Scot
+    last: Kelchner
+  - first: Steven
+    last: Kelk
+  - first: James
+    middle:
+    - O
+    last: McInerney
+  - first: David
+    middle:
+    - A
+    last: Morrison
+  - first: Luay
+    last: Nakhleh
+  - first: Mike
+    last: Steel
+  - first: Leen
+    last: Stougie
+  - first: James
+    last: Whitfield
+  year: 2013
+  type: journal
+  journal: Trends in Genetics
+  volume:
+  issue:
+  pages:
+  note: Trends in Genetics, 29(8):439–441 (2013).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{bapteste2013networks,
+      author = {Eric Bapteste and Leo van Iersel and Axel Janke and Scot Kelchner and Steven Kelk and James O. McInerney and David A. Morrison and Luay Nakhleh and Mike Steel and Leen Stougie and James Whitfield},
+      title = {Networks: expanding evolutionary thinking},
+      year = {2013}
+    }
+- title: Geographically Structured Populations of Cryptococcus neoformans Variety grubii in Asia Correlate with HIV Status
+    and Show a Clonal Population Structure
+  release-date:
+  authors:
+  - first: Kantarawee
+    last: Khayhan
+  year: 2013
+  type: journal
+  journal: PLoS ONE
+  volume:
+  issue:
+  pages:
+  note: PLoS ONE, 8(9):e72222. doi:10.1371/journal.pone.0072222 (2013).
+  doi-identifier: 10.1371/journal.pone.0072222
+  doi-url: https://doi.org/10.1371/journal.pone.0072222
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{khayhan2013geographically,
+      author = {Kantarawee Khayhan et al.},
+      title = {Geographically Structured Populations of Cryptococcus neoformans Variety grubii in Asia Correlate with HIV Status and Show a Clonal Population Structure},
+      year = {2013}
+    }
+- title: Ancient dispersal of the human fungal pathogen Cryptococcus gattii from the Amazon rainforest
+  release-date:
+  authors:
+  - first: Ferry
+    last: Hagen
+  year: 2013
+  type: journal
+  journal: PLoS ONE
+  volume:
+  issue:
+  pages:
+  note: PLoS ONE, 8(8):e71148. doi:10.1371/journal.pone.0071148 (2013). Press release.
+  doi-identifier: 10.1371/journal.pone.0071148
+  doi-url: https://doi.org/10.1371/journal.pone.0071148
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{hagen2013ancient,
+      author = {Ferry Hagen et al.},
+      title = {Ancient dispersal of the human fungal pathogen Cryptococcus gattii from the Amazon rainforest},
+      year = {2013}
+    }
+- title: A quadratic kernel for computing the hybridization number of multiple trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Simone
+    last: Linz
+  year: 2013
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 113(9):318–323 (2013). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2013quadratic,
+      author = {Leo van Iersel and Simone Linz},
+      title = {A quadratic kernel for computing the hybridization number of multiple trees},
+      year = {2013}
+    }
+- title: 'Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina T. Huber, Jacobus Koolen, Vincent Moulton
+    and Andreas Spillner'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2013
+  type: review
+  journal: Systematic Biology
+  volume:
+  issue:
+  pages:
+  note: Systematic Biology, 62(2):346–348 (2013). Free-access link.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2013book,
+      author = {Leo van Iersel},
+      title = {Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner},
+      year = {2013}
+    }
+- title: Cycle killer… qu’est-ce que c’est? On the comparative approximability of hybridization number and directed feedback
+    vertex set
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Nela
+    last: Lekic
+  - first: Simone
+    last: Linz
+  - first: Celine
+    last: Scornavacca
+  - first: Leen
+    last: Stougie
+  year: 2012
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 26(4):1635–1656 (2012). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{kelk2012cycle,
+      author = {Steven Kelk and Leo van Iersel and Nela Lekic and Simone Linz and Celine Scornavacca and Leen Stougie},
+      title = {Cycle killer… qu’est-ce que c’est? On the comparative approximability of hybridization number and directed feedback vertex set},
+      year = {2012}
+    }
+- title: On the elusiveness of clusters
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Celine
+    last: Scornavacca
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2012
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 9(2):517-534 (2012). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{kelk2012elusiveness,
+      author = {Steven Kelk and Celine Scornavacca and Leo van Iersel},
+      title = {On the elusiveness of clusters},
+      year = {2012}
+    }
+- title: Every Ternary Permutation Constraint Satisfaction Problem Parameterized Above Average Has a Kernel with a Quadratic
+    Number of Variables
+  release-date:
+  authors:
+  - first: Gregory
+    last: Gutin
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Matthias
+    last: Mnich
+  - first: Anders
+    last: Yeo
+  year: 2012
+  type: journal
+  journal: Journal of Computer and System Sciences
+  volume:
+  issue:
+  pages:
+  note: Journal of Computer and System Sciences, 78:151-163 (2012). Preliminary version in ESA 2010, LNCS 6346:326-337. arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{gutin2012every,
+      author = {Gregory Gutin and Leo van Iersel and Matthias Mnich and Anders Yeo},
+      title = {Every Ternary Permutation Constraint Satisfaction Problem Parameterized Above Average Has a Kernel with a Quadratic Number of Variables},
+      year = {2012}
+    }
+- title: When Two Trees Go to War
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  year: 2011
+  type: journal
+  journal: Journal of Theoretical Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Theoretical Biology, 269:245-255 (2011). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2011when,
+      author = {Leo van Iersel and Steven Kelk},
+      title = {When Two Trees Go to War},
+      year = {2011}
+    }
+- title: A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks
+  release-date:
+  authors:
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Radoslaw
+    last: Suchecki
+  year: 2011
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8(3):635-649 (2011).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{huber2011practical,
+      author = {Katharina Huber and Leo van Iersel and Steven Kelk and Radoslaw Suchecki},
+      title = {A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks},
+      year = {2011}
+    }
+- title: Constructing the Simplest Possible Phylogenetic Network from Triplets
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  year: 2011
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 60:207-235 (2011). Preliminary version in ISAAC 2008, LNCS 5369:472-483.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2011constructing,
+      author = {Leo van Iersel and Steven Kelk},
+      title = {Constructing the Simplest Possible Phylogenetic Network from Triplets},
+      year = {2011}
+    }
+- title: Locating a Tree in a Phylogenetic Network
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Charles
+    last: Semple
+  - first: Mike
+    last: Steel
+  year: 2010
+  type: journal
+  journal: Information Processing Letters
+  volume:
+  issue:
+  pages:
+  note: Information Processing Letters, 110(23):1037-1043 (2010). arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2010locating,
+      author = {Leo van Iersel and Charles Semple and Mike Steel},
+      title = {Locating a Tree in a Phylogenetic Network},
+      year = {2010}
+    }
+- title: Quantifying the Extent of Lateral Gene Transfer Required to Avert a ‘Genome of Eden’
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Charles
+    last: Semple
+  - first: Mike
+    last: Steel
+  year: 2010
+  type: journal
+  journal: Bulletin of Mathematical Biology
+  volume:
+  issue:
+  pages:
+  note: Bulletin of Mathematical Biology, 72(7):1783-1798 (2010).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2010quantifying,
+      author = {Leo van Iersel and Charles Semple and Mike Steel},
+      title = {Quantifying the Extent of Lateral Gene Transfer Required to Avert a ‘Genome of Eden’},
+      year = {2010}
+    }
+- title: 'Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations to Represent Conflicting Clusters'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Regula
+    last: Rupp
+  - first: Daniel
+    last: Huson
+  year: 2010
+  type: journal
+  journal: Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: Bioinformatics, 26:i124-i131 (2010). Proceedings of ISMB 2010.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2010phylogenetic,
+      author = {Leo van Iersel and Steven Kelk and Regula Rupp and Daniel Huson},
+      title = {Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations to Represent Conflicting Clusters},
+      year = {2010}
+    }
+- title: 'Uniqueness, Intractability and Exact Algorithms: Reflections on Level-k Phylogenetic Networks'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Matthias
+    last: Mnich
+  year: 2009
+  type: journal
+  journal: Journal of Bioinformatics and Computational Biology
+  volume:
+  issue:
+  pages:
+  note: Journal of Bioinformatics and Computational Biology, 7(4):597-623 (2009).
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2009uniqueness,
+      author = {Leo van Iersel and Steven Kelk and Matthias Mnich},
+      title = {Uniqueness, Intractability and Exact Algorithms: Reflections on Level-k Phylogenetic Networks},
+      year = {2009}
+    }
+- title: Constructing Level-2 Phylogenetic Networks from Triplets
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Judith
+    last: Keijsper
+  - first: Steven
+    last: Kelk
+  - first: Leen
+    last: Stougie
+  - first: Ferry
+    last: Hagen
+  - first: Teun
+    last: Boekhout
+  year: 2009
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 6(4):667-681 (2009). Preliminary version in RECOMB
+    2008, LNBI 4955:450-462. arXiv:0707.2890.
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '0707.2890'
+  preprint-url: https://arxiv.org/abs/0707.2890
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2009constructing,
+      author = {Leo van Iersel and Judith Keijsper and Steven Kelk and Leen Stougie and Ferry Hagen and Teun Boekhout},
+      title = {Constructing Level-2 Phylogenetic Networks from Triplets},
+      year = {2009}
+    }
+- title: 'Shorelines of Islands of Tractability: Algorithms for Parsimony and Minimum Perfect Phylogeny Haplotyping Problems'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Judith
+    last: Keijsper
+  - first: Steven
+    last: Kelk
+  - first: Leen
+    last: Stougie
+  year: 2008
+  type: journal
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume:
+  issue:
+  pages:
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 5(2):301-312 (2008). Preliminary version in WABI
+    2006, LNCS 4175:80-91.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2008shorelines,
+      author = {Leo van Iersel and Judith Keijsper and Steven Kelk and Leen Stougie},
+      title = {Shorelines of Islands of Tractability: Algorithms for Parsimony and Minimum Perfect Phylogeny Haplotyping Problems},
+      year = {2008}
+    }
+- title: Prefix reversals on binary and ternary strings
+  release-date:
+  authors:
+  - first: Cor
+    last: Hurkens
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Judith
+    last: Keijsper
+  - first: Steven
+    last: Kelk
+  - first: Leen
+    last: Stougie
+  - first: John
+    last: Tromp
+  year: 2007
+  type: journal
+  journal: SIAM Journal on Discrete Mathematics
+  volume:
+  issue:
+  pages:
+  note: SIAM Journal on Discrete Mathematics, 21(3):592-611 (2007). Preliminary version in AB 2007, LNCS 4545:292-306. arXiv.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{hurkens2007prefix,
+      author = {Cor Hurkens and Leo van Iersel and Judith Keijsper and Steven Kelk and Leen Stougie and John Tromp},
+      title = {Prefix reversals on binary and ternary strings},
+      year = {2007}
+    }
+- title: The Complexity of the Single Individual SNP Haplotyping Problem
+  release-date:
+  authors:
+  - first: Rudi
+    last: Cilibrasi
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: John
+    last: Tromp
+  year: 2007
+  type: journal
+  journal: Algorithmica
+  volume:
+  issue:
+  pages:
+  note: Algorithmica, 49(1):13-36 (2007). Preliminary version in WABI 2005, LNCS 3692:128-139.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{cilibrasi2007complexity,
+      author = {Rudi Cilibrasi and Leo van Iersel and Steven Kelk and John Tromp},
+      title = {The Complexity of the Single Individual SNP Haplotyping Problem},
+      year = {2007}
+    }
+- title: A short note on exponential-time algorithms for hybridization number
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Leen
+    last: Stougie
+  year: 2013
+  type: preprint
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:1312.1255 [q-bio.PE] (2013).
+  doi-identifier:
+  doi-url:
+  preprint-server: arXiv
+  preprint-identifier: '1312.1255'
+  preprint-url: https://arxiv.org/abs/1312.1255
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2013short,
+      author = {Leo van Iersel and Steven Kelk and Nela Lekic and Leen Stougie},
+      title = {A short note on exponential-time algorithms for hybridization number},
+      year = {2013}
+    }
+- title: Algorithms, Haplotypes and Phylogenetic Networks
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2009
+  type: thesis
+  journal: Eindhoven University of Technology
+  volume:
+  issue:
+  pages:
+  note: Ph.D. Thesis, Eindhoven University of Technology, 2009.
+  doi-identifier:
+  doi-url:
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  abstract:
+  bibtex: |-
+    @misc{iersel2009algorithms,
+      author = {Leo van Iersel},
+      title = {Algorithms, Haplotypes and Phylogenetic Networks},
+      year = {2009}
     }
