@@ -60,26 +60,17 @@ plugins:
 author:
   name   : "Leo van Iersel"
   avatar : "/assets/images/uniting-phylogenetic-network-research-poster-pic.jpeg"
-  bio    : ""
+  bio    : "Associate Professor in Mathematical Phylogenetics at TU Delft"
   links: &social_links
     - label: "l.j.j.vaniersel@tudelft.nl"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:l.j.j.vaniersel@tudelft.nl"
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google-scholar"
-      url: ""
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: ""
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/leovaniersel"
-    - label: "ORCID"
-      icon: "fab fa-fw fa-orcid"
-      url: ""
+      url: "http://scholar.google.nl/citations?user=9GAwpXYAAAAJ"
     - label: "TU Delft"
       icon: "fas fa-fw fa-university"
-      url: ""
+      url: "https://www.tudelft.nl/en/staff/l.j.j.vaniersel/"
 
 footer:
   links:
@@ -88,16 +79,10 @@ footer:
       url: "mailto:l.j.j.vaniersel@tudelft.nl"
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google-scholar"
-      url: ""
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/leovaniersel"
-    - label: "ORCID"
-      icon: "fab fa-fw fa-orcid"
-      url: ""
+      url: "http://scholar.google.nl/citations?user=9GAwpXYAAAAJ"
     - label: "TU Delft"
       icon: "fas fa-fw fa-university"
-      url: ""
+      url: "https://www.tudelft.nl/en/staff/l.j.j.vaniersel/"
 
 defaults:
   - scope:

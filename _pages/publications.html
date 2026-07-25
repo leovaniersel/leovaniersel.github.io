@@ -16,9 +16,8 @@ classes: wide
 </script>
 
 
-
-
-<p>Below you can find my publications and preprints, with links and toggleable abstracts. MSc and BSc theses are listed at the <a href="#theses">bottom</a>. See also the <a href="{{ '/coauthors/' | relative_url }}">co-authors list</a> and my <a href="https://scholar.google.com/citations?user=wJh7R3UAAAAJ" target="_blank">Google Scholar profile</a>.</p>
+<p><a href="{{ '/coauthors/' | relative_url }}">Co-authors list</a>.
+  <a href="http://scholar.google.nl/citations?user=9GAwpXYAAAAJ" target="_blank">Google Scholar profile</a>.</p>
 
 
 {% assign all_pubs = site.data.pubs %}
@@ -30,10 +29,10 @@ Separate non-theses and theses
 {% assign theses = all_pubs | where: "type", "thesis" %}
 
 {%- comment -%}
-Sort non-theses and theses by release-date descending
+Sort all publications by year, newest first.
 {%- endcomment -%}
-{% assign normal_pubs = normal_pubs | sort: "release-date" | reverse %}
-{% assign theses = theses | sort: "release-date" | reverse %}
+{% assign normal_pubs = normal_pubs | sort: "year" | reverse %}
+{% assign theses = theses | sort: "year" | reverse %}
 
 {%- comment -%}
 Group non-theses by pub.year, assign reverse numbering

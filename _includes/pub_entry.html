@@ -70,8 +70,12 @@
         <!-- Buttons after info -->
         <span class="info-buttons" style="white-space: nowrap;">
           {% if pub.type == "journal" %}
-            {% if pub.doi-url %}
-              <a class="link-button" href="{{ pub.doi-url }}" target="_blank">journal</a>
+            {% assign journal_url = pub.doi-url | default: '' %}
+            {% if pub.doi-identifier and journal_url == '' %}
+              {% assign journal_url = pub.doi-identifier | prepend: 'https://doi.org/' %}
+            {% endif %}
+            {% if journal_url != '' %}
+              <a class="link-button" href="{{ journal_url }}" target="_blank">journal</a>
             {% endif %}
             {% if pub.preprint-url %}
               <a class="link-button" href="{{ pub.preprint-url }}" target="_blank">{{ pub.preprint-server }}</a>
