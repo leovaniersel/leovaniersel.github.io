@@ -1,15 +1,63 @@
-.stud-entry {
-  padding: 0.3em 0;
-  font-size: 0.95em;
-  line-height: 1.5;
+.stud-list {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stud-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-left: 3px solid #2f6f9f;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.stud-card:hover {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  border-color: #4a86b8;
+}
+
+.stud-year {
+  flex: 0 0 55px;
+  font-size: 0.85rem;
+  color: #5f6b7a;
+  padding-top: 0.1rem;
+  white-space: nowrap;
+}
+
+.stud-body {
+  flex: 1;
 }
 
 .stud-name {
   font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.stud-thesis {
+  font-size: 0.88rem;
+  color: #444;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+.stud-thesis a {
+  color: #2f6f9f;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.stud-thesis a:hover {
+  text-decoration: underline;
 }
 
 .stud-links {
-  margin-left: 0.4em;
+  margin-top: 0.35rem;
 }
 
 .stud-link-btn {
@@ -27,23 +75,4 @@
 
 .stud-link-btn:hover {
   background-color: #ddd;
-}
-
-.stud-sep {
-  margin: 0 0.4em;
-  color: #aaa;
-}
-
-.stud-thesis {
-  color: #444;
-  font-style: italic;
-}
-
-a.stud-thesis {
-  color: #2f6f9f;
-  text-decoration: none;
-}
-
-a.stud-thesis:hover {
-  text-decoration: underline;
 }

@@ -9,21 +9,35 @@ classes: wide
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/students.css' | relative_url }}">
 
-{% assign phd_students = site.data.stud | where: "role", "phd" %}
-{% assign msc_students = site.data.stud | where: "role", "msc" %}
-{% assign bsc_students = site.data.stud | where: "role", "bsc" %}
+{% assign phd_current = site.data.stud | where: "role", "phd" | where_exp: "s", "s.year == nil" %}
+{% assign phd_past = site.data.stud | where: "role", "phd" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
+{% assign phd_students = phd_current | concat: phd_past %}
+
+{% assign msc_current = site.data.stud | where: "role", "msc" | where_exp: "s", "s.year == nil" %}
+{% assign msc_past = site.data.stud | where: "role", "msc" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
+{% assign msc_students = msc_current | concat: msc_past %}
+
+{% assign bsc_current = site.data.stud | where: "role", "bsc" | where_exp: "s", "s.year == nil" %}
+{% assign bsc_past = site.data.stud | where: "role", "bsc" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
+{% assign bsc_students = bsc_current | concat: bsc_past %}
 
 <h2>PhD Students</h2>
-{% for stud in phd_students %}
-  {% include stud_entry.html stud=stud %}
-{% endfor %}
+<div class="stud-list">
+  {% for stud in phd_students %}
+    {% include stud_entry.html stud=stud %}
+  {% endfor %}
+</div>
 
 <h2>MSc Students</h2>
-{% for stud in msc_students %}
-  {% include stud_entry.html stud=stud %}
-{% endfor %}
+<div class="stud-list">
+  {% for stud in msc_students %}
+    {% include stud_entry.html stud=stud %}
+  {% endfor %}
+</div>
 
 <h2>BSc Students</h2>
-{% for stud in bsc_students %}
-  {% include stud_entry.html stud=stud %}
-{% endfor %}
+<div class="stud-list">
+  {% for stud in bsc_students %}
+    {% include stud_entry.html stud=stud %}
+  {% endfor %}
+</div>
