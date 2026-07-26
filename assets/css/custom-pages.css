@@ -311,6 +311,7 @@
 }
 
 .project-card {
+  position: relative;
   background: #fff;
   border: 1px solid #e3e8ef;
   border-left: 3px solid #2f6f9f;
@@ -349,7 +350,11 @@
 }
 
 .project-highlights {
-  text-align: right;
+  position: absolute;
+  bottom: -0.6em;
+  right: 0.6em;
+  margin: 0;
+  z-index: 2;
 }
 
 .coauthor-list {
