@@ -16,9 +16,15 @@ classes: wide
   {% for event in site.data.events.phylogenetics %}
   <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
     {% if event.image %}
-      <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
-        <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
-      </a>
+      {% if event.url %}
+        <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </a>
+      {% else %}
+        <span class="event-card__image">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </span>
+      {% endif %}
     {% endif %}
     <div class="event-card__body">
       <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
@@ -47,9 +53,15 @@ classes: wide
   {% for event in site.data.events.ai-math %}
   <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
     {% if event.image %}
-      <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
-        <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
-      </a>
+      {% if event.url %}
+        <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </a>
+      {% else %}
+        <span class="event-card__image">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </span>
+      {% endif %}
     {% endif %}
     <div class="event-card__body">
       <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
