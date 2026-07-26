@@ -11,9 +11,9 @@ main:
         url: /coauthors/
   - title: "Software"
     url: /software/
-  - title: "Activities"
+  - title: "Events"
     children:
-      - title: "Events"
+      - title: "Workshops"
         url: /events/
       - title: "Talks"
         url: /talks/
