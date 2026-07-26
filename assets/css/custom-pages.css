@@ -109,6 +109,29 @@
   opacity: 0.85;
 }
 
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.about-images a {
+  display: block;
+}
+
+.about-images img {
+  height: 320px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  border: 1px solid #e0e0e0;
+}
+
+.about-images img:hover {
+  opacity: 0.85;
+}
+
 .event-list {
   display: grid;
   gap: 0.75rem;
