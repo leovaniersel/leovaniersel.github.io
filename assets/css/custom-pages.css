@@ -126,7 +126,7 @@
 
 .about-image-card img {
   display: block;
-  height: 260px;
+  height: 340px;
   width: auto;
   max-width: 100%;
 }
@@ -138,6 +138,14 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: #24292f;
+}
+
+.about-image-year {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #6b7280;
 }
 
 .event-list {
