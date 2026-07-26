@@ -4,6 +4,13 @@
   margin-bottom: 0.5rem;
 }
 
+/* This page has many more year transitions than Publications/Talks
+   (often one student per year), so the shared year-label spacing
+   adds up fast; tighten it here specifically. */
+.stud-list .year-label {
+  margin: 0.8em 0 0.5em;
+}
+
 .stud-card {
   display: flex;
   gap: 1rem;
@@ -58,6 +65,7 @@
 
 .stud-links {
   margin-top: 0.35rem;
+  text-align: right;
 }
 
 .stud-link-btn {
