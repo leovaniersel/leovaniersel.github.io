@@ -48,7 +48,7 @@
 
 
     
-    <div class="info-row" style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+    <div class="info-row" style="display: flex; align-items: baseline; flex-wrap: wrap;">
 
       <span class="info">
         {% if pub.type == "journal" %}
@@ -66,7 +66,7 @@
        </span>
   
         <!-- Buttons after info -->
-        <span class="info-buttons" style="white-space: nowrap;">
+        <span class="info-buttons" style="white-space: nowrap; margin-left: auto;">
           {% if pub.type == "journal" %}
             {% assign journal_url = pub.doi-url | default: '' %}
             {% if pub.doi-identifier and journal_url == '' %}

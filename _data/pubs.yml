@@ -4112,6 +4112,62 @@
   authors:
   - first: Kantarawee
     last: Khayhan
+  - first: Ferry
+    last: Hagen
+  - first: Weihua
+    last: Pan
+  - first: Sitali
+    last: Simwami
+  - first: Matthew
+    middle:
+    - C
+    last: Fisher
+  - first: Retno
+    last: Wahyuningsih
+  - first: Arunaloke
+    last: Chakrabarti
+  - first: Anuradha
+    last: Chowdhary
+  - first: Reiko
+    last: Ikeda
+  - first: Saad
+    middle:
+    - J
+    last: Taj-Aldeen
+  - first: Ziauddin
+    last: Khan
+  - first: Margaret
+    last: Ip
+  - first: Darma
+    last: Imran
+  - first: Ridhawati
+    last: Sjam
+  - first: Pojana
+    last: Sriburee
+  - first: Wanqing
+    last: Liao
+  - first: Kunyaluk
+    last: Chaicumpar
+  - first: Varaporn
+    last: Vuddhakul
+  - first: Wieland
+    last: Meyer
+  - first: Luciana
+    last: Trilles
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Jacques
+    middle:
+    - F
+    last: Meis
+  - first: Corné
+    middle:
+    - H
+    - W
+    last: Klaassen
+  - first: Teun
+    last: Boekhout
   year: 2013
   type: journal
   journal: PLoS ONE
@@ -4130,7 +4186,7 @@
     structure, and associations among geography, sequence type, and HIV status.
   bibtex: |
     @article{khayhan2013geographically,
-      author = {Khayhan, Kantarawee},
+      author = {Khayhan, Kantarawee and Hagen, Ferry and Pan, Weihua and Simwami, Sitali and Fisher, Matthew C. and Wahyuningsih, Retno and Chakrabarti, Arunaloke and Chowdhary, Anuradha and Ikeda, Reiko and Taj-Aldeen, Saad J. and Khan, Ziauddin and Ip, Margaret and Imran, Darma and Sjam, Ridhawati and Sriburee, Pojana and Liao, Wanqing and Chaicumpar, Kunyaluk and Vuddhakul, Varaporn and Meyer, Wieland and Trilles, Luciana and van Iersel, Leo and Meis, Jacques F. and Klaassen, Corné H. W. and Boekhout, Teun},
       title = {{Geographically Structured Populations of Cryptococcus neoformans Variety grubii in Asia Correlate with HIV Status and Show a Clonal Population Structure}},
       journal = {PLoS ONE},
       year = {2013},
@@ -4161,6 +4217,71 @@
   authors:
   - first: Ferry
     last: Hagen
+  - first: Paulo
+    middle:
+    - C
+    last: Ceresini
+  - first: Itzhack
+    last: Polacheck
+  - first: Hansong
+    last: Ma
+  - first: Filip
+    tussenvoegsel: van
+    last: Nieuwerburgh
+  - first: Toni
+    last: Gabaldón
+  - first: Sarah
+    last: Kagan
+  - first: E. Rhiannon
+    last: Pursall
+  - first: Hans
+    middle:
+    - L
+    last: Hoogveld
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Gunnar
+    middle:
+    - W
+    last: Klau
+  - first: Steven
+    last: Kelk
+  - first: Leen
+    last: Stougie
+  - first: Karen
+    middle:
+    - H
+    last: Bartlett
+  - first: Kerstin
+    last: Voelz
+  - first: Leszek
+    middle:
+    - P
+    last: Pryszcz
+  - first: Elizabeth
+    last: Castañeda
+  - first: Marcia
+    last: Lazera
+  - first: Wieland
+    last: Meyer
+  - first: Dieter
+    last: Deforce
+  - first: Jacques
+    middle:
+    - F
+    last: Meis
+  - first: Robin
+    middle:
+    - C
+    last: May
+  - first: Corné
+    middle:
+    - H
+    - W
+    last: Klaassen
+  - first: Teun
+    last: Boekhout
   year: 2013
   type: journal
   journal: PLoS ONE
@@ -4180,7 +4301,7 @@
     to temperate regions.
   bibtex: |
     @article{hagen2013ancient,
-      author = {Hagen, Ferry},
+      author = {Hagen, Ferry and Ceresini, Paulo C. and Polacheck, Itzhack and Ma, Hansong and van Nieuwerburgh, Filip and Gabaldón, Toni and Kagan, Sarah and Pursall, E. Rhiannon and Hoogveld, Hans L. and van Iersel, Leo and Klau, Gunnar W. and Kelk, Steven and Stougie, Leen and Bartlett, Karen H. and Voelz, Kerstin and Pryszcz, Leszek P. and Castañeda, Elizabeth and Lazera, Marcia and Meyer, Wieland and Deforce, Dieter and Meis, Jacques F. and May, Robin C. and Klaassen, Corné H. W. and Boekhout, Teun},
       title = {{Ancient dispersal of the human fungal pathogen Cryptococcus gattii from the Amazon rainforest}},
       journal = {PLoS ONE},
       year = {2013},
