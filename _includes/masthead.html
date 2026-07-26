@@ -14,14 +14,39 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.url == page.url %} class="current" aria-current="page"{% endif %}
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
+            {%- if link.children -%}
+              {%- assign group_active = false -%}
+              {%- for child in link.children -%}
+                {%- if child.url == page.url -%}{%- assign group_active = true -%}{%- endif -%}
+              {%- endfor -%}
+              <li class="masthead__menu-item nav-dropdown">
+                <a
+                  href="{{ link.children.first.url | relative_url }}"
+                  class="nav-dropdown__toggle{% if group_active %} current{% endif %}"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >{{ link.title }}</a>
+                <ul class="nav-dropdown__menu">
+                  {%- for child in link.children -%}
+                    <li>
+                      <a
+                        href="{{ child.url | relative_url }}"
+                        {% if child.url == page.url %} class="current" aria-current="page"{% endif %}
+                      >{{ child.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </li>
+            {%- else -%}
+              <li class="masthead__menu-item">
+                <a
+                  href="{{ link.url | relative_url }}"
+                  {% if link.url == page.url %} class="current" aria-current="page"{% endif %}
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {%- endif -%}
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
@@ -39,3 +64,33 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var openDropdown = function (el) { el.classList.add('open'); el.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'true'); };
+  var closeDropdown = function (el) { el.classList.remove('open'); el.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'false'); };
+  var closeAll = function () {
+    document.querySelectorAll('.nav-dropdown.open').forEach(closeDropdown);
+  };
+
+  document.querySelectorAll('.nav-dropdown__toggle').forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
+      var parent = toggle.closest('.nav-dropdown');
+      var isOpen = parent.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        e.preventDefault();
+        openDropdown(parent);
+      }
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-dropdown')) closeAll();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeAll();
+  });
+});
+</script>

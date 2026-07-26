@@ -31,3 +31,88 @@
   border-bottom: 2px solid #2f6f9f;
   padding-bottom: 0.25em;
 }
+
+/* Grouped nav dropdowns (People, Activities). */
+/* The theme clips .visible-links with overflow:hidden as a no-JS/pre-JS
+   fallback for greedy-nav; that also clips our dropdown menus, so relax it. */
+.greedy-nav .visible-links {
+  overflow: visible;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__toggle::after {
+  content: "";
+  display: inline-block;
+  margin-inline-start: 0.35em;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+
+.nav-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 1rem;
+  min-width: 160px;
+  margin: 0.5em 0 0;
+  padding: 0.4em 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
+  z-index: 20;
+}
+
+.nav-dropdown:hover .nav-dropdown__menu,
+.nav-dropdown.open .nav-dropdown__menu {
+  display: block;
+}
+
+.nav-dropdown__menu li {
+  display: block;
+  border: none;
+}
+
+.nav-dropdown__menu a {
+  display: block;
+  margin: 0;
+  padding: 0.45em 1.1em;
+  white-space: nowrap;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-dropdown__menu a:before {
+  display: none;
+}
+
+.nav-dropdown__menu a:hover,
+.nav-dropdown__menu a.current {
+  color: #2f6f9f;
+  background: #eef3f8;
+}
+
+/* Inside the collapsed "more" flyout, show grouped items as a flat list. */
+.hidden-links .nav-dropdown__menu {
+  display: block;
+  position: static;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding-inline-start: 1em;
+}
+
+.hidden-links .nav-dropdown__toggle {
+  pointer-events: none;
+}
+
+.hidden-links .nav-dropdown__toggle::after {
+  display: none;
+}

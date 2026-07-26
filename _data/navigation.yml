@@ -3,13 +3,17 @@ main:
     url: /
   - title: "Publications"
     url: /publications/
-  - title: "Students"
-    url: /students/
-  - title: "Co-authors"
-    url: /coauthors/
+  - title: "People"
+    children:
+      - title: "Students"
+        url: /students/
+      - title: "Co-authors"
+        url: /coauthors/
   - title: "Software"
     url: /software/
-  - title: "Events"
-    url: /events/
-  - title: "Talks"
-    url: /talks/
+  - title: "Activities"
+    children:
+      - title: "Events"
+        url: /events/
+      - title: "Talks"
+        url: /talks/
