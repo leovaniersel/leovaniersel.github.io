@@ -253,6 +253,7 @@
   padding: 1rem 1.1rem;
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  scroll-margin-top: 1em;
 }
 
 .software-card:hover {
