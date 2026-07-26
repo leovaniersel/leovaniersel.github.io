@@ -58,7 +58,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name : ""
+  name : "Leo van Iersel"
   bio   : "Associate Professor in Mathematical Phylogenetics at TU Delft"
   location: "Room 36.HB 04.050"
   address: "Mekelweg 4, 2628 CD, Delft"
