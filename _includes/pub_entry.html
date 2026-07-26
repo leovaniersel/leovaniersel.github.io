@@ -61,7 +61,7 @@
         {% if pub.type == "journal" %}
           <i>{{ pub.journal }}</i>{% if pub.volume %}, {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}{% endif %}{% if pub.pages %}:{{ pub.pages }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}.
           {% if pub.conference-note %}
-            Preliminary version in {% if pub.conference-doi-url %}<a href="{{ pub.conference-doi-url }}" target="_blank">{{ pub.conference-note }}</a>{% else %}{{ pub.conference-note }}{% endif %}.
+            Preliminary version in {{ pub.conference-note }}.
           {% endif %}
         {% elsif pub.type == "preprint" %}
           {% if pub.preprint-server %}{{ pub.preprint-server }}{% endif %}{% if pub.preprint-identifier %}:{{ pub.preprint-identifier }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}.
@@ -82,6 +82,9 @@
             {% endif %}
             {% if pub.preprint-url %}
               <a class="link-button" href="{{ pub.preprint-url }}" target="_blank">{{ pub.preprint-server }}</a>
+            {% endif %}
+            {% if pub.conference-doi-url %}
+              <a class="link-button" href="{{ pub.conference-doi-url }}" target="_blank">conference</a>
             {% endif %}
             {% if pub.software-url %}
               <a class="link-button" href="{{ pub.software-url }}" target="_blank">software</a>
