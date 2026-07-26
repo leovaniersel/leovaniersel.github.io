@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Leo van Iersel
+title: ""
 subtitle: leovaniersel.github.io
 email: l.j.j.vaniersel@tudelft.nl
 description: >- # this means to ignore newlines until "baseurl:"
@@ -58,9 +58,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Leo van Iersel"
-  avatar : "/assets/images/uniting-phylogenetic-network-research-poster-pic.jpeg"
-  bio    : "Associate Professor in Mathematical Phylogenetics at TU Delft"
+  name : "Leo van Iersel"
+  bio   : "Associate Professor in Mathematical Phylogenetics at TU Delft"
+  location: "Room 36.HB 04.050"
+  address: "Mekelweg 4, 2628 CD, Delft"
   links: &social_links
     - label: "l.j.j.vaniersel@tudelft.nl"
       icon: "fas fa-fw fa-envelope"

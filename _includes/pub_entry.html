@@ -108,6 +108,9 @@
       left: 0.6em;
       z-index: 2;
     ">
+      {% if pub.summary %}
+        <button class="toggle-button lowkey" onclick="toggleBox('sum_{{ pub.title | slugify }}')">summary</button>
+      {% endif %}
       {% if pub.abstract %}
         <button class="toggle-button lowkey" onclick="toggleBox('abs_{{ pub.title | slugify }}')">abstract</button>
       {% endif %}
@@ -122,6 +125,17 @@
 
 <!-- Optional toggles below full row, aligned with pub-middle -->
 <div style="margin-left: 3.3em; margin-top: -0.7em;">
+  {% if pub.summary %}
+    <div id="sum_{{ pub.title | slugify }}" class="abstract-box noshow" style="
+      font-family: inherit;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0.4em 0.6em 0.6em 0.6em;
+      font-size: 0.9em;
+      line-height: 1.3em;
+      white-space: normal;
+    ">{{ pub.summary }}</div>
+  {% endif %}
   {% if pub.abstract %}
     <div id="abs_{{ pub.title | slugify }}" class="abstract-box noshow" style="
       font-family: inherit;

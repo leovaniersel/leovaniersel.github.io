@@ -1,0 +1,56 @@
+---
+layout: single
+title: "Events"
+permalink: /events/
+author_profile: true
+classes: wide
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
+
+<p>Below are the workshops I organized on Phylogenetics and on AI &amp; Mathematics.</p>
+
+<h2>Phylogenetics</h2>
+
+<div class="event-list">
+  {% for event in site.data.events.phylogenetics %}
+  <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
+    {% if event.image %}
+      <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
+        <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+      </a>
+    {% endif %}
+    <div class="event-card__body">
+      <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
+      <p class="event-meta">
+        {{ event.date }}<br>
+        {{ event.location }}{% if event.role %} · <em>{{ event.role }}</em>{% endif %}
+        {% if event.links %}
+          {% for link in event.links %}
+            · <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+          {% endfor %}
+        {% endif %}
+      </p>
+    </div>
+    {% if event.image2 %}
+      <a class="event-card__image event-card__image--right" href="{{ event.image2-url }}" target="_blank" rel="noopener">
+        <img src="{{ event.image2 | relative_url }}" alt="{{ event.title }}">
+      </a>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
+
+<h2>AI &amp; Mathematics</h2>
+
+<div class="event-list">
+  {% for event in site.data.events.ai-math %}
+  <article class="event-card">
+    <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
+    <p class="event-meta">
+      {{ event.date }}<br>
+      {{ event.location }}{% if event.role %} · <em>{{ event.role }}</em>{% endif %}
+    </p>
+  </article>
+  {% endfor %}
+</div>

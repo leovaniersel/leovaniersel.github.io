@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>Software - Leo van Iersel</title>
+<!-- begin _includes/seo.html --><title>Software</title>
 <meta name="description" content="Personal homepage of Leo van Iersel">
 
 
@@ -25,7 +25,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Leo van Iersel">
+<meta property="og:site_name" content="">
 <meta property="og:title" content="Software">
 <meta property="og:url" content="http://localhost:4000/software/">
 
@@ -79,6 +79,7 @@
 
 
     <link rel="stylesheet" href="/assets/css/overrides.css">
+<link rel="stylesheet" href="/assets/css/custom-pages.css">
 <link rel="icon" type="image/svg+xml" href="/assets/images/nh-icon.svg">
 <link rel="apple-touch-icon" href="/assets/images/nh-icon.svg">
 <meta property="og:image" content="http://localhost:4000/assets/images/nh-icon.svg">
@@ -105,7 +106,7 @@
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
-          Leo van Iersel
+          
           <span class="site-subtitle">leovaniersel.github.io</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
@@ -122,6 +123,18 @@
               >Publications</a>
             </li><li class="masthead__menu-item">
               <a
+                href="/students/"
+                
+                
+              >Students</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/coauthors/"
+                
+                
+              >Co-authors</a>
+            </li><li class="masthead__menu-item">
+              <a
                 href="/software/"
                 
                 
@@ -132,6 +145,12 @@
                 
                 
               >Events</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/talks/"
+                
+                
+              >Talks</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -165,12 +184,6 @@
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   
-    <div class="author__avatar">
-      <a href="http://localhost:4000/">
-        <img src="/assets/images/uniting-phylogenetic-network-research-poster-pic.jpeg" alt="Leo van Iersel" itemprop="image" class="u-photo">
-      </a>
-    </div>
-  
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
@@ -188,6 +201,10 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Room 36.HB 04.050</span>
+        </li>
+      
 
       
         
@@ -197,10 +214,6 @@
         
           
             <li><a href="http://scholar.google.nl/citations?user=9GAwpXYAAAAJ" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-google-scholar" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
-          
-        
-          
-            <li><a href="https://github.com/leovaniersel" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
           
@@ -257,19 +270,24 @@
 
       
 
-      <!--
+      
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
+    <i class="fas fa-fw fa-building" aria-hidden="true"></i>
+    <span class="label">Mekelweg 4, 2628 CD, Delft</span>
   </li>
--->
+
+
     </ul>
   </div>
 </div>
 
   
-  
+  <div class="sidebar-images">
+  <a href="https://www.lorentzcenter.nl/uniting-phylogenetic-network-research.html" target="_blank" rel="noopener">
+    <img src="/assets/images/sidebar/poster_lorentz_2026.jpeg" alt="Uniting Phylogenetic Network Research – Lorentz Center 2026">
+  </a>
+</div>
+
   </div>
 
 
@@ -298,19 +316,24 @@
         
         <link rel="stylesheet" href="/assets/css/custom-pages.css">
 
-<p class="software-page-intro">A curated collection of software tools and algorithms related to phylogenetic networks, tree reconstruction, and network optimization.</p>
 
 <div class="software-list">
-  <article class="software-card">
-    <h3><a href="https://github.com/nholtgrefe/panda">PaNDA</a></h3>
-    <p>Efficient Optimization of Phylogenetic Diversity in Networks.</p>
-    <p class="software-meta">By Niels Holtgrefe · <a href="https://doi.org/10.1101/2025.11.14.688467">paper</a></p>
+  <article class="software-card software-card--with-logo">
+    <img class="software-logo" src="/assets/images/software/phypanda_icon.svg" alt="PaNDA logo">
+    <div>
+      <h3><a href="https://github.com/nholtgrefe/panda">PaNDA</a></h3>
+      <p>Efficient Optimization of Phylogenetic Diversity in Networks.</p>
+      <p class="software-meta">By Niels Holtgrefe · <a href="https://doi.org/10.1101/2025.11.14.688467">paper</a></p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://github.com/nholtgrefe/squirrel">SQUIRREL</a></h3>
-    <p>Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments.</p>
-    <p class="software-meta">By Niels Holtgrefe · <a href="https://doi.org/10.1101/2024.11.01.621567">paper</a></p>
+  <article class="software-card software-card--with-logo">
+    <img class="software-logo" src="/assets/images/software/squirrel_icon.svg" alt="SQUIRREL logo">
+    <div>
+      <h3><a href="https://github.com/nholtgrefe/squirrel">SQUIRREL</a></h3>
+      <p>Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments.</p>
+      <p class="software-meta">By Niels Holtgrefe · <a href="https://doi.org/10.1101/2024.11.01.621567">paper</a></p>
+    </div>
   </article>
 
   <article class="software-card">
@@ -329,6 +352,12 @@
     <h3><a href="https://github.com/ArkadiyD/PhyloGNN">PhyloGNN</a></h3>
     <p>Solving the Tree Containment Problem Using Graph Neural Networks.</p>
     <p class="software-meta">By Arkadiy Dushatskiy · <a href="https://arxiv.org/abs/2404.09812">paper</a></p>
+  </article>
+
+  <article class="software-card">
+    <h3><a href="https://www.uea.ac.uk/groups-and-centres/computational-biology/software/trilonet">TriLoNet</a></h3>
+    <p>Constructing rooted level-1 phylogenetic networks from aligned DNA sequence data or trinet collections.</p>
+    <p class="software-meta">By James Oldman, Taoyang Wu, Vincent Moulton · <a href="https://doi.org/10.1093/molbev/msw068">paper</a></p>
   </article>
 
   <article class="software-card">
@@ -385,10 +414,13 @@
     <p class="software-meta">By Steven Kelk · <a href="http://dx.doi.org/10.1007/978-3-642-33122-0_34">paper</a></p>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
-    <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
-    <p class="software-meta"><a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
+  <article class="software-card software-card--with-logo">
+    <img class="software-logo" src="/assets/images/software/cass_logo.gif" alt="Cass logo">
+    <div>
+      <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
+      <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
+      <p class="software-meta"><a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
+    </div>
   </article>
 
   <article class="software-card">
@@ -486,10 +518,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
       
         
-          <li><a href="https://github.com/leovaniersel" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
           <li><a href="https://www.tudelft.nl/en/staff/l.j.j.vaniersel/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-university" aria-hidden="true"></i> TU Delft</a></li>
         
       
@@ -500,7 +528,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Leo van Iersel</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000"></a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

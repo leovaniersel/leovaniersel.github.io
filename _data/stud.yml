@@ -1,0 +1,431 @@
+- name:
+    first: Niels
+    last: Holtgrefe
+  role: phd
+  thesis:
+  thesis-url:
+  website: https://www.nielsholtgrefe.nl/
+  scholar: https://scholar.google.com/citations?user=wJh7R3UAAAAJ
+
+- name:
+    first: Esther
+    last: Julien
+  role: phd
+  thesis: "Leveraging Data in Algorithm Design"
+  thesis-url: https://doi.org/10.4233/uuid:3df57b28-1976-4d62-a483-2c513e062d89
+  website:
+  scholar: https://scholar.google.nl/citations?user=qyOapq8AAAAJ
+
+- name:
+    first: Yukihiro
+    last: Murakami
+  role: phd
+  thesis: "On Phylogenetic Encodings and Orchard Networks"
+  thesis-url: https://doi.org/10.4233/uuid:049932ab-4124-4639-a7e3-146ac4fd805d
+  website: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-y-yuki-murakami
+  scholar: https://scholar.google.nl/citations?user=JCRspVQAAAAJ
+
+- name:
+    first: Remie
+    last: Janssen
+  role: phd
+  thesis: "Rearranging Phylogenetic Networks"
+  thesis-url: https://doi.org/10.4233/uuid:1b713961-4e6d-4bb5-a7d0-37279084ee57
+  website: https://remiejanssen.nl/
+  scholar: https://scholar.google.nl/citations?user=RWz39u8AAAAJ
+
+- name:
+    first: Teun
+    last: Janssen
+  role: phd
+  thesis: "Optimization in the Photolithography Bay: Scheduling and the Traveling Salesman Problem"
+  thesis-url: https://doi.org/10.4233/uuid:12961f87-eeff-41b5-8688-df28e0ad9860
+  website: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drir-tml-teun-janssen
+  scholar:
+
+- name:
+    first: Natalia
+    last: "Vázquez Purriños"
+  role: msc
+  thesis: "Phylogenetic Network Inference via Reinforcement Learning and Cherry Picking"
+  thesis-url: https://resolver.tudelft.nl/uuid:ed80a898-2d5b-45fa-b86b-51a86f9ef9c2
+
+- name:
+    first: Noud
+    last: Riemens
+  role: msc
+  thesis: "Exploiting Asset Similarities in Sample Efficient Portfolio Optimization"
+  thesis-url: https://resolver.tudelft.nl/uuid:5c182d18-25f6-4548-98c8-84285753d500
+
+- name:
+    first: Floor
+    last: Laseur
+  role: msc
+  thesis: "Initialization Strategies for Energy Management System Optimization"
+  thesis-url: https://resolver.tudelft.nl/uuid:7b71d703-3f98-4c8d-abdf-08f3203ec6ab
+
+- name:
+    first: Sebastiaan
+    tussenvoegsel: van
+    last: Krieken
+  role: msc
+  thesis: "Dense Reachable Subgraphs: Hardness, Algorithms and Experiments"
+  thesis-url: https://resolver.tudelft.nl/uuid:bb772d2a-f919-498d-98ad-6fc41456ef4d
+
+- name:
+    first: Tim
+    last: Levert
+  role: msc
+  thesis: "Triplet Encoding of Stemmata"
+  thesis-url: https://resolver.tudelft.nl/uuid:a590255b-06dd-4f56-a905-c2f41705f525
+
+- name:
+    first: Timo
+    tussenvoegsel: den
+    last: Dulk
+  role: msc
+  thesis: "Heuristics for strategic passenger-oriented train timetabling"
+  thesis-url: https://resolver.tudelft.nl/uuid:260d0726-28eb-4506-b2db-dabf2b31b7e7
+
+- name:
+    first: Theo
+    last: Broeders
+  role: msc
+  thesis: "A Graph-Neural-Network Approach for Reconstructing Temporal Networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:35a897a9-b80a-471e-aaf5-5f9294212955
+
+- name:
+    first: Christopher
+    last: Reichling
+  role: msc
+  thesis: "Classes of Semi-binary Phylogenetic Networks encoded by μ-representations"
+  thesis-url: https://resolver.tudelft.nl/uuid:3fca1fca-b7d6-4abc-ad2f-960395ce451d
+
+- name:
+    first: Niels
+    last: Holtgrefe
+  role: msc
+  thesis: "Computing the Scanwidth of Directed Acyclic Graphs"
+  thesis-url: https://resolver.tudelft.nl/uuid:9c82fd2a-5841-4aac-8e40-d4d22542cdf5
+
+- name:
+    first: Hans
+    last: Keur
+  role: msc
+  thesis: "Creating phylogenetic networks from clusters"
+  thesis-url: https://resolver.tudelft.nl/uuid:4dd0bbf1-a734-4e72-af8f-de3c3651c760
+
+- name:
+    first: Robbert
+    last: Huijsman
+  role: msc
+  thesis: "Treewidth based algorithms for Tree Containment in phylogenetics"
+  thesis-url: https://resolver.tudelft.nl/uuid:3906ebda-d667-4d3e-8bee-3f1f4df78387
+
+- name:
+    first: Susan
+    last: Veldkamp
+  role: msc
+  thesis: "A MaxSAT Approach to Solving Frequency Conflicts within Cyclic Train Timetables"
+  thesis-url: https://resolver.tudelft.nl/uuid:0ca4b6d3-2194-41d1-8a9a-64dd4be9a87a
+
+- name:
+    first: Frank
+    tussenvoegsel: van der
+    last: Made
+  role: msc
+  thesis: "Box set optimization for e-commerce warehouses: Applied to bol.com"
+  thesis-url: https://resolver.tudelft.nl/uuid:88c93d07-1614-4aaf-ae2c-86e548c6264c
+
+- name:
+    first: Leonie
+    last: Nipius
+  role: msc
+  thesis: "Encoding undirected and semi-directed binary phylogenetic networks by quarnets"
+  thesis-url: https://resolver.tudelft.nl/uuid:eaeb4293-6349-4d6e-ab53-94b781fc65e1
+
+- name:
+    first: Teun
+    last: Druijf
+  role: msc
+  thesis: "Optimizing Shunting Operations: A case-study at Kijfhoek shunting yard"
+  thesis-url: https://resolver.tudelft.nl/uuid:e20191aa-4782-4686-85ae-5ff85adbf935
+
+- name:
+    first: Myrte
+    tussenvoegsel: van
+    last: Belkom
+  role: msc
+  thesis: "Exploring deep learning to improve allelic peak calling in forensic DNA analysis"
+  thesis-url: https://resolver.tudelft.nl/uuid:f0a4d8ec-0d95-441c-ba35-65b087447929
+
+- name:
+    first: Alexandre
+    last: Simon
+  role: msc
+  thesis: "Algorithmic study of 2-interval graphs"
+  thesis-url: https://resolver.tudelft.nl/uuid:e899eff1-bd18-4007-bfbb-b57cdd893a81
+
+- name:
+    first: Frank
+    last: Janisse
+  role: msc
+  thesis: "Encoding level-k phylogenetic networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:11939b58-b834-4073-8de8-b61d9a5f9a81
+
+- name:
+    first: Simon
+    tussenvoegsel: van
+    last: Oosterom
+  role: msc
+  thesis: "Investment Optimized Airport Infrastructure for Battery and Hydrogen Canister Swaps"
+  thesis-url: https://resolver.tudelft.nl/uuid:237762d9-6feb-42e9-b513-23bcba5055d7
+
+- name:
+    first: Rosanne
+    last: Wallin
+  role: msc
+  thesis: "Applicability of phylogenetic network algorithms for representing the evolutionary history of SARS-CoV-2"
+  thesis-url: https://github.com/rosanneandrea/corona-networks
+
+- name:
+    first: Jasper
+    tussenvoegsel: van
+    last: Bemmelen
+  role: msc
+  thesis: "Reconstructing tree-child networks from their exhibited trinets"
+  thesis-url: https://www.ubvu.vu.nl/scripties/getpdf.cfm?facid=27&id=21599
+
+- name:
+    first: Bryan
+    last: Versendaal
+  role: msc
+  thesis: "Improving algorithms in phylogenetics using machine learning"
+  thesis-url: https://resolver.tudelft.nl/uuid:83690896-2783-4340-8b02-11a23d82e9f9
+
+- name:
+    first: Sjors
+    last: Kole
+  role: msc
+  thesis: "Constructing level-2 phylogenetic networks from trinets"
+  thesis-url: https://resolver.tudelft.nl/uuid:c699ea63-f8c8-40f7-8f07-11ac055c42e0
+
+- name:
+    first: Sander
+    last: Borst
+  role: msc
+  thesis: "New FPT algorithms for finding the temporal hybridization number for sets of phylogenetic trees"
+  thesis-url: https://resolver.tudelft.nl/uuid:2697da91-c596-48d1-9f09-f21da02ddb54
+
+- name:
+    first: Mick
+    tussenvoegsel: van
+    last: Dijk
+  role: msc
+  thesis: "Classifying Candida species using Mixed Integer Optimization based optimal classification trees"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A068ff836-099b-4abe-8d9e-cf96706169df?collection=education
+
+- name:
+    first: "Céline"
+    last: Swennenhuis
+  role: msc
+  thesis: "Parallel Machine Scheduling: with Partition Constraints"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Ad8f71f9a-6b59-4b51-9fe5-b0a4358a0d7f?collection=education
+
+- name:
+    first: Erica
+    tussenvoegsel: van der
+    last: Sar
+  role: msc
+  thesis: "Multi-attribute vehicle routing problems: Exploring the limits of exact methods in practice"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Aec15c141-289b-4a8d-ae76-652bae893ab4?collection=education
+
+- name:
+    first: Youri
+    tussenvoegsel: van der
+    last: Kuij
+  role: bsc
+  thesis: "Maximizing Quartet Profile Consistency for Level-1 Phylogenetic Networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:57bf7fcb-1e6b-45a6-962c-0f7246cb99a8
+
+- name:
+    first: Jari
+    last: Brits
+  role: bsc
+  thesis: "Distinguishing phylogenetic trees from networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:b515be05-f539-41d6-b57b-d23a0b4156e8
+
+- name:
+    first: Guuske
+    last: Kouwenhoven
+  role: bsc
+  thesis: "Identifiability of Phylogenetic Trinets"
+  thesis-url: https://resolver.tudelft.nl/uuid:5aa152f2-e99c-4bb8-bb27-c112ab50b5f4
+
+- name:
+    first: Simon
+    last: Deuten
+  role: bsc
+  thesis: "Reconstructing Phylogenetic Networks Using Quarnet-Puzzling"
+  thesis-url: https://resolver.tudelft.nl/uuid:4b30854e-73c6-4cc4-beab-80299fc7f26e
+
+- name:
+    first: Joachim
+    tussenvoegsel: de
+    last: "Bosch Kemper"
+  role: bsc
+  thesis: "Establishing Existence of Paths between Ranked Phylogenetic Networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:ed1bfa42-2db3-4d1b-bddf-021fb84c4d95
+
+- name:
+    first: Tyren
+    last: Koning
+  role: bsc
+  thesis: "At a crossroads – Optimizing Markovian patrol strategies for perimeter defense"
+  thesis-url: https://resolver.tudelft.nl/uuid:84b31581-36d8-4665-9310-28e633c47c3e
+
+- name:
+    first: Bouke
+    last: Hoekstra
+  role: bsc
+  thesis: "Reconstructing Phylogenetic Networks Using Cherry Picking"
+  thesis-url: https://resolver.tudelft.nl/uuid:28a81f86-ce16-4262-b81e-779c26bd1e95
+
+- name:
+    first: Merel
+    tussenvoegsel: van
+    last: Gruijthuijsen
+  role: bsc
+  thesis: "Forest-Based Binary Phylogenetic Networks: Finding Optimal Base Forests with Integer Linear Programming"
+  thesis-url: https://resolver.tudelft.nl/uuid:ace16f6a-c08f-454d-8732-1e627dd89b32
+
+- name:
+    first: Margot
+    tussenvoegsel: van de
+    last: Klok
+  role: bsc
+  thesis: "A new polynomial for describing Phylogenetic Networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:c4ef44cf-cb0f-4912-8da1-1ba16f59f81e
+
+- name:
+    first: Merel
+    last: Susanna
+  role: bsc
+  thesis: "Making phylogenetic networks orchard: Algorithms to determine if a phylogenetic network is orchard and to transform non-orchard to orchard networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:724ac2af-e569-4586-b367-288fef890252
+
+- name:
+    first: Elise
+    last: Deen
+  role: bsc
+  thesis: "Different reduction rules for the Maximum Parsimony distance on phylogenetic trees"
+  thesis-url: https://resolver.tudelft.nl/uuid:0deb0697-bc1d-4cd9-96ed-f516872f24b0
+
+- name:
+    first: Riche
+    last: Mol
+  role: bsc
+  thesis: "Reconstruction of Phylogenetic Networks: An algorithm for deconstructing and reconstructing Level-2 Binary Networks based on their distances"
+  thesis-url: https://resolver.tudelft.nl/uuid:7b0f3919-0e78-4264-9e8f-028cf3fcde31
+
+- name:
+    first: Selma
+    last: "Husanović"
+  role: bsc
+  thesis: "Tail move rearrangement algorithm for rooted binary phylogenetic networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:5adc7ba5-c068-493c-b1de-c4ef8f74c0a1
+
+- name:
+    first: Leonie
+    last: Nipius
+  role: bsc
+  thesis: "Rooted binary level-3 phylogenetic networks are encoded by quarnets"
+  thesis-url: https://resolver.tudelft.nl/uuid:a9c5a8d4-bc8b-4d15-bdbb-3ed35a9fb75d
+
+- name:
+    first: Maaike
+    last: Elgersma
+  role: bsc
+  thesis: "Preventing overfitting in Mixed Integer Optimization based classification tree construction"
+  thesis-url: https://resolver.tudelft.nl/uuid:542b608f-0e48-474b-b1e1-bf1096ae7fe3
+
+- name:
+    first: Robbert
+    last: Huijsman
+  role: bsc
+  thesis: "Tree-child Network Containment"
+  thesis-url: https://resolver.tudelft.nl/uuid:0fc3b746-0d3f-459d-8fc2-c9e6aea821df
+
+- name:
+    first: Esmay
+    last: Verzijlbergen
+  role: bsc
+  thesis: "Orienting phylogenetic networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:6b890080-8a60-4189-89dc-b12f23a8677a
+
+- name:
+    first: Bram
+    tussenvoegsel: van den
+    last: Heuvel
+  role: bsc
+  thesis: "Multi-robot parcel sorting systems: Allocation and path finding"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Ae129aa53-1cca-469e-bf09-80142d4b879c?collection=education
+
+- name:
+    first: Arthur
+    last: Mooiman
+  role: bsc
+  thesis: "Computing Measures for Tree-Basedness of Phylogenetic Networks"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A7739fe8e-e2b2-493a-983d-d1a47603f2eb?collection=education
+
+- name:
+    first: Noortje
+    last: Bonenkamp
+  role: bsc
+  thesis: "Resource-constrained Machine Scheduling"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Afa52773a-4362-4299-b7b2-eca491b6e4f2?collection=education
+
+- name:
+    first: Frank
+    last: Janisse
+  role: bsc
+  thesis: "Measuring how far a nonbinary phylogenetic network is from being tree-based"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A961c6a92-1d6e-4bfd-b8db-7ff4fa3694fa?collection=education
+
+- name:
+    first: Niels
+    last: Jonkman
+  role: bsc
+  thesis: "Parental Parsimony on Phylogenetic Networks: Computing the Maximum Parsimony Scores of Phylogenetic Networks"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A3ff117b3-4c22-4530-8704-cc598a830ac2?collection=education
+
+- name:
+    first: Margot
+    tussenvoegsel: van
+    last: Aken
+  role: bsc
+  thesis: "De afstand tussen ongewortelde fylogenetische bomen"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Aa93653f7-584e-4d0b-ba4f-661d89f2101d?collection=education
+
+- name:
+    first: Eveline
+    tussenvoegsel: de
+    last: Swart
+  role: bsc
+  thesis: "Resolving contradicting binets and finding similarities in networks"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A2defcd3f-02be-4e7d-acd2-bb9261d1b533?collection=education
+
+- name:
+    first: Erica
+    tussenvoegsel: van der
+    last: Sar
+  role: bsc
+  thesis: "Constructing Evolutionary Supernetworks from Binets"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A766609a6-2857-42e0-a4fd-4ea1e4f5cc18?collection=education
+
+- name:
+    first: Laura
+    last: Jetten
+  role: bsc
+  thesis: "Characterising tree-based phylogenetic networks"
+  thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Afda2636d-0ed5-4dd2-bacf-8abbbad8994e?collection=education

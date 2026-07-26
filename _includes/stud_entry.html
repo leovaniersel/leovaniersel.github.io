@@ -1,0 +1,28 @@
+<div class="stud-entry">
+  <span class="stud-name">
+    {%- assign fullname = stud.name.first -%}
+    {%- if stud.name.tussenvoegsel -%}
+      {%- assign fullname = fullname | append: " " | append: stud.name.tussenvoegsel -%}
+    {%- endif -%}
+    {%- assign fullname = fullname | append: " " | append: stud.name.last -%}
+    {{ fullname }}
+  </span>
+  {%- if stud.website or stud.scholar -%}
+    <span class="stud-links">
+      {%- if stud.website -%}
+        <a class="stud-link-btn" href="{{ stud.website }}" target="_blank">website</a>
+      {%- endif -%}
+      {%- if stud.scholar -%}
+        <a class="stud-link-btn" href="{{ stud.scholar }}" target="_blank">scholar</a>
+      {%- endif -%}
+    </span>
+  {%- endif -%}
+  {%- if stud.thesis -%}
+    <span class="stud-sep">—</span>
+    {%- if stud.thesis-url -%}
+      <a class="stud-thesis" href="{{ stud.thesis-url }}" target="_blank">{{ stud.thesis }}</a>
+    {%- else -%}
+      <span class="stud-thesis">{{ stud.thesis }}</span>
+    {%- endif -%}
+  {%- endif -%}
+</div>

@@ -1,0 +1,49 @@
+.stud-entry {
+  padding: 0.3em 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.stud-name {
+  font-weight: 600;
+}
+
+.stud-links {
+  margin-left: 0.4em;
+}
+
+.stud-link-btn {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 1px 6px;
+  margin-right: 3px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #444;
+  vertical-align: middle;
+}
+
+.stud-link-btn:hover {
+  background-color: #ddd;
+}
+
+.stud-sep {
+  margin: 0 0.4em;
+  color: #aaa;
+}
+
+.stud-thesis {
+  color: #444;
+  font-style: italic;
+}
+
+a.stud-thesis {
+  color: #2f6f9f;
+  text-decoration: none;
+}
+
+a.stud-thesis:hover {
+  text-decoration: underline;
+}

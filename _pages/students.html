@@ -1,0 +1,29 @@
+---
+layout: single
+title: "Students"
+permalink: /students/
+author_profile: true
+classes: wide
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/students.css' | relative_url }}">
+
+{% assign phd_students = site.data.stud | where: "role", "phd" %}
+{% assign msc_students = site.data.stud | where: "role", "msc" %}
+{% assign bsc_students = site.data.stud | where: "role", "bsc" %}
+
+<h2>PhD Students</h2>
+{% for stud in phd_students %}
+  {% include stud_entry.html stud=stud %}
+{% endfor %}
+
+<h2>MSc Students</h2>
+{% for stud in msc_students %}
+  {% include stud_entry.html stud=stud %}
+{% endfor %}
+
+<h2>BSc Students</h2>
+{% for stud in bsc_students %}
+  {% include stud_entry.html stud=stud %}
+{% endfor %}

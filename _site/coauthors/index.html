@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>Co-authors - Leo van Iersel</title>
+<!-- begin _includes/seo.html --><title>Co-authors</title>
 <meta name="description" content="Personal homepage of Leo van Iersel">
 
 
@@ -25,7 +25,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Leo van Iersel">
+<meta property="og:site_name" content="">
 <meta property="og:title" content="Co-authors">
 <meta property="og:url" content="http://localhost:4000/coauthors/">
 
@@ -79,6 +79,7 @@
 
 
     <link rel="stylesheet" href="/assets/css/overrides.css">
+<link rel="stylesheet" href="/assets/css/custom-pages.css">
 <link rel="icon" type="image/svg+xml" href="/assets/images/nh-icon.svg">
 <link rel="apple-touch-icon" href="/assets/images/nh-icon.svg">
 <meta property="og:image" content="http://localhost:4000/assets/images/nh-icon.svg">
@@ -105,7 +106,7 @@
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
-          Leo van Iersel
+          
           <span class="site-subtitle">leovaniersel.github.io</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
@@ -122,6 +123,18 @@
               >Publications</a>
             </li><li class="masthead__menu-item">
               <a
+                href="/students/"
+                
+                
+              >Students</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/coauthors/"
+                
+                
+              >Co-authors</a>
+            </li><li class="masthead__menu-item">
+              <a
                 href="/software/"
                 
                 
@@ -132,6 +145,12 @@
                 
                 
               >Events</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/talks/"
+                
+                
+              >Talks</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -165,12 +184,6 @@
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   
-    <div class="author__avatar">
-      <a href="http://localhost:4000/">
-        <img src="/assets/images/uniting-phylogenetic-network-research-poster-pic.jpeg" alt="Leo van Iersel" itemprop="image" class="u-photo">
-      </a>
-    </div>
-  
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
@@ -188,6 +201,10 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Room 36.HB 04.050</span>
+        </li>
+      
 
       
         
@@ -197,10 +214,6 @@
         
           
             <li><a href="http://scholar.google.nl/citations?user=9GAwpXYAAAAJ" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-google-scholar" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
-          
-        
-          
-            <li><a href="https://github.com/leovaniersel" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
           
@@ -257,19 +270,24 @@
 
       
 
-      <!--
+      
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
+    <i class="fas fa-fw fa-building" aria-hidden="true"></i>
+    <span class="label">Mekelweg 4, 2628 CD, Delft</span>
   </li>
--->
+
+
     </ul>
   </div>
 </div>
 
   
-  
+  <div class="sidebar-images">
+  <a href="https://www.lorentzcenter.nl/uniting-phylogenetic-network-research.html" target="_blank" rel="noopener">
+    <img src="/assets/images/sidebar/poster_lorentz_2026.jpeg" alt="Uniting Phylogenetic Network Research – Lorentz Center 2026">
+  </a>
+</div>
+
   </div>
 
 
@@ -296,7 +314,216 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>Collaborators I have co-authored work with, sorted by number of joint publications.</p>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div id="coauthor-map" style="height: 380px; margin-bottom: 2rem; border: 1px solid #e0e0e0; border-radius: 8px;"></div>
+
+<script>
+var map = L.map('coauthor-map').setView([30, 10], 2);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 18
+}).addTo(map);
+
+var coauthors = [
+  
+  { name: "Mark Jones", institution: "Middlesex University London", lat: 51.5896, lng: -0.229 },
+  
+  { name: "Steven Kelk", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Celine Scornavacca", institution: "CNRS, Montpellier", lat: 43.6324, lng: 3.8642 },
+  
+  { name: "Yukihiro Murakami", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Vincent Moulton", institution: "University of East Anglia", lat: 52.6218, lng: 1.2396 },
+  
+  { name: "Leen Stougie", institution: "CWI / VU Amsterdam", lat: 52.3562, lng: 4.9522 },
+  
+  { name: "Remie Janssen", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Niels Holtgrefe", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Norbert Zeh", institution: "Dalhousie University", lat: 44.636, lng: -63.5921 },
+  
+  { name: "Mathias Weller", institution: "CNRS, Montpellier", lat: 43.6324, lng: 3.8642 },
+  
+  { name: "Nela Lekic", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Esther Julien", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Simone Linz", institution: "University of Auckland", lat: -36.8523, lng: 174.7691 },
+  
+  { name: "Katharina T. Huber", institution: "University of East Anglia", lat: 52.6218, lng: 1.2396 },
+  
+  { name: "Taoyang Wu", institution: "University of East Anglia", lat: 52.6218, lng: 1.2396 },
+  
+  { name: "Fabio Pardi", institution: "CNRS, Montpellier", lat: 43.6324, lng: 3.8642 },
+  
+  { name: "Martin Frohn", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Jannik Schestag", institution: "University of Bergen", lat: 60.3929, lng: 5.3241 },
+  
+  { name: "Mike Steel", institution: "University of Canterbury", lat: -43.5225, lng: 172.5796 },
+  
+  { name: "Charles Semple", institution: "University of Canterbury", lat: -43.5225, lng: 172.5796 },
+  
+  { name: "Péter L. Erdős", institution: "Rényi Institute, Budapest", lat: 47.5068, lng: 19.0541 },
+  
+  { name: "Judith Keijsper", institution: "TU Eindhoven", lat: 51.448, lng: 5.4893 },
+  
+  { name: "Ruben Meuwese", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Philippe Gambette", institution: "Université Paris-Est", lat: 48.8415, lng: 2.5875 },
+  
+  { name: "Teun Janssen", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Elizabeth Gross", institution: "University of Hawaii", lat: 21.2969, lng: -157.8171 },
+  
+  { name: "Matthias Mnich", institution: "TU Hamburg", lat: 53.4576, lng: 9.9699 },
+  
+  { name: "John Tromp", institution: "Amsterdam", lat: 52.3571, lng: 4.9056 },
+  
+  { name: "Jordan Dempsey", institution: "Dalhousie University", lat: 44.636, lng: -63.5921 },
+  
+  { name: "Giulia Bernardini", institution: "University of Milan", lat: 45.4654, lng: 9.1866 },
+  
+  { name: "Samuel Martin", institution: "EMBL-EBI, Hinxton", lat: 52.0797, lng: 0.186 },
+  
+  { name: "Alexander Schoenhuth", institution: "Bielefeld University", lat: 51.9561, lng: 8.6651 },
+  
+  { name: "Gunnar W. Klau", institution: "HHU Düsseldorf", lat: 51.1872, lng: 6.7963 },
+  
+  { name: "David Bryant", institution: "University of Otago", lat: -45.8641, lng: 170.5142 },
+  
+  { name: "Nadia Pisanti", institution: "University of Pisa", lat: 43.7184, lng: 10.399 },
+  
+  { name: "Tobias Marschall", institution: "HHU Düsseldorf", lat: 51.1872, lng: 6.7963 },
+  
+  { name: "Mareike Fischer", institution: "University of Greifswald", lat: 54.095, lng: 13.3812 },
+  
+  { name: "Chris Whidden", institution: "Dalhousie University", lat: 44.636, lng: -63.5921 },
+  
+  { name: "István Miklós", institution: "Rényi Institute, Budapest", lat: 47.5068, lng: 19.0541 },
+  
+  { name: "Stephen G. Hartke", institution: "University of Nebraska", lat: 40.8202, lng: -96.7001 },
+  
+  { name: "Eric Bapteste", institution: "Sorbonne Université, Paris", lat: 48.8482, lng: 2.3566 },
+  
+  { name: "Axel Janke", institution: "Goethe University Frankfurt", lat: 50.1213, lng: 8.6491 },
+  
+  { name: "Scot Kelchner", institution: "Idaho State University", lat: 42.8646, lng: -112.4297 },
+  
+  { name: "James O. McInerney", institution: "University of Manchester", lat: 53.466, lng: -2.2341 },
+  
+  { name: "David A. Morrison", institution: "SLU Uppsala", lat: 59.8155, lng: 17.669 },
+  
+  { name: "Luay Nakhleh", institution: "Rice University", lat: 29.7174, lng: -95.4018 },
+  
+  { name: "James Whitfield", institution: "University of Illinois", lat: 40.102, lng: -88.2272 },
+  
+  { name: "Gregory Gutin", institution: "Royal Holloway, University of London", lat: 51.4259, lng: -0.5674 },
+  
+  { name: "Anders Yeo", institution: "University of Southern Denmark", lat: 55.3682, lng: 10.4286 },
+  
+  { name: "Daniel Huson", institution: "University of Tübingen", lat: 48.5337, lng: 9.0459 },
+  
+  { name: "Teun Boekhout", institution: "Westerdijk Institute, Amsterdam", lat: 52.3571, lng: 4.9056 },
+  
+  { name: "Cor Hurkens", institution: "TU Eindhoven", lat: 51.448, lng: 5.4893 },
+  
+  { name: "Rudi Cilibrasi", institution: "CWI, Amsterdam", lat: 52.3562, lng: 4.9522 },
+  
+  { name: "Sander Borst", institution: "Max Planck Institute for Informatics, Saarbrücken", lat: 49.2565, lng: 7.0416 },
+  
+  { name: "Elise Deen", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Arkadiy Dushatskiy", institution: "CWI, Amsterdam", lat: 52.3562, lng: 4.9522 },
+  
+  { name: "Joan Carles Pons", institution: "University of the Balearic Islands", lat: 39.6356, lng: 2.6419 },
+  
+  { name: "Seth Sullivant", institution: "NC State University", lat: 35.7847, lng: -78.6821 },
+  
+  { name: "Kristina Wicke", institution: "New Jersey Institute of Technology", lat: 40.7421, lng: -74.1783 },
+  
+  { name: "John A. Rhodes", institution: "University of Alaska Fairbanks", lat: 64.8577, lng: -147.8204 },
+  
+  { name: "Elizabeth S. Allman", institution: "University of Alaska Fairbanks", lat: 64.8577, lng: -147.8204 },
+  
+  { name: "Yangjing Long", institution: "Central China Normal University", lat: 30.5344, lng: 114.2985 },
+  
+  { name: "Jari Brits", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Manuel Lafond", institution: "Université de Sherbrooke", lat: 45.3795, lng: -71.9268 },
+  
+  { name: "Rene Sitters", institution: "VU Amsterdam", lat: 52.334, lng: 4.8656 },
+  
+  { name: "Martijn van Ee", institution: "Netherlands Defence Academy, Breda", lat: 51.5882, lng: 4.7757 },
+  
+  { name: "Georgios Stamoulis", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Stèphane Dauzére-Pérès", institution: "Ecole des Mines, Saint-Étienne", lat: 45.4389, lng: 4.3852 },
+  
+  { name: "Claude Yugma", institution: "Ecole des Mines, Saint-Étienne", lat: 45.4389, lng: 4.3852 },
+  
+  { name: "Dion Gijswijt", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Thomas Bosman", institution: "VU Amsterdam", lat: 52.334, lng: 4.8656 },
+  
+  { name: "Céline Swennenhuis", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Janosch Döcker", institution: "University of Tübingen", lat: 48.5337, lng: 9.0459 },
+  
+  { name: "Colby Long", institution: "College of Wooster", lat: 40.8078, lng: -81.944 },
+  
+  { name: "Rosanne Wallin", institution: "VU Amsterdam", lat: 52.334, lng: 4.8656 },
+  
+  { name: "Leonie Veenema-Nipius", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Sjors Kole", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Ferry Hagen", institution: "Westerdijk Institute, Amsterdam", lat: 52.3571, lng: 4.9056 },
+  
+  { name: "Hector Baños", institution: "California State University, San Bernardino", lat: 34.1828, lng: -117.3242 },
+  
+  { name: "Pau Vives López", institution: "Universitat de les Illes Balears", lat: 39.6356, lng: 2.6419 },
+  
+  { name: "Aviva Englander", institution: "University of Wisconsin-Madison", lat: 43.0766, lng: -89.4125 },
+  
+  { name: "Murray Patterson", institution: "Georgia State University", lat: 33.7537, lng: -84.3863 },
+  
+  { name: "Luca Forte", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Christopher Reichling", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Laura Jetten", institution: "TU Delft", lat: 51.9994, lng: 4.3731 },
+  
+  { name: "Guillaume Scholz", institution: "University of Greifswald", lat: 54.095, lng: 13.3812 },
+  
+  { name: "Olivier Boes", institution: "Maastricht University", lat: 50.8578, lng: 5.6939 },
+  
+  { name: "Regula Rupp", institution: "University of Tübingen", lat: 48.5337, lng: 9.0459 },
+  
+  { name: "Radoslaw Suchecki", institution: "Alkahest, San Carlos, CA", lat: 37.5065, lng: -122.2611 }
+  
+];
+
+// Group by location
+var byLocation = {};
+coauthors.forEach(function(c) {
+  var key = c.lat + ',' + c.lng;
+  if (!byLocation[key]) byLocation[key] = { lat: c.lat, lng: c.lng, institution: c.institution, names: [] };
+  byLocation[key].names.push(c.name);
+});
+
+Object.values(byLocation).forEach(function(loc) {
+  var nameList = loc.names.map(function(n) { return '<strong>' + n + '</strong>'; }).join('<br>');
+  L.marker([loc.lat, loc.lng]).addTo(map)
+    .bindPopup('<span style="color:#555;font-size:0.85em">' + loc.institution + '</span><br>' + nameList);
+});
+</script>
+
+<p>Collaborators I have co-authored work with, sorted by number of joint publications.</p>
 
 
 
@@ -323,7 +550,7 @@
   
     
       
-      <li>Mark Jones (x34)</li>
+      <li>Mark Jones (x35)</li>
     
   
     
@@ -333,12 +560,12 @@
   
     
       
-      <li>Vincent Moulton (x17)</li>
+      <li>Yukihiro Murakami (x17)</li>
     
   
     
       
-      <li>Yukihiro Murakami (x16)</li>
+      <li>Vincent Moulton (x17)</li>
     
   
     
@@ -353,7 +580,7 @@
   
     
       
-      <li>Niels Holtgrefe (x9)</li>
+      <li>Niels Holtgrefe (x10)</li>
     
   
     
@@ -383,6 +610,11 @@
   
     
       
+      <li>Esther Julien (x5)</li>
+    
+  
+    
+      
       <li>Taoyang Wu (x4)</li>
     
   
@@ -404,11 +636,6 @@
     
       
       <li>Fabio Pardi (x4)</li>
-    
-  
-    
-      
-      <li>Esther Julien (x4)</li>
     
   
     
@@ -448,6 +675,11 @@
   
     
       
+      <li>Samuel Martin (x2)</li>
+    
+  
+    
+      
       <li>Matthias Mnich (x2)</li>
     
   
@@ -474,6 +706,11 @@
     
       
       <li>Elizabeth Gross (x2)</li>
+    
+  
+    
+      
+      <li>Yangjing Long (x1)</li>
     
   
     
@@ -519,11 +756,6 @@
     
       
       <li>Sander Borst (x1)</li>
-    
-  
-    
-      
-      <li>Samuel Martin (x1)</li>
     
   
     
@@ -629,6 +861,11 @@
     
       
       <li>Joan Carles Pons (x1)</li>
+    
+  
+    
+      
+      <li>Jari Brits (x1)</li>
     
   
     
@@ -851,10 +1088,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
       
         
-          <li><a href="https://github.com/leovaniersel" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
           <li><a href="https://www.tudelft.nl/en/staff/l.j.j.vaniersel/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-university" aria-hidden="true"></i> TU Delft</a></li>
         
       
@@ -865,7 +1098,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Leo van Iersel</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000"></a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

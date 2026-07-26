@@ -1,0 +1,392 @@
+- date: "July 2027"
+  year: 2027
+  event: "Uniting Phylogenetic Network Research"
+  location: "Lorentz Center, Leiden"
+  lat: 52.1601
+  lng: 4.4970
+
+- date: "May 2026"
+  year: 2026
+  event: "Mathfest"
+  event-url: "https://platformwiskunde.nl/mathfest/"
+  location: "Utrecht"
+  lat: 52.0908
+  lng: 5.1222
+  links:
+    - label: "news item"
+      url: "https://nos.nl/regio/utrecht/artikel/757384-wiskunde-saai-op-dit-festival-maken-ze-er-juist-iets-leuks-van"
+
+- date: "March 2026"
+  year: 2026
+  event: "International Workshop on Probabilistic, Combinatorial, and Algorithmic Phylogenetics"
+  location: "Taipei, Taiwan"
+  lat: 25.0330
+  lng: 121.5654
+
+- date: "September 2025"
+  year: 2025
+  event: "Weekend van de Wetenschap"
+  event-url: "https://weekendvandewetenschap.nl/nieuws/programma-weekend-van-de-wetenschap-2025-compleet"
+  location: "Den Haag"
+  lat: 52.0705
+  lng: 4.3007
+
+- date: "September 2025"
+  year: 2025
+  event: "Learning Enhanced Optimization"
+  location: "CWI, Amsterdam"
+  lat: 52.3562
+  lng: 4.9522
+
+- date: "August 2025"
+  year: 2025
+  event: "Novel Mathematical Paradigm for Phylogenomics"
+  location: "Banff International Research Station, Canada"
+  lat: 51.1784
+  lng: -115.5708
+
+- date: "October 2024"
+  year: 2024
+  event: "From Phylogenetics to Phylogenomics: Mathematical and Statistical Challenges in the era of Big Data"
+  location: "ICERM, Providence, RI, USA"
+  lat: 41.8268
+  lng: -71.4028
+
+- date: "September 2024"
+  year: 2024
+  event: "Theory, Methods, and Applications of Quantitative Phylogenomics"
+  location: "ICERM, Providence, RI, USA"
+  lat: 41.8268
+  lng: -71.4028
+
+- date: "August 2023"
+  year: 2023
+  event: "ICIAM 2023"
+  event-url: "https://iciam2023.org/"
+  location: "Tokyo, Japan"
+  lat: 35.6762
+  lng: 139.6503
+  title: "Challenges and Recent Advances in Phylogenetics"
+  title-url: "https://iciam2023.org/registered_data?id=02545"
+
+- date: "August 2022"
+  year: 2022
+  event: "Emerging Mathematical Frontiers in Molecular Evolution"
+  event-url: "http://www.mittag-leffler.se/konferens/emerging-mathematical-frontiers-molecular-evolution"
+  location: "Institute Mittag-Leffler, Sweden"
+  lat: 59.3956
+  lng: 18.1558
+
+- date: "April 2021"
+  year: 2021
+  event: "Algorithms and Complexity in Phylogenetics"
+  location: "International online seminar"
+
+- date: "October 2019"
+  year: 2019
+  event: "Algorithms and Complexity in Phylogenetics"
+  event-url: "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=19443"
+  location: "Dagstuhl, Germany"
+  lat: 49.5406
+  lng: 6.9175
+  links:
+    - label: "report"
+      url: "https://drops.dagstuhl.de/opus/volltexte/2020/11859/pdf/dagrep_v009_i010_p134_19443.pdf"
+
+- date: "May 2018"
+  year: 2018
+  event: "General Mathematics Colloquium"
+  location: "University of Amsterdam"
+  lat: 52.3666
+  lng: 4.9020
+
+- date: "June 2017"
+  year: 2017
+  event: "Workshop on Algebraic and Combinatorial Phylogenetics"
+  location: "Barcelona, Spain"
+  lat: 41.3888
+  lng: 2.1590
+  title: "Rearrangement moves on rooted phylogenetic networks"
+  links:
+    - label: "slides"
+      url: "https://leovaniersel.wordpress.com/wp-content/uploads/2014/09/van_iersel_barcelona.pdf"
+
+- date: "December 2016"
+  year: 2016
+  event: "Mathematics Colloquium"
+  location: "Leiden University"
+  lat: 52.1601
+  lng: 4.4970
+
+- date: "October 2016"
+  year: 2016
+  event: "Pattern Recognition and Bioinformatics Colloquium"
+  location: "TU Delft"
+  lat: 51.9994
+  lng: 4.3731
+
+- date: "July 2016"
+  year: 2016
+  event: "Workshop on Flexible Network Design (FND)"
+  location: "VU Amsterdam"
+  lat: 52.3340
+  lng: 4.8656
+  title: "Reconstructing phylogenetic networks from subnetworks"
+
+- date: "June 2016"
+  year: 2016
+  event: "What is…? seminar, Delft Institute of Applied Mathematics"
+  location: "TU Delft"
+  lat: 51.9994
+  lng: 4.3731
+  title: "What is a phylogenetic network?"
+
+- date: "July 2015"
+  year: 2015
+  event: "Phylogenetic networks workshop"
+  location: "Singapore"
+  lat: 1.3521
+  lng: 103.8198
+  title: "Reconstructing phylogenetic level-1 networks from nondense binet and trinet sets"
+
+- date: "May 2015"
+  year: 2015
+  event: "DIAMANT Symposium"
+  location: "Veenendaal"
+  lat: 52.0235
+  lng: 5.5592
+  title: "Reconstructing evolutionary histories"
+
+- date: "March 2015"
+  year: 2015
+  event: "TU Delft Optimization Seminar"
+  location: "TU Delft"
+  lat: 51.9994
+  lng: 4.3731
+  title: "Reconstructing phylogenetic networks from subnetworks"
+
+- date: "July 2014"
+  year: 2014
+  event: "Greifswald Phylogenetics Meeting"
+  location: "Greifswald, Germany"
+  lat: 54.0950
+  lng: 13.3812
+  title: "Hybridization Number on Three Trees"
+
+- date: "June 2014"
+  year: 2014
+  event: "EUSACOU Workshop"
+  location: "Tinbergen Institute, Amsterdam"
+  lat: 52.3571
+  lng: 4.9166
+  title: "Parameterized algorithms for reconstructing phylogenetic networks"
+
+- date: "November 2013"
+  year: 2013
+  event: "Alfréd Rényi Institute of Mathematics"
+  location: "Budapest, Hungary"
+  lat: 47.5068
+  lng: 19.0541
+  title: "Reconstructing Phylogenetic Networks"
+
+- date: "July 2013"
+  year: 2013
+  event: "Midsummer Combinatorial Workshop (MCW)"
+  location: "Prague, Czech Republic"
+  lat: 50.0755
+  lng: 14.4378
+  title: "Reconstructing Phylogenetic Networks"
+
+- date: "May 2013"
+  year: 2013
+  event: "Mathematical and Computational Evolutionary Biology (MCEB)"
+  location: "Montpellier, France"
+  lat: 43.6119
+  lng: 3.8772
+  title: "Approximation Algorithms for Nonbinary Agreement Forests"
+  type: "poster"
+
+- date: "October 2012"
+  year: 2012
+  event: "The Future of Phylogenetic Networks"
+  location: "Lorentz Center, Leiden"
+  lat: 52.1601
+  lng: 4.4970
+  title: "A summary of the week"
+
+- date: "June 2012"
+  year: 2012
+  event: "Mathematical and Computational Evolutionary Biology (MCEB)"
+  location: "Montpellier, France"
+  lat: 43.6119
+  lng: 3.8772
+  title: "Hybridization Networks for Multiple Trees"
+  type: "poster"
+
+- date: "April 2012"
+  year: 2012
+  event: "Seminar"
+  location: "University of East Anglia, United Kingdom"
+  lat: 52.6218
+  lng: 1.2396
+  title: "Minimizing Hybridizations"
+
+- date: "January 2012"
+  year: 2012
+  event: "SOUTH – 16th Annual New Zealand Phylogenetics Meeting"
+  location: "Kaikoura, New Zealand"
+  lat: -42.4009
+  lng: 173.6815
+  title: "Approximating the minimum number of reticulations needed to explain two conflicting gene trees"
+
+- date: "January 2012"
+  year: 2012
+  event: "Gijs de Leve Prijs Reward Lecture, LNMB Conference"
+  location: "Lunteren, Netherlands"
+  lat: 52.0826
+  lng: 5.6175
+
+- date: "April 2010"
+  year: 2010
+  event: "Adelaide Phylogenetics Conference"
+  location: "Adelaide, Australia"
+  lat: -34.9285
+  lng: 138.6007
+  title: "Phylogenetic networks do not need to be complex"
+
+- date: "February 2010"
+  year: 2010
+  event: "DOOM – 14th Annual New Zealand Phylogenetics Meeting"
+  location: "Mount Ruapehu, New Zealand"
+  lat: -39.2820
+  lng: 175.5649
+  title: "Avoiding a Genome of Eden"
+
+- date: "December 2009"
+  year: 2009
+  event: "TACO Workshop on Treewidth and Combinatorial Optimization"
+  location: "Eindhoven University, The Netherlands"
+  lat: 51.4480
+  lng: 5.4893
+  title: "Treewidth and the Genome of Eden"
+
+- date: "November 2009"
+  year: 2009
+  event: "Physoc Seminar"
+  location: "University of Canterbury, Christchurch, New Zealand"
+  lat: -43.5225
+  lng: 172.5796
+  title: "Using Mathematics to Reconstruct the Evolution of Species"
+
+- date: "October 2009"
+  year: 2009
+  event: "Allan Wilson Centre Meeting"
+  location: "Palmerston North, New Zealand"
+  lat: -40.3523
+  lng: 175.6082
+  title: "Phylogenetic Networks Do not Need to Be Complex"
+
+- date: "December 2008"
+  year: 2008
+  event: "International Symposium on Algorithms and Computation (ISAAC 2008)"
+  location: "Gold Coast, Australia"
+  lat: -28.0167
+  lng: 153.4000
+  title: "Constructing the Simplest Possible Phylogenetic Network from Triplets"
+
+- date: "June 2008"
+  year: 2008
+  event: "Mathematics and Informatics in Evolution and Phylogeny"
+  location: "Montpellier, France"
+  lat: 43.6119
+  lng: 3.8772
+  title: "Level-k Phylogenetic Networks"
+
+- date: "April 2008"
+  year: 2008
+  event: "Algorithms Seminar"
+  location: "Eindhoven University, The Netherlands"
+  lat: 51.4480
+  lng: 5.4893
+  title: "On the Simplicity of Evolution: Algorithms for Phylogenetic Networks"
+
+- date: "April 2008"
+  year: 2008
+  event: "Conference on Research in Computational Molecular Biology (RECOMB 2008)"
+  location: "Singapore"
+  lat: 1.3521
+  lng: 103.8198
+  title: "Constructing Level-2 Phylogenetic Networks from Triplets"
+
+- date: "January 2008"
+  year: 2008
+  event: "Conference on the Mathematics of Operations Research"
+  location: "Lunteren, The Netherlands"
+  lat: 52.0826
+  lng: 5.6175
+  title: "Level-k Phylogenetic Networks: Uniqueness and Complexity"
+
+- date: "November 2007"
+  year: 2007
+  event: "DIAMANT/EIDMA Symposium"
+  location: "Soesterberg, The Netherlands"
+  lat: 52.1248
+  lng: 5.3055
+  title: "Constructing Evolutionary Networks from Triplets"
+
+- date: "February 2007"
+  year: 2007
+  event: "EIDMA Seminar Combinatorial Theory"
+  location: "Eindhoven University, The Netherlands"
+  lat: 51.4480
+  lng: 5.4893
+  title: "Combinatorial Problems in Genetics"
+
+- date: "January 2007"
+  year: 2007
+  event: "Conference on the Mathematics of Operations Research"
+  location: "Lunteren, The Netherlands"
+  lat: 52.0826
+  lng: 5.6175
+  title: "Resolving Ambiguity in Genetical Data"
+
+- date: "December 2006"
+  year: 2006
+  event: "Genome Informatics AG-seminar"
+  location: "Bielefeld, Germany"
+  lat: 51.9607
+  lng: 8.6648
+  title: "Sorting pancakes"
+
+- date: "October 2006"
+  year: 2006
+  event: "SIREN 2006"
+  location: "Utrecht, The Netherlands"
+  lat: 52.0908
+  lng: 5.1222
+  title: "Computing evolutionary distance by genome rearrangements: a combinatorial approach"
+  type: "poster"
+
+- date: "April 2006"
+  year: 2006
+  event: "Algorithms Seminar"
+  location: "Eindhoven University, The Netherlands"
+  lat: 51.4480
+  lng: 5.4893
+  title: "Lots of Problems about Strings and Prefix Reversals"
+
+- date: "October 2005"
+  year: 2005
+  event: "Workshop on Algorithms in Bioinformatics 2005"
+  location: "Mallorca, Spain"
+  lat: 39.5696
+  lng: 2.6502
+  title: "On the Complexity of Several Haplotyping Problems"
+
+- date: "May 2005"
+  year: 2005
+  event: "EIDMA Seminar Combinatorial Theory"
+  location: "Eindhoven University, The Netherlands"
+  lat: 51.4480
+  lng: 5.4893
+  title: "Two Complexity Results in Computational Biology"
