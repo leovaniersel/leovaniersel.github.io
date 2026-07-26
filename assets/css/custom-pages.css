@@ -348,6 +348,10 @@
   font-weight: 600;
 }
 
+.project-highlights {
+  text-align: right;
+}
+
 .software-box {
   border: 1px solid #ccc;
   padding: 1em 1.2em;
