@@ -63,6 +63,11 @@ if (markers.length) {
     {% endif %}
     {% assign name = name | append: " " | append: a.last %}
 
+    <!-- Normalize known name variants so the same person is counted once -->
+    {% if name == "Katharina Huber" or name == "Katharina T Huber" %}
+      {% assign name = "Katharina T. Huber" %}
+    {% endif %}
+
     {% unless name == "Leo van Iersel" %}
       {% assign raw = raw | append: name | append: "||" %}
     {% endunless %}
