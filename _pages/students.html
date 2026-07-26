@@ -21,7 +21,9 @@ classes: wide
 {% assign bsc_past = site.data.stud | where: "role", "bsc" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
 {% assign bsc_students = bsc_current | concat: bsc_past %}
 
-<h2>PhD Students</h2>
+<p>Below is a list of <a href="#phd-students">PhD</a>, <a href="#msc-students">MSc</a> and <a href="#bsc-students">BSc</a> students that I supervised.</p>
+
+<h2 id="phd-students">PhD Students</h2>
 {% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in phd_students %}
@@ -33,7 +35,7 @@ classes: wide
   {% endfor %}
 </div>
 
-<h2>MSc Students</h2>
+<h2 id="msc-students">MSc Students</h2>
 {% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in msc_students %}
@@ -45,7 +47,7 @@ classes: wide
   {% endfor %}
 </div>
 
-<h2>BSc Students</h2>
+<h2 id="bsc-students">BSc Students</h2>
 {% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in bsc_students %}
