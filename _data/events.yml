@@ -48,6 +48,7 @@ ai-math:
     location: "CWI, Amsterdam"
     role: "Research Semester Programme"
     url: "https://www.cwi.nl/en/events/cwi-research-semester-programs/learning-enhanced-optimization/"
+    image: "/assets/images/sidebar/learning_enhanced_optimization.png"
 
   - title: "Learned Methods for Operations Research"
     date: "November 3–6, 2025"
