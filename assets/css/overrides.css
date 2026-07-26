@@ -1,7 +1,8 @@
 /* Site-specific overrides that avoid SCSS/front-matter parsing. */
 
 .page__content {
-  font-size: 0.9em;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 /* Keep LinkedIn icon monochrome (no brand blue). */
