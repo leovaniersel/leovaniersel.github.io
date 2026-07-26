@@ -508,14 +508,14 @@
   - first: Jannik
     last: Schestag
   year: 2025
-  type: preprint
+  type: conference
   journal: RECOMB 2026
   volume:
   issue:
   pages:
   note: RECOMB 2026. bioRxiv. Software available.
-  doi-identifier: 10.1101/2025.11.14.688467
-  doi-url: https://www.biorxiv.org/content/10.1101/2025.11.14.688467
+  doi-identifier:
+  doi-url:
   preprint-server: bioRxiv
   preprint-identifier: 10.1101/2025.11.14.688467
   preprint-url: https://www.biorxiv.org/content/10.1101/2025.11.14.688467
