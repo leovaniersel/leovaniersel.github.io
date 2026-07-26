@@ -287,7 +287,7 @@
   color: #5f6b7a;
 }
 
-.software-card .software-meta a {
+.software-card .software-meta a:not(.link-button) {
   color: #2f6f9f;
   font-weight: 600;
 }
@@ -344,7 +344,7 @@
   margin-bottom: 0;
 }
 
-.project-card .project-meta a {
+.project-card .project-meta a:not(.link-button) {
   color: #2f6f9f;
   font-weight: 600;
 }
@@ -502,6 +502,18 @@
   overflow-x: hidden;
 }
 
+/* Used when a reveal box embeds a full pub/software card rather than
+   plain text, so the embedded card's own styling isn't double-boxed. */
+.abstract-box.highlight-reveal {
+  border: none;
+  padding: 0;
+  background: none;
+  max-height: none;
+  overflow: visible;
+  font-size: 100%;
+  line-height: inherit;
+}
+
 .copy-btn {
   position: absolute;
   top: 0.4em;
@@ -537,13 +549,13 @@
 }
 
 .link-button {
-  background-color: #e8f0f8;
-  color: #2f6f9f;
+  background-color: #2f6f9f;
+  color: #fff;
   font-weight: 600;
 }
 
 .link-button:hover {
-  background-color: #d6e6f2;
+  background-color: #24587e;
 }
 
 .toggle-button.lowkey {

@@ -60,13 +60,19 @@ classes: wide
       <button class="toggle-button lowkey" onclick="toggleBox('hp1-box')">highlight paper</button>
       <button class="toggle-button lowkey" onclick="toggleBox('hs1-box')">highlight software</button>
     </p>
-    <div id="hp1-box" class="abstract-box noshow">
-      <strong>{{ hp1.title }}</strong><br>
-      <a href="{{ '/publications/' | relative_url }}#pub-{{ hp1.title | slugify }}">View publication</a>
+    <div id="hp1-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp1 %}
+      {% include pub_entry.html pub=hp1 pubnum="&bull;" %}
     </div>
-    <div id="hs1-box" class="abstract-box noshow">
-      <strong>SQUIRREL</strong><br>
-      <a href="{{ '/software/' | relative_url }}#sw-squirrel">View software</a>
+    <div id="hs1-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/squirrel_icon.svg' | relative_url }}" alt="SQUIRREL logo">
+        <div>
+          <h3><a href="https://github.com/nholtgrefe/squirrel">SQUIRREL</a></h3>
+          <p>Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments.</p>
+          <p class="software-meta">By Niels Holtgrefe <a class="link-button" href="https://doi.org/10.1101/2024.11.01.621567">paper</a></p>
+        </div>
+      </article>
     </div>
   </article>
 
@@ -78,13 +84,19 @@ classes: wide
       <button class="toggle-button lowkey" onclick="toggleBox('hp2-box')">highlight paper</button>
       <button class="toggle-button lowkey" onclick="toggleBox('hs2-box')">highlight software</button>
     </p>
-    <div id="hp2-box" class="abstract-box noshow">
-      <strong>{{ hp2.title }}</strong><br>
-      <a href="{{ '/publications/' | relative_url }}#pub-{{ hp2.title | slugify }}">View publication</a>
+    <div id="hp2-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp2 %}
+      {% include pub_entry.html pub=hp2 pubnum="&bull;" %}
     </div>
-    <div id="hs2-box" class="abstract-box noshow">
-      <strong>FHyNCH</strong><br>
-      <a href="{{ '/software/' | relative_url }}#sw-fhynch">View software</a>
+    <div id="hs2-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/fhynch_icon.svg' | relative_url }}" alt="FHyNCH logo">
+        <div>
+          <h3><a href="https://github.com/estherjulien/FHyNCH">FHyNCH</a></h3>
+          <p>Finding Hybridization Networks via Cherry-picking Heuristics, constructing rooted phylogenetic networks from rooted multifurcating trees with missing leaves.</p>
+          <p class="software-meta">By Esther Julien <a class="link-button" href="https://doi.org/10.1016/j.ympev.2024.108137">paper</a></p>
+        </div>
+      </article>
     </div>
   </article>
 
@@ -96,13 +108,16 @@ classes: wide
       <button class="toggle-button lowkey" onclick="toggleBox('hp3-box')">highlight paper</button>
       <button class="toggle-button lowkey" onclick="toggleBox('hs3-box')">highlight software</button>
     </p>
-    <div id="hp3-box" class="abstract-box noshow">
-      <strong>{{ hp3.title }}</strong><br>
-      <a href="{{ '/publications/' | relative_url }}#pub-{{ hp3.title | slugify }}">View publication</a>
+    <div id="hp3-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp3 %}
+      {% include pub_entry.html pub=hp3 pubnum="&bull;" %}
     </div>
-    <div id="hs3-box" class="abstract-box noshow">
-      <strong>Scanwidth</strong><br>
-      <a href="{{ '/software/' | relative_url }}#sw-scanwidth">View software</a>
+    <div id="hs3-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card">
+        <h3><a href="https://github.com/nholtgrefe/scanwidth">Scanwidth</a></h3>
+        <p>Exact and heuristic algorithms for computing the scanwidth of a directed acyclic graph.</p>
+        <p class="software-meta">By Niels Holtgrefe <a class="link-button" href="https://doi.org/10.1016/j.jcss.2026.103802">paper</a></p>
+      </article>
     </div>
   </article>
 
@@ -114,13 +129,16 @@ classes: wide
       <button class="toggle-button lowkey" onclick="toggleBox('hp4-box')">highlight paper</button>
       <button class="toggle-button lowkey" onclick="toggleBox('hs4-box')">highlight software</button>
     </p>
-    <div id="hp4-box" class="abstract-box noshow">
-      <strong>{{ hp4.title }}</strong><br>
-      <a href="{{ '/publications/' | relative_url }}#pub-{{ hp4.title | slugify }}">View publication</a>
+    <div id="hp4-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp4 %}
+      {% include pub_entry.html pub=hp4 pubnum="&bull;" %}
     </div>
-    <div id="hs4-box" class="abstract-box noshow">
-      <strong>Computing Optimal Tree-Child Networks for Sets of Binary Phylogenetic Trees</strong><br>
-      <a href="{{ '/software/' | relative_url }}#sw-treechild">View software</a>
+    <div id="hs4-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card">
+        <h3><a href="https://github.com/nzeh/tree_child_code">Computing Optimal Tree-Child Networks for Sets of Binary Phylogenetic Trees</a></h3>
+        <p>Optimally reconstructing tree-child networks for sets of binary trees.</p>
+        <p class="software-meta">By Norbert Zeh <a class="link-button" href="https://arxiv.org/abs/1907.08474">paper</a></p>
+      </article>
     </div>
   </article>
 
@@ -131,13 +149,19 @@ classes: wide
       <button class="toggle-button lowkey" onclick="toggleBox('hp5-box')">highlight paper</button>
       <button class="toggle-button lowkey" onclick="toggleBox('hs5-box')">highlight software</button>
     </p>
-    <div id="hp5-box" class="abstract-box noshow">
-      <strong>{{ hp5.title }}</strong><br>
-      <a href="{{ '/publications/' | relative_url }}#pub-{{ hp5.title | slugify }}">View publication</a>
+    <div id="hp5-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp5 %}
+      {% include pub_entry.html pub=hp5 pubnum="&bull;" %}
     </div>
-    <div id="hs5-box" class="abstract-box noshow">
-      <strong>Cass</strong><br>
-      <a href="{{ '/software/' | relative_url }}#sw-cass">View software</a>
+    <div id="hs5-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/cass_logo.gif' | relative_url }}" alt="Cass logo">
+        <div>
+          <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
+          <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
+          <p class="software-meta"><a class="link-button" href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
+        </div>
+      </article>
     </div>
   </article>
 </div>
