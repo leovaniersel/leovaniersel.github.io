@@ -1709,6 +1709,8 @@
   preprint-server: arXiv
   preprint-identifier: '2207.00574'
   preprint-url: https://arxiv.org/abs/2207.00574
+  conference-note: ESA 2022, LIPIcs 244:69
+  conference-doi-url: https://doi.org/10.4230/LIPIcs.ESA.2022.69
   software-url:
   summary: Studies Tree Containment parameterized by the treewidth of the input phylogenetic
     network. The paper gives the first algorithm using network treewidth as a parameter,
@@ -1753,11 +1755,13 @@
   pages: '13'
   note: Algorithms for Molecular Biology, 18:13 (2023). Preliminary version in WABI
     2022, 10.4230/LIPIcs.WABI.2022.16. arXiv.
-  doi-identifier: 10.4230/LIPIcs.WABI.2022.16
-  doi-url: https://doi.org/10.4230/LIPIcs.WABI.2022.16
+  doi-identifier: 10.1186/s13015-023-00233-3
+  doi-url: https://doi.org/10.1186/s13015-023-00233-3
   preprint-server: arXiv
   preprint-identifier: '2304.02729'
   preprint-url: https://arxiv.org/abs/2304.02729
+  conference-note: WABI 2022, LIPIcs 242:16
+  conference-doi-url: https://doi.org/10.4230/LIPIcs.WABI.2022.16
   software-url:
   summary: Uses cherry-picking and machine learning to construct phylogenetic networks
     from multiple trees. The paper combines combinatorial network theory with predictive
@@ -1770,8 +1774,8 @@
       year = {2023},
       volume = {18},
       pages = {13},
-      doi = {10.4230/LIPIcs.WABI.2022.16},
-      url = {https://doi.org/10.4230/LIPIcs.WABI.2022.16}
+      doi = {10.1186/s13015-023-00233-3},
+      url = {https://doi.org/10.1186/s13015-023-00233-3}
     }
   abstract: Combining a set of phylogenetic trees into a single phylogenetic network
     that explains all of them is a fundamental challenge in evolutionary studies.
@@ -2616,6 +2620,7 @@
   preprint-server: arXiv
   preprint-identifier: '1802.00317'
   preprint-url: https://arxiv.org/abs/1802.00317
+  conference-note: AlCoB 2018, LNBI 10849:37–49
   software-url:
   summary: Develops polynomial-time algorithms for phylogenetic inference problems
     involving both gene duplication and reticulation. The paper studies tractable
@@ -2994,6 +2999,7 @@
   preprint-server:
   preprint-identifier:
   preprint-url:
+  conference-note: WAOA 2016, LNCS 10138:183–196
   software-url:
   summary: Studies the a priori travelling salesperson problem in the scenario model.
     The paper analyzes approximation and optimization questions when uncertain scenarios
@@ -3446,7 +3452,8 @@
   preprint-server: arXiv
   preprint-identifier: '1311.4045'
   preprint-url: https://arxiv.org/abs/1311.4045
-  software-url: Treeduce
+  conference-note: WG 2014, LNCS 8747:299–311
+  software-url: https://leovaniersel.wordpress.com/software/treeduce/
   summary: Develops kernelization results for the hybridization number problem on
     multiple nonbinary trees. The paper reduces input size while preserving the parameterized
     problem of constructing low-reticulation networks.
@@ -3756,6 +3763,7 @@
   preprint-server:
   preprint-identifier:
   preprint-url:
+  conference-note: RECOMB 2014, LNCS 8394:237–249
   software-url:
   summary: Introduces WhatsHap, a fixed-parameter dynamic-programming approach to
     weighted haplotype assembly. The method solves the weighted minimum error correction
@@ -3954,6 +3962,7 @@
   preprint-server: arXiv
   preprint-identifier: '1210.3211'
   preprint-url: https://arxiv.org/abs/1210.3211
+  conference-note: WABI 2012, LNCS 7534:430–440
   software-url:
   summary: Presents a practical approximation algorithm for massive hybridization-number
     instances on binary and nonbinary trees. The paper targets scalable construction
@@ -4403,6 +4412,7 @@
   preprint-server: arXiv
   preprint-identifier: '1004.1956'
   preprint-url: https://arxiv.org/abs/1004.1956
+  conference-note: ESA 2010, LNCS 6346:326–337
   software-url:
   summary: Studies ternary permutation constraint satisfaction parameterized above
     average. The paper proves the existence of a quadratic-variable kernel for every
@@ -4545,6 +4555,7 @@
   preprint-server: arXiv
   preprint-identifier: '0707.2890'
   preprint-url: https://arxiv.org/abs/0707.2890
+  conference-note: ISAAC 2008, LNCS 5369:472–483
   software-url:
   summary: Studies construction of the simplest phylogenetic network consistent with
     a dense triplet set. The paper focuses on minimizing reticulations while representing
@@ -4799,6 +4810,7 @@
   preprint-server: arXiv
   preprint-identifier: '0707.2890'
   preprint-url: https://arxiv.org/abs/0707.2890
+  conference-note: RECOMB 2008, LNBI 4955:450–462
   software-url:
   summary: Extends triplet-based phylogenetic network reconstruction to level-2 networks.
     The paper proves polynomial-time solvability for dense triplet sets and NP-hardness
@@ -4855,6 +4867,7 @@
   preprint-server:
   preprint-identifier:
   preprint-url:
+  conference-note: WABI 2006, LNCS 4175:80–91
   software-url:
   summary: Studies boundary cases of tractability for parsimony and minimum perfect
     phylogeny haplotyping problems. The paper maps where exact or efficient algorithms
@@ -4898,6 +4911,7 @@
   preprint-server: arXiv
   preprint-identifier: math/0602456
   preprint-url: https://arxiv.org/abs/math/0602456
+  conference-note: AB 2007, LNCS 4545:292–306
   software-url:
   summary: Studies prefix reversals on binary and ternary strings. The paper analyzes
     combinatorial properties and algorithmic questions related to sorting or transforming
@@ -4951,6 +4965,7 @@
   preprint-server:
   preprint-identifier:
   preprint-url:
+  conference-note: WABI 2005, LNCS 3692:128–139
   software-url:
   summary: Analyzes the computational complexity of the single-individual SNP haplotyping
     problem. The paper studies algorithmic difficulty in reconstructing haplotypes
