@@ -8,9 +8,9 @@ classes: wide
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 
-<p>Below are the workshops I organized on Phylogenetics and on AI &amp; Mathematics.</p>
+<p>Below are the workshops I organized on <a href="#phylogenetics">Phylogenetics</a> and on <a href="#ai-mathematics">AI &amp; Mathematics</a>.</p>
 
-<h2>Phylogenetics</h2>
+<h2 id="phylogenetics">Phylogenetics</h2>
 
 <div class="event-list">
   {% for event in site.data.events.phylogenetics %}
@@ -47,7 +47,7 @@ classes: wide
   {% endfor %}
 </div>
 
-<h2>AI &amp; Mathematics</h2>
+<h2 id="ai-mathematics">AI &amp; Mathematics</h2>
 
 <div class="event-list">
   {% for event in site.data.events.ai-math %}
