@@ -514,6 +514,22 @@
   line-height: inherit;
 }
 
+/* The embedded pub_entry card's own pubnum column and its
+   summary/abstract/bibtex toggles don't work in this nested context
+   (they'd also match .abstract-box and close the outer reveal box
+   they live in), so hide them here. */
+.highlight-reveal .pub-left {
+  display: none;
+}
+
+.highlight-reveal .lowkey-button-group {
+  display: none;
+}
+
+.highlight-reveal .pub-entry + div {
+  display: none;
+}
+
 .copy-btn {
   position: absolute;
   top: 0.4em;
