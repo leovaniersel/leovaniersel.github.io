@@ -33,11 +33,17 @@ talks.forEach(function(t) {
   byLocation[key].entries.push(t.date + ': ' + t.event);
 });
 
+var markers = [];
 Object.values(byLocation).forEach(function(loc) {
   var lines = loc.entries.map(function(e) { return '<li style="margin:2px 0">' + e + '</li>'; }).join('');
-  L.marker([loc.lat, loc.lng]).addTo(map)
+  var marker = L.marker([loc.lat, loc.lng]).addTo(map)
     .bindPopup('<span style="color:#555;font-size:0.85em">' + loc.location + '</span><ul style="margin:4px 0 0;padding-left:16px;font-size:0.85em">' + lines + '</ul>', { maxWidth: 320 });
+  markers.push(marker);
 });
+
+if (markers.length) {
+  map.fitBounds(L.featureGroup(markers).getBounds().pad(0.15));
+}
 </script>
 
 {% assign talks_by_year = site.data.talks | group_by: "year" | sort: "name" | reverse %}
