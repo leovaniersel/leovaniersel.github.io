@@ -12,8 +12,14 @@ classes: wide
 
 <h2 id="phylogenetics">Phylogenetics</h2>
 
+{% assign phylogenetics_events = site.data.events.phylogenetics | sort: "year" | reverse %}
+{% assign current_year = "" %}
 <div class="event-list">
-  {% for event in site.data.events.phylogenetics %}
+  {% for event in phylogenetics_events %}
+    {% if event.year != current_year %}
+      <div class="year-label"><span>{{ event.year }}</span></div>
+      {% assign current_year = event.year %}
+    {% endif %}
   <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
     {% if event.image %}
       {% if event.url %}
@@ -49,8 +55,14 @@ classes: wide
 
 <h2 id="ai-mathematics">AI &amp; Mathematics</h2>
 
+{% assign aimath_events = site.data.events.ai-math | sort: "year" | reverse %}
+{% assign current_year = "" %}
 <div class="event-list">
-  {% for event in site.data.events.ai-math %}
+  {% for event in aimath_events %}
+    {% if event.year != current_year %}
+      <div class="year-label"><span>{{ event.year }}</span></div>
+      {% assign current_year = event.year %}
+    {% endif %}
   <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
     {% if event.image %}
       {% if event.url %}

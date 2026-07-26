@@ -1,11 +1,3 @@
-.talk-year {
-  margin: 2rem 0 0.5rem;
-  font-size: 1.3rem;
-  color: #2f6f9f;
-  border-bottom: 2px solid #e3e8ef;
-  padding-bottom: 0.25rem;
-}
-
 .talk-list {
   display: grid;
   gap: 0.5rem;

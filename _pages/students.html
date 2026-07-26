@@ -22,22 +22,37 @@ classes: wide
 {% assign bsc_students = bsc_current | concat: bsc_past %}
 
 <h2>PhD Students</h2>
+{% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in phd_students %}
+    {% if stud.year and stud.year != current_year %}
+      <div class="year-label"><span>{{ stud.year }}</span></div>
+      {% assign current_year = stud.year %}
+    {% endif %}
     {% include stud_entry.html stud=stud %}
   {% endfor %}
 </div>
 
 <h2>MSc Students</h2>
+{% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in msc_students %}
+    {% if stud.year and stud.year != current_year %}
+      <div class="year-label"><span>{{ stud.year }}</span></div>
+      {% assign current_year = stud.year %}
+    {% endif %}
     {% include stud_entry.html stud=stud %}
   {% endfor %}
 </div>
 
 <h2>BSc Students</h2>
+{% assign current_year = "" %}
 <div class="stud-list">
   {% for stud in bsc_students %}
+    {% if stud.year and stud.year != current_year %}
+      <div class="year-label"><span>{{ stud.year }}</span></div>
+      {% assign current_year = stud.year %}
+    {% endif %}
     {% include stud_entry.html stud=stud %}
   {% endfor %}
 </div>

@@ -1,12 +1,14 @@
 phylogenetics:
   - title: "Uniting Phylogenetic Network Research"
     date: "June 29 – July 3, 2026"
+    year: 2026
     location: "Lorentz Center, Leiden"
     url: "https://www.lorentzcenter.nl/uniting-phylogenetic-network-research.html"
     image: "/assets/images/sidebar/poster_lorentz_2026.jpeg"
 
   - title: "Theory, Methods, and Applications of Quantitative Phylogenomics"
     date: "Sep 4 – Dec 6, 2024"
+    year: 2024
     location: "ICERM, Providence, RI, USA"
     role: "Research Semester Programme"
     url: "https://icerm.brown.edu/programs/sp-f24/"
@@ -14,6 +16,7 @@ phylogenetics:
 
   - title: "From Phylogenetics to Phylogenomics: Mathematical and Statistical Challenges in the era of Big Data"
     date: "Oct 21–25, 2024"
+    year: 2024
     location: "ICERM, Providence, RI, USA"
     role: "Workshop"
     url: "https://icerm.brown.edu/programs/sp-f24/w2/"
@@ -21,12 +24,14 @@ phylogenetics:
 
   - title: "Distinguishability in Genealogical Phylogenetic Networks"
     date: "August 13–17, 2018"
+    year: 2018
     location: "Lorentz Center, Leiden"
     url: "https://www.lorentzcenter.nl/distinguishability-in-genealogical-phylogenetic-networks.html"
     image: "/assets/images/sidebar/poster_lorentz_2018.jpg"
 
   - title: "Utilizing Genealogical Phylogenetic Networks in Evolutionary Biology: Touching the Data"
     date: "July 7–11, 2014"
+    year: 2014
     location: "Lorentz Center, Leiden, The Netherlands"
     url: "http://www.lorentzcenter.nl/lc/web/2014/642/info.php3?wsid=642&venue=Snellius"
     image: "/assets/images/sidebar/poster_touching_the_data.jpg"
@@ -36,6 +41,7 @@ phylogenetics:
 
   - title: "The Future of Phylogenetic Networks"
     date: "October 15–19, 2012"
+    year: 2012
     location: "Lorentz Center, Leiden, The Netherlands"
     url: "http://www.lorentzcenter.nl/lc/web/2012/515/info.php3?wsid=515"
     image: "/assets/images/sidebar/poster_lorentz_2012.jpg"
@@ -45,6 +51,7 @@ phylogenetics:
 ai-math:
   - title: "Learning Enhanced Optimization"
     date: "Sep – Nov, 2025"
+    year: 2025
     location: "CWI, Amsterdam"
     role: "Research Semester Programme"
     url: "https://www.cwi.nl/en/events/cwi-research-semester-programs/learning-enhanced-optimization/"
@@ -52,30 +59,35 @@ ai-math:
 
   - title: "Learned Methods for Operations Research"
     date: "November 3–6, 2025"
+    year: 2025
     location: "CWI, Amsterdam"
     url: "https://www.cwi.nl/en/events/cwi-research-semester-programmes/satellite-workshop-2-learned-methods-for-operations-research/"
     image: "/assets/images/sidebar/learning_enhanced_optimization.png"
 
   - title: "4th Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
     date: "June 12–13, 2025"
+    year: 2025
     location: "Tilburg University"
     url: "https://aimath.nl/index.php/2025/03/13/4th-aim-cluster-event-tilburg/"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "3rd Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
     date: "June 13–14, 2024"
+    year: 2024
     location: "Utrecht University"
     url: "https://aimath.nl/index.php/2024/03/29/aim-2024-uu/"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "2nd Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
     date: "June 1–2, 2023"
+    year: 2023
     location: "University of Twente"
     url: "https://www.utwente.nl/en/eemcs/sacs/aim2023/"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "Guarantees for AI"
     date: "2023"
+    year: 2023
     location: "ICT.OPEN, Jaarbeurs Utrecht"
     role: "Track"
     url: "https://www.ictopen.nl/track-guarantees-ai"
@@ -83,11 +95,13 @@ ai-math:
 
   - title: "AIM Networking Event"
     date: "December 1, 2022"
+    year: 2022
     location: "NWO, Utrecht"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "1st Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
     date: "June 9–10, 2022"
+    year: 2022
     location: "CWI, Amsterdam"
     url: "https://www.cwi.nl/events/2022/first-workshop-on-ai-and-mathematics/first-workshop-on-ai-and-mathematics-connecting-the-mathematics-clusters"
     image: "/assets/images/sidebar/aim_logo.png"

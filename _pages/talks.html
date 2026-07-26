@@ -46,12 +46,15 @@ if (markers.length) {
 }
 </script>
 
-{% assign talks_by_year = site.data.talks | group_by: "year" | sort: "name" | reverse %}
+{% assign sorted_talks = site.data.talks | sort: "year" | reverse %}
+{% assign current_year = "" %}
 
-{% for year_group in talks_by_year %}
-<h2 class="talk-year">{{ year_group.name }}</h2>
 <div class="talk-list">
-  {% for talk in year_group.items %}
+  {% for talk in sorted_talks %}
+    {% if talk.year != current_year %}
+      <div class="year-label"><span>{{ talk.year }}</span></div>
+      {% assign current_year = talk.year %}
+    {% endif %}
   <article class="talk-card">
     <div class="talk-date">{{ talk.date }}</div>
     <div class="talk-body">
@@ -80,4 +83,3 @@ if (markers.length) {
   </article>
   {% endfor %}
 </div>
-{% endfor %}
