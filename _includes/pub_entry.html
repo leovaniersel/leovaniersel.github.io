@@ -15,15 +15,8 @@
 
 
   <!-- Middle Column: Title, Authors, Info, preprint -->
-  <div class="pub-middle" style="flex: 1; border: 1px solid #ddd; border-radius: 5px; padding: 0.55em 0.8em 0.8em 0.8em; position: relative;">
-    <div class="top-label" style="position: absolute;
-        top: -0.8em;
-        right: 1em;
-        background-color: white;
-        padding: 0 0.4em;
-        font-size: 0.6em;
-        font-family: monospace;
-        color: #777;">
+  <div class="pub-middle" style="flex: 1; border: 1px solid #ddd; border-left: 3px solid #2f6f9f; border-radius: 5px; padding: 0.55em 0.8em 0.8em 0.8em; position: relative;">
+    <div class="top-label">
       {% if pub.type == "journal" %}
         journal article
       {% elsif pub.type == "preprint" %}

@@ -267,6 +267,15 @@
   line-height: 1.35;
 }
 
+.software-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.software-card h3 a:hover {
+  color: #2f6f9f;
+}
+
 .software-card p {
   margin: 0 0 0.35rem;
   line-height: 1.55;
@@ -477,12 +486,20 @@
   padding: 3px 8px;
   margin-right: 4px;
   margin-top: 2px;
-  background-color: #eee;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+}
+
+.link-button {
+  background-color: #e8f0f8;
+  color: #2f6f9f;
+  font-weight: 600;
+}
+
+.link-button:hover {
+  background-color: #d6e6f2;
 }
 
 .toggle-button.lowkey {
@@ -496,9 +513,10 @@
   border-radius: 3px;
 }
 
-.toggle-button:hover,
-.link-button:hover {
-  background-color: #ddd;
+.toggle-button.lowkey:hover {
+  background-color: #eee;
+  border-color: #2f6f9f;
+  color: #2f6f9f;
 }
 
 .year-label {
@@ -527,6 +545,18 @@
   background: white;
   padding: 0 0.5em;
   z-index: 1;
+}
+
+.top-label {
+  position: absolute;
+  top: -0.8em;
+  right: 1em;
+  background-color: #e8f0f8;
+  color: #2f6f9f;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65em;
 }
 
 ul.no-bullets {

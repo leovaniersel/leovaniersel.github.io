@@ -65,14 +65,15 @@
   font-size: 0.7em;
   padding: 1px 6px;
   margin-right: 3px;
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #e8f0f8;
+  border: none;
   border-radius: 3px;
   text-decoration: none;
-  color: #444;
+  color: #2f6f9f;
+  font-weight: 600;
   vertical-align: middle;
 }
 
 .stud-link-btn:hover {
-  background-color: #ddd;
+  background-color: #d6e6f2;
 }
