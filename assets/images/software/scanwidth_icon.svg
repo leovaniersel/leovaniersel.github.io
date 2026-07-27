@@ -1,37 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <circle cx="50" cy="50" r="48" fill="#eef3f8"/>
 
-  <!-- network arcs: a small rooted network with one reticulation -->
-  <g stroke="#5b8bb0" stroke-width="3.6" stroke-linecap="round" fill="none">
-    <path d="M 50 16 L 26 38"/>
-    <path d="M 50 16 L 74 38"/>
-    <path d="M 26 38 L 50 62"/>
-    <path d="M 74 38 L 50 62"/>
-    <path d="M 26 38 L 21 82"/>
-    <path d="M 74 38 L 79 82"/>
-    <path d="M 50 62 L 50 82"/>
-  </g>
+  <!-- top slice of bread: flat base, arched shoulders -->
+  <path d="M 17 42 L 17 33 C 17 25, 26 23, 35 23 L 65 23 C 74 23, 83 25, 83 33 L 83 42 Z" fill="#e3b06f"/>
 
-  <!-- scan line: the sweep whose widest cut defines the scanwidth -->
-  <line x1="9" y1="50" x2="91" y2="50"
-        stroke="#edc07a" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- lettuce -->
+  <path d="M 13 42 Q 20 37, 27 42 Q 34 37, 41 42 Q 48 37, 55 42 Q 62 37, 69 42 Q 76 37, 87 42 L 87 50 L 13 50 Z" fill="#6a8f4a"/>
 
-  <!-- the arcs the scan line cuts -->
-  <g fill="#e08a2e" stroke="#eef3f8" stroke-width="1.8">
-    <circle cx="24.6" cy="50" r="5.2"/>
-    <circle cx="38" cy="50" r="5.2"/>
-    <circle cx="62" cy="50" r="5.2"/>
-    <circle cx="75.4" cy="50" r="5.2"/>
-  </g>
+  <!-- tomato -->
+  <rect x="15" y="49" width="70" height="9" rx="3.5" fill="#c1273d"/>
 
-  <!-- vertices -->
-  <g fill="#2f6f9f">
-    <circle cx="50" cy="16" r="5.5"/>
-    <circle cx="26" cy="38" r="5.5"/>
-    <circle cx="74" cy="38" r="5.5"/>
-    <circle cx="50" cy="62" r="5.5"/>
-    <circle cx="21" cy="82" r="5.5"/>
-    <circle cx="50" cy="82" r="5.5"/>
-    <circle cx="79" cy="82" r="5.5"/>
-  </g>
+  <!-- cheese -->
+  <rect x="13" y="57" width="74" height="7" rx="2" fill="#f0b93c"/>
+
+  <!-- bottom slice of bread -->
+  <path d="M 17 63 L 83 63 L 83 70 C 83 76, 74 78, 65 78 L 35 78 C 26 78, 17 76, 17 70 Z" fill="#d9a05c"/>
+
+  <!-- the cut: how many layers it crosses is what scanwidth measures -->
+  <line x1="52" y1="14" x2="52" y2="86" stroke="#2f6f9f" stroke-width="3" stroke-dasharray="6 4.5" stroke-linecap="round"/>
 </svg>
