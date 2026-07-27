@@ -1,37 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <circle cx="50" cy="50" r="48" fill="#eef3f8"/>
 
-  <!-- network arcs: a small rooted network with one reticulation -->
-  <g stroke="#5b8bb0" stroke-width="3.6" stroke-linecap="round" fill="none">
-    <path d="M 50 16 L 26 38"/>
-    <path d="M 50 16 L 74 38"/>
-    <path d="M 26 38 L 50 62"/>
-    <path d="M 74 38 L 50 62"/>
-    <path d="M 26 38 L 21 82"/>
-    <path d="M 74 38 L 79 82"/>
-    <path d="M 50 62 L 50 82"/>
-  </g>
+  <!-- tail -->
+  <path d="M 58 79 C 71 83, 79 77, 80 68" stroke="#b98d5c" stroke-width="5" fill="none" stroke-linecap="round"/>
 
-  <!-- scan line: the sweep whose widest cut defines the scanwidth -->
-  <line x1="9" y1="50" x2="91" y2="50"
-        stroke="#edc07a" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- body, upright sentry pose: a meerkat on lookout, scanning -->
+  <path d="M 50 36 C 40 36, 36 50, 36 64 C 36 76, 41 83, 50 83 C 59 83, 64 76, 64 64 C 64 50, 60 36, 50 36 Z" fill="#c9a06a"/>
+  <path d="M 50 48 C 44.5 48, 42.5 58, 42.5 66 C 42.5 75, 45.5 79.5, 50 79.5 C 54.5 79.5, 57.5 75, 57.5 66 C 57.5 58, 55.5 48, 50 48 Z" fill="#e0c396"/>
 
-  <!-- the arcs the scan line cuts -->
-  <g fill="#e08a2e" stroke="#eef3f8" stroke-width="1.8">
-    <circle cx="24.6" cy="50" r="5.2"/>
-    <circle cx="38" cy="50" r="5.2"/>
-    <circle cx="62" cy="50" r="5.2"/>
-    <circle cx="75.4" cy="50" r="5.2"/>
-  </g>
+  <!-- forepaws held at the chest -->
+  <ellipse cx="45.5" cy="52" rx="3.4" ry="4.2" fill="#b98d5c"/>
+  <ellipse cx="54.5" cy="52" rx="3.4" ry="4.2" fill="#b98d5c"/>
 
-  <!-- vertices -->
-  <g fill="#2f6f9f">
-    <circle cx="50" cy="16" r="5.5"/>
-    <circle cx="26" cy="38" r="5.5"/>
-    <circle cx="74" cy="38" r="5.5"/>
-    <circle cx="50" cy="62" r="5.5"/>
-    <circle cx="21" cy="82" r="5.5"/>
-    <circle cx="50" cy="82" r="5.5"/>
-    <circle cx="79" cy="82" r="5.5"/>
-  </g>
+  <!-- hind feet -->
+  <ellipse cx="42" cy="83" rx="5" ry="3" fill="#b98d5c"/>
+  <ellipse cx="58" cy="83" rx="5" ry="3" fill="#b98d5c"/>
+
+  <!-- ears -->
+  <circle cx="38.5" cy="24" r="4" fill="#6b5240"/>
+  <circle cx="61.5" cy="24" r="4" fill="#6b5240"/>
+
+  <!-- head -->
+  <ellipse cx="50" cy="27" rx="12.5" ry="11.5" fill="#c9a06a"/>
+  <ellipse cx="50" cy="33" rx="6.2" ry="4.8" fill="#e0c396"/>
+  <ellipse cx="50" cy="31" rx="2.3" ry="1.7" fill="#3f3128"/>
+
+  <!-- eye patches: the meerkat's signature -->
+  <ellipse cx="43.5" cy="25" rx="5" ry="3.6" fill="#3f3128" transform="rotate(-18 43.5 25)"/>
+  <ellipse cx="56.5" cy="25" rx="5" ry="3.6" fill="#3f3128" transform="rotate(18 56.5 25)"/>
+  <circle cx="44.6" cy="24.2" r="1.1" fill="#ffffff"/>
+  <circle cx="57.6" cy="24.2" r="1.1" fill="#ffffff"/>
+
+  <!-- ground: kept clear of the badge edge -->
+  <path d="M 24 86 L 76 86" stroke="#c9b79c" stroke-width="3" stroke-linecap="round"/>
 </svg>
