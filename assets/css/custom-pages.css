@@ -565,13 +565,16 @@
 }
 
 .link-button {
-  background-color: #2f6f9f;
+  background-color: #3b83b9;
   color: #fff;
   font-weight: 600;
 }
 
 .link-button:hover {
-  background-color: #24587e;
+  color: #3b83b9;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .toggle-button.lowkey {
