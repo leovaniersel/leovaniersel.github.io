@@ -292,6 +292,79 @@
   font-weight: 600;
 }
 
+/* Usage notes folded in from the retired WordPress/TU Delft software pages,
+   revealed by the card's "usage" toggle. */
+.legacy-usage {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* These are reference docs the reader deliberately opened, so let them expand
+   rather than sit in the short scroll box .abstract-box defaults to. Qualified
+   with .abstract-box so it wins regardless of rule order. */
+.abstract-box.legacy-usage {
+  max-height: none;
+  overflow: visible;
+}
+
+.legacy-usage__note {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.legacy-usage h4 {
+  margin: 0.9rem 0 0.3rem;
+  font-size: 0.9rem;
+  color: #2f6f9f;
+}
+
+.legacy-usage p {
+  margin: 0 0 0.45rem;
+}
+
+.legacy-usage ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.legacy-usage li {
+  margin-bottom: 0.2rem;
+}
+
+.legacy-usage code {
+  background: #eef2f7;
+  border-radius: 3px;
+  padding: 0.05em 0.35em;
+  font-size: 0.88em;
+  word-break: break-word;
+}
+
+/* Wide tables scroll inside the box rather than stretching the card. */
+.legacy-usage__tablewrap {
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+}
+
+.legacy-usage table {
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.legacy-usage th,
+.legacy-usage td {
+  border: 1px solid #dbe3ec;
+  padding: 0.25rem 0.55rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.legacy-usage th {
+  background: #f4f7fa;
+  font-weight: 600;
+}
+
 .software-page-intro {
   margin-bottom: 1rem;
   color: #4b5563;

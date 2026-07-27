@@ -3543,7 +3543,7 @@
   preprint-url: https://arxiv.org/abs/1311.4045
   conference-note: WG 2014, LNCS 8747:299–311
   conference-doi-url: https://doi.org/10.1007/978-3-319-12340-0_25
-  software-url: https://leovaniersel.wordpress.com/software/treeduce/
+  software-url: /software/#sw-treeduce
   summary: Shows that the problem of finding the simplest evolutionary network explaining
     several conflicting, not-necessarily-fully-resolved evolutionary trees can always
     be shrunk down to a much smaller instance before being solved exactly, and demonstrates

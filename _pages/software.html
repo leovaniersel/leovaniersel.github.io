@@ -7,6 +7,7 @@ classes: wide
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
+<script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
 
 
 <div class="software-list">
@@ -85,34 +86,174 @@ classes: wide
     <p class="software-meta">By Norbert Zeh <a class="link-button" href="https://arxiv.org/abs/1907.08474">paper</a></p>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://leovaniersel.wordpress.com/software/treeduce/">Treeduce</a></h3>
+  <article id="sw-treeduce" class="software-card">
+    <h3>Treeduce</h3>
     <p>A preprocessing algorithm for hybridization number on any number of binary or nonbinary trees.</p>
-    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1016/j.jcss.2016.03.006">paper</a></p>
+    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1016/j.jcss.2016.03.006">paper</a>
+      <button class="toggle-button lowkey" onclick="toggleBox('sw-treeduce-usage')">usage</button></p>
+    <div id="sw-treeduce-usage" class="abstract-box legacy-usage noshow">
+      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
+      <h4>Compiling</h4>
+      <p>With a Java compiler installed, run <code>javac Treeduce.java</code> in the folder containing the source.</p>
+      <h4>Running</h4>
+      <p><code>java Treeduce input.tree [k] [-s]</code></p>
+      <ul>
+        <li><code>input.tree</code> — text file containing any number of trees in Newick format</li>
+        <li><code>k</code> — the value of the parameter (default is 1)</li>
+        <li><code>-s</code> — enable silent mode</li>
+      </ul>
+      <p>The reduced trees are written in Newick format to a file called <code>reduced.tree</code>.</p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://leovaniersel.wordpress.com/software/cycle-killer/">NonbinaryCycleKiller</a></h3>
+  <article id="sw-nonbinarycyclekiller" class="software-card">
+    <h3>NonbinaryCycleKiller</h3>
     <p>A practical algorithm for constructing a phylogenetic network from two large (possibly multifurcating) trees.</p>
-    <p class="software-meta"><a class="link-button" href="http://www.biomedcentral.com/1471-2105/15/127">paper</a></p>
+    <p class="software-meta"><a class="link-button" href="http://www.biomedcentral.com/1471-2105/15/127">paper</a>
+      <button class="toggle-button lowkey" onclick="toggleBox('sw-nbck-usage')">usage</button></p>
+    <div id="sw-nbck-usage" class="abstract-box legacy-usage noshow">
+      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
+      <p>Constructs a network displaying (refinements of) both input trees, aiming to minimise the reticulation
+        number. Extends the original <a href="http://skelk.sdf-eu.org/cyclekiller">CycleKiller</a>, which handled
+        only binary trees.</p>
+      <h4>Requirements</h4>
+      <ul>
+        <li>A Java compiler.</li>
+        <li><a href="https://www.ibm.com/academic" target="_blank" rel="noopener">CPLEX</a> — free for academic use.</li>
+        <li>Optional: <a href="https://uni-tuebingen.de/en/218832" target="_blank" rel="noopener">Dendroscope</a>, to view the constructed networks.</li>
+        <li>Optional: <a href="https://github.com/cwhidden/rspr" target="_blank" rel="noopener">rSPR</a>, only needed for the <code>--rspr</code> and <code>--rsprapp</code> options.</li>
+      </ul>
+      <h4>Compiling and running</h4>
+      <p><code>javac -classpath jarpath NonbinaryCycleKiller.java</code></p>
+      <p><code>java -classpath jarpath;. -Djava.library.path=libpath NonbinaryCycleKiller test.tree</code></p>
+      <ul>
+        <li><code>test.tree</code> — text file containing two trees in Newick format, one per line</li>
+        <li><code>jarpath</code> — path to <code>cplex.jar</code></li>
+        <li><code>libpath</code> — path to the CPLEX shared library (often unnecessary)</li>
+      </ul>
+      <p>The network is saved in e-Newick format to <code>test-network.tree</code>, which opens in Dendroscope.</p>
+      <h4>Options</h4>
+      <ul>
+        <li><code>--maf</code> — FPT algorithm of MAF for the initial agreement forest (default)</li>
+        <li><code>--mafapp</code> — approximation algorithm of MAF</li>
+        <li><code>--rspr</code> / <code>--rsprapp</code> — FPT / approximation algorithm of rSPR (requires at least one binary input tree)</li>
+        <li><code>--given af.txt</code> — use the initial agreement forest in <code>af.txt</code></li>
+      </ul>
+      <p>The approximation algorithms are much faster than the FPT ones, though their worst-case guarantees are
+        weaker. Worst-case approximation ratios:</p>
+      <div class="legacy-usage__tablewrap">
+        <table>
+          <thead>
+            <tr><th></th><th>binary inputs</th><th>one binary, one nonbinary</th><th>nonbinary inputs</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>--maf</code></td><td>2</td><td>4</td><td>4</td></tr>
+            <tr><td><code>--mafapp</code></td><td>5</td><td>7</td><td>7</td></tr>
+            <tr><td><code>--rspr</code></td><td>2</td><td>4</td><td>N/A</td></tr>
+            <tr><td><code>--rsprapp</code></td><td>4</td><td>6</td><td>N/A</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>In practice the ratios are much smaller on essentially all data.</p>
+      <h4>Additional functionality</h4>
+      <p>Given an acyclic agreement forest, <code>java NonbinaryCycleKiller trees.tree --given aaf.txt</code> outputs a
+        network displaying both trees and corresponding to that forest. The program can also find a directed feedback
+        vertex set of a digraph via <code>java NonbinaryCycleKiller outlists.txt --dfvs</code>, where vertices are
+        numbered 0…n-1 and line <em>i</em> lists the out-neighbours of vertex <em>i</em>-1, separated by spaces.</p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="http://homepage.tudelft.nl/56w4n/software/ilpeace/">ILPEACE</a></h3>
+  <article id="sw-ilpeace" class="software-card">
+    <h3>ILPEACE</h3>
     <p>Reconciling a binary gene tree with a binary undated species tree.</p>
-    <p class="software-meta"><a class="link-button" href="http://arxiv.org/abs/1410.7004">paper</a></p>
+    <p class="software-meta"><a class="link-button" href="http://arxiv.org/abs/1410.7004">paper</a>
+      <button class="toggle-button lowkey" onclick="toggleBox('sw-ilpeace-usage')">usage</button></p>
+    <div id="sw-ilpeace-usage" class="abstract-box legacy-usage noshow">
+      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
+      <p>Finds an optimal reconciliation between a binary gene tree and a binary species tree.</p>
+      <h4>Requirements</h4>
+      <ul>
+        <li><a href="https://www.ibm.com/academic" target="_blank" rel="noopener">CPLEX</a> — free for academic use.</li>
+        <li>Optional: <a href="https://graphviz.org/" target="_blank" rel="noopener">Graphviz</a>, to render the output.</li>
+      </ul>
+      <h4>Compiling and running</h4>
+      <p><code>javac ReconciliationILP.java -classpath [path to cplex.jar]</code></p>
+      <p><code>java -Djava.library.path=[path to shared library] ReconciliationILP species.tree gene.tree</code></p>
+      <p><code>species.tree</code> and <code>gene.tree</code> each contain one binary tree in Newick format.</p>
+      <h4>Output</h4>
+      <ul>
+        <li><code>G.dot</code> — the gene tree with labelled nodes.</li>
+        <li><code>S.dot</code> — the species tree, each node labelled by the gene-tree nodes mapped to it; blue edges mark transfer (T or TL) events.</li>
+        <li><code>network.txt</code> — the species tree with transfer edges added, in e-Newick format.</li>
+      </ul>
+      <p>With Graphviz installed, the dot-files are also converted to PDF.</p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://leovaniersel.wordpress.com/software/mpnet/">MPNet</a></h3>
+  <article id="sw-mpnet" class="software-card">
+    <h3>MPNet</h3>
     <p>Computing the maximum parsimony score of a phylogenetic network.</p>
-    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/140959948">paper</a></p>
+    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/140959948">paper</a>
+      <button class="toggle-button lowkey" onclick="toggleBox('sw-mpnet-usage')">usage</button></p>
+    <div id="sw-mpnet-usage" class="abstract-box legacy-usage noshow">
+      <p class="legacy-usage__note">The original download page is no longer online; the source files are available on request.</p>
+      <p>Computes the softwired and hardwired parsimony score of a phylogenetic network using integer linear
+        programming. Two versions exist: a CPLEX version (recommended, much faster, free for academic use) and a
+        GLPK version (free, but considerably slower).</p>
+      <h4>CPLEX version</h4>
+      <p>Install <a href="https://www.ibm.com/academic" target="_blank" rel="noopener">CPLEX</a>, then:</p>
+      <p><code>javac MPNet.java -classpath [path to cplex.jar]</code></p>
+      <p><code>java -Djava.library.path=[path to shared library] MPNet network.tree sequences.fasta</code></p>
+      <h4>GLPK version</h4>
+      <p>Download <a href="https://www.gnu.org/software/glpk/" target="_blank" rel="noopener">GLPK</a> and place
+        <code>glpsol</code> (on Windows, <code>glpsol.exe</code> plus the DLLs from its directory) in the folder
+        containing <code>MPNetGLPK.java</code>, then:</p>
+      <p><code>javac MPNetGLPK.java</code></p>
+      <p><code>java MPNetGLPK network.tree sequences.fasta</code></p>
+      <h4>Input</h4>
+      <ul>
+        <li><code>network.tree</code> — a network in e-Newick format.</li>
+        <li><code>sequences.fasta</code> — one taxon per line: a name, a space, then a character state or sequence of
+          states. <code>-</code> and <code>?</code> indicate gaps.</li>
+      </ul>
+      <h4>Output</h4>
+      <p>Dot-files containing the networks with assigned character states, converted to PDF if
+        <a href="https://graphviz.org/" target="_blank" rel="noopener">Graphviz</a> is installed. Labels on
+        reticulation edges give the support for that edge.</p>
+      <h4>Options</h4>
+      <ul>
+        <li><code>--nolabels</code> / <code>--nostates</code> — hide taxon labels / character states</li>
+        <li><code>--softwired</code> / <code>--hardwired</code> — compute only that score</li>
+        <li><code>--silent</code> — suppress intermediate results</li>
+        <li><code>--rand k</code> — randomly generate a single <em>k</em>-state character instead of reading a sequence file</li>
+      </ul>
+      <p>Edge-support values roughly indicate the fraction of the genome inherited over that edge. For a reticulation
+        edge <em>e</em>=(<em>u</em>,<em>r</em>), let <em>s</em>(<em>u</em>) be the number of characters for which
+        <em>u</em> is the only parent of <em>r</em> sharing its state; the support of <em>e</em> is
+        <em>s</em>(<em>u</em>) divided by the sum of <em>s</em>(<em>p</em>) over all parents <em>p</em> of <em>r</em>.
+        Supports of all reticulation edges at a reticulation therefore sum to 1 unless all are 0, and a support is 0
+        exactly when the edge can be removed without increasing the parsimony score.</p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="http://homepage.tudelft.nl/56w4n/software/MAF/">MAF</a></h3>
+  <article id="sw-maf" class="software-card">
+    <h3>MAF</h3>
     <p>Maximum agreement forests for nonbinary trees.</p>
-    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/120903567">paper</a></p>
+    <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/120903567">paper</a>
+      <button class="toggle-button lowkey" onclick="toggleBox('sw-maf-usage')">usage</button></p>
+    <div id="sw-maf-usage" class="abstract-box legacy-usage noshow">
+      <p class="legacy-usage__note">Version 1.2 (October 2012). The original download page is no longer online; the source file is available on request.</p>
+      <p>Implements both an approximation and an FPT algorithm. The approximation algorithm computes an agreement
+        forest of two trees within a factor 4 of optimal — the best known guarantee that also works for nonbinary
+        (not fully resolved) trees. The FPT algorithm computes a maximum agreement forest exactly. For binary trees,
+        <a href="https://github.com/cwhidden/rspr" target="_blank" rel="noopener">rSPR</a> is faster and has a better
+        approximation algorithm.</p>
+      <h4>Compiling and running</h4>
+      <p><code>javac MAF.java</code>, then <code>java MAF trees.txt</code>, where <code>trees.txt</code> contains two
+        trees in Newick format.</p>
+      <p>Optionally install <a href="https://graphviz.org/" target="_blank" rel="noopener">Graphviz</a> to view
+        graphical representations of the constructed agreement forest.</p>
+    </div>
   </article>
 
   <article class="software-card">
