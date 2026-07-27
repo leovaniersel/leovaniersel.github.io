@@ -7,7 +7,7 @@ main:
     children:
       - title: "Students"
         url: /students/
-      - title: "Co-authors"
+      - title: "Collaborators"
         url: /coauthors/
   - title: "Software"
     url: /software/
