@@ -163,33 +163,6 @@ classes: wide
     </div>
   </article>
 
-  <article id="sw-ilpeace" class="software-card">
-    <h3>ILPEACE</h3>
-    <p>Reconciling a binary gene tree with a binary undated species tree.</p>
-    <p class="software-meta"><a class="link-button" href="http://arxiv.org/abs/1410.7004">paper</a>
-      <button class="toggle-button lowkey" onclick="toggleBox('sw-ilpeace-usage')">usage</button></p>
-    <div id="sw-ilpeace-usage" class="abstract-box legacy-usage noshow">
-      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
-      <p>Finds an optimal reconciliation between a binary gene tree and a binary species tree.</p>
-      <h4>Requirements</h4>
-      <ul>
-        <li><a href="https://www.ibm.com/academic" target="_blank" rel="noopener">CPLEX</a> — free for academic use.</li>
-        <li>Optional: <a href="https://graphviz.org/" target="_blank" rel="noopener">Graphviz</a>, to render the output.</li>
-      </ul>
-      <h4>Compiling and running</h4>
-      <p><code>javac ReconciliationILP.java -classpath [path to cplex.jar]</code></p>
-      <p><code>java -Djava.library.path=[path to shared library] ReconciliationILP species.tree gene.tree</code></p>
-      <p><code>species.tree</code> and <code>gene.tree</code> each contain one binary tree in Newick format.</p>
-      <h4>Output</h4>
-      <ul>
-        <li><code>G.dot</code> — the gene tree with labelled nodes.</li>
-        <li><code>S.dot</code> — the species tree, each node labelled by the gene-tree nodes mapped to it; blue edges mark transfer (T or TL) events.</li>
-        <li><code>network.txt</code> — the species tree with transfer edges added, in e-Newick format.</li>
-      </ul>
-      <p>With Graphviz installed, the dot-files are also converted to PDF.</p>
-    </div>
-  </article>
-
   <article id="sw-mpnet" class="software-card">
     <h3>MPNet</h3>
     <p>Computing the maximum parsimony score of a phylogenetic network.</p>

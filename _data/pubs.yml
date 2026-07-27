@@ -3929,8 +3929,8 @@
   summary: Introduces an exact optimization method for matching up a gene family's
     evolutionary tree with the species tree even without knowing exactly when past
     speciation events occurred, searching efficiently over all plausible timings
-    to find the most parsimonious explanation — a proof-of-concept, backed by free
-    software, that opens the door to more advanced dating methods for species trees.
+    to find the most parsimonious explanation — a proof-of-concept that opens the
+    door to more advanced dating methods for species trees.
   bibtex: |
     @misc{iersel2014exact,
       author = {van Iersel, Leo and Scornavacca, Celine and Kelk, Steven},
