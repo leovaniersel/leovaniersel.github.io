@@ -90,9 +90,9 @@ classes: wide
     <h3>Treeduce</h3>
     <p>A preprocessing algorithm for hybridization number on any number of binary or nonbinary trees.</p>
     <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1016/j.jcss.2016.03.006">paper</a>
+      <a class="link-button" href="{{ '/assets/software/Treeduce.java' | relative_url }}">source</a>
       <button class="toggle-button lowkey" onclick="toggleBox('sw-treeduce-usage')">usage</button></p>
     <div id="sw-treeduce-usage" class="abstract-box legacy-usage noshow">
-      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
       <h4>Compiling</h4>
       <p>With a Java compiler installed, run <code>javac Treeduce.java</code> in the folder containing the source.</p>
       <h4>Running</h4>
@@ -110,9 +110,9 @@ classes: wide
     <h3>NonbinaryCycleKiller</h3>
     <p>A practical algorithm for constructing a phylogenetic network from two large (possibly multifurcating) trees.</p>
     <p class="software-meta"><a class="link-button" href="http://www.biomedcentral.com/1471-2105/15/127">paper</a>
+      <a class="link-button" href="{{ '/assets/software/NonbinaryCycleKiller.java' | relative_url }}">source</a>
       <button class="toggle-button lowkey" onclick="toggleBox('sw-nbck-usage')">usage</button></p>
     <div id="sw-nbck-usage" class="abstract-box legacy-usage noshow">
-      <p class="legacy-usage__note">The original download page is no longer online; the source file is available on request.</p>
       <p>Constructs a network displaying (refinements of) both input trees, aiming to minimise the reticulation
         number. Extends the original <a href="http://skelk.sdf-eu.org/cyclekiller">CycleKiller</a>, which handled
         only binary trees.</p>
@@ -194,9 +194,10 @@ classes: wide
     <h3>MPNet</h3>
     <p>Computing the maximum parsimony score of a phylogenetic network.</p>
     <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/140959948">paper</a>
+      <a class="link-button" href="{{ '/assets/software/MPNet.java' | relative_url }}">source (CPLEX)</a>
+      <a class="link-button" href="{{ '/assets/software/MPNetGLPK.java' | relative_url }}">source (GLPK)</a>
       <button class="toggle-button lowkey" onclick="toggleBox('sw-mpnet-usage')">usage</button></p>
     <div id="sw-mpnet-usage" class="abstract-box legacy-usage noshow">
-      <p class="legacy-usage__note">The original download page is no longer online; the source files are available on request.</p>
       <p>Computes the softwired and hardwired parsimony score of a phylogenetic network using integer linear
         programming. Two versions exist: a CPLEX version (recommended, much faster, free for academic use) and a
         GLPK version (free, but considerably slower).</p>
@@ -240,9 +241,10 @@ classes: wide
     <h3>MAF</h3>
     <p>Maximum agreement forests for nonbinary trees.</p>
     <p class="software-meta"><a class="link-button" href="http://dx.doi.org/10.1137/120903567">paper</a>
+      <a class="link-button" href="{{ '/assets/software/MAF.java' | relative_url }}">source</a>
       <button class="toggle-button lowkey" onclick="toggleBox('sw-maf-usage')">usage</button></p>
     <div id="sw-maf-usage" class="abstract-box legacy-usage noshow">
-      <p class="legacy-usage__note">Version 1.2 (October 2012). The original download page is no longer online; the source file is available on request.</p>
+      <p class="legacy-usage__note">Version 1.2 (October 2012).</p>
       <p>Implements both an approximation and an FPT algorithm. The approximation algorithm computes an agreement
         forest of two trees within a factor 4 of optimal — the best known guarantee that also works for nonbinary
         (not fully resolved) trees. The FPT algorithm computes a maximum agreement forest exactly. For binary trees,
