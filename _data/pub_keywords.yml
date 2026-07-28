@@ -5,15 +5,21 @@
 - identifiability
 - encoding
 - phylogenetic diversity
+- hybridization number
+- agreement forests
 - fixed-parameter tractability
+- approximation algorithms
 - distance-based
 - tree-based
+- triplet-based
+- quartet-based
 - subnet-based
 - sequence-based
 - cluster-based
 - tree-containment
 - orientation
 - metrics
+- rearrangement moves
 - machine learning
 - scanwidth
 - applications
