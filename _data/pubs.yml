@@ -14,6 +14,7 @@
     last: Martin
   year: 2026
   type: preprint
+  keywords: [identifiability, sequence-based, orientation]
   journal:
   volume:
   issue:
@@ -74,6 +75,7 @@
     last: Murakami
   year: 2026
   type: preprint
+  keywords: [tree-based, metrics]
   journal:
   volume:
   issue:
@@ -126,6 +128,7 @@
     last: Weller
   year: 2026
   type: preprint
+  keywords: [scanwidth, fixed-parameter tractability, tree-containment]
   journal:
   volume:
   issue:
@@ -181,6 +184,7 @@
     last: Weller
   year: 2026
   type: preprint
+  keywords: [scanwidth, phylogenetic diversity, fixed-parameter tractability]
   journal:
   volume:
   issue:
@@ -236,6 +240,7 @@
     last: Kelk
   year: 2026
   type: journal
+  keywords: [subnet-based, sequence-based, orientation]
   journal: Annals of Combinatorics
   volume:
   issue:
@@ -292,6 +297,7 @@
     last: Zeh
   year: 2026
   type: preprint
+  keywords: [fixed-parameter tractability, tree-containment, orientation]
   journal:
   volume:
   issue:
@@ -350,6 +356,7 @@
     last: Iersel
   year: 2026
   type: preprint
+  keywords: [fixed-parameter tractability, orientation]
   journal:
   volume:
   issue:
@@ -400,6 +407,7 @@
     last: Meuwese
   year: 2025
   type: preprint
+  keywords: []
   journal:
   volume:
   issue:
@@ -447,6 +455,7 @@
     last: Moulton
   year: 2026
   type: journal
+  keywords: [tree-based, orientation]
   journal: Theory in Biosciences
   volume: '145'
   issue: '1'
@@ -510,6 +519,7 @@
     last: Schestag
   year: 2025
   type: conference
+  keywords: [scanwidth, phylogenetic diversity, fixed-parameter tractability, orientation]
   journal: RECOMB 2026
   volume:
   issue:
@@ -569,6 +579,7 @@
     last: Jones
   year: 2026
   type: journal
+  keywords: [scanwidth, fixed-parameter tractability]
   journal: Journal of Computer and System Sciences
   volume: '160'
   issue:
@@ -619,6 +630,7 @@
     last: Murakami
   year: 2026
   type: journal
+  keywords: [tree-based, metrics]
   journal: Advances in Applied Mathematics
   volume: '172'
   issue:
@@ -666,6 +678,7 @@
     last: Weller
   year: 2025
   type: conference
+  keywords: [phylogenetic diversity, fixed-parameter tractability]
   journal: WABI 2025
   volume: '344'
   issue:
@@ -725,6 +738,7 @@
     last: Wicke
   year: 2025
   type: journal
+  keywords: [identifiability, distance-based, subnet-based, orientation]
   journal: Bulletin of Mathematical Biology
   volume: '87'
   issue: 12
@@ -785,6 +799,7 @@
     last: Sullivant
   year: 2025
   type: preprint
+  keywords: [identifiability, subnet-based, sequence-based, orientation]
   journal:
   volume:
   issue:
@@ -835,6 +850,7 @@
     last: Moulton
   year: 2025
   type: journal
+  keywords: [subnet-based, sequence-based, orientation]
   journal: Molecular Biology and Evolution
   volume: '42'
   issue: '4'
@@ -896,6 +912,7 @@
     last: Scholz
   year: 2025
   type: journal
+  keywords: [fixed-parameter tractability, tree-based]
   journal: Information Processing Letters
   volume: '187'
   issue:
@@ -957,6 +974,7 @@
     last: Weller
   year: 2025
   type: conference
+  keywords: [phylogenetic diversity, fixed-parameter tractability]
   journal: RECOMB-CG 2025
   volume:
   issue:
@@ -1011,6 +1029,7 @@
     last: Zeh
   year: 2025
   type: journal
+  keywords: [orientation]
   journal: Information Processing Letters
   volume: '190'
   issue:
@@ -1064,6 +1083,7 @@
     last: Kelk
   year: 2025
   type: journal
+  keywords: [subnet-based, orientation]
   journal: Journal of Computer and System Sciences
   volume: '152'
   issue:
@@ -1121,6 +1141,7 @@
     last: Veenema-Nipius
   year: 2025
   type: journal
+  keywords: [encoding, subnet-based, orientation]
   journal: Bulletin of Mathematical Biology
   volume: '87'
   issue:
@@ -1179,6 +1200,7 @@
     last: Zeh
   year: 2024
   type: preprint
+  keywords: [tree-based, orientation]
   journal:
   volume:
   issue:
@@ -1229,6 +1251,7 @@
     last: Stougie
   year: 2024
   type: journal
+  keywords: [machine learning]
   journal: Molecular Phylogenetics and Evolution
   volume: '199'
   issue:
@@ -1282,6 +1305,7 @@
     last: Iersel
   year: 2025
   type: journal
+  keywords: [tree-based]
   journal: IEEE Transactions on Computational Biology and Bioinformatics (2025)
   volume:
   issue:
@@ -1338,6 +1362,7 @@
     last: Kelk
   year: 2024
   type: preprint
+  keywords: [identifiability, subnet-based, sequence-based]
   journal:
   volume:
   issue:
@@ -1391,6 +1416,7 @@
     last: Stougie
   year: 2024
   type: journal
+  keywords: [sequence-based, tree-containment, machine learning]
   journal: Transactions on Machine Learning Research (2024)
   volume:
   issue:
@@ -1444,6 +1470,7 @@
     last: Zeh
   year: 2024
   type: journal
+  keywords: [fixed-parameter tractability, subnet-based, parsimony]
   journal: Journal of Computer and System Sciences
   volume: '140'
   issue:
@@ -1503,6 +1530,7 @@
     last: Semple
   year: 2024
   type: journal
+  keywords: [fixed-parameter tractability, orientation]
   journal: Journal of Computer and System Sciences
   volume: '140'
   issue:
@@ -1554,6 +1582,7 @@
     last: Weller
   year: 2024
   type: journal
+  keywords: []
   journal: Peer Community Journal
   volume: '4'
   issue:
@@ -1607,6 +1636,7 @@
     last: Murakami
   year: 2023
   type: conference
+  keywords: [tree-based, metrics]
   journal: WABI 2023
   volume: '273'
   issue:
@@ -1665,6 +1695,7 @@
     last: Murakami
   year: 2023
   type: journal
+  keywords: [identifiability, encoding, orientation, metrics]
   journal: Information Processing Letters
   volume: '182'
   issue:
@@ -1725,6 +1756,7 @@
     last: Iersel
   year: 2023
   type: journal
+  keywords: [fixed-parameter tractability, tree-containment]
   journal: Discrete Mathematics & Theoretical Computer Science
   volume: '25'
   issue: '2'
@@ -1776,6 +1808,7 @@
     last: Stougie
   year: 2023
   type: journal
+  keywords: [machine learning]
   journal: Algorithms for Molecular Biology
   volume: '18'
   issue:
@@ -1837,6 +1870,7 @@
     last: Murakami
   year: 2022
   type: journal
+  keywords: [tree-based, metrics]
   journal: Bulletin of Mathematical Biology
   volume: '84'
   issue:
@@ -1891,6 +1925,7 @@
     last: Murakami
   year: 2022
   type: journal
+  keywords: [identifiability, distance-based]
   journal: Discrete Applied Mathematics
   volume: '306'
   issue:
@@ -1942,6 +1977,7 @@
     last: Kelk
   year: 2022
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Algorithmica
   volume: '84'
   issue:
@@ -1996,6 +2032,7 @@
     last: Zeh
   year: 2022
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Algorithmica
   volume: '84'
   issue:
@@ -2044,6 +2081,7 @@
     last: Nipius
   year: 2022
   type: journal
+  keywords: [subnet-based]
   journal: Information Processing Letters
   volume: '178'
   issue:
@@ -2103,6 +2141,7 @@
     last: Stougie
   year: 2021
   type: journal
+  keywords: [sequence-based, applications]
   journal: BMC Ecology and Evolution
   volume: '21'
   issue:
@@ -2176,6 +2215,7 @@
     last: Zeh
   year: 2021
   type: journal
+  keywords: [tree-based]
   journal: Advances in Applied Mathematics
   volume: '129'
   issue:
@@ -2233,6 +2273,7 @@
     last: Murakami
   year: 2021
   type: journal
+  keywords: [identifiability, sequence-based, orientation]
   journal: Journal of Mathematical Biology
   volume: '83'
   issue:
@@ -2280,6 +2321,7 @@
     last: Murakami
   year: 2020
   type: journal
+  keywords: [identifiability, distance-based, orientation]
   journal: Advances in Applied Mathematics
   volume: '120'
   issue:
@@ -2337,6 +2379,7 @@
     last: Scornavacca
   year: 2019
   type: preprint
+  keywords: [fixed-parameter tractability, sequence-based, parsimony]
   journal:
   volume:
   issue:
@@ -2392,6 +2435,7 @@
     last: Kelk
   year: 2019
   type: journal
+  keywords: [perfect phylogeny, parsimony]
   journal: Systematic Biology
   volume: '68'
   issue: '5'
@@ -2449,6 +2493,7 @@
     last: Linz
   year: 2019
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Discrete Applied Mathematics
   volume: '260'
   issue:
@@ -2503,6 +2548,7 @@
     last: Moulton
   year: 2019
   type: journal
+  keywords: [encoding, subnet-based]
   journal: Bulletin of Mathematical Biology
   volume: '81'
   issue: '10'
@@ -2553,6 +2599,7 @@
     last: Jones
   year: 2019
   type: journal
+  keywords: [identifiability, subnet-based, orientation]
   journal: Journal of Mathematical Biology
   volume: '79'
   issue: '5'
@@ -2601,6 +2648,7 @@
     last: Iersel
   year: 2019
   type: journal
+  keywords: [fixed-parameter tractability, sequence-based, parsimony]
   journal: Journal of Mathematical Biology
   volume: '78'
   issue: 1-2
@@ -2660,6 +2708,7 @@
     last: Zeh
   year: 2020
   type: journal
+  keywords: [cluster-based]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '17'
   issue: '1'
@@ -2730,6 +2779,7 @@
     last: Yugma
   year: 2018
   type: preprint
+  keywords: []
   journal:
   volume:
   issue:
@@ -2777,6 +2827,7 @@
     last: Moulton
   year: 2018
   type: journal
+  keywords: [identifiability, subnet-based, orientation]
   journal: SIAM Journal on Discrete Mathematics
   volume: '32'
   issue: '3'
@@ -2841,6 +2892,7 @@
     last: Scornavacca
   year: 2018
   type: journal
+  keywords: [orientation, metrics]
   journal: Bulletin of Mathematical Biology
   volume: '80'
   issue: '8'
@@ -2895,6 +2947,7 @@
     last: Scornavacca
   year: 2018
   type: journal
+  keywords: [parsimony]
   journal: Systematic Biology
   volume: '67'
   issue: '3'
@@ -2939,6 +2992,7 @@
     last: Iersel
   year: 2018
   type: journal
+  keywords: [tree-based]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '14'
   issue: '1'
@@ -2996,6 +3050,7 @@
     last: Boes
   year: 2018
   type: journal
+  keywords: [fixed-parameter tractability, orientation]
   journal: Algorithmica
   volume: '80'
   issue: '11'
@@ -3057,6 +3112,7 @@
     last: Sitters
   year: 2018
   type: journal
+  keywords: [TSP]
   journal: Discrete Applied Mathematics
   volume: '250'
   issue:
@@ -3102,6 +3158,7 @@
     last: Scornavacca
   year: 2017
   type: journal
+  keywords: [distance-based, tree-based, orientation, metrics, parsimony]
   journal: PLoS Computational Biology
   volume: '13'
   issue: '8'
@@ -3172,6 +3229,7 @@
     last: Miklós
   year: 2017
   type: journal
+  keywords: []
   journal: The Electronic Journal of Combinatorics
   volume: '24'
   issue: '2'
@@ -3226,6 +3284,7 @@
     last: Wu
   year: 2017
   type: journal
+  keywords: [subnet-based]
   journal: Bulletin of Mathematical Biology
   volume: '79'
   issue: '5'
@@ -3294,6 +3353,7 @@
     last: Wu
   year: 2017
   type: journal
+  keywords: [subnet-based]
   journal: Algorithmica
   volume: '77'
   issue: '1'
@@ -3349,6 +3409,7 @@
     last: Scornavacca
   year: 2016
   type: journal
+  keywords: [sequence-based, tree-containment]
   journal: Bulletin of Mathematical Biology
   volume: '78'
   issue: '9'
@@ -3411,6 +3472,7 @@
     last: Zeh
   year: 2016
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: SIAM Journal on Discrete Mathematics
   volume: '30'
   issue: '3'
@@ -3476,6 +3538,7 @@
     last: Moulton
   year: 2016
   type: journal
+  keywords: [subnet-based, sequence-based]
   journal: Molecular Biology and Evolution
   volume: '33'
   issue: '8'
@@ -3530,6 +3593,7 @@
     last: Scornavacca
   year: 2016
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Journal of Computer and System Sciences
   volume: '82'
   issue: '6'
@@ -3582,6 +3646,7 @@
     last: Weller
   year: 2016
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Journal of Graph Algorithms and Applications
   volume: '20'
   issue: '2'
@@ -3636,6 +3701,7 @@
     last: Linz
   year: 2016
   type: journal
+  keywords: [subnet-based, CSP]
   journal: Theoretical Computer Science
   volume: '609'
   issue: '1'
@@ -3691,6 +3757,7 @@
     last: Iersel
   year: 2015
   type: journal
+  keywords: []
   journal: Nieuw Archief voor Wiskunde
   volume: 5/16
   issue: '3'
@@ -3729,6 +3796,7 @@
     last: Scornavacca
   year: 2015
   type: journal
+  keywords: [fixed-parameter tractability, parsimony]
   journal: SIAM Journal on Discrete Mathematics
   volume: '29'
   issue: '1'
@@ -3789,6 +3857,7 @@
     last: Wu
   year: 2015
   type: journal
+  keywords: [subnet-based, cluster-based]
   journal: Systematic Biology
   volume: '64'
   issue: '1'
@@ -3855,6 +3924,7 @@
     last: Schoenhuth
   year: 2015
   type: journal
+  keywords: [fixed-parameter tractability, sequence-based, haplotype assembly]
   journal: Journal of Computational Biology
   volume: '22'
   issue: '6'
@@ -3915,6 +3985,7 @@
     last: Kelk
   year: 2014
   type: preprint
+  keywords: [parsimony]
   journal:
   volume:
   issue:
@@ -3968,6 +4039,7 @@
     last: Bryant
   year: 2014
   type: journal
+  keywords: [fixed-parameter tractability, orientation]
   journal: Journal of Graph Algorithms and Applications
   volume: '18'
   issue: '3'
@@ -4003,6 +4075,7 @@
     last: Moulton
   year: 2014
   type: journal
+  keywords: [encoding, subnet-based]
   journal: Journal of Mathematical Biology
   volume: '68'
   issue: '7'
@@ -4061,6 +4134,7 @@
     last: Scornavacca
   year: 2014
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: BMC Bioinformatics
   volume: '15'
   issue:
@@ -4118,6 +4192,7 @@
     last: Stougie
   year: 2014
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: SIAM Journal on Discrete Mathematics
   volume: '28'
   issue: '1'
@@ -4189,6 +4264,7 @@
     last: Whitfield
   year: 2013
   type: journal
+  keywords: []
   journal: Trends in Genetics
   volume: '29'
   issue: '8'
@@ -4280,6 +4356,7 @@
     last: Boekhout
   year: 2013
   type: journal
+  keywords: [sequence-based, applications]
   journal: PLoS ONE
   volume: '8'
   issue: '9'
@@ -4396,6 +4473,7 @@
     last: Boekhout
   year: 2013
   type: journal
+  keywords: [cluster-based, applications]
   journal: PLoS ONE
   volume: '8'
   issue: '8'
@@ -4447,6 +4525,7 @@
     last: Linz
   year: 2013
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Information Processing Letters
   volume: '113'
   issue: '9'
@@ -4488,6 +4567,7 @@
     last: Iersel
   year: 2013
   type: journal
+  keywords: []
   journal: Systematic Biology
   volume: '62'
   issue: '2'
@@ -4532,6 +4612,7 @@
     last: Stougie
   year: 2012
   type: journal
+  keywords: []
   journal: SIAM Journal on Discrete Mathematics
   volume: '26'
   issue: '4'
@@ -4585,6 +4666,7 @@
     last: Iersel
   year: 2012
   type: journal
+  keywords: [cluster-based, parsimony]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '9'
   issue: '2'
@@ -4645,6 +4727,7 @@
     last: Yeo
   year: 2012
   type: journal
+  keywords: [fixed-parameter tractability, CSP]
   journal: Journal of Computer and System Sciences
   volume: '78'
   issue:
@@ -4690,6 +4773,7 @@
     last: Kelk
   year: 2011
   type: journal
+  keywords: [subnet-based, cluster-based]
   journal: Journal of Theoretical Biology
   volume: '269'
   issue:
@@ -4743,6 +4827,7 @@
     last: Suchecki
   year: 2011
   type: journal
+  keywords: [subnet-based]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '8'
   issue: '3'
@@ -4796,6 +4881,7 @@
     last: Kelk
   year: 2011
   type: journal
+  keywords: [fixed-parameter tractability, subnet-based]
   journal: Algorithmica
   volume: '60'
   issue:
@@ -4849,6 +4935,7 @@
     last: Steel
   year: 2010
   type: journal
+  keywords: [cluster-based, tree-containment]
   journal: Information Processing Letters
   volume: '110'
   issue: '23'
@@ -4899,6 +4986,7 @@
     last: Steel
   year: 2010
   type: journal
+  keywords: [fixed-parameter tractability]
   journal: Bulletin of Mathematical Biology
   volume: '72'
   issue: '7'
@@ -4951,6 +5039,7 @@
     last: Huson
   year: 2010
   type: journal
+  keywords: [cluster-based]
   journal: Bioinformatics
   volume: '26'
   issue:
@@ -5005,6 +5094,7 @@
     last: Mnich
   year: 2009
   type: journal
+  keywords: [fixed-parameter tractability, subnet-based]
   journal: Journal of Bioinformatics and Computational Biology
   volume: '7'
   issue: '4'
@@ -5063,6 +5153,7 @@
     last: Boekhout
   year: 2009
   type: journal
+  keywords: [fixed-parameter tractability, subnet-based]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '6'
   issue: '4'
@@ -5123,6 +5214,7 @@
     last: Stougie
   year: 2008
   type: journal
+  keywords: [fixed-parameter tractability, perfect phylogeny, parsimony]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '5'
   issue: '2'
@@ -5170,6 +5262,7 @@
     last: Tromp
   year: 2007
   type: journal
+  keywords: [pancake sorting]
   journal: SIAM Journal on Discrete Mathematics
   volume: '21'
   issue: '3'
@@ -5229,6 +5322,7 @@
     last: Tromp
   year: 2007
   type: journal
+  keywords: [sequence-based, haplotype assembly]
   journal: Algorithmica
   volume: '49'
   issue: '1'
@@ -5284,6 +5378,7 @@
     last: Stougie
   year: 2013
   type: preprint
+  keywords: []
   journal:
   volume:
   issue:
@@ -5321,6 +5416,7 @@
     last: Iersel
   year: 2009
   type: thesis
+  keywords: [haplotype assembly]
   journal: Eindhoven University of Technology
   volume:
   issue:

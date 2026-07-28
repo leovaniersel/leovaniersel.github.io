@@ -17,6 +17,25 @@ classes: wide
 
 
 
+{%- comment -%}
+Keyword filter. The list of keywords lives in _data/pub_keywords.yml and the
+keywords of each publication in its `keywords:` field in _data/pubs.yml.
+A keyword is only offered if some publication actually carries it.
+{%- endcomment -%}
+<div class="pub-filter" id="pub-filter">
+  <div class="pub-filter__bar">
+    <span class="pub-filter__label">Filter by keyword</span>
+    <button type="button" class="pub-filter__chip is-active" data-keyword="">all</button>
+    {% for kw in site.data.pub_keywords %}
+      {% assign matching = site.data.pubs | where_exp: "p", "p.keywords contains kw" %}
+      {% if matching.size > 0 %}
+        <button type="button" class="pub-filter__chip" data-keyword="{{ kw }}">{{ kw }} <span class="pub-filter__count">{{ matching.size }}</span></button>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <p class="pub-filter__status" id="pub-filter-status" aria-live="polite"></p>
+</div>
+
 {% assign all_pubs = site.data.pubs %}
 
 {%- comment -%}
@@ -41,17 +60,21 @@ Group non-theses by pub.year, assign reverse numbering
   {% assign pubnum = total | minus: forloop.index0 %}
 
   {% if pub.year != current_year %}
-    <div class="year-label"><span>{{ pub.year }}</span></div>
+    <div class="year-label" data-year-label><span>{{ pub.year }}</span></div>
     {% assign current_year = pub.year %}
   {% endif %}
 
-  {% include pub_entry.html pub=pub pubnum=pubnum%}
+  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|">
+    {% include pub_entry.html pub=pub pubnum=pubnum%}
+  </div>
 {% endfor %}
 
 {%- comment -%}
 Render theses under a separate header, still sorted by release-date
 {%- endcomment -%}
-<h2 id="theses">Theses</h2>
+<h2 id="theses" data-year-label>Theses</h2>
 {% for pub in theses %}
-  {% include pub_entry.html pub=pub pubnum="&bull;" %}
+  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|">
+    {% include pub_entry.html pub=pub pubnum="&bull;" %}
+  </div>
 {% endfor %}

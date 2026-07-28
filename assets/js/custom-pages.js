@@ -43,3 +43,71 @@ document.addEventListener("DOMContentLoaded", () => {
     bib.appendChild(btn);
   });
 });
+
+/* Keyword filter on the Publications page.
+   Chips are additive: selecting several shows publications matching any of
+   them. Year headings hide themselves when nothing is left underneath. */
+document.addEventListener("DOMContentLoaded", () => {
+  const filter = document.getElementById("pub-filter");
+  if (!filter) return;
+
+  const chips = Array.from(filter.querySelectorAll(".pub-filter__chip"));
+  const allChip = chips.find((c) => c.dataset.keyword === "");
+  const status = document.getElementById("pub-filter-status");
+  const items = Array.from(document.querySelectorAll(".pub-item"));
+  const selected = new Set();
+
+  function apply() {
+    let shown = 0;
+    items.forEach((item) => {
+      const kws = item.dataset.keywords || "";
+      const match =
+        selected.size === 0 ||
+        Array.from(selected).some((kw) => kws.includes("|" + kw + "|"));
+      item.classList.toggle("is-hidden", !match);
+      if (match) shown++;
+    });
+
+    // A heading stays only if some visible publication follows it before the next heading.
+    document.querySelectorAll("[data-year-label]").forEach((label) => {
+      let el = label.nextElementSibling;
+      let keep = false;
+      while (el && !el.hasAttribute("data-year-label")) {
+        if (el.classList.contains("pub-item") && !el.classList.contains("is-hidden")) {
+          keep = true;
+          break;
+        }
+        el = el.nextElementSibling;
+      }
+      label.classList.toggle("is-hidden", !keep);
+    });
+
+    allChip.classList.toggle("is-active", selected.size === 0);
+    if (selected.size === 0) {
+      status.textContent = "";
+    } else {
+      status.textContent =
+        shown + (shown === 1 ? " publication" : " publications") +
+        " matching " + Array.from(selected).join(", ");
+    }
+  }
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const kw = chip.dataset.keyword;
+      if (kw === "") {
+        selected.clear();
+        chips.forEach((c) => c.classList.remove("is-active"));
+      } else if (selected.has(kw)) {
+        selected.delete(kw);
+        chip.classList.remove("is-active");
+      } else {
+        selected.add(kw);
+        chip.classList.add("is-active");
+      }
+      apply();
+    });
+  });
+
+  apply();
+});

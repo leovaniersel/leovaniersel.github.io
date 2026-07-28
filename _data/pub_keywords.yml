@@ -1,0 +1,25 @@
+# Keywords offered as filters at the top of the Publications page.
+# Edit this list freely: add, remove or reorder entries and the filter bar
+# follows. A keyword only does something once it also appears in the
+# `keywords:` list of at least one publication in pubs.yml.
+- identifiability
+- encoding
+- phylogenetic diversity
+- fixed-parameter tractability
+- distance-based
+- tree-based
+- subnet-based
+- sequence-based
+- cluster-based
+- tree-containment
+- orientation
+- metrics
+- machine learning
+- scanwidth
+- applications
+- perfect phylogeny
+- parsimony
+- haplotype assembly
+- CSP
+- TSP
+- pancake sorting
