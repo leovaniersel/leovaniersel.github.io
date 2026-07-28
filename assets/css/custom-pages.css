@@ -124,14 +124,10 @@
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
 }
 
-/* A fixed box so all three render identically. Height alone left them at
-   240/272/260px wide, since the three have different aspect ratios; cover
-   trims each to the same frame instead. */
 .about-image-card img {
   display: block;
   height: 340px;
-  width: 250px;
-  object-fit: cover;
+  width: auto;
   max-width: 100%;
 }
 
