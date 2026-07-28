@@ -124,10 +124,14 @@
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
 }
 
+/* A fixed box so all three render identically. Height alone left them at
+   240/272/260px wide, since the three have different aspect ratios; cover
+   trims each to the same frame instead. */
 .about-image-card img {
   display: block;
   height: 340px;
-  width: auto;
+  width: 250px;
+  object-fit: cover;
   max-width: 100%;
 }
 
@@ -246,6 +250,7 @@
 }
 
 .software-card {
+  position: relative;
   background: #fff;
   border: 1px solid #e3e8ef;
   border-left: 3px solid #2f6f9f;
@@ -254,6 +259,21 @@
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
   scroll-margin-top: 1em;
+}
+
+/* Matches the "journal article" / "preprint" label on the publication cards.
+   Done in CSS rather than markup so every software card picks it up. */
+.software-card::before {
+  content: "software";
+  position: absolute;
+  top: -0.8em;
+  right: 1em;
+  background-color: #e8f0f8;
+  color: #2f6f9f;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65rem;
 }
 
 .software-card:hover {
@@ -422,11 +442,15 @@
   font-weight: 600;
 }
 
+/* Centred on the card's bottom border. translateY(50%) from bottom:0 does
+   this regardless of the buttons' height, unlike a fixed em offset. */
 .project-highlights {
   position: absolute;
-  bottom: -0.6em;
+  bottom: 0;
   right: 0.6em;
+  transform: translateY(50%);
   margin: 0;
+  line-height: 1;
   z-index: 2;
 }
 
@@ -745,16 +769,13 @@
   line-height: inherit;
 }
 
-/* The embedded pub_entry card's own pubnum column and its
-   summary/abstract/bibtex toggle buttons don't work in this nested context
-   (they'd also match .abstract-box and close the outer reveal box
-   they live in), so hide them here. The plain-language summary itself is
-   still worth showing, so it's displayed unconditionally below, while the
-   abstract and bibtex stay hidden since they have no working toggle here. */
-.highlight-reveal .pub-left {
-  display: none;
-}
-
+/* The embedded pub_entry card's summary/abstract/bibtex toggle buttons don't
+   work in this nested context (they'd also match .abstract-box and close the
+   outer reveal box they live in), so hide them here. The plain-language
+   summary itself is still worth showing, so it's displayed unconditionally
+   below, while the abstract and bibtex stay hidden since they have no working
+   toggle here. (The number badge needs no rule: those cards pass a bullet
+   rather than a number, so no badge is rendered.) */
 .highlight-reveal .lowkey-button-group {
   display: none;
 }
@@ -768,15 +789,8 @@
   display: block;
 }
 
-/* Indented to clear the pubnum column, which is hidden in the embedded
-   context, so the summary lines up with the card above it there. */
 .pub-toggles {
-  margin-left: 3.3em;
   margin-top: -0.7em;
-}
-
-.highlight-reveal .pub-toggles {
-  margin-left: 0;
 }
 
 .copy-btn {
@@ -877,6 +891,21 @@
   right: 1em;
   background-color: #e8f0f8;
   color: #2f6f9f;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 0.65em;
+}
+
+/* The publication number, sitting on the top-left border as a counterpart to
+   the type label on the right. Muted, so it reads as a reference rather than
+   competing with the title. */
+.pubnum-label {
+  position: absolute;
+  top: -0.8em;
+  left: 1em;
+  background-color: #eef2f7;
+  color: #5f6b7a;
   font-weight: 600;
   border-radius: 3px;
   padding: 1px 6px;
