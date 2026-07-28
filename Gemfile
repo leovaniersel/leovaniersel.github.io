@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# Local copy of the theme, used only by _config_dev.yml so that local builds
+# skip the 26 MB remote_theme download that jekyll-remote-theme repeats on
+# every build. GitHub Pages ignores this Gemfile and keeps using remote_theme.
+gem "minimal-mistakes-jekyll"
+
 gem "liquid", "~> 4.0.4"
 gem "csv"
 gem "bigdecimal"

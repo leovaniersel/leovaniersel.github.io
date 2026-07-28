@@ -1,0 +1,21 @@
+# Local development overrides. Not used by GitHub Pages, which reads only
+# _config.yml and keeps using remote_theme.
+#
+# Build or serve with it layered on top of the main config:
+#
+#   bundle exec jekyll serve --config _config.yml,_config_dev.yml
+#   bundle exec jekyll build --config _config.yml,_config_dev.yml
+#
+# Why: jekyll-remote-theme re-downloads the whole theme -- about 26 MB, into a
+# fresh temp directory -- on every single build, with no caching between runs.
+# On a slow link that alone took ~2 minutes of a ~7 minute build. Pointing at
+# the locally installed gem instead removes the download entirely.
+#
+# Caveat: the gem is a tagged release while remote_theme tracks the theme's
+# master branch, so the two can drift slightly. If something looks wrong
+# locally but fine once deployed, rebuild without this override to check:
+#
+#   bundle exec jekyll build
+
+remote_theme:
+theme: minimal-mistakes-jekyll
