@@ -25,13 +25,26 @@ A keyword is only offered if some publication actually carries it.
 <div class="pub-filter" id="pub-filter">
   <div class="pub-filter__bar">
     <span class="pub-filter__label">Filter by keyword</span>
-    <button type="button" class="pub-filter__chip is-active" data-keyword="">all</button>
-    {% for kw in site.data.pub_keywords %}
-      {% assign matching = site.data.pubs | where_exp: "p", "p.keywords contains kw" %}
-      {% if matching.size > 0 %}
-        <button type="button" class="pub-filter__chip" data-keyword="{{ kw }}">{{ kw }} <span class="pub-filter__count">{{ matching.size }}</span></button>
-      {% endif %}
-    {% endfor %}
+    <div class="pub-filter__dropdown">
+      <button type="button" class="pub-filter__toggle" id="pub-filter-toggle"
+              aria-expanded="false" aria-controls="pub-filter-panel">
+        <span id="pub-filter-toggle-text">all publications</span>
+        <span class="pub-filter__caret" aria-hidden="true"></span>
+      </button>
+      <div class="pub-filter__panel" id="pub-filter-panel" hidden>
+        {% for kw in site.data.pub_keywords %}
+          {% assign matching = site.data.pubs | where_exp: "p", "p.keywords contains kw" %}
+          {% if matching.size > 0 %}
+            <label class="pub-filter__option">
+              <input type="checkbox" value="{{ kw }}">
+              <span class="pub-filter__option-name">{{ kw }}</span>
+              <span class="pub-filter__count">{{ matching.size }}</span>
+            </label>
+          {% endif %}
+        {% endfor %}
+        <button type="button" class="pub-filter__clear" id="pub-filter-clear">clear all</button>
+      </div>
+    </div>
   </div>
   <p class="pub-filter__status" id="pub-filter-status" aria-live="polite"></p>
 </div>

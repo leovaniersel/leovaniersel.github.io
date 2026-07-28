@@ -45,25 +45,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* Keyword filter on the Publications page.
-   Chips are additive: selecting several shows publications matching any of
-   them. Year headings hide themselves when nothing is left underneath. */
+   A dropdown of checkboxes rather than a row of chips, because the keyword
+   list outgrew the width of the page. Selections are additive: several
+   keywords show publications matching any of them. Year headings hide
+   themselves when nothing is left underneath. */
 document.addEventListener("DOMContentLoaded", () => {
   const filter = document.getElementById("pub-filter");
   if (!filter) return;
 
-  const chips = Array.from(filter.querySelectorAll(".pub-filter__chip"));
-  const allChip = chips.find((c) => c.dataset.keyword === "");
+  const toggle = document.getElementById("pub-filter-toggle");
+  const toggleText = document.getElementById("pub-filter-toggle-text");
+  const panel = document.getElementById("pub-filter-panel");
+  const clearBtn = document.getElementById("pub-filter-clear");
   const status = document.getElementById("pub-filter-status");
+  const boxes = Array.from(panel.querySelectorAll("input[type=checkbox]"));
   const items = Array.from(document.querySelectorAll(".pub-item"));
-  const selected = new Set();
+
+  function selectedKeywords() {
+    return boxes.filter((b) => b.checked).map((b) => b.value);
+  }
+
+  function setOpen(open) {
+    panel.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    filter.classList.toggle("is-open", open);
+  }
 
   function apply() {
+    const selected = selectedKeywords();
     let shown = 0;
+
     items.forEach((item) => {
       const kws = item.dataset.keywords || "";
       const match =
-        selected.size === 0 ||
-        Array.from(selected).some((kw) => kws.includes("|" + kw + "|"));
+        selected.length === 0 ||
+        selected.some((kw) => kws.includes("|" + kw + "|"));
       item.classList.toggle("is-hidden", !match);
       if (match) shown++;
     });
@@ -82,31 +98,36 @@ document.addEventListener("DOMContentLoaded", () => {
       label.classList.toggle("is-hidden", !keep);
     });
 
-    allChip.classList.toggle("is-active", selected.size === 0);
-    if (selected.size === 0) {
+    if (selected.length === 0) {
+      toggleText.textContent = "all publications";
       status.textContent = "";
     } else {
+      toggleText.textContent =
+        selected.length === 1 ? selected[0] : selected.length + " keywords";
       status.textContent =
         shown + (shown === 1 ? " publication" : " publications") +
-        " matching " + Array.from(selected).join(", ");
+        " matching " + selected.join(", ");
     }
+    filter.classList.toggle("has-selection", selected.length > 0);
   }
 
-  chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      const kw = chip.dataset.keyword;
-      if (kw === "") {
-        selected.clear();
-        chips.forEach((c) => c.classList.remove("is-active"));
-      } else if (selected.has(kw)) {
-        selected.delete(kw);
-        chip.classList.remove("is-active");
-      } else {
-        selected.add(kw);
-        chip.classList.add("is-active");
-      }
-      apply();
-    });
+  toggle.addEventListener("click", () => setOpen(panel.hidden));
+  boxes.forEach((b) => b.addEventListener("change", apply));
+
+  clearBtn.addEventListener("click", () => {
+    boxes.forEach((b) => (b.checked = false));
+    apply();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!filter.contains(e.target)) setOpen(false);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !panel.hidden) {
+      setOpen(false);
+      toggle.focus();
+    }
   });
 
   apply();

@@ -1,31 +1,31 @@
 # Keywords offered as filters at the top of the Publications page.
-# Edit this list freely: add, remove or reorder entries and the filter bar
+# Edit this list freely: add, remove or reorder entries and the filter
 # follows. A keyword only does something once it also appears in the
 # `keywords:` list of at least one publication in pubs.yml.
-- identifiability
-- encoding
-- phylogenetic diversity
-- hybridization number
 - agreement forests
-- fixed-parameter tractability
-- approximation algorithms
-- distance-based
-- tree-based
-- triplet-based
-- quartet-based
-- subnet-based
-- sequence-based
-- cluster-based
-- tree-containment
-- orientation
-- metrics
-- rearrangement moves
-- machine learning
-- scanwidth
 - applications
-- perfect phylogeny
-- parsimony
+- approximation algorithms
+- cluster-based
+- constraint satisfaction
+- distance-based
+- encoding
+- fixed-parameter tractability
 - haplotype assembly
-- CSP
-- TSP
-- pancake sorting
+- hybridization number
+- identifiability
+- machine learning
+- metrics
+- orientation
+- parsimony
+- perfect phylogeny
+- phylogenetic diversity
+- quartet-based
+- rearrangement moves
+- routing & scheduling
+- scanwidth
+- sequence-based
+- strings
+- subnet-based
+- tree-based
+- tree-containment
+- triplet-based
