@@ -56,28 +56,22 @@ classes: wide
     </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://github.com/ArkadiyD/PhyloGNN">PhyloGNN</a></h3>
-    <p>Solving the Tree Containment Problem Using Graph Neural Networks.</p>
-    <p class="software-meta">By Arkadiy Dushatskiy <a class="link-button" href="https://arxiv.org/abs/2404.09812">paper</a></p>
+  <article id="sw-trilonet" class="software-card software-card--with-logo">
+    <img class="software-logo" src="{{ '/assets/images/software/trilonet_icon.svg' | relative_url }}" alt="TriLoNet logo">
+    <div>
+      <h3><a href="https://www.uea.ac.uk/groups-and-centres/computational-biology/software/trilonet">TriLoNet</a></h3>
+      <p>Constructing rooted level-1 phylogenetic networks from aligned DNA sequence data or trinet collections.</p>
+      <p class="software-meta">By James Oldman <a class="link-button" href="https://doi.org/10.1093/molbev/msw068">paper</a></p>
+    </div>
   </article>
 
-  <article class="software-card">
-    <h3><a href="https://www.uea.ac.uk/groups-and-centres/computational-biology/software/trilonet">TriLoNet</a></h3>
-    <p>Constructing rooted level-1 phylogenetic networks from aligned DNA sequence data or trinet collections.</p>
-    <p class="software-meta">By James Oldman <a class="link-button" href="https://doi.org/10.1093/molbev/msw068">paper</a></p>
-  </article>
-
-  <article class="software-card">
-    <h3><a href="https://github.com/KSjors/TriL2Net">TriL2Net</a></h3>
-    <p>Constructing level-2 phylogenetic networks from trinets.</p>
-    <p class="software-meta">By Sjors Kole <a class="link-button" href="http://resolver.tudelft.nl/uuid:c699ea63-f8c8-40f7-8f07-11ac055c42e0">thesis</a> <a class="link-button" href="https://doi.org/10.1016/j.ipl.2022.106300">paper</a></p>
-  </article>
-
-  <article class="software-card">
-    <h3><a href="https://github.com/mathcals/temporal_hybridization_number">Finding the temporal hybridization number for sets of phylogenetic trees</a></h3>
-    <p>Computing the temporal hybridization number for sets of phylogenetic trees.</p>
-    <p class="software-meta">By Sander Borst <a class="link-button" href="http://resolver.tudelft.nl/uuid:2697da91-c596-48d1-9f09-f21da02ddb54">thesis</a> <a class="link-button" href="http://dx.doi.org/10.1007/s00453-022-00946-8">paper</a></p>
+  <article id="sw-temporal" class="software-card software-card--with-logo">
+    <img class="software-logo" src="{{ '/assets/images/software/temporal_icon.svg' | relative_url }}" alt="Temporal hybridization number logo">
+    <div>
+      <h3><a href="https://github.com/mathcals/temporal_hybridization_number">Finding the temporal hybridization number for sets of phylogenetic trees</a></h3>
+      <p>Computing the temporal hybridization number for sets of phylogenetic trees.</p>
+      <p class="software-meta">By Sander Borst <a class="link-button" href="http://resolver.tudelft.nl/uuid:2697da91-c596-48d1-9f09-f21da02ddb54">thesis</a> <a class="link-button" href="http://dx.doi.org/10.1007/s00453-022-00946-8">paper</a></p>
+    </div>
   </article>
 
   <article id="sw-treechild" class="software-card software-card--with-logo">
@@ -87,6 +81,27 @@ classes: wide
       <p>Optimally reconstructing tree-child networks for sets of binary trees.</p>
       <p class="software-meta">By Norbert Zeh <a class="link-button" href="https://arxiv.org/abs/1907.08474">paper</a></p>
     </div>
+  </article>
+
+  <article id="sw-cass" class="software-card software-card--with-logo">
+    <img class="software-logo" src="{{ '/assets/images/software/cass_logo.gif' | relative_url }}" alt="Cass logo">
+    <div>
+      <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
+      <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
+      <p class="software-meta"><a class="link-button" href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
+    </div>
+  </article>
+
+  <article class="software-card">
+    <h3><a href="https://github.com/ArkadiyD/PhyloGNN">PhyloGNN</a></h3>
+    <p>Solving the Tree Containment Problem Using Graph Neural Networks.</p>
+    <p class="software-meta">By Arkadiy Dushatskiy <a class="link-button" href="https://arxiv.org/abs/2404.09812">paper</a></p>
+  </article>
+
+  <article class="software-card">
+    <h3><a href="https://github.com/KSjors/TriL2Net">TriL2Net</a></h3>
+    <p>Constructing level-2 phylogenetic networks from trinets.</p>
+    <p class="software-meta">By Sjors Kole <a class="link-button" href="http://resolver.tudelft.nl/uuid:c699ea63-f8c8-40f7-8f07-11ac055c42e0">thesis</a> <a class="link-button" href="https://doi.org/10.1016/j.ipl.2022.106300">paper</a></p>
   </article>
 
   <article id="sw-treeduce" class="software-card">
@@ -238,15 +253,6 @@ classes: wide
     <h3><a href="http://skelk.sdf-eu.org/cyclekiller">CycleKiller</a></h3>
     <p>A practical algorithm for constructing a phylogenetic network from two large bifurcating trees.</p>
     <p class="software-meta">By Steven Kelk <a class="link-button" href="http://dx.doi.org/10.1007/978-3-642-33122-0_34">paper</a></p>
-  </article>
-
-  <article id="sw-cass" class="software-card software-card--with-logo">
-    <img class="software-logo" src="{{ '/assets/images/software/cass_logo.gif' | relative_url }}" alt="Cass logo">
-    <div>
-      <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
-      <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
-      <p class="software-meta"><a class="link-button" href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
-    </div>
   </article>
 
   <article class="software-card">
