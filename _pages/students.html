@@ -8,53 +8,39 @@ classes: wide
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/students.css' | relative_url }}">
+<script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
 
-{% assign phd_current = site.data.stud | where: "role", "phd" | where_exp: "s", "s.year == nil" %}
-{% assign phd_past = site.data.stud | where: "role", "phd" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
-{% assign phd_students = phd_current | concat: phd_past %}
+{%- comment -%}
+One combined list, newest first, with current students (no year) at the top.
+The role buttons below filter it; each card carries its own role badge so the
+levels stay distinguishable when everything is shown at once.
+{%- endcomment -%}
+{% assign current = site.data.stud | where_exp: "s", "s.year == nil" %}
+{% assign past = site.data.stud | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
+{% assign students = current | concat: past %}
 
-{% assign msc_current = site.data.stud | where: "role", "msc" | where_exp: "s", "s.year == nil" %}
-{% assign msc_past = site.data.stud | where: "role", "msc" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
-{% assign msc_students = msc_current | concat: msc_past %}
-
-{% assign bsc_current = site.data.stud | where: "role", "bsc" | where_exp: "s", "s.year == nil" %}
-{% assign bsc_past = site.data.stud | where: "role", "bsc" | where_exp: "s", "s.year != nil" | sort: "year" | reverse %}
-{% assign bsc_students = bsc_current | concat: bsc_past %}
-
-<p>Below is a list of <a href="#phd-students">PhD</a>, <a href="#msc-students">MSc</a> and <a href="#bsc-students">BSc</a> students that I supervised.</p>
-
-<h2 id="phd-students">PhD Students</h2>
-{% assign current_year = "" %}
-<div class="stud-list">
-  {% for stud in phd_students %}
-    {% if stud.year and stud.year != current_year %}
-      <div class="year-label"><span>{{ stud.year }}</span></div>
-      {% assign current_year = stud.year %}
+<div class="stud-filter" id="stud-filter">
+  <span class="stud-filter__label">Show</span>
+  <button type="button" class="stud-filter__chip is-active" data-role="">all</button>
+  {% assign roles = "phd,msc,bsc" | split: "," %}
+  {% for r in roles %}
+    {% assign matching = site.data.stud | where: "role", r %}
+    {% if matching.size > 0 %}
+      {% assign label = r | upcase | replace: "PHD", "PhD" | replace: "MSC", "MSc" | replace: "BSC", "BSc" %}
+      <button type="button" class="stud-filter__chip" data-role="{{ r }}">{{ label }} <span class="stud-filter__count">{{ matching.size }}</span></button>
     {% endif %}
-    {% include stud_entry.html stud=stud %}
   {% endfor %}
 </div>
 
-<h2 id="msc-students">MSc Students</h2>
 {% assign current_year = "" %}
 <div class="stud-list">
-  {% for stud in msc_students %}
+  {% for stud in students %}
     {% if stud.year and stud.year != current_year %}
-      <div class="year-label"><span>{{ stud.year }}</span></div>
+      <div class="year-label" data-stud-year><span>{{ stud.year }}</span></div>
       {% assign current_year = stud.year %}
     {% endif %}
-    {% include stud_entry.html stud=stud %}
-  {% endfor %}
-</div>
-
-<h2 id="bsc-students">BSc Students</h2>
-{% assign current_year = "" %}
-<div class="stud-list">
-  {% for stud in bsc_students %}
-    {% if stud.year and stud.year != current_year %}
-      <div class="year-label"><span>{{ stud.year }}</span></div>
-      {% assign current_year = stud.year %}
-    {% endif %}
-    {% include stud_entry.html stud=stud %}
+    <div class="stud-item" data-role="{{ stud.role }}">
+      {% include stud_entry.html stud=stud %}
+    </div>
   {% endfor %}
 </div>

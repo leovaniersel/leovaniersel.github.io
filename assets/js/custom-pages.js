@@ -44,47 +44,95 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* Keyword filter on the Publications page.
-   A dropdown of checkboxes rather than a row of chips, because the keyword
-   list outgrew the width of the page. Selections are additive: several
-   keywords show publications matching any of them. Year headings hide
-   themselves when nothing is left underneath. */
+/* Keyword and co-author filters on the Publications page.
+   Within a dropdown the choices are additive (any of them matches); across the
+   two dropdowns they combine, so a publication must satisfy both. Year headings
+   hide themselves when nothing is left underneath. */
 document.addEventListener("DOMContentLoaded", () => {
   const filter = document.getElementById("pub-filter");
   if (!filter) return;
 
-  const toggle = document.getElementById("pub-filter-toggle");
-  const toggleText = document.getElementById("pub-filter-toggle-text");
-  const panel = document.getElementById("pub-filter-panel");
-  const clearBtn = document.getElementById("pub-filter-clear");
-  const status = document.getElementById("pub-filter-status");
-  const boxes = Array.from(panel.querySelectorAll("input[type=checkbox]"));
   const items = Array.from(document.querySelectorAll(".pub-item"));
+  const status = document.getElementById("pub-filter-status");
 
-  function selectedKeywords() {
-    return boxes.filter((b) => b.checked).map((b) => b.value);
-  }
+  // Build the co-author options from the publications themselves, keeping only
+  // names that appear on at least two.
+  const MIN_JOINT = 2;
+  const tally = new Map();
+  items.forEach((item) => {
+    (item.dataset.authors || "").split("|").filter(Boolean).forEach((name) => {
+      tally.set(name, (tally.get(name) || 0) + 1);
+    });
+  });
+  const authors = Array.from(tally.entries())
+    .filter(([, n]) => n >= MIN_JOINT)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 
-  function setOpen(open) {
-    panel.hidden = !open;
-    toggle.setAttribute("aria-expanded", String(open));
-    filter.classList.toggle("is-open", open);
+  const authorOptions = document.getElementById("pub-author-options");
+  authors.forEach(([name, n]) => {
+    const label = document.createElement("label");
+    label.className = "pub-filter__option";
+    const box = document.createElement("input");
+    box.type = "checkbox";
+    box.value = name;
+    const nameEl = document.createElement("span");
+    nameEl.className = "pub-filter__option-name";
+    nameEl.textContent = name;
+    const countEl = document.createElement("span");
+    countEl.className = "pub-filter__count";
+    countEl.textContent = n;
+    label.append(box, nameEl, countEl);
+    authorOptions.appendChild(label);
+  });
+
+  const groups = [
+    {
+      toggle: document.getElementById("pub-filter-toggle"),
+      text: document.getElementById("pub-filter-toggle-text"),
+      panel: document.getElementById("pub-filter-panel"),
+      clear: document.getElementById("pub-filter-clear"),
+      field: "keywords",
+      empty: "all publications",
+      unit: "keyword",
+    },
+    {
+      toggle: document.getElementById("pub-author-toggle"),
+      text: document.getElementById("pub-author-toggle-text"),
+      panel: document.getElementById("pub-author-panel"),
+      clear: document.getElementById("pub-author-clear"),
+      field: "authors",
+      empty: "anyone",
+      unit: "co-author",
+    },
+  ];
+
+  groups.forEach((g) => {
+    g.boxes = Array.from(g.panel.querySelectorAll("input[type=checkbox]"));
+  });
+
+  const selectedOf = (g) => g.boxes.filter((b) => b.checked).map((b) => b.value);
+
+  function setOpen(g, open) {
+    g.panel.hidden = !open;
+    g.toggle.setAttribute("aria-expanded", String(open));
+    g.toggle.closest(".pub-filter__dropdown").classList.toggle("is-open", open);
+    if (open) groups.filter((o) => o !== g).forEach((o) => setOpen(o, false));
   }
 
   function apply() {
-    const selected = selectedKeywords();
+    const picks = groups.map(selectedOf);
     let shown = 0;
 
     items.forEach((item) => {
-      const kws = item.dataset.keywords || "";
-      const match =
-        selected.length === 0 ||
-        selected.some((kw) => kws.includes("|" + kw + "|"));
-      item.classList.toggle("is-hidden", !match);
-      if (match) shown++;
+      const ok = groups.every((g, i) => {
+        if (picks[i].length === 0) return true;
+        const hay = item.dataset[g.field] || "";
+        return picks[i].some((v) => hay.includes("|" + v + "|"));
+      });
+      item.classList.toggle("is-hidden", !ok);
+      if (ok) shown++;
     });
 
-    // A heading stays only if some visible publication follows it before the next heading.
     document.querySelectorAll("[data-year-label]").forEach((label) => {
       let el = label.nextElementSibling;
       let keep = false;
@@ -98,37 +146,79 @@ document.addEventListener("DOMContentLoaded", () => {
       label.classList.toggle("is-hidden", !keep);
     });
 
-    if (selected.length === 0) {
-      toggleText.textContent = "all publications";
-      status.textContent = "";
-    } else {
-      toggleText.textContent =
-        selected.length === 1 ? selected[0] : selected.length + " keywords";
-      status.textContent =
-        shown + (shown === 1 ? " publication" : " publications") +
-        " matching " + selected.join(", ");
-    }
-    filter.classList.toggle("has-selection", selected.length > 0);
+    groups.forEach((g, i) => {
+      const sel = picks[i];
+      g.text.textContent =
+        sel.length === 0 ? g.empty
+          : sel.length === 1 ? sel[0]
+          : sel.length + " " + g.unit + "s";
+      g.toggle.closest(".pub-filter__dropdown").classList.toggle("has-selection", sel.length > 0);
+    });
+
+    const all = picks.flat();
+    status.textContent = all.length === 0 ? ""
+      : shown + (shown === 1 ? " publication" : " publications") + " matching " + all.join(", ");
   }
 
-  toggle.addEventListener("click", () => setOpen(panel.hidden));
-  boxes.forEach((b) => b.addEventListener("change", apply));
-
-  clearBtn.addEventListener("click", () => {
-    boxes.forEach((b) => (b.checked = false));
-    apply();
+  groups.forEach((g) => {
+    g.toggle.addEventListener("click", () => setOpen(g, g.panel.hidden));
+    g.boxes.forEach((b) => b.addEventListener("change", apply));
+    g.clear.addEventListener("click", () => {
+      g.boxes.forEach((b) => (b.checked = false));
+      apply();
+    });
   });
 
   document.addEventListener("click", (e) => {
-    if (!filter.contains(e.target)) setOpen(false);
+    if (!filter.contains(e.target)) groups.forEach((g) => setOpen(g, false));
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !panel.hidden) {
-      setOpen(false);
-      toggle.focus();
+    if (e.key === "Escape") {
+      const open = groups.find((g) => !g.panel.hidden);
+      if (open) {
+        setOpen(open, false);
+        open.toggle.focus();
+      }
     }
   });
 
   apply();
+});
+
+/* Role filter on the Students page. Single-select: one level at a time, or
+   "all". Year headings hide themselves when nothing is left underneath. */
+document.addEventListener("DOMContentLoaded", () => {
+  const filter = document.getElementById("stud-filter");
+  if (!filter) return;
+
+  const chips = Array.from(filter.querySelectorAll(".stud-filter__chip"));
+  const items = Array.from(document.querySelectorAll(".stud-item"));
+
+  function apply(role) {
+    items.forEach((item) => {
+      item.classList.toggle("is-hidden", role !== "" && item.dataset.role !== role);
+    });
+
+    document.querySelectorAll("[data-stud-year]").forEach((label) => {
+      let el = label.nextElementSibling;
+      let keep = false;
+      while (el && !el.hasAttribute("data-stud-year")) {
+        if (el.classList.contains("stud-item") && !el.classList.contains("is-hidden")) {
+          keep = true;
+          break;
+        }
+        el = el.nextElementSibling;
+      }
+      label.classList.toggle("is-hidden", !keep);
+    });
+
+    chips.forEach((c) => c.classList.toggle("is-active", c.dataset.role === role));
+  }
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => apply(chip.dataset.role));
+  });
+
+  apply("");
 });

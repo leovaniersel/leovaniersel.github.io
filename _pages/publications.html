@@ -45,6 +45,24 @@ A keyword is only offered if some publication actually carries it.
         <button type="button" class="pub-filter__clear" id="pub-filter-clear">clear all</button>
       </div>
     </div>
+
+    {%- comment -%}
+    Co-author filter. The options are built by JavaScript from the names on the
+    publications themselves, keeping only those with at least two joint papers,
+    since that list has to be derived rather than declared.
+    {%- endcomment -%}
+    <span class="pub-filter__label pub-filter__label--second">and co-author</span>
+    <div class="pub-filter__dropdown">
+      <button type="button" class="pub-filter__toggle" id="pub-author-toggle"
+              aria-expanded="false" aria-controls="pub-author-panel">
+        <span id="pub-author-toggle-text">anyone</span>
+        <span class="pub-filter__caret" aria-hidden="true"></span>
+      </button>
+      <div class="pub-filter__panel" id="pub-author-panel" hidden>
+        <div id="pub-author-options"></div>
+        <button type="button" class="pub-filter__clear" id="pub-author-clear">clear all</button>
+      </div>
+    </div>
   </div>
   <p class="pub-filter__status" id="pub-filter-status" aria-live="polite"></p>
 </div>
@@ -77,7 +95,17 @@ Group non-theses by pub.year, assign reverse numbering
     {% assign current_year = pub.year %}
   {% endif %}
 
-  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|">
+  {%- capture pub_authors -%}
+    {%- for a in pub.authors -%}
+      {%- assign nm = a.first -%}
+      {%- if a.middle -%}{%- for m in a.middle -%}{%- assign nm = nm | append: " " | append: m | append: "." -%}{%- endfor -%}{%- endif -%}
+      {%- if a.tussenvoegsel -%}{%- assign nm = nm | append: " " | append: a.tussenvoegsel -%}{%- endif -%}
+      {%- assign nm = nm | append: " " | append: a.last -%}
+      {%- if nm == "Katharina Huber" or nm == "Katharina T Huber" -%}{%- assign nm = "Katharina T. Huber" -%}{%- endif -%}
+      {%- unless nm == "Leo van Iersel" -%}|{{ nm }}{%- endunless -%}
+    {%- endfor -%}|
+  {%- endcapture -%}
+  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|" data-authors="{{ pub_authors }}">
     {% include pub_entry.html pub=pub pubnum=pubnum%}
   </div>
 {% endfor %}
@@ -87,7 +115,17 @@ Render theses under a separate header, still sorted by release-date
 {%- endcomment -%}
 <h2 id="theses" data-year-label>Theses</h2>
 {% for pub in theses %}
-  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|">
+  {%- capture pub_authors -%}
+    {%- for a in pub.authors -%}
+      {%- assign nm = a.first -%}
+      {%- if a.middle -%}{%- for m in a.middle -%}{%- assign nm = nm | append: " " | append: m | append: "." -%}{%- endfor -%}{%- endif -%}
+      {%- if a.tussenvoegsel -%}{%- assign nm = nm | append: " " | append: a.tussenvoegsel -%}{%- endif -%}
+      {%- assign nm = nm | append: " " | append: a.last -%}
+      {%- if nm == "Katharina Huber" or nm == "Katharina T Huber" -%}{%- assign nm = "Katharina T. Huber" -%}{%- endif -%}
+      {%- unless nm == "Leo van Iersel" -%}|{{ nm }}{%- endunless -%}
+    {%- endfor -%}|
+  {%- endcapture -%}
+  <div class="pub-item" data-keywords="|{{ pub.keywords | join: '|' }}|" data-authors="{{ pub_authors }}">
     {% include pub_entry.html pub=pub pubnum="&bull;" %}
   </div>
 {% endfor %}

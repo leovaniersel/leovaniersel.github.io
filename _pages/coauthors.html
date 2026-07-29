@@ -102,9 +102,20 @@ if (markers.length) {
     {% unless entry == "" %}
       {% assign parts = entry | split: "||" %}
       {% assign pub_count = parts[0] | plus: 0 %}
+      {%- comment -%}
+      Homepages come from _data/coauthor_links.yml, and are only offered for
+      co-authors with at least two joint publications.
+      {%- endcomment -%}
+      {% assign coauthor_name = parts[1] %}
+      {% assign homepage = site.data.coauthor_links[coauthor_name] %}
       <article class="coauthor-card">
         <div class="coauthor-name">{{ parts[1] }}</div>
         <div class="coauthor-count">{{ pub_count }} joint publication{% if pub_count != 1 %}s{% endif %}</div>
+        {% if pub_count >= 2 and homepage %}
+          <div class="coauthor-links">
+            <a class="coauthor-link-btn" href="{{ homepage }}" target="_blank" rel="noopener">website</a>
+          </div>
+        {% endif %}
       </article>
     {% endunless %}
   {% endfor %}

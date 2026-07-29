@@ -1,0 +1,12 @@
+# Overrides for the theme's interface strings.
+#
+# Deliberately partial: any key left out is simply undefined, and the theme's
+# templates fall back to their own built-in defaults, exactly as they did
+# before this file existed. So only what is listed here changes.
+#
+# Requires `locale: en` in _config.yml, since the theme looks these up as
+# site.data.ui-text[site.locale].
+
+en:
+  # The button beside the profile photo, visible in narrow view.
+  follow_label: "Contact"

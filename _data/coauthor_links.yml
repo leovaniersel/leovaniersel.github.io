@@ -1,0 +1,38 @@
+# Homepages for co-authors, shown on the Collaborators page.
+#
+# Keys must match the displayed name exactly, including the normalisation the
+# page applies (for instance "Katharina T. Huber"). A co-author with no entry
+# here simply shows no link, so this list can be filled in gradually.
+#
+# Only co-authors with at least two joint publications get a link rendered.
+# 21 of those 37 are listed below; the remainder are named at the foot of this
+# file and still need a URL.
+
+Steven Kelk: http://skelk.sdf-eu.org/
+Mark Jones: https://aloobyalordant.github.io/
+Celine Scornavacca: https://sites.google.com/view/celinescornavacca
+Vincent Moulton: http://www2.cmp.uea.ac.uk/~vlm/
+Yukihiro Murakami: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-y-yuki-murakami
+Leen Stougie: https://www.cwi.nl/en/people/leen-stougie/
+Remie Janssen: https://remiejanssen.nl/
+Niels Holtgrefe: https://www.nielsholtgrefe.nl/
+Katharina T. Huber: https://research-portal.uea.ac.uk/en/persons/katharina-huber/
+Norbert Zeh: https://web.cs.dal.ca/~nzeh/
+Mathias Weller: http://igm.univ-mlv.fr/~mweller/
+Simone Linz: https://profiles.auckland.ac.nz/s-linz
+Fabio Pardi: https://sites.google.com/site/fabiopardi/
+Taoyang Wu: https://sites.google.com/site/taoyangwu/home
+Charles Semple: https://www.math.canterbury.ac.nz/~c.semple/
+Mike Steel: https://www.math.canterbury.ac.nz/~m.steel/
+Philippe Gambette: http://monge.univ-eiffel.fr/~gambette/
+Giulia Bernardini: https://sites.google.com/view/giulia-bernardini
+Gunnar W. Klau: https://www.cs.hhu.de/en/research-groups/algorithmic-bioinformatics
+Matthias Mnich: https://www.tuhh.de/algo/research/mnich
+Teun Janssen: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drir-tml-teun-janssen
+
+# Still to add (each has at least two joint publications):
+#
+#   Corné H. W. Klaassen, Elizabeth Gross, Esther Julien, Ferry Hagen,
+#   Jacques F. Meis, Jannik Schestag, John Tromp, Jordan Dempsey,
+#   Judith Keijsper, Martin Frohn, Nela Lekic, Péter L. Erdős,
+#   Ruben Meuwese, Samuel Martin, Teun Boekhout, Wieland Meyer
