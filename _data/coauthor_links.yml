@@ -5,11 +5,11 @@
 # here simply shows no link, so this list can be filled in gradually.
 #
 # Only co-authors with at least two joint publications get a link rendered.
-# 21 of those 37 are listed below; the remainder are named at the foot of this
-# file and still need a URL.
+# 32 of those 37 are listed below; the remaining five are named at the foot of
+# this file.
 
 Steven Kelk: http://skelk.sdf-eu.org/
-Mark Jones: https://aloobyalordant.github.io/
+Mark Jones: https://www.mdx.ac.uk/about-us/our-people/staff-directory/dr-mark-jones/
 Celine Scornavacca: https://sites.google.com/view/celinescornavacca
 Vincent Moulton: http://www2.cmp.uea.ac.uk/~vlm/
 Yukihiro Murakami: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-y-yuki-murakami
@@ -29,10 +29,21 @@ Giulia Bernardini: https://sites.google.com/view/giulia-bernardini
 Gunnar W. Klau: https://www.cs.hhu.de/en/research-groups/algorithmic-bioinformatics
 Matthias Mnich: https://www.tuhh.de/algo/research/mnich
 Teun Janssen: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drir-tml-teun-janssen
+Jannik Schestag: http://www.jannikschestag.eu/
+Elizabeth Gross: https://egross-uh.github.io/
+Samuel Martin: https://www.embl.org/people/person/samuel-martin/
+Ferry Hagen: https://www.uva.nl/en/profile/h/a/f.hagen/f.hagen.html
+John Tromp: https://tromp.github.io/
+Péter L. Erdős: https://renyi.hu/en/node/254
+Judith Keijsper: https://research.tue.nl/en/persons/judith-cm-keijsper/
+Martin Frohn: https://cris.maastrichtuniversity.nl/en/persons/martin-frohn/
+Ruben Meuwese: https://cris.maastrichtuniversity.nl/en/persons/ruben-meuwese/
+Corné H. W. Klaassen: https://pure.eur.nl/en/persons/corn%C3%A9-klaassen/
+Teun Boekhout: https://faculty.ksu.edu.sa/en/teunboekhout
 
-# Still to add (each has at least two joint publications):
+# Still to add. For these five I could not find a page I was confident enough
+# to link -- either no institutional profile exists, or the person has left
+# academia and only aggregator pages (Scholar, ResearchGate, LinkedIn) turned
+# up, which seemed worse than no link at all:
 #
-#   Corné H. W. Klaassen, Elizabeth Gross, Esther Julien, Ferry Hagen,
-#   Jacques F. Meis, Jannik Schestag, John Tromp, Jordan Dempsey,
-#   Judith Keijsper, Martin Frohn, Nela Lekic, Péter L. Erdős,
-#   Ruben Meuwese, Samuel Martin, Teun Boekhout, Wieland Meyer
+#   Esther Julien, Jacques F. Meis, Jordan Dempsey, Nela Lekic, Wieland Meyer
