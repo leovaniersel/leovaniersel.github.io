@@ -812,6 +812,15 @@
   height: 84px;
 }
 
+/* A journal cover rather than a diagram: portrait, so height-led with its own
+   aspect ratio kept. */
+.spotlight-figure--cover {
+  width: auto;
+  height: 92px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+}
+
 @media (max-width: 480px) {
   .spotlight-summary {
     flex-direction: column;

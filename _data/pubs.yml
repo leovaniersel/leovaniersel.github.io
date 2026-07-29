@@ -3857,7 +3857,7 @@
     last: Wu
   year: 2015
   type: journal
-  keywords: [triplet-based, subnet-based, cluster-based]
+  keywords: [encoding, tree-based, subnet-based]
   journal: Systematic Biology
   volume: '64'
   issue: '1'
@@ -3924,7 +3924,7 @@
     last: Schoenhuth
   year: 2015
   type: journal
-  keywords: [fixed-parameter tractability, sequence-based, haplotype assembly]
+  keywords: [sequence-based, haplotype assembly, strings, applications]
   journal: Journal of Computational Biology
   volume: '22'
   issue: '6'
@@ -3985,7 +3985,7 @@
     last: Kelk
   year: 2014
   type: preprint
-  keywords: [parsimony]
+  keywords: []
   journal:
   volume:
   issue:
@@ -4039,7 +4039,7 @@
     last: Bryant
   year: 2014
   type: journal
-  keywords: [fixed-parameter tractability, orientation]
+  keywords: [fixed-parameter tractability]
   journal: Journal of Graph Algorithms and Applications
   volume: '18'
   issue: '3'
@@ -4075,7 +4075,7 @@
     last: Moulton
   year: 2014
   type: journal
-  keywords: [encoding, triplet-based]
+  keywords: [encoding, subnet-based]
   journal: Journal of Mathematical Biology
   volume: '68'
   issue: '7'
@@ -4356,7 +4356,7 @@
     last: Boekhout
   year: 2013
   type: journal
-  keywords: [sequence-based, applications]
+  keywords: [applications]
   journal: PLoS ONE
   volume: '8'
   issue: '9'
@@ -4473,7 +4473,7 @@
     last: Boekhout
   year: 2013
   type: journal
-  keywords: [cluster-based, applications]
+  keywords: [applications]
   journal: PLoS ONE
   volume: '8'
   issue: '8'
@@ -4666,7 +4666,7 @@
     last: Iersel
   year: 2012
   type: journal
-  keywords: [hybridization number, cluster-based, parsimony]
+  keywords: [cluster-based]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '9'
   issue: '2'
@@ -4773,7 +4773,7 @@
     last: Kelk
   year: 2011
   type: journal
-  keywords: [hybridization number, triplet-based, cluster-based]
+  keywords: [hybridization number, triplet-based, cluster-based, tree-based]
   journal: Journal of Theoretical Biology
   volume: '269'
   issue:
@@ -4827,7 +4827,7 @@
     last: Suchecki
   year: 2011
   type: journal
-  keywords: [triplet-based]
+  keywords: [triplet-based, applications]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '8'
   issue: '3'
@@ -4935,7 +4935,7 @@
     last: Steel
   year: 2010
   type: journal
-  keywords: [cluster-based, tree-containment]
+  keywords: [tree-containment]
   journal: Information Processing Letters
   volume: '110'
   issue: '23'
@@ -4986,7 +4986,7 @@
     last: Steel
   year: 2010
   type: journal
-  keywords: [fixed-parameter tractability]
+  keywords: []
   journal: Bulletin of Mathematical Biology
   volume: '72'
   issue: '7'
@@ -5039,7 +5039,7 @@
     last: Huson
   year: 2010
   type: journal
-  keywords: [cluster-based]
+  keywords: [cluster-based, applications]
   journal: Bioinformatics
   volume: '26'
   issue:
@@ -5094,7 +5094,7 @@
     last: Mnich
   year: 2009
   type: journal
-  keywords: [fixed-parameter tractability, triplet-based, subnet-based]
+  keywords: [triplet-based]
   journal: Journal of Bioinformatics and Computational Biology
   volume: '7'
   issue: '4'
@@ -5214,7 +5214,7 @@
     last: Stougie
   year: 2008
   type: journal
-  keywords: [fixed-parameter tractability, perfect phylogeny, parsimony]
+  keywords: [strings, perfect phylogeny, parsimony]
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '5'
   issue: '2'
@@ -5416,7 +5416,7 @@
     last: Iersel
   year: 2009
   type: thesis
-  keywords: [haplotype assembly, strings]
+  keywords: [haplotype assembly, strings, triplet-based]
   journal: Eindhoven University of Technology
   volume:
   issue:

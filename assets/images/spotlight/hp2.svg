@@ -1,12 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <circle cx="50" cy="50" r="48" fill="#eef3f8"/>
-  <g stroke="#5b8bb0" stroke-width="3.4" stroke-linecap="round" fill="none">
-    <path d="M 24 20 L 24 26 M 24 26 L 16 36 M 24 26 L 32 36"/>
-    <path d="M 24 46 L 24 52 M 24 52 L 16 62 M 24 52 L 32 62"/>
-    <path d="M 24 72 L 24 78 M 24 78 L 16 88 M 24 78 L 32 88"/>
+
+  <g stroke="#5b8bb0" stroke-width="3" stroke-linecap="round" fill="none">
+    <!-- resolved triplet: ((a,b),c) -->
+    <path d="M 24 15 L 24 20"/>
+    <path d="M 24 20 L 18 26"/><path d="M 24 20 L 31 34"/>
+    <path d="M 18 26 L 14 34"/><path d="M 18 26 L 23 34"/>
+    <!-- star triplet: all three from one vertex -->
+    <path d="M 24 41 L 24 46"/>
+    <path d="M 24 46 L 14 60"/><path d="M 24 46 L 24 60"/><path d="M 24 46 L 34 60"/>
+    <!-- cherry -->
+    <path d="M 24 67 L 24 72"/>
+    <path d="M 24 72 L 17 84"/><path d="M 24 72 L 31 84"/>
   </g>
-  <path d="M 38 54 L 49 54" stroke="#e0a83e" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="4 3.5"/>
-  <path d="M 46 50 L 50.5 54 L 46 58" stroke="#e0a83e" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M 40 50 L 49 50" stroke="#e0a83e" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="4 3.5"/>
+  <path d="M 46 46 L 50.5 50 L 46 54" stroke="#e0a83e" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
   <g stroke="#5b8bb0" stroke-width="3.2" stroke-linecap="round" fill="none">
     <path d="M 72 28 L 62 42"/><path d="M 72 28 L 82 42"/>
     <path d="M 62 42 L 72 56"/><path d="M 82 42 L 72 56"/>
