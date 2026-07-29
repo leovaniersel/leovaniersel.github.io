@@ -786,8 +786,38 @@
   display: none;
 }
 
+/* The spotlight boxes render the summary themselves, beside a figure, so the
+   copy the include would otherwise show is suppressed here. */
 .highlight-reveal .pub-toggles [id^="sum_"] {
-  display: block;
+  display: none;
+}
+
+.spotlight-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin-top: 0.75rem;
+  font-size: 0.92em;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.spotlight-summary p {
+  margin: 0;
+}
+
+.spotlight-figure {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 84px;
+}
+
+@media (max-width: 480px) {
+  .spotlight-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 }
 
 .pub-toggles {

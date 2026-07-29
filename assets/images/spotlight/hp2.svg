@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="48" fill="#eef3f8"/>
+  <g stroke="#5b8bb0" stroke-width="3.4" stroke-linecap="round" fill="none">
+    <path d="M 24 20 L 24 26 M 24 26 L 16 36 M 24 26 L 32 36"/>
+    <path d="M 24 46 L 24 52 M 24 52 L 16 62 M 24 52 L 32 62"/>
+    <path d="M 24 72 L 24 78 M 24 78 L 16 88 M 24 78 L 32 88"/>
+  </g>
+  <path d="M 38 54 L 49 54" stroke="#e0a83e" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="4 3.5"/>
+  <path d="M 46 50 L 50.5 54 L 46 58" stroke="#e0a83e" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#5b8bb0" stroke-width="3.2" stroke-linecap="round" fill="none">
+    <path d="M 72 28 L 62 42"/><path d="M 72 28 L 82 42"/>
+    <path d="M 62 42 L 72 56"/><path d="M 82 42 L 72 56"/>
+    <path d="M 62 42 L 60 74"/><path d="M 82 42 L 84 74"/><path d="M 72 56 L 72 74"/>
+  </g>
+  <g fill="#2f6f9f"><circle cx="72" cy="28" r="4.2"/><circle cx="62" cy="42" r="4.2"/><circle cx="82" cy="42" r="4.2"/><circle cx="72" cy="56" r="4.2"/><circle cx="60" cy="74" r="4.2"/><circle cx="72" cy="74" r="4.2"/><circle cx="84" cy="74" r="4.2"/></g>
+</svg>
