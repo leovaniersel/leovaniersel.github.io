@@ -1,0 +1,157 @@
+---
+layout: single
+title: "Research"
+permalink: /research/
+author_profile: true
+classes: wide
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
+<script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
+
+{% assign hp1 = site.data.pubs | where_exp: "p", "p.title == 'Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the CFN model'" | first %}
+{% assign hp2 = site.data.pubs | where_exp: "p", "p.title == 'Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning'" | first %}
+{% assign hp3 = site.data.pubs | where_exp: "p", "p.title == 'Embedding phylogenetic trees in networks of low treewidth'" | first %}
+{% assign hp4 = site.data.pubs | where_exp: "p", "p.title == 'Orchard Networks are Trees with Additional Horizontal Arcs'" | first %}
+{% assign hp5 = site.data.pubs | where_exp: "p", "p.title == 'Networks: expanding evolutionary thinking'" | first %}
+
+<div class="project-list">
+  <article class="project-card">
+    <h3>Identifiability of evolutionary histories</h3>
+    <p>With Steven Kelk, Mark Jones, Martin Frohn and Niels Holtgrefe.</p>
+    <p class="project-meta"><a href="http://www.nwo.nl/">NWO</a> ENW-M2 grant</p>
+    <p class="project-highlights">
+      <button class="toggle-button lowkey" onclick="toggleBox('hp1-box')">spotlight paper</button>
+      <button class="toggle-button lowkey" onclick="toggleBox('hs1-box')">spotlight software</button>
+    </p>
+    <div id="hp1-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp1 %}
+      {% include pub_entry.html pub=hp1 pubnum="&bull;" %}
+      <div class="spotlight-summary">
+        <img class="spotlight-figure" src="{{ '/assets/images/spotlight/hp1.svg' | relative_url }}" alt="">
+        <p>{{ hp1.summary }}</p>
+      </div>
+    </div>
+    <div id="hs1-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/squirrel_icon.svg' | relative_url }}" alt="SQUIRREL logo">
+        <div>
+          <h3><a href="https://github.com/nholtgrefe/squirrel">SQUIRREL</a></h3>
+          <p>Reconstructing semi-directed phylogenetic level-1 networks from four-leaved networks or sequence alignments.</p>
+          <p class="software-meta">By Niels Holtgrefe <a class="link-button" href="https://doi.org/10.1101/2024.11.01.621567">paper</a></p>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h3>Optimization for and with Machine Learning</h3>
+    <p>With Karen Aardal, Dick den Hertog, Etienne de Klerk, Monique Laurent, Guido Schäfer, Leen Stougie, Esther Julien, Giulia Bernardini and others.</p>
+    <p class="project-meta"><a href="http://www.nwo.nl/">NWO</a> ENW-GROOT grant <a class="link-button" href="https://optimal.uva.nl/">website</a></p>
+    <p class="project-highlights">
+      <button class="toggle-button lowkey" onclick="toggleBox('hp2-box')">spotlight paper</button>
+      <button class="toggle-button lowkey" onclick="toggleBox('hs2-box')">spotlight software</button>
+    </p>
+    <div id="hp2-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp2 %}
+      {% include pub_entry.html pub=hp2 pubnum="&bull;" %}
+      <div class="spotlight-summary">
+        <img class="spotlight-figure" src="{{ '/assets/images/spotlight/hp2.svg' | relative_url }}" alt="">
+        <p>{{ hp2.summary }}</p>
+      </div>
+    </div>
+    <div id="hs2-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/fhynch_icon.svg' | relative_url }}" alt="FHyNCH logo">
+        <div>
+          <h3><a href="https://github.com/estherjulien/FHyNCH">FHyNCH</a></h3>
+          <p>Finding Hybridization Networks via Cherry-picking Heuristics, constructing rooted phylogenetic networks from rooted multifurcating trees with missing leaves.</p>
+          <p class="software-meta">By Esther Julien <a class="link-button" href="https://doi.org/10.1016/j.ympev.2024.108137">paper</a></p>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h3>Treewidth Parameterizations of Network Construction Problems in Phylogenetics</h3>
+    <p>With Mark Jones.</p>
+    <p class="project-meta"><a href="http://www.nwo.nl/">NWO</a> ENW-KLEIN grant</p>
+    <p class="project-highlights">
+      <button class="toggle-button lowkey" onclick="toggleBox('hp3-box')">spotlight paper</button>
+      <button class="toggle-button lowkey" onclick="toggleBox('hs3-box')">spotlight software</button>
+    </p>
+    <div id="hp3-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp3 %}
+      {% include pub_entry.html pub=hp3 pubnum="&bull;" %}
+      <div class="spotlight-summary">
+        <img class="spotlight-figure" src="{{ '/assets/images/spotlight/hp3.svg' | relative_url }}" alt="">
+        <p>{{ hp3.summary }}</p>
+      </div>
+    </div>
+    <div id="hs3-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/scanwidth_icon.svg' | relative_url }}" alt="Scanwidth logo">
+        <div>
+          <h3><a href="https://github.com/nholtgrefe/scanwidth">Scanwidth</a></h3>
+          <p>Exact and heuristic algorithms for computing the scanwidth of a directed acyclic graph.</p>
+          <p class="software-meta">By Niels Holtgrefe <a class="link-button" href="https://doi.org/10.1016/j.jcss.2026.103802">paper</a></p>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h3>Encoding, reconstructing and comparing complex evolutionary scenarios</h3>
+    <p>With Mark Jones, Yukihiro Murakami and Remie Janssen.</p>
+    <p class="project-meta"><a href="http://www.nwo.nl/">NWO</a> <a href="http://www.nwo.nl/en/funding/our-funding-instruments/nwo/innovational-research-incentives-scheme/vidi/index.html">Vidi</a> grant</p>
+    <p class="project-highlights">
+      <button class="toggle-button lowkey" onclick="toggleBox('hp4-box')">spotlight paper</button>
+      <button class="toggle-button lowkey" onclick="toggleBox('hs4-box')">spotlight software</button>
+    </p>
+    <div id="hp4-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp4 %}
+      {% include pub_entry.html pub=hp4 pubnum="&bull;" %}
+      <div class="spotlight-summary">
+        <img class="spotlight-figure" src="{{ '/assets/images/spotlight/hp4.svg' | relative_url }}" alt="">
+        <p>{{ hp4.summary }}</p>
+      </div>
+    </div>
+    <div id="hs4-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/treechild_icon.svg' | relative_url }}" alt="Tree-child networks logo">
+        <div>
+          <h3><a href="https://github.com/nzeh/tree_child_code">Computing Optimal Tree-Child Networks for Sets of Binary Phylogenetic Trees</a></h3>
+          <p>Optimally reconstructing tree-child networks for sets of binary trees.</p>
+          <p class="software-meta">By Norbert Zeh <a class="link-button" href="https://arxiv.org/abs/1907.08474">paper</a></p>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <h3>Bringing phylogenetic networks to life</h3>
+    <p class="project-meta"><a href="http://www.nwo.nl/">NWO</a> <a href="http://www.nwo.nl/en/funding/our-funding-instruments/nwo/innovational-research-incentives-scheme/veni/index.html">Veni</a> grant</p>
+    <p class="project-highlights">
+      <button class="toggle-button lowkey" onclick="toggleBox('hp5-box')">spotlight paper</button>
+      <button class="toggle-button lowkey" onclick="toggleBox('hs5-box')">spotlight software</button>
+    </p>
+    <div id="hp5-box" class="abstract-box highlight-reveal noshow">
+      {% assign pub = hp5 %}
+      {% include pub_entry.html pub=hp5 pubnum="&bull;" %}
+      <div class="spotlight-summary">
+        <img class="spotlight-figure spotlight-figure--cover" src="{{ '/assets/images/sidebar/trends_in_genetics.jpg' | relative_url }}" alt="Trends in Genetics cover">
+        <p>{{ hp5.summary }}</p>
+      </div>
+    </div>
+    <div id="hs5-box" class="abstract-box highlight-reveal noshow">
+      <article class="software-card software-card--with-logo">
+        <img class="software-logo" src="{{ '/assets/images/software/cass_logo.gif' | relative_url }}" alt="Cass logo">
+        <div>
+          <h3><a href="https://sites.google.com/site/cassalgorithm/">Cass</a></h3>
+          <p>Combines any set of phylogenetic trees into a phylogenetic network representing all clusters of all input trees.</p>
+          <p class="software-meta"><a class="link-button" href="http://bioinformatics.oxfordjournals.org/cgi/content/full/26/12/i124?ijkey=FqvHzMpNP9M2TM9&amp;keytype=ref">paper</a> · Integrated into <a href="http://ab.inf.uni-tuebingen.de/software/dendroscope/">Dendroscope</a></p>
+        </div>
+      </article>
+    </div>
+  </article>
+</div>
