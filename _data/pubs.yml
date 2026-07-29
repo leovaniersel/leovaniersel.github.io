@@ -1771,7 +1771,7 @@
   conference-note: ESA 2022, LIPIcs 244:69
   conference-doi-url: https://doi.org/10.4230/LIPIcs.ESA.2022.69
   software-url:
-  summary: Gives the first efficient algorithm for checking whether a proposed evolutionary
+  summary: Describes an algorithm for checking whether a proposed evolutionary
     tree is consistent with a network, based on a general measure of how tree-like
     the network's underlying structure is, extending fast verification to a broader
     range of networks than earlier specialized methods could handle.
