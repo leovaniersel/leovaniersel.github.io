@@ -17,5 +17,8 @@
 #
 #   bundle exec jekyll build
 
-remote_theme:
+# Must be `false`, not an empty value: Jekyll's config merge drops nil values
+# rather than letting them override, so a bare `remote_theme:` leaves the one
+# in _config.yml in place and the theme is downloaded anyway.
+remote_theme: false
 theme: minimal-mistakes-jekyll
