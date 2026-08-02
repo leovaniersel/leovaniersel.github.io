@@ -189,9 +189,9 @@
   volume:
   issue:
   pages:
-  note: "(2026). arXiv."
-  doi-identifier: 10.48550/arXiv.2604.27745
-  doi-url: https://doi.org/10.48550/arXiv.2604.27745
+  note: "arXiv."
+  doi-identifier:
+  doi-url: 
   preprint-server: arXiv
   preprint-identifier: '2604.27745'
   preprint-url: https://arxiv.org/abs/2604.27745
