@@ -133,6 +133,14 @@
 
 .about-image-caption {
   display: block;
+  /* Keep the caption out of the card's intrinsic width, so the image alone
+     decides how wide the card is. Otherwise a caption wider than its picture
+     stretches the card past it, stranding the rounded corners off the image
+     -- "Research Semester Program" clears its 243px image by only 11px, so
+     any slightly wider font rendering tips it over. The caption still fills
+     the card, and wraps instead of widening it. */
+  width: 0;
+  min-width: 100%;
   padding: 0.6em 0.8em;
   border-top: 1px solid #eee;
   font-size: 0.8rem;
