@@ -183,9 +183,9 @@
   - first: Mathias
     last: Weller
   year: 2026
-  type: preprint
+  type: conference
   keywords: [scanwidth, phylogenetic diversity, fixed-parameter tractability]
-  journal:
+  journal: IPEC 2026
   volume:
   issue:
   pages:
