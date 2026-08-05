@@ -1,26 +1,37 @@
 ---
 layout: single
-title: "Events"
+title: "Organized workshops"
 permalink: /events/
 author_profile: true
 classes: wide
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
+<script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
 
-<p>Below are the workshops I organized on <a href="#phylogenetics">Phylogenetics</a> and on <a href="#ai-mathematics">AI &amp; Mathematics</a>.</p>
+{%- comment -%}
+One combined list, newest first, mixing both categories within each year. The
+buttons below filter it; every card carries its category so the filter can.
+{%- endcomment -%}
+{% assign workshops = site.data.events.workshops | sort: "year" | reverse %}
+{% assign phylogenetics = site.data.events.workshops | where: "category", "phylogenetics" %}
+{% assign aimath = site.data.events.workshops | where: "category", "ai-math" %}
 
-<h2 id="phylogenetics">Phylogenetics</h2>
+<div class="event-filter" id="event-filter">
+  <span class="event-filter__label">Show</span>
+  <button type="button" class="event-filter__chip is-active" data-category="">all</button>
+  <button type="button" class="event-filter__chip" data-category="phylogenetics">Phylogenetics <span class="event-filter__count">{{ phylogenetics.size }}</span></button>
+  <button type="button" class="event-filter__chip" data-category="ai-math">AI &amp; Mathematics <span class="event-filter__count">{{ aimath.size }}</span></button>
+</div>
 
-{% assign phylogenetics_events = site.data.events.phylogenetics | sort: "year" | reverse %}
 {% assign current_year = "" %}
 <div class="event-list">
-  {% for event in phylogenetics_events %}
+  {% for event in workshops %}
     {% if event.year != current_year %}
-      <div class="year-label"><span>{{ event.year }}</span></div>
+      <div class="year-label" data-event-year><span>{{ event.year }}</span></div>
       {% assign current_year = event.year %}
     {% endif %}
-  <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
+  <article class="event-card{% if event.image %} event-card--with-image{% endif %}" data-category="{{ event.category }}">
     {% if event.image %}
       {% if event.url %}
         <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
@@ -49,39 +60,6 @@ classes: wide
         <img src="{{ event.image2 | relative_url }}" alt="{{ event.title }}">
       </a>
     {% endif %}
-  </article>
-  {% endfor %}
-</div>
-
-<h2 id="ai-mathematics">AI &amp; Mathematics</h2>
-
-{% assign aimath_events = site.data.events.ai-math | sort: "year" | reverse %}
-{% assign current_year = "" %}
-<div class="event-list">
-  {% for event in aimath_events %}
-    {% if event.year != current_year %}
-      <div class="year-label"><span>{{ event.year }}</span></div>
-      {% assign current_year = event.year %}
-    {% endif %}
-  <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
-    {% if event.image %}
-      {% if event.url %}
-        <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
-          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
-        </a>
-      {% else %}
-        <span class="event-card__image">
-          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
-        </span>
-      {% endif %}
-    {% endif %}
-    <div class="event-card__body">
-      <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
-      <p class="event-meta">
-        {{ event.date }}<br>
-        {{ event.location }}{% if event.role %} · <em>{{ event.role }}</em>{% endif %}
-      </p>
-    </div>
   </article>
   {% endfor %}
 </div>

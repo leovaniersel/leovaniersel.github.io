@@ -222,3 +222,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
   apply("");
 });
+
+/* Category filter on the Organized workshops page. Same shape as the Students
+   role filter: one category at a time, or "all", with year headings hiding
+   themselves when nothing is left underneath. */
+document.addEventListener("DOMContentLoaded", () => {
+  const filter = document.getElementById("event-filter");
+  if (!filter) return;
+
+  const chips = Array.from(filter.querySelectorAll(".event-filter__chip"));
+  const cards = Array.from(document.querySelectorAll(".event-card[data-category]"));
+
+  function apply(category) {
+    cards.forEach((card) => {
+      card.classList.toggle(
+        "is-hidden",
+        category !== "" && card.dataset.category !== category
+      );
+    });
+
+    document.querySelectorAll("[data-event-year]").forEach((label) => {
+      let el = label.nextElementSibling;
+      let keep = false;
+      while (el && !el.hasAttribute("data-event-year")) {
+        if (el.classList.contains("event-card") && !el.classList.contains("is-hidden")) {
+          keep = true;
+          break;
+        }
+        el = el.nextElementSibling;
+      }
+      label.classList.toggle("is-hidden", !keep);
+    });
+
+    chips.forEach((c) => c.classList.toggle("is-active", c.dataset.category === category));
+  }
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => apply(chip.dataset.category));
+  });
+
+  apply("");
+});

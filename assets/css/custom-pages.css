@@ -156,6 +156,50 @@
   color: #6b7280;
 }
 
+/* Category filter, matching the role chips on the Students page. */
+.event-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 1.2rem;
+}
+
+.event-filter__label {
+  font-size: 0.85rem;
+  color: #5f6b7a;
+  margin-right: 0.4rem;
+}
+
+.event-filter__chip {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.2em 0.7em;
+  border: 1px solid #cfdae6;
+  border-radius: 999px;
+  background: #fff;
+  color: #2f6f9f;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.event-filter__chip:hover {
+  border-color: #4a86b8;
+  background: #f2f7fb;
+}
+
+.event-filter__chip.is-active {
+  background: #3b83b9;
+  border-color: #3b83b9;
+  color: #fff;
+}
+
+.event-filter__count {
+  opacity: 0.65;
+  font-size: 0.9em;
+  margin-left: 0.15em;
+}
+
 .event-list {
   display: grid;
   gap: 0.75rem;

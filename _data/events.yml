@@ -1,5 +1,8 @@
-phylogenetics:
+# Workshops I organized, one list. `category` drives the filter on the
+# Organized workshops page: phylogenetics | ai-math.
+workshops:
   - title: "Uniting Phylogenetic Network Research"
+    category: phylogenetics
     date: "June 29 – July 3, 2026"
     year: 2026
     location: "Lorentz Center, Leiden"
@@ -7,6 +10,7 @@ phylogenetics:
     image: "/assets/images/sidebar/poster_lorentz_2026.jpeg"
 
   - title: "Theory, Methods, and Applications of Quantitative Phylogenomics"
+    category: phylogenetics
     date: "Sep 4 – Dec 6, 2024"
     year: 2024
     location: "ICERM, Providence, RI, USA"
@@ -15,6 +19,7 @@ phylogenetics:
     image: "/assets/images/sidebar/icerm_2024.png"
 
   - title: "From Phylogenetics to Phylogenomics: Mathematical and Statistical Challenges in the era of Big Data"
+    category: phylogenetics
     date: "Oct 21–25, 2024"
     year: 2024
     location: "ICERM, Providence, RI, USA"
@@ -23,6 +28,7 @@ phylogenetics:
     image: "/assets/images/sidebar/icerm_2024_workshop.jpg"
 
   - title: "Distinguishability in Genealogical Phylogenetic Networks"
+    category: phylogenetics
     date: "August 13–17, 2018"
     year: 2018
     location: "Lorentz Center, Leiden"
@@ -30,6 +36,7 @@ phylogenetics:
     image: "/assets/images/sidebar/poster_lorentz_2018.jpg"
 
   - title: "Utilizing Genealogical Phylogenetic Networks in Evolutionary Biology: Touching the Data"
+    category: phylogenetics
     date: "July 7–11, 2014"
     year: 2014
     location: "Lorentz Center, Leiden, The Netherlands"
@@ -40,6 +47,7 @@ phylogenetics:
         url: "https://sites.google.com/site/touchingthedata/"
 
   - title: "The Future of Phylogenetic Networks"
+    category: phylogenetics
     date: "October 15–19, 2012"
     year: 2012
     location: "Lorentz Center, Leiden, The Netherlands"
@@ -48,8 +56,8 @@ phylogenetics:
     image2: "/assets/images/sidebar/trends_in_genetics.jpg"
     image2-url: "http://www.cell.com/trends/genetics/issue?pii=S0168-9525%2813%29X0008-3"
 
-ai-math:
   - title: "Learning Enhanced Optimization"
+    category: ai-math
     date: "Sep – Nov, 2025"
     year: 2025
     location: "CWI, Amsterdam"
@@ -58,6 +66,7 @@ ai-math:
     image: "/assets/images/sidebar/learning_enhanced_optimization.png"
 
   - title: "Learned Methods for Operations Research"
+    category: ai-math
     date: "November 3–6, 2025"
     year: 2025
     location: "CWI, Amsterdam"
@@ -65,6 +74,7 @@ ai-math:
     image: "/assets/images/sidebar/learning_enhanced_optimization.png"
 
   - title: "4th Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
+    category: ai-math
     date: "June 12–13, 2025"
     year: 2025
     location: "Tilburg University"
@@ -72,6 +82,7 @@ ai-math:
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "3rd Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
+    category: ai-math
     date: "June 13–14, 2024"
     year: 2024
     location: "Utrecht University"
@@ -79,6 +90,7 @@ ai-math:
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "2nd Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
+    category: ai-math
     date: "June 1–2, 2023"
     year: 2023
     location: "University of Twente"
@@ -86,6 +98,7 @@ ai-math:
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "Guarantees for AI"
+    category: ai-math
     date: "2023"
     year: 2023
     location: "ICT.OPEN, Jaarbeurs Utrecht"
@@ -94,12 +107,14 @@ ai-math:
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "AIM Networking Event"
+    category: ai-math
     date: "December 1, 2022"
     year: 2022
     location: "NWO, Utrecht"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "1st Workshop on AI and Mathematics – Connecting the Mathematics Clusters"
+    category: ai-math
     date: "June 9–10, 2022"
     year: 2022
     location: "CWI, Amsterdam"
