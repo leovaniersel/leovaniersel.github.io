@@ -1,6 +1,14 @@
 # Workshops I organized, one list. `category` drives the filter on the
 # Organized workshops page: phylogenetics | ai-math.
 workshops:
+  - title: "Algorithms and Statistics in Phylogenetics"
+    category: phylogenetics
+    date: "September 19 – September 24, 2027"
+    year: 2027
+    location: "Schloss Dagstuhl, Germany"
+    url: "https://www.dagstuhl.de/27382"
+    image: "https://www.dagstuhl.de/_Resources/Static/Packages/Dagstuhl.Site/Frontend/images/LZI-Logo.jpg?bust=b988b355"
+
   - title: "Uniting Phylogenetic Network Research"
     category: phylogenetics
     date: "June 29 – July 3, 2026"
