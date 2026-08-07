@@ -1,7 +1,7 @@
 - name:
     first: Max
     last: Verton
-  role: MSc
+  role: msc
   thesis:
   thesis-url:
   website: 
@@ -10,7 +10,7 @@
 - name:
     first: Chai
     last: Fillerup
-  role: MSc
+  role: msc
   thesis:
   thesis-url:
   website: 
@@ -19,7 +19,7 @@
 - name:
     first: Ida
     last: Pelupessy
-  role: MSc
+  role: msc
   thesis:
   thesis-url:
   website: 
