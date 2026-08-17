@@ -240,6 +240,15 @@
   margin-left: auto;
 }
 
+/* Two 160px images plus the gaps need most of a narrow screen on their own,
+   leaving the title a sliver and pushing the page sideways. The second image
+   is supplementary, so drop it until the card has room for both. */
+@media (max-width: 640px) {
+  .event-card__image--right {
+    display: none;
+  }
+}
+
 .event-card__body {
   flex: 1 1 auto;
   padding: 0.1rem 0.35rem;
