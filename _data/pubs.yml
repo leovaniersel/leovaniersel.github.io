@@ -1,4 +1,62 @@
 ---
+- title: 'Metropolis-Hastings Sampling of Phylogenetic Networks: Correcting for Symmetries'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Christopher
+    last: Reichling
+  year: 2026
+  type: preprint
+  keywords: [encoding, rearrangement moves]
+  journal:
+  volume:
+  issue:
+  pages:
+  note: "(2026). arXiv."
+  doi-identifier: 10.48550/arXiv.2608.12430
+  doi-url: https://doi.org/10.48550/arXiv.2608.12430
+  preprint-server: arXiv
+  preprint-identifier: '2608.12430'
+  preprint-url: https://arxiv.org/abs/2608.12430
+  software-url:
+  summary: Points out that a standard statistical technique for exploring possible
+    evolutionary histories quietly favours the less symmetric ones, gives a correction
+    that removes the bias, and shows the correction is unnecessary for several widely
+    used families of networks and can be computed quickly for the rest.
+  abstract: In phylogenetics, Metropolis-Hastings methods are commonly used to sample
+    phylogenetic trees or networks, for example from Bayesian posteriors. These methods
+    generally use transitions that distinguish all nodes involved, and thus require
+    fully labelled representations of phylogenetic networks. We argue that sampling
+    leaf-labelled phylogenetic networks demands a correction for the number of fully
+    labelled representatives of a leaf-labelled network, or, equivalently, for its
+    internal symmetry. Without correction, there is a danger of undersampling networks
+    with internal symmetries. We show that this correction can be realized by a quotient
+    construction on the Metropolis-Hastings Markov chain, which, in practice, requires
+    the calculation of the size of the network's automorphism group. Using μ-vectors,
+    we show that the automorphism group is trivial for orchard networks, and thus
+    also for tree-child networks and trees. This implies that a correction for symmetry
+    is not needed when sampling only from such network classes. More generally, using
+    our Python implementation of the algorithms in this paper, we show that using
+    μ-vectors can significantly speed up calculations of automorphism group sizes
+    and thus of Metropolis-Hastings sampling of leaf-labelled networks.
+  bibtex: |
+    @misc{iersel2026metropolis,
+      author = {van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro and Reichling, Christopher},
+      title = {{Metropolis-Hastings Sampling of Phylogenetic Networks: Correcting for Symmetries}},
+      year = {2026},
+      archivePrefix = {arXiv},
+      eprint = {2608.12430},
+      doi = {10.48550/arXiv.2608.12430},
+      url = {https://doi.org/10.48550/arXiv.2608.12430}
+    }
 - title: On Tree-Network Distinguishability and Full Identifiability of Phylogenetic
     Networks
   release-date:
