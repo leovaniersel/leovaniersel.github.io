@@ -413,15 +413,15 @@
     tussenvoegsel: van
     last: Iersel
   year: 2026
-  type: preprint
+  type: journal
   keywords: [agreement forests, fixed-parameter tractability]
-  journal:
-  volume:
-  issue:
-  pages:
-  note: "(2026). arXiv."
-  doi-identifier: 10.48550/arXiv.2602.22281
-  doi-url: https://doi.org/10.48550/arXiv.2602.22281
+  journal: Journal of Graph Algorithms and Applications
+  volume: '30'
+  issue: '1'
+  pages: 363--383
+  note:
+  doi-identifier: 10.7155/jgaa.v30i1.3194
+  doi-url: https://doi.org/10.7155/jgaa.v30i1.3194
   preprint-server: arXiv
   preprint-identifier: '2602.22281'
   preprint-url: https://arxiv.org/abs/2602.22281
@@ -431,14 +431,16 @@
     with each other, by proving a tighter limit on how far such problems can be simplified
     before they must be solved directly.
   bibtex: |
-    @misc{kelk2026kernel,
+    @article{kelk2026kernel,
       author = {Kelk, Steven and Meuwese, Ruben and van Iersel, Leo},
       title = {{A kernel for the maximum agreement forest problem on multiple binary phylogenetic trees}},
+      journal = {Journal of Graph Algorithms and Applications},
       year = {2026},
-      archivePrefix = {arXiv},
-      eprint = {2602.22281},
-      doi = {10.48550/arXiv.2602.22281},
-      url = {https://doi.org/10.48550/arXiv.2602.22281}
+      volume = {30},
+      number = {1},
+      pages = {363--383},
+      doi = {10.7155/jgaa.v30i1.3194},
+      url = {https://doi.org/10.7155/jgaa.v30i1.3194}
     }
   abstract: The maximum agreement forest (MAF) problem in phylogenetics takes as input
     a set t >= 2 of binary phylogenetic trees T on the same set of taxa X. It asks
