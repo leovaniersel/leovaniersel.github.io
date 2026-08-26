@@ -100,13 +100,14 @@
     parameters are non-trivial (i.e., not 0 or 1). In contrast to the generic identifiability
     established in prior work, this holds at every point of the parameter space, not
     merely off of a measure-zero subset. Our second result distinguishes phylogenetic
-    networks from phylogenetic trees, on the same parameter space, under JC and K2P.
-    We prove that no phylogenetic network and phylogenetic tree can induce the same
-    leaf-pattern distribution unless the network is a tree, possibly augmented with
-    certain substructures called 2-blobs. This means the presence of reticulate evolution
-    creates, in most cases, a detectable signature in the leaf-pattern distribution.
-    More broadly, these results have consequences for identifiability beyond the models
-    and network classes studied here, including for several coalescent-based models.
+    networks from phylogenetic trees, on the same parameter space, under JC. We prove
+    that no phylogenetic network and phylogenetic tree can induce the same leaf-pattern
+    distribution unless the network is a tree, possibly augmented with certain substructures
+    called 2-blobs. This means the presence of reticulate evolution creates, in most
+    cases, a detectable signature in the leaf-pattern distribution. More broadly, these
+    results have consequences for identifiability beyond the models and network classes
+    studied here, including for several coalescent-based models.
+
   bibtex: |
     @misc{brits2026treenetwork,
       author = {Brits, Jari and Holtgrefe, Niels and van Iersel, Leo and Martin, Samuel},
