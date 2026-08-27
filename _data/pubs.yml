@@ -15,7 +15,9 @@
     last: Reichling
   year: 2026
   type: preprint
-  keywords: [encoding, rearrangement moves]
+  keywords:
+  - encoding
+  - rearrangement moves
   journal:
   volume:
   issue:
@@ -57,67 +59,6 @@
       doi = {10.48550/arXiv.2608.12430},
       url = {https://doi.org/10.48550/arXiv.2608.12430}
     }
-- title: On Tree-Network Distinguishability and Full Identifiability of Phylogenetic
-    Networks
-  release-date:
-  authors:
-  - first: Jari
-    last: Brits
-  - first: Niels
-    last: Holtgrefe
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Samuel
-    last: Martin
-  year: 2026
-  type: preprint
-  keywords: [identifiability, sequence-based]
-  journal:
-  volume:
-  issue:
-  pages:
-  note: "(2026). arXiv."
-  doi-identifier: 10.48550/arXiv.2607.12919
-  doi-url: https://doi.org/10.48550/arXiv.2607.12919
-  preprint-server: arXiv
-  preprint-identifier: '2607.12919'
-  preprint-url: https://arxiv.org/abs/2607.12919
-  software-url:
-  summary: Proves that genetic data can reliably distinguish a straightforward evolutionary
-    tree from a more tangled history involving hybridization, and shows that in a
-    wide range of realistic cases such a network can be fully and uniquely reconstructed
-    from the data rather than only narrowed down to a few possibilities.
-  abstract: Phylogenetic networks generalize phylogenetic trees to evolutionary histories
-    that include reticulate events such as recombination, horizontal gene transfer,
-    and hybridization. Under a Markov model of nucleotide substitution, a phylogenetic
-    network determines a distribution of leaf-patterns. Here, we study the identifiability
-    of the network topology from this distribution under the Jukes-Cantor (JC), Kimura
-    2-parameter (K2P), and Kimura 3-parameter (K3P) models. Our first result is that
-    the semi-directed network parameter of a level-1 phylogenetic network (modulo
-    redirecting triangles) is fully identifiable under all three models, on a biologically
-    reasonable parameter space in which substitution rates are probabilistic and mixing
-    parameters are non-trivial (i.e., not 0 or 1). In contrast to the generic identifiability
-    established in prior work, this holds at every point of the parameter space, not
-    merely off of a measure-zero subset. Our second result distinguishes phylogenetic
-    networks from phylogenetic trees, on the same parameter space, under JC. We prove
-    that no phylogenetic network and phylogenetic tree can induce the same leaf-pattern
-    distribution unless the network is a tree, possibly augmented with certain substructures
-    called 2-blobs. This means the presence of reticulate evolution creates, in most
-    cases, a detectable signature in the leaf-pattern distribution. More broadly, these
-    results have consequences for identifiability beyond the models and network classes
-    studied here, including for several coalescent-based models.
-
-  bibtex: |
-    @misc{brits2026treenetwork,
-      author = {Brits, Jari and Holtgrefe, Niels and van Iersel, Leo and Martin, Samuel},
-      title = {{On Tree-Network Distinguishability and Full Identifiability of Phylogenetic Networks}},
-      year = {2026},
-      archivePrefix = {arXiv},
-      eprint = {2607.12919},
-      doi = {10.48550/arXiv.2607.12919},
-      url = {https://doi.org/10.48550/arXiv.2607.12919}
-    }
 - title: Proximity Measures for Classes of Phylogenetic Networks
   release-date:
   authors:
@@ -134,7 +75,8 @@
     last: Murakami
   year: 2026
   type: preprint
-  keywords: [metrics]
+  keywords:
+  - metrics
   journal:
   volume:
   issue:
@@ -175,6 +117,131 @@
       doi = {10.48550/arXiv.2607.11325},
       url = {https://doi.org/10.48550/arXiv.2607.11325}
     }
+- title: On Tree-Network Distinguishability and Full Identifiability of Phylogenetic
+    Networks
+  release-date:
+  authors:
+  - first: Jari
+    last: Brits
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Samuel
+    last: Martin
+  year: 2026
+  type: preprint
+  keywords:
+  - identifiability
+  - sequence-based
+  journal:
+  volume:
+  issue:
+  pages:
+  note: "(2026). arXiv."
+  doi-identifier: 10.48550/arXiv.2607.12919
+  doi-url: https://doi.org/10.48550/arXiv.2607.12919
+  preprint-server: arXiv
+  preprint-identifier: '2607.12919'
+  preprint-url: https://arxiv.org/abs/2607.12919
+  software-url:
+  summary: Proves that genetic data can reliably distinguish a straightforward evolutionary
+    tree from a more tangled history involving hybridization, and shows that in a
+    wide range of realistic cases such a network can be fully and uniquely reconstructed
+    from the data rather than only narrowed down to a few possibilities.
+  abstract: Phylogenetic networks generalize phylogenetic trees to evolutionary histories
+    that include reticulate events such as recombination, horizontal gene transfer,
+    and hybridization. Under a Markov model of nucleotide substitution, a phylogenetic
+    network determines a distribution of leaf-patterns. Here, we study the identifiability
+    of the network topology from this distribution under the Jukes-Cantor (JC), Kimura
+    2-parameter (K2P), and Kimura 3-parameter (K3P) models. Our first result is that
+    the semi-directed network parameter of a level-1 phylogenetic network (modulo
+    redirecting triangles) is fully identifiable under all three models, on a biologically
+    reasonable parameter space in which substitution rates are probabilistic and mixing
+    parameters are non-trivial (i.e., not 0 or 1). In contrast to the generic identifiability
+    established in prior work, this holds at every point of the parameter space, not
+    merely off of a measure-zero subset. Our second result distinguishes phylogenetic
+    networks from phylogenetic trees, on the same parameter space, under JC. We prove
+    that no phylogenetic network and phylogenetic tree can induce the same leaf-pattern
+    distribution unless the network is a tree, possibly augmented with certain substructures
+    called 2-blobs. This means the presence of reticulate evolution creates, in most
+    cases, a detectable signature in the leaf-pattern distribution. More broadly,
+    these results have consequences for identifiability beyond the models and network
+    classes studied here, including for several coalescent-based models.
+  bibtex: |
+    @misc{brits2026treenetwork,
+      author = {Brits, Jari and Holtgrefe, Niels and van Iersel, Leo and Martin, Samuel},
+      title = {{On Tree-Network Distinguishability and Full Identifiability of Phylogenetic Networks}},
+      year = {2026},
+      archivePrefix = {arXiv},
+      eprint = {2607.12919},
+      doi = {10.48550/arXiv.2607.12919},
+      url = {https://doi.org/10.48550/arXiv.2607.12919}
+    }
+- title: Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic
+    networks under the CFN model
+  release-date: 2026-05-21
+  authors:
+  - first: Martin
+    last: Frohn
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2026
+  type: journal
+  keywords:
+  - quartet-based
+  - subnet-based
+  - sequence-based
+  - identifiability
+  journal: Annals of Combinatorics
+  volume:
+  issue:
+  pages:
+  note: Annals of Combinatorics, to appear. arXiv.
+  doi-identifier: 10.1007/s00026-026-00830-0
+  doi-url: https://doi.org/10.1007/s00026-026-00830-0
+  preprint-server: arXiv
+  preprint-identifier: '2511.22736'
+  preprint-url: https://arxiv.org/abs/2511.22736
+  software-url:
+  summary: Determines how much genetic sequence data is actually needed to reconstruct
+    a common type of evolutionary network with high confidence, showing that the required
+    amount of data scales predictably with the number of species involved.
+  bibtex: |
+    @article{frohn2026bounds,
+      author = {Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
+      title = {Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the {CFN} model},
+      journal = {Annals of Combinatorics},
+      doi = {10.1007/s00026-026-00830-0},
+      year = {2026}
+    }
+  abstract: Phylogenetic trees and networks are graphs used to model evolutionary
+    relationships, with trees representing strictly branching histories and networks
+    allowing for events in which lineages merge, called reticulation events. While
+    the question of data sufficiency has been studied extensively in the context of
+    trees, it remains largely unexplored for networks. In this work we take a first
+    step in this direction by establishing bounds on the amount of genomic data required
+    to reconstruct binary level-$1$ semi-directed phylogenetic networks, which are
+    binary networks in which reticulation events are indicated by directed edges,
+    all other edges are undirected, and cycles are vertex-disjoint. For this class,
+    methods have been developed recently that are statistically consistent. Roughly
+    speaking, such methods are guaranteed to reconstruct the correct network assuming
+    infinitely long genomic sequences. Here we consider the question whether networks
+    from this class can be uniquely and correctly reconstructed from finite sequences.
+    Specifically, we present an inference algorithm that takes as input genetic sequence
+    data, and demonstrate that the sequence length sufficient to reconstruct the correct
+    network with high probability, under the CFN model of evolution, scales logarithmically,
+    polynomially, or polylogarithmically with the number of taxa, depending on the
+    parameter regime. As part of our contribution, we also present novel inference
+    rules for quartet data in the semi-directed phylogenetic network setting.
 - title: Tree Containment Parameterized by Scanwidth
   release-date:
   authors:
@@ -187,7 +254,10 @@
     last: Weller
   year: 2026
   type: preprint
-  keywords: [scanwidth, fixed-parameter tractability, tree-containment]
+  keywords:
+  - scanwidth
+  - fixed-parameter tractability
+  - tree-containment
   journal:
   volume:
   issue:
@@ -227,6 +297,59 @@
     that there is no algorithm for TREE CONTAINMENT that runs in $2^{o(c\log{c})}
     n^{O(1)}$ time, even on binary inputs, where $c$ is the directed cutwidth of the
     input network, which upper-bounds the scanwidth $k$.
+- title: Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs
+  release-date: 2026-04-08
+  authors:
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  year: 2026
+  type: journal
+  keywords:
+  - scanwidth
+  - fixed-parameter tractability
+  journal: Journal of Computer and System Sciences
+  volume: '160'
+  issue:
+  pages: '103802'
+  note: Journal of Computer and System Sciences, 160:103802 (2026). arXiv.
+  doi-identifier: 10.1016/j.jcss.2026.103802
+  doi-url: https://doi.org/10.1016/j.jcss.2026.103802
+  preprint-server: arXiv
+  preprint-identifier: 2403.12734
+  preprint-url: https://arxiv.org/abs/2403.12734
+  software-url: https://github.com/nholtgrefe/scanwidth
+  summary: Gives the first practical algorithm for exactly computing scanwidth, a
+    measure of how tree-like a directed graph is, plus a fast heuristic approximation,
+    enabling this measure to actually be computed and used on realistically sized
+    evolutionary networks.
+  bibtex: |
+    @article{holtgrefe2026exact,
+      author = {Holtgrefe, Niels and van Iersel, Leo and Jones, Mark},
+      title = {Exact and heuristic computation of the scanwidth of directed acyclic graphs},
+      journal={Journal of Computer and System Sciences},
+      doi={10.1016/j.jcss.2026.103802},
+      volume = {160},
+      pages = {103802},
+      year = {2026}
+    }
+  abstract: 'To measure the tree-likeness of a directed acyclic graph (DAG), a new
+    width parameter that considers the directions of the arcs was recently introduced:
+    scanwidth. We present the first algorithm that efficiently computes the exact
+    scanwidth of general DAGs. For DAGs with one root and scanwidth $k$ it runs in
+    $O(k \cdot n^k \cdot m)$ time. The algorithm also functions as an FPT algorithm
+    with complexity $O(2^{4 \ell - 1} \cdot \ell \cdot n + n^2)$ for phylogenetic
+    networks of level-$\ell$, a type of DAG used to depict evolutionary relationships
+    among species. Our algorithm performs well in practice, being able to compute
+    the scanwidth of synthetic networks up to 30 reticulations and 100 leaves within
+    500 seconds. Furthermore, we propose a heuristic that obtains an average practical
+    approximation ratio of 1.5 on these networks. While we prove that the scanwidth
+    is bounded from below by the treewidth of the underlying undirected graph, experiments
+    suggest that for networks the parameters are close in practice.'
 - title: Average-Tree Phylogenetic Diversity Parameterized by Scanwidth and Invisibility
   release-date:
   authors:
@@ -243,14 +366,17 @@
     last: Weller
   year: 2026
   type: conference
-  keywords: [scanwidth, phylogenetic diversity, fixed-parameter tractability]
+  keywords:
+  - scanwidth
+  - phylogenetic diversity
+  - fixed-parameter tractability
   journal: IPEC 2026
   volume:
   issue:
   pages:
-  note: "arXiv."
+  note: arXiv.
   doi-identifier:
-  doi-url: 
+  doi-url:
   preprint-server: arXiv
   preprint-identifier: '2604.27745'
   preprint-url: https://arxiv.org/abs/2604.27745
@@ -282,65 +408,6 @@
     induced by these taxa is reticulation-visible. We generalize this algorithm to
     still run in polynomial time if each biconnected component of the induced network
     has only constantly many invisible reticulations.
-- title: Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic
-    networks under the CFN model
-  release-date: 2026-05-21
-  authors:
-  - first: Martin
-    last: Frohn
-  - first: Niels
-    last: Holtgrefe
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Steven
-    last: Kelk
-  year: 2026
-  type: journal
-  keywords: [quartet-based, subnet-based, sequence-based, identifiability]
-  journal: Annals of Combinatorics
-  volume:
-  issue:
-  pages:
-  note: Annals of Combinatorics, to appear. arXiv.
-  doi-identifier: 10.1007/s00026-026-00830-0
-  doi-url: https://doi.org/10.1007/s00026-026-00830-0
-  preprint-server: arXiv
-  preprint-identifier: '2511.22736'
-  preprint-url: https://arxiv.org/abs/2511.22736
-  software-url:
-  summary: Determines how much genetic sequence data is actually needed to reconstruct
-    a common type of evolutionary network with high confidence, showing that the
-    required amount of data scales predictably with the number of species involved.
-  bibtex: |
-    @article{frohn2026bounds,
-      author = {Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
-      title = {Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the {CFN} model},
-      journal = {Annals of Combinatorics},
-      doi = {10.1007/s00026-026-00830-0},
-      year = {2026}
-    }
-  abstract: Phylogenetic trees and networks are graphs used to model evolutionary
-    relationships, with trees representing strictly branching histories and networks
-    allowing for events in which lineages merge, called reticulation events. While
-    the question of data sufficiency has been studied extensively in the context of
-    trees, it remains largely unexplored for networks. In this work we take a first
-    step in this direction by establishing bounds on the amount of genomic data required
-    to reconstruct binary level-$1$ semi-directed phylogenetic networks, which are
-    binary networks in which reticulation events are indicated by directed edges,
-    all other edges are undirected, and cycles are vertex-disjoint. For this class,
-    methods have been developed recently that are statistically consistent. Roughly
-    speaking, such methods are guaranteed to reconstruct the correct network assuming
-    infinitely long genomic sequences. Here we consider the question whether networks
-    from this class can be uniquely and correctly reconstructed from finite sequences.
-    Specifically, we present an inference algorithm that takes as input genetic sequence
-    data, and demonstrate that the sequence length sufficient to reconstruct the correct
-    network with high probability, under the CFN model of evolution, scales logarithmically,
-    polynomially, or polylogarithmically with the number of taxa, depending on the
-    parameter regime. As part of our contribution, we also present novel inference
-    rules for quartet data in the semi-directed phylogenetic network setting.
 - title: A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted
     Tree-Child Networks
   release-date:
@@ -356,7 +423,10 @@
     last: Zeh
   year: 2026
   type: preprint
-  keywords: [fixed-parameter tractability, tree-containment, orientation]
+  keywords:
+  - fixed-parameter tractability
+  - tree-containment
+  - orientation
   journal:
   volume:
   issue:
@@ -415,7 +485,9 @@
     last: Iersel
   year: 2026
   type: journal
-  keywords: [agreement forests, fixed-parameter tractability]
+  keywords:
+  - agreement forests
+  - fixed-parameter tractability
   journal: Journal of Graph Algorithms and Applications
   volume: '30'
   issue: '1'
@@ -454,51 +526,51 @@
     version of the problem, and demonstrate that the bound r, the length to which
     common chains are truncated, is tight. Our results constitute the first kernels
     for MAF in the t>2 regime.
-- title: Computational support for case-heavy proofs in mathematical phylogenetics
+- title: Metrics for classes of semi-binary phylogenetic networks using μ-representations
   release-date:
   authors:
-  - first: Luca
-    last: Forte
+  - first: Christopher
+    last: Reichling
   - first: Leo
     tussenvoegsel: van
     last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: Ruben
-    last: Meuwese
-  year: 2025
-  type: preprint
-  keywords: [agreement forests, fixed-parameter tractability]
-  journal:
-  volume:
+  - first: Yukihiro
+    last: Murakami
+  year: 2026
+  type: journal
+  keywords:
+  - metrics
+  journal: Advances in Applied Mathematics
+  volume: '172'
   issue:
-  pages:
-  note: "(2025). arXiv."
-  doi-identifier: 10.48550/arXiv.2512.16691
-  doi-url: https://doi.org/10.48550/arXiv.2512.16691
+  pages: '102953'
+  note: Advances in Applied Mathematics, 172:102953 (2026). arXiv.
+  doi-identifier: 10.1016/j.aam.2025.102953
+  doi-url: https://doi.org/10.1016/j.aam.2025.102953
   preprint-server: arXiv
-  preprint-identifier: '2512.16691'
-  preprint-url: https://arxiv.org/abs/2512.16691
+  preprint-identifier: '2412.05107'
+  preprint-url: https://arxiv.org/abs/2412.05107
   software-url:
-  summary: Shows that computer-assisted checking can shorten and simplify many long,
-    case-heavy mathematical proofs in phylogenetics, and uses the same approach to
-    establish new results that would otherwise have taken considerable effort to
-    prove by hand.
+  summary: Develops mathematically rigorous ways to measure how similar or different
+    two evolutionary networks are, for two common types of network, filling a gap
+    since comparing networks (rather than trees) has generally been much harder.
   bibtex: |
-    @misc{forte2025computational,
-      author = {Forte, Luca and van Iersel, Leo and Kelk, Steven and Meuwese, Ruben},
-      title = {{Computational support for case-heavy proofs in mathematical phylogenetics}},
-      year = {2025},
-      archivePrefix = {arXiv},
-      eprint = {2512.16691},
-      doi = {10.48550/arXiv.2512.16691},
-      url = {https://doi.org/10.48550/arXiv.2512.16691}
+    @article{reichling2026metrics,
+      author = {Reichling, Christopher and van Iersel, Leo and Murakami, Yukihiro},
+      title = {{Metrics for classes of semi-binary phylogenetic networks using μ-representations}},
+      journal = {Advances in Applied Mathematics},
+      year = {2026},
+      volume = {172},
+      pages = {102953}
     }
-  abstract: In this note we demonstrate that a number of case-heavy combinatorial
-    proofs in the mathematical phylogenetics literature can be proven more compactly
-    using computational support. We use these techniques to also prove several new
-    combinatorial lemmas that would have taken considerable effort to prove by hand.
-    We are optimistic that similar approaches can be deployed more widely in phylogenetics.
+  abstract: Phylogenetic networks are useful in representing the evolutionary history
+    of taxa. In certain scenarios, one requires a way to compare different networks.
+    In practice, this can be rather difficult, except within specific classes of networks.
+    In this paper, we derive metrics for the class of \emph{orchard networks} and
+    the class of \emph{strongly reticulation-visible} networks, from variants of so-called
+    \emph{$μ$-representations}, which are vector representations of networks. For
+    both network classes, we impose degree constraints on the vertices, by considering
+    \emph{semi-binary} networks.
 - title: Characterizing semi-directed phylogenetic networks and their multi-rootable
     variants
   release-date: 2025-12-10
@@ -516,7 +588,8 @@
     last: Moulton
   year: 2026
   type: journal
-  keywords: [orientation]
+  keywords:
+  - orientation
   journal: Theory in Biosciences
   volume: '145'
   issue: '1'
@@ -564,6 +637,53 @@
     and pave the way to improved theoretical and computational analyses of such networks,
     for example, within the development of algebraic evolutionary models that are
     based on such networks.
+- title: Computational support for case-heavy proofs in mathematical phylogenetics
+  release-date:
+  authors:
+  - first: Luca
+    last: Forte
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Ruben
+    last: Meuwese
+  year: 2025
+  type: preprint
+  keywords:
+  - agreement forests
+  - fixed-parameter tractability
+  journal:
+  volume:
+  issue:
+  pages:
+  note: "(2025). arXiv."
+  doi-identifier: 10.48550/arXiv.2512.16691
+  doi-url: https://doi.org/10.48550/arXiv.2512.16691
+  preprint-server: arXiv
+  preprint-identifier: '2512.16691'
+  preprint-url: https://arxiv.org/abs/2512.16691
+  software-url:
+  summary: Shows that computer-assisted checking can shorten and simplify many long,
+    case-heavy mathematical proofs in phylogenetics, and uses the same approach to
+    establish new results that would otherwise have taken considerable effort to prove
+    by hand.
+  bibtex: |
+    @misc{forte2025computational,
+      author = {Forte, Luca and van Iersel, Leo and Kelk, Steven and Meuwese, Ruben},
+      title = {{Computational support for case-heavy proofs in mathematical phylogenetics}},
+      year = {2025},
+      archivePrefix = {arXiv},
+      eprint = {2512.16691},
+      doi = {10.48550/arXiv.2512.16691},
+      url = {https://doi.org/10.48550/arXiv.2512.16691}
+    }
+  abstract: In this note we demonstrate that a number of case-heavy combinatorial
+    proofs in the mathematical phylogenetics literature can be proven more compactly
+    using computational support. We use these techniques to also prove several new
+    combinatorial lemmas that would have taken considerable effort to prove by hand.
+    We are optimistic that similar approaches can be deployed more widely in phylogenetics.
 - title: 'PaNDA: Efficient Optimization of Phylogenetic Diversity in Networks'
   release-date: 2025-11-17
   authors:
@@ -580,7 +700,10 @@
     last: Schestag
   year: 2025
   type: conference
-  keywords: [scanwidth, phylogenetic diversity, fixed-parameter tractability]
+  keywords:
+  - scanwidth
+  - phylogenetic diversity
+  - fixed-parameter tractability
   journal: RECOMB 2026
   volume:
   issue:
@@ -628,152 +751,6 @@
     analysis to model uncertainty of the root location. We prove that finding a subset
     of k taxa with maximum diversity remains NP-hard on semi-directed networks, but
     do present a polynomial-time algorithm for networks with bounded level.
-- title: Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs
-  release-date: 2026-04-08
-  authors:
-  - first: Niels
-    last: Holtgrefe
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  year: 2026
-  type: journal
-  keywords: [scanwidth, fixed-parameter tractability]
-  journal: Journal of Computer and System Sciences
-  volume: '160'
-  issue:
-  pages: '103802'
-  note: Journal of Computer and System Sciences, 160:103802 (2026). arXiv.
-  doi-identifier: 10.1016/j.jcss.2026.103802
-  doi-url: https://doi.org/10.1016/j.jcss.2026.103802
-  preprint-server: arXiv
-  preprint-identifier: 2403.12734
-  preprint-url: https://arxiv.org/abs/2403.12734
-  software-url: https://github.com/nholtgrefe/scanwidth
-  summary: Gives the first practical algorithm for exactly computing scanwidth, a
-    measure of how tree-like a directed graph is, plus a fast heuristic approximation,
-    enabling this measure to actually be computed and used on realistically sized
-    evolutionary networks.
-  bibtex: |
-    @article{holtgrefe2026exact,
-      author = {Holtgrefe, Niels and van Iersel, Leo and Jones, Mark},
-      title = {Exact and heuristic computation of the scanwidth of directed acyclic graphs},
-      journal={Journal of Computer and System Sciences},
-      doi={10.1016/j.jcss.2026.103802},
-      volume = {160},
-      pages = {103802},
-      year = {2026}
-    }
-  abstract: 'To measure the tree-likeness of a directed acyclic graph (DAG), a new
-    width parameter that considers the directions of the arcs was recently introduced:
-    scanwidth. We present the first algorithm that efficiently computes the exact
-    scanwidth of general DAGs. For DAGs with one root and scanwidth $k$ it runs in
-    $O(k \cdot n^k \cdot m)$ time. The algorithm also functions as an FPT algorithm
-    with complexity $O(2^{4 \ell - 1} \cdot \ell \cdot n + n^2)$ for phylogenetic
-    networks of level-$\ell$, a type of DAG used to depict evolutionary relationships
-    among species. Our algorithm performs well in practice, being able to compute
-    the scanwidth of synthetic networks up to 30 reticulations and 100 leaves within
-    500 seconds. Furthermore, we propose a heuristic that obtains an average practical
-    approximation ratio of 1.5 on these networks. While we prove that the scanwidth
-    is bounded from below by the treewidth of the underlying undirected graph, experiments
-    suggest that for networks the parameters are close in practice.'
-- title: Metrics for classes of semi-binary phylogenetic networks using μ-representations
-  release-date:
-  authors:
-  - first: Christopher
-    last: Reichling
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Yukihiro
-    last: Murakami
-  year: 2026
-  type: journal
-  keywords: [metrics]
-  journal: Advances in Applied Mathematics
-  volume: '172'
-  issue:
-  pages: '102953'
-  note: Advances in Applied Mathematics, 172:102953 (2026). arXiv.
-  doi-identifier: 10.1016/j.aam.2025.102953
-  doi-url: https://doi.org/10.1016/j.aam.2025.102953
-  preprint-server: arXiv
-  preprint-identifier: '2412.05107'
-  preprint-url: https://arxiv.org/abs/2412.05107
-  software-url:
-  summary: Develops mathematically rigorous ways to measure how similar or different
-    two evolutionary networks are, for two common types of network, filling a gap
-    since comparing networks (rather than trees) has generally been much harder.
-  bibtex: |
-    @article{reichling2026metrics,
-      author = {Reichling, Christopher and van Iersel, Leo and Murakami, Yukihiro},
-      title = {{Metrics for classes of semi-binary phylogenetic networks using μ-representations}},
-      journal = {Advances in Applied Mathematics},
-      year = {2026},
-      volume = {172},
-      pages = {102953}
-    }
-  abstract: Phylogenetic networks are useful in representing the evolutionary history
-    of taxa. In certain scenarios, one requires a way to compare different networks.
-    In practice, this can be rather difficult, except within specific classes of networks.
-    In this paper, we derive metrics for the class of \emph{orchard networks} and
-    the class of \emph{strongly reticulation-visible} networks, from variants of so-called
-    \emph{$μ$-representations}, which are vector representations of networks. For
-    both network classes, we impose degree constraints on the vertices, by considering
-    \emph{semi-binary} networks.
-- title: Average-Tree Phylogenetic Diversity of Networks
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Jannik
-    last: Schestag
-  - first: Celine
-    last: Scornavacca
-  - first: Mathias
-    last: Weller
-  year: 2025
-  type: conference
-  keywords: [phylogenetic diversity, fixed-parameter tractability]
-  journal: WABI 2025
-  volume: '344'
-  issue:
-  pages: 15:1--15:20
-  note: WABI 2025. LIPIcs 344:15 (2025).
-  doi-identifier: 10.4230/LIPIcs.WABI.2025.15
-  doi-url: https://doi.org/10.4230/LIPIcs.WABI.2025.15
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  software-url:
-  summary: Introduces a way to measure phylogenetic diversity that accounts for uncertainty
-    about which branches of an evolutionary network were actually used, shows that
-    computing it is hard in general but tractable when a network has only a few hybridization
-    events, and validates the approach experimentally.
-  bibtex: |
-    @InProceedings{vaniersel_et_al:LIPIcs.WABI.2025.15,
-      author = {van Iersel, Leo and Jones, Mark and Schestag, Jannik and Scornavacca, Celine and Weller, Mathias},
-      title = {{Average-Tree Phylogenetic Diversity of Networks}},
-      booktitle = {25th International Conference on Algorithms for Bioinformatics (WABI 2025)},
-      pages = {15:1--15:20},
-      series = {Leibniz International Proceedings in Informatics (LIPIcs)},
-      ISBN = {978-3-95977-386-7},
-      ISSN = {1868-8969},
-      year = {2025},
-      volume = {344},
-      editor = {Brejová, Broňa and Patro, Rob},
-      publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
-      address = {Dagstuhl, Germany},
-      URL = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.WABI.2025.15},
-      URN = {urn:nbn:de:0030-drops-239405},
-      doi = {10.4230/LIPIcs.WABI.2025.15},
-      annote = {Keywords: phylogenetic diversity, phylogenetic networks, network phylogenetic diversity, algorithms, computational complexity}
-    }
 - title: Distinguishing Phylogenetic Level-2 Networks with Quartets and Inter-Taxon
     Quartet Distances
   release-date: 2025-10-23
@@ -799,7 +776,10 @@
     last: Wicke
   year: 2025
   type: journal
-  keywords: [identifiability, distance-based, quartet-based]
+  keywords:
+  - identifiability
+  - distance-based
+  - quartet-based
   journal: Bulletin of Mathematical Biology
   volume: '87'
   issue: 12
@@ -860,7 +840,11 @@
     last: Sullivant
   year: 2025
   type: preprint
-  keywords: [identifiability, quartet-based, subnet-based, sequence-based]
+  keywords:
+  - identifiability
+  - quartet-based
+  - subnet-based
+  - sequence-based
   journal:
   volume:
   issue:
@@ -872,10 +856,10 @@
   preprint-identifier: 10.1101/2025.04.18.649493
   preprint-url: https://www.biorxiv.org/content/10.1101/2025.04.18.649493
   software-url:
-  summary: Extends prior guarantees that an evolutionary network can be uniquely
-    recovered from enough genetic data to a wider and more realistic class of networks,
-    including cases with two closely linked hybridization events, and shows that
-    key large-scale features of any such network are always recoverable.
+  summary: Extends prior guarantees that an evolutionary network can be uniquely recovered
+    from enough genetic data to a wider and more realistic class of networks, including
+    cases with two closely linked hybridization events, and shows that key large-scale
+    features of any such network are always recoverable.
   bibtex: |
     @misc{englander2025identifiability,
       author = {Englander, Aviva K and Frohn, Martin and Gross, Elizabeth and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Sullivant, Seth},
@@ -890,6 +874,64 @@
     Our main result shows that binary semi-directed level-2 phylogenetic networks are generically identifiable under the Jukes-Cantor model, provided they are triangle-free and strongly tree-child. We also strengthen existing identifiability results for level-1 networks, showing that the number of reticulation nodes is generically identifiable under the Jukes-Cantor model.
 
     In addition, we present more general identifiability results that do not restrict the network level at all and hold for the Jukes-Cantor as well as for the Kimura-2-parameter model. Specifically, we demonstrate that any two binary semi-directed networks that display different sets of 4-leaf subtrees (quartets) are distinguishable. This has direct implications for the identifiability of a networks reticulated components (blobs). We show that the tree-of-blobs of a network, the global branching structure of the network, is identifiable, as well as the circular ordering of the subnetworks around each blob, for networks in which edges do not cross and taxa are on the outside.
+- title: Reconstructing semi-directed level-1 networks using few quarnets
+  release-date: 2025-03-28
+  authors:
+  - first: Martin
+    last: Frohn
+  - first: Niels
+    last: Holtgrefe
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Steven
+    last: Kelk
+  year: 2025
+  type: journal
+  keywords:
+  - quartet-based
+  - subnet-based
+  journal: Journal of Computer and System Sciences
+  volume: '152'
+  issue:
+  pages: '103655'
+  note: Journal of Computer and System Sciences, 152:103655 (2025). arXiv.
+  doi-identifier: 10.1016/j.jcss.2025.103655
+  doi-url: https://doi.org/10.1016/j.jcss.2025.103655
+  preprint-server: arXiv
+  preprint-identifier: '2409.06034'
+  preprint-url: https://arxiv.org/abs/2409.06034
+  software-url:
+  summary: Shows that an evolutionary network can be accurately reconstructed from
+    far fewer small four-species building blocks than previously thought needed, giving
+    a fast algorithm that uses close to the minimum possible amount of such information,
+    and extending the approach to recover the coarse overall shape of even more complex
+    networks.
+  bibtex: |
+    @article{frohn2025reconstructing,
+      title={Reconstructing semi-directed level-1 networks using few quarnets},
+      author={Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
+      journal={Journal of Computer and System Sciences},
+      doi={10.1016/j.jcss.2025.103655},
+      volume = {152},
+      pages = {103655},
+      year = {2025}
+    }
+  abstract: Semi-directed networks are partially directed graphs that model evolution
+    where the directed edges represent reticulate evolutionary events. We present
+    an algorithm that reconstructs binary $n$-leaf semi-directed level-1 networks
+    in $O( n^2)$ time from its quarnets (4-leaf subnetworks). Our method assumes we
+    have direct access to all quarnets, yet uses only an asymptotically optimal number
+    of $O(n \log n)$ quarnets. When the network is assumed to contain no triangles,
+    our method instead relies only on four-cycle quarnets and the splits of the other
+    quarnets. A variant of our algorithm works with quartets rather than quarnets
+    and we show that it reconstructs most of a semi-directed level-1 network from
+    an asymptotically optimal $O(n \log n)$ of the quartets it displays. Additionally,
+    we provide an $O(n^3)$ time algorithm that reconstructs the tree-of-blobs of any
+    binary $n$-leaf semi-directed network with unbounded level from $O(n^3)$ splits
+    of its quarnets.
 - title: 'Squirrel: Reconstructing semi-directed phylogenetic level-1 networks from
     four-leaved networks or sequence alignments'
   release-date: 2025-03-27
@@ -911,7 +953,10 @@
     last: Moulton
   year: 2025
   type: journal
-  keywords: [quartet-based, sequence-based, applications]
+  keywords:
+  - quartet-based
+  - sequence-based
+  - applications
   journal: Molecular Biology and Evolution
   volume: '42'
   issue: '4'
@@ -959,6 +1004,69 @@
     level-1 network, it is guaranteed to reconstruct the original network. SO_SCPLOWQUIRRELC_SCPLOW
     is implemented in Python, has an easy-to-use graphical user-interface that takes
     sequence alignments or quarnets as input, and is freely available at https://github.com/nholtgrefe/squirrel.'
+- title: When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?
+  release-date:
+  authors:
+  - first: Katharina
+    middle:
+    - T
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Vincent
+    last: Moulton
+  - first: Leonie
+    last: Veenema-Nipius
+  year: 2025
+  type: journal
+  keywords:
+  - encoding
+  - subnet-based
+  journal: Bulletin of Mathematical Biology
+  volume: '87'
+  issue:
+  pages: '136'
+  note: Bulletin of Mathematical Biology, 87:136 (2025). arXiv.
+  doi-identifier: 10.1007/s11538-025-01510-5
+  doi-url: https://doi.org/10.1007/s11538-025-01510-5
+  preprint-server: arXiv
+  preprint-identifier: '2408.12997'
+  preprint-url: https://arxiv.org/abs/2408.12997
+  software-url:
+  summary: Determines how complex an evolutionary network can get before the information
+    in all its four-species sub-networks is no longer enough to pin it down exactly,
+    showing this holds up to a certain complexity level but breaks down beyond it,
+    while the network's coarse overall structure remains always recoverable — results
+    that underpin the reliability of practical reconstruction software such as Squirrel.
+  bibtex: |
+    @article{huber2025when,
+      author = {Huber, Katharina T and van Iersel, Leo and Jones, Mark and Moulton, Vincent and Veenema-Nipius, Leonie},
+      title = {{When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?}},
+      journal = {Bulletin of Mathematical Biology},
+      year = {2025},
+      volume = {87},
+      pages = {136}
+    }
+  abstract: Phylogenetic networks are graphs that are used to represent evolutionary
+    relationships between different taxa. They generalize phylogenetic trees since
+    for example, unlike trees, they permit lineages to combine. Recently, there has
+    been rising interest in semi-directed phylogenetic networks, which are mixed graphs
+    in which certain lineage combination events are represented by directed edges
+    coming together, whereas the remaining edges are left undirected. One reason to
+    consider such networks is that it can be difficult to root a network using real
+    data. In this paper, we consider the problem of when a semi-directed phylogenetic
+    network is defined or encoded by the smaller networks that it induces on the 4-leaf
+    subsets of its leaf set. These smaller networks are called quarnets. We prove
+    that semi-directed binary level-2 phylogenetic networks are encoded by their quarnets,
+    but that this is not the case for level-3. In addition, we prove that the so-called
+    blob tree of a semi-directed binary network, a tree that give the coarse-grained
+    structure of the network, is always encoded by the quarnets of the network. These
+    results are relevant for proving the statistical consistency of programs that
+    are currently being developed for reconstructing phylogenetic networks from practical
+    data, such as the recently developed Squirrel software tool.
 - title: Is this network proper forest-based?
   release-date:
   authors:
@@ -973,7 +1081,8 @@
     last: Scholz
   year: 2025
   type: journal
-  keywords: [fixed-parameter tractability]
+  keywords:
+  - fixed-parameter tractability
   journal: Information Processing Letters
   volume: '187'
   issue:
@@ -1019,7 +1128,7 @@
     is a new characterization for when a network with $m$ roots is proper forest-based
     which is given in terms of the existence of certain $m$-colorings of the vertices
     of the network.
-- title: Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond
+- title: Average-Tree Phylogenetic Diversity of Networks
   release-date:
   authors:
   - first: Leo
@@ -1035,323 +1144,43 @@
     last: Weller
   year: 2025
   type: conference
-  keywords: [phylogenetic diversity, fixed-parameter tractability]
-  journal: RECOMB-CG 2025
-  volume:
+  keywords:
+  - phylogenetic diversity
+  - fixed-parameter tractability
+  journal: WABI 2025
+  volume: '344'
   issue:
-  pages: 107--130
-  note: RECOMB-CG (2025). arXiv.
-  doi-identifier: 10.1007/978-3-031-94928-9_7
-  doi-url: https://doi.org/10.1007/978-3-031-94928-9_7
-  preprint-server: arXiv
-  preprint-identifier: '2405.01091'
-  preprint-url: https://arxiv.org/abs/2405.01091
-  software-url:
-  summary: Gives an efficient algorithm for selecting the most diverse subset of
-    species from an evolutionary network whenever the network has a manageable number
-    of hybridization events, and shows that a natural attempt to broaden this efficiency
-    to more tangled networks is impossible unless a major unsolved problem in computer
-    science (P=NP) turns out to be false.
-  bibtex: |
-    @inproceedings{DBLP:conf/recombcg/IerselJSSW25,
-      author = {Leo van Iersel and Mark Jones and Jannik Schestag and Céline Scornavacca and Mathias Weller},
-      title = {Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond},
-      booktitle = {Comparative Genomics - 22nd RECOMB International Workshop, RECOMB-CG 2025, Seoul, South Korea, April 24-25, 2025, Proceedings},
-      pages = {107--130},
-      year = {2025},
-      crossref = {DBLP:conf/recombcg/2025},
-      url = {https://doi.org/10.1007/978-3-031-94928-9_7},
-      doi = {10.1007/978-3-031-94928-9_7},
-      biburl = {https://dblp.org/rec/conf/recombcg/IerselJSSW25.bib},
-      bibsource = {dblp computer science bibliography, https://dblp.org}
-    }
-  abstract: 'Network Phylogenetic Diversity (Network-PD) is a measure for the diversity
-    of a set of species based on a rooted phylogenetic network (with branch lengths
-    and inheritance probabilities on the reticulation edges) describing the evolution
-    of those species. We consider the Max-Network-PD problem: Given such a network,
-    find k species with maximum Network-PD score. We show that this problem is fixed-parameter
-    tractable (FPT) for binary networks, by describing an optimal algorithm running
-    in O(2r log(k)(n + r)) time, with n the total number of species in the network
-    and r its reticulation number. Furthermore, we show that Max-Network-PD is NP-hard
-    for level-1 networks, proving that, unless P=NP, the FPT approach cannot be extended
-    by using the level as parameter instead of the reticulation number.'
-- title: A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple
-    Unrooted Binary Trees
-  release-date:
-  authors:
-  - first: Jordan
-    last: Dempsey
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Norbert
-    last: Zeh
-  year: 2025
-  type: journal
-  keywords: [agreement forests, approximation algorithms]
-  journal: Information Processing Letters
-  volume: '190'
-  issue:
-  pages: '106572'
-  note: Information Processing Letters, 190:106572 (2025). arXiv.
-  doi-identifier: 10.1016/j.ipl.2025.106572
-  doi-url: https://doi.org/10.1016/j.ipl.2025.106572
-  preprint-server: arXiv
-  preprint-identifier: '2409.08440'
-  preprint-url: https://arxiv.org/abs/2409.08440
-  software-url:
-  summary: Gives a much simpler algorithm that comes within a factor of 4 of the
-    best possible score for measuring how much several evolutionary trees disagree
-    with each other, matching the best known guarantee with a far more straightforward
-    method, and proves that this particular approach cannot be improved any further.
-  bibtex: |
-    @article{dempsey2025simple,
-      author = {Dempsey, Jordan and van Iersel, Leo and Jones, Mark and Zeh, Norbert},
-      title = {{A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple Unrooted Binary Trees}},
-      journal = {Information Processing Letters},
-      year = {2025},
-      volume = {190},
-      pages = {106572},
-      archivePrefix = {arXiv},
-      eprint = {2409.08440},
-      doi = {10.1016/j.ipl.2025.106572},
-      url = {https://doi.org/10.1016/j.ipl.2025.106572}
-    }
-  abstract: We present a simple 4-approximation algorithm for computing a maximum
-    agreement forest of multiple unrooted binary trees. This algorithm applies LP
-    rounding to an extension of a recent ILP formulation of the maximum agreement
-    forest problem on two trees by Van Wersch al. We achieve the same approximation
-    ratio as the algorithm of Chen et al. but our algorithm is extremely simple. We
-    also prove that no algorithm based on the ILP formulation by Van Wersch et al.
-    can achieve an approximation ratio of $4 - \varepsilon$, for any $\varepsilon
-    > 0$, even on two trees. To this end, we prove that the integrality gap of the
-    ILP approaches 4 as the size of the two input trees grows.
-- title: Reconstructing semi-directed level-1 networks using few quarnets
-  release-date: 2025-03-28
-  authors:
-  - first: Martin
-    last: Frohn
-  - first: Niels
-    last: Holtgrefe
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Steven
-    last: Kelk
-  year: 2025
-  type: journal
-  keywords: [quartet-based, subnet-based]
-  journal: Journal of Computer and System Sciences
-  volume: '152'
-  issue:
-  pages: '103655'
-  note: Journal of Computer and System Sciences, 152:103655 (2025). arXiv.
-  doi-identifier: 10.1016/j.jcss.2025.103655
-  doi-url: https://doi.org/10.1016/j.jcss.2025.103655
-  preprint-server: arXiv
-  preprint-identifier: '2409.06034'
-  preprint-url: https://arxiv.org/abs/2409.06034
-  software-url:
-  summary: Shows that an evolutionary network can be accurately reconstructed from
-    far fewer small four-species building blocks than previously thought needed,
-    giving a fast algorithm that uses close to the minimum possible amount of such
-    information, and extending the approach to recover the coarse overall shape of
-    even more complex networks.
-  bibtex: |
-    @article{frohn2025reconstructing,
-      title={Reconstructing semi-directed level-1 networks using few quarnets},
-      author={Frohn, Martin and Holtgrefe, Niels and van Iersel, Leo and Jones, Mark and Kelk, Steven},
-      journal={Journal of Computer and System Sciences},
-      doi={10.1016/j.jcss.2025.103655},
-      volume = {152},
-      pages = {103655},
-      year = {2025}
-    }
-  abstract: Semi-directed networks are partially directed graphs that model evolution
-    where the directed edges represent reticulate evolutionary events. We present
-    an algorithm that reconstructs binary $n$-leaf semi-directed level-1 networks
-    in $O( n^2)$ time from its quarnets (4-leaf subnetworks). Our method assumes we
-    have direct access to all quarnets, yet uses only an asymptotically optimal number
-    of $O(n \log n)$ quarnets. When the network is assumed to contain no triangles,
-    our method instead relies only on four-cycle quarnets and the splits of the other
-    quarnets. A variant of our algorithm works with quartets rather than quarnets
-    and we show that it reconstructs most of a semi-directed level-1 network from
-    an asymptotically optimal $O(n \log n)$ of the quartets it displays. Additionally,
-    we provide an $O(n^3)$ time algorithm that reconstructs the tree-of-blobs of any
-    binary $n$-leaf semi-directed network with unbounded level from $O(n^3)$ splits
-    of its quarnets.
-- title: When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?
-  release-date:
-  authors:
-  - first: Katharina
-    middle:
-    - T
-    last: Huber
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Vincent
-    last: Moulton
-  - first: Leonie
-    last: Veenema-Nipius
-  year: 2025
-  type: journal
-  keywords: [encoding, subnet-based]
-  journal: Bulletin of Mathematical Biology
-  volume: '87'
-  issue:
-  pages: '136'
-  note: Bulletin of Mathematical Biology, 87:136 (2025). arXiv.
-  doi-identifier: 10.1007/s11538-025-01510-5
-  doi-url: https://doi.org/10.1007/s11538-025-01510-5
-  preprint-server: arXiv
-  preprint-identifier: '2408.12997'
-  preprint-url: https://arxiv.org/abs/2408.12997
-  software-url:
-  summary: Determines how complex an evolutionary network can get before the information
-    in all its four-species sub-networks is no longer enough to pin it down exactly,
-    showing this holds up to a certain complexity level but breaks down beyond it,
-    while the network's coarse overall structure remains always recoverable — results
-    that underpin the reliability of practical reconstruction software such as Squirrel.
-  bibtex: |
-    @article{huber2025when,
-      author = {Huber, Katharina T and van Iersel, Leo and Jones, Mark and Moulton, Vincent and Veenema-Nipius, Leonie},
-      title = {{When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?}},
-      journal = {Bulletin of Mathematical Biology},
-      year = {2025},
-      volume = {87},
-      pages = {136}
-    }
-  abstract: Phylogenetic networks are graphs that are used to represent evolutionary
-    relationships between different taxa. They generalize phylogenetic trees since
-    for example, unlike trees, they permit lineages to combine. Recently, there has
-    been rising interest in semi-directed phylogenetic networks, which are mixed graphs
-    in which certain lineage combination events are represented by directed edges
-    coming together, whereas the remaining edges are left undirected. One reason to
-    consider such networks is that it can be difficult to root a network using real
-    data. In this paper, we consider the problem of when a semi-directed phylogenetic
-    network is defined or encoded by the smaller networks that it induces on the 4-leaf
-    subsets of its leaf set. These smaller networks are called quarnets. We prove
-    that semi-directed binary level-2 phylogenetic networks are encoded by their quarnets,
-    but that this is not the case for level-3. In addition, we prove that the so-called
-    blob tree of a semi-directed binary network, a tree that give the coarse-grained
-    structure of the network, is always encoded by the quarnets of the network. These
-    results are relevant for proving the statistical consistency of programs that
-    are currently being developed for reconstructing phylogenetic networks from practical
-    data, such as the recently developed Squirrel software tool.
-- title: A Wild Sheep Chase Through an Orchard
-  release-date:
-  authors:
-  - first: Jordan
-    last: Dempsey
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Mark
-    last: Jones
-  - first: Yukihiro
-    last: Murakami
-  - first: Norbert
-    last: Zeh
-  year: 2024
-  type: preprint
-  keywords: [orientation]
-  journal:
-  volume:
-  issue:
-  pages:
-  note: arXiv:2408.10769 (2024).
-  doi-identifier: 10.48550/arXiv.2408.10769
-  doi-url: https://doi.org/10.48550/arXiv.2408.10769
-  preprint-server: arXiv
-  preprint-identifier: '2408.10769'
-  preprint-url: https://arxiv.org/abs/2408.10769
-  software-url:
-  summary: Shows that determining whether an evolutionary network — considered without
-    knowing the direction of time — could have arisen from a tree-like history augmented
-    by horizontal gene transfer is computationally hard, and introduces a new mathematical
-    description of such networks that may help future research make progress despite
-    this hardness.
-  bibtex: |
-    @misc{dempsey2024wild,
-      author = {Dempsey, Jordan and van Iersel, Leo and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
-      title = {{A Wild Sheep Chase Through an Orchard}},
-      year = {2024},
-      archivePrefix = {arXiv},
-      eprint = {2408.10769},
-      doi = {10.48550/arXiv.2408.10769},
-      url = {https://doi.org/10.48550/arXiv.2408.10769}
-    }
-  abstract: Orchards are a biologically relevant class of phylogenetic networks as
-    they can describe treelike evolutionary histories augmented with horizontal transfer
-    events. Moreover, the class has attractive mathematical characterizations that
-    can be exploited algorithmically. On the other hand, undirected orchard networks
-    have hardly been studied yet. Here, we prove that deciding whether an undirected,
-    binary phylogenetic network is an orchard -- or equivalently, whether it has an
-    orientation that makes it a rooted orchard -- is NP-hard. For this, we introduce
-    a new characterization of undirected orchards which could be useful for proving
-    positive results.
-- title: Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking
-    and Machine Learning
-  release-date:
-  authors:
-  - first: Giulia
-    last: Bernardini
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Esther
-    last: Julien
-  - first: Leen
-    last: Stougie
-  year: 2024
-  type: journal
-  keywords: [hybridization number, tree-based, machine learning]
-  journal: Molecular Phylogenetics and Evolution
-  volume: '199'
-  issue:
-  pages: '108137'
-  note: Molecular Phylogenetics and Evolution, 199:108137 (2024).
-  doi-identifier: 10.1016/j.ympev.2024.108137
-  doi-url: https://doi.org/10.1016/j.ympev.2024.108137
+  pages: 15:1--15:20
+  note: WABI 2025. LIPIcs 344:15 (2025).
+  doi-identifier: 10.4230/LIPIcs.WABI.2025.15
+  doi-url: https://doi.org/10.4230/LIPIcs.WABI.2025.15
   preprint-server:
   preprint-identifier:
   preprint-url:
   software-url:
-  summary: Presents FHyNCH, software that combines a tree-simplification technique
-    with machine learning to reconstruct evolutionary networks from large collections
-    of trees, even when those trees are only partially resolved and cover different,
-    overlapping sets of species — a scale and flexibility beyond what earlier methods
-    could handle.
+  summary: Introduces a way to measure phylogenetic diversity that accounts for uncertainty
+    about which branches of an evolutionary network were actually used, shows that
+    computing it is hard in general but tractable when a network has only a few hybridization
+    events, and validates the approach experimentally.
   bibtex: |
-    @article{bernardini2024inferring,
-      author = {Bernardini, Giulia and van Iersel, Leo and Julien, Esther and Stougie, Leen},
-      title = {{Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning}},
-      journal = {Molecular Phylogenetics and Evolution},
-      year = {2024},
-      volume = {199},
-      pages = {108137},
-      doi = {10.1016/j.ympev.2024.108137},
-      url = {https://doi.org/10.1016/j.ympev.2024.108137}
+    @InProceedings{vaniersel_et_al:LIPIcs.WABI.2025.15,
+      author = {van Iersel, Leo and Jones, Mark and Schestag, Jannik and Scornavacca, Celine and Weller, Mathias},
+      title = {{Average-Tree Phylogenetic Diversity of Networks}},
+      booktitle = {25th International Conference on Algorithms for Bioinformatics (WABI 2025)},
+      pages = {15:1--15:20},
+      series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+      ISBN = {978-3-95977-386-7},
+      ISSN = {1868-8969},
+      year = {2025},
+      volume = {344},
+      editor = {Brejová, Broňa and Patro, Rob},
+      publisher = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+      address = {Dagstuhl, Germany},
+      URL = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.WABI.2025.15},
+      URN = {urn:nbn:de:0030-drops-239405},
+      doi = {10.4230/LIPIcs.WABI.2025.15},
+      annote = {Keywords: phylogenetic diversity, phylogenetic networks, network phylogenetic diversity, algorithms, computational complexity}
     }
-  abstract: The Hybridization problem asks to reconcile a set of conflicting phylogenetic
-    trees into a single phylogenetic network with the smallest possible number of
-    reticulation nodes. This problem is computationally hard and previous solutions
-    are restricted to small and/or severely restricted data sets, for example, a set
-    of binary trees with the same taxon set or only two non-binary trees with non-equal
-    taxon sets. Building on our previous work on binary trees, we present FHyNCH,
-    the first algorithmic framework to heuristically solve the Hybridization problem
-    for large sets of multifurcating trees whose sets of taxa may differ. Our heuristics
-    combine the cherry-picking technique, recently proposed to solve the same problem
-    for binary trees, with two carefully designed machine-learning models. We demonstrate
-    that our methods are practical and produce qualitatively good solutions through
-    experiments on both synthetic and real data sets.
 - title: Fence decompositions and cherry covers in non-binary phylogenetic networks
   release-date:
   authors:
@@ -1406,6 +1235,172 @@
     networks, by studying its fence decomposition. Finally, we prove that it is possible
     to characterize semi-binary tree-child networks, a subclass of tree-based networks,
     in terms of the number of their cherry covers.
+- title: Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Jannik
+    last: Schestag
+  - first: Celine
+    last: Scornavacca
+  - first: Mathias
+    last: Weller
+  year: 2025
+  type: conference
+  keywords:
+  - phylogenetic diversity
+  - fixed-parameter tractability
+  journal: RECOMB-CG 2025
+  volume:
+  issue:
+  pages: 107--130
+  note: RECOMB-CG (2025). arXiv.
+  doi-identifier: 10.1007/978-3-031-94928-9_7
+  doi-url: https://doi.org/10.1007/978-3-031-94928-9_7
+  preprint-server: arXiv
+  preprint-identifier: '2405.01091'
+  preprint-url: https://arxiv.org/abs/2405.01091
+  software-url:
+  summary: Gives an efficient algorithm for selecting the most diverse subset of species
+    from an evolutionary network whenever the network has a manageable number of hybridization
+    events, and shows that a natural attempt to broaden this efficiency to more tangled
+    networks is impossible unless a major unsolved problem in computer science (P=NP)
+    turns out to be false.
+  bibtex: |
+    @inproceedings{DBLP:conf/recombcg/IerselJSSW25,
+      author = {Leo van Iersel and Mark Jones and Jannik Schestag and Céline Scornavacca and Mathias Weller},
+      title = {Phylogenetic Network Diversity Parameterized by Reticulation Number and Beyond},
+      booktitle = {Comparative Genomics - 22nd RECOMB International Workshop, RECOMB-CG 2025, Seoul, South Korea, April 24-25, 2025, Proceedings},
+      pages = {107--130},
+      year = {2025},
+      crossref = {DBLP:conf/recombcg/2025},
+      url = {https://doi.org/10.1007/978-3-031-94928-9_7},
+      doi = {10.1007/978-3-031-94928-9_7},
+      biburl = {https://dblp.org/rec/conf/recombcg/IerselJSSW25.bib},
+      bibsource = {dblp computer science bibliography, https://dblp.org}
+    }
+  abstract: 'Network Phylogenetic Diversity (Network-PD) is a measure for the diversity
+    of a set of species based on a rooted phylogenetic network (with branch lengths
+    and inheritance probabilities on the reticulation edges) describing the evolution
+    of those species. We consider the Max-Network-PD problem: Given such a network,
+    find k species with maximum Network-PD score. We show that this problem is fixed-parameter
+    tractable (FPT) for binary networks, by describing an optimal algorithm running
+    in O(2r log(k)(n + r)) time, with n the total number of species in the network
+    and r its reticulation number. Furthermore, we show that Max-Network-PD is NP-hard
+    for level-1 networks, proving that, unless P=NP, the FPT approach cannot be extended
+    by using the level as parameter instead of the reticulation number.'
+- title: A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple
+    Unrooted Binary Trees
+  release-date:
+  authors:
+  - first: Jordan
+    last: Dempsey
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Norbert
+    last: Zeh
+  year: 2025
+  type: journal
+  keywords:
+  - agreement forests
+  - approximation algorithms
+  journal: Information Processing Letters
+  volume: '190'
+  issue:
+  pages: '106572'
+  note: Information Processing Letters, 190:106572 (2025). arXiv.
+  doi-identifier: 10.1016/j.ipl.2025.106572
+  doi-url: https://doi.org/10.1016/j.ipl.2025.106572
+  preprint-server: arXiv
+  preprint-identifier: '2409.08440'
+  preprint-url: https://arxiv.org/abs/2409.08440
+  software-url:
+  summary: Gives a much simpler algorithm that comes within a factor of 4 of the best
+    possible score for measuring how much several evolutionary trees disagree with
+    each other, matching the best known guarantee with a far more straightforward
+    method, and proves that this particular approach cannot be improved any further.
+  bibtex: |
+    @article{dempsey2025simple,
+      author = {Dempsey, Jordan and van Iersel, Leo and Jones, Mark and Zeh, Norbert},
+      title = {{A Simple 4-Approximation Algorithm for Maximum Agreement Forests on Multiple Unrooted Binary Trees}},
+      journal = {Information Processing Letters},
+      year = {2025},
+      volume = {190},
+      pages = {106572},
+      archivePrefix = {arXiv},
+      eprint = {2409.08440},
+      doi = {10.1016/j.ipl.2025.106572},
+      url = {https://doi.org/10.1016/j.ipl.2025.106572}
+    }
+  abstract: We present a simple 4-approximation algorithm for computing a maximum
+    agreement forest of multiple unrooted binary trees. This algorithm applies LP
+    rounding to an extension of a recent ILP formulation of the maximum agreement
+    forest problem on two trees by Van Wersch al. We achieve the same approximation
+    ratio as the algorithm of Chen et al. but our algorithm is extremely simple. We
+    also prove that no algorithm based on the ILP formulation by Van Wersch et al.
+    can achieve an approximation ratio of $4 - \varepsilon$, for any $\varepsilon
+    > 0$, even on two trees. To this end, we prove that the integrality gap of the
+    ILP approaches 4 as the size of the two input trees grows.
+- title: A Wild Sheep Chase Through an Orchard
+  release-date:
+  authors:
+  - first: Jordan
+    last: Dempsey
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2024
+  type: preprint
+  keywords:
+  - orientation
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:2408.10769 (2024).
+  doi-identifier: 10.48550/arXiv.2408.10769
+  doi-url: https://doi.org/10.48550/arXiv.2408.10769
+  preprint-server: arXiv
+  preprint-identifier: '2408.10769'
+  preprint-url: https://arxiv.org/abs/2408.10769
+  software-url:
+  summary: Shows that determining whether an evolutionary network — considered without
+    knowing the direction of time — could have arisen from a tree-like history augmented
+    by horizontal gene transfer is computationally hard, and introduces a new mathematical
+    description of such networks that may help future research make progress despite
+    this hardness.
+  bibtex: |
+    @misc{dempsey2024wild,
+      author = {Dempsey, Jordan and van Iersel, Leo and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
+      title = {{A Wild Sheep Chase Through an Orchard}},
+      year = {2024},
+      archivePrefix = {arXiv},
+      eprint = {2408.10769},
+      doi = {10.48550/arXiv.2408.10769},
+      url = {https://doi.org/10.48550/arXiv.2408.10769}
+    }
+  abstract: Orchards are a biologically relevant class of phylogenetic networks as
+    they can describe treelike evolutionary histories augmented with horizontal transfer
+    events. Moreover, the class has attractive mathematical characterizations that
+    can be exploited algorithmically. On the other hand, undirected orchard networks
+    have hardly been studied yet. Here, we prove that deciding whether an undirected,
+    binary phylogenetic network is an orchard -- or equivalently, whether it has an
+    orientation that makes it a rooted orchard -- is NP-hard. For this, we introduce
+    a new characterization of undirected orchards which could be useful for proving
+    positive results.
 - title: Invariants for level-1 phylogenetic networks under the random walk 4-state
     Markov model
   release-date: 2024-07-16
@@ -1423,7 +1418,9 @@
     last: Kelk
   year: 2024
   type: preprint
-  keywords: [identifiability, sequence-based]
+  keywords:
+  - identifiability
+  - sequence-based
   journal:
   volume:
   issue:
@@ -1477,7 +1474,9 @@
     last: Stougie
   year: 2024
   type: journal
-  keywords: [tree-containment, machine learning]
+  keywords:
+  - tree-containment
+  - machine learning
   journal: Transactions on Machine Learning Research (2024)
   volume:
   issue:
@@ -1489,11 +1488,11 @@
   preprint-identifier: '2404.09812'
   preprint-url: https://arxiv.org/abs/2404.09812
   software-url:
-  summary: Uses machine learning, specifically graph neural networks, to quickly
-    and approximately check whether a proposed evolutionary tree is consistent with
-    a larger network — a problem that is computationally hard to solve exactly —
-    achieving over 95% accuracy and generalizing to larger species sets than it was
-    trained on.
+  summary: Uses machine learning, specifically graph neural networks, to quickly and
+    approximately check whether a proposed evolutionary tree is consistent with a
+    larger network — a problem that is computationally hard to solve exactly — achieving
+    over 95% accuracy and generalizing to larger species sets than it was trained
+    on.
   bibtex: |
     @article{dushatskiy2024solving,
       author = {Dushatskiy, Arkadiy and Julien, Esther and van Iersel, Leo and Stougie, Leen},
@@ -1513,62 +1512,6 @@
     than the instances contained in the training dataset (i.e., our algorithm has
     the inductive learning ability). Our algorithm demonstrates an accuracy of over
     $95\%$ in solving the tree containment problem on instances with up to 100 leaves.
-- title: A near-linear kernel for bounded-state parsimony distance
-  release-date:
-  authors:
-  - first: Elise
-    last: Deen
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Remie
-    last: Janssen
-  - first: Mark
-    last: Jones
-  - first: Yukihiro
-    last: Murakami
-  - first: Norbert
-    last: Zeh
-  year: 2024
-  type: journal
-  keywords: [fixed-parameter tractability, metrics, parsimony]
-  journal: Journal of Computer and System Sciences
-  volume: '140'
-  issue:
-  pages: '103477'
-  note: Journal of Computer and System Sciences, 140:103477 (2024). arXiv.
-  doi-identifier: 10.1016/j.jcss.2023.103477
-  doi-url: https://doi.org/10.1016/j.jcss.2023.103477
-  preprint-server: arXiv
-  preprint-identifier: '2211.00378'
-  preprint-url: https://arxiv.org/abs/2211.00378
-  software-url:
-  summary: Proves that a natural measure of how much two evolutionary trees disagree,
-    based on a limited number of possible character states, can always be efficiently
-    simplified to a near-minimal instance before solving, extending an efficiency
-    guarantee that was previously known only for a related, less restrictive version
-    of the measure.
-  bibtex: |
-    @article{deen2024nearlinear,
-      author = {Deen, Elise and van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
-      title = {{A near-linear kernel for bounded-state parsimony distance}},
-      journal = {Journal of Computer and System Sciences},
-      year = {2024},
-      volume = {140},
-      pages = {103477}
-    }
-  abstract: The maximum parsimony distance $d_{\textrm{MP}}(T_1,T_2)$ and the bounded-state
-    maximum parsimony distance $d_{\textrm{MP}}^t(T_1,T_2)$ measure the difference
-    between two phylogenetic trees $T_1,T_2$ in terms of the maximum difference between
-    their parsimony scores for any character (with $t$ a bound on the number of states
-    in the character, in the case of $d_{\textrm{MP}}^t(T_1,T_2)$). While computing
-    $d_{\textrm{MP}}(T_1, T_2)$ was previously shown to be fixed-parameter tractable
-    with a linear kernel, no such result was known for $d_{\textrm{MP}}^t(T_1,T_2)$.
-    In this paper, we prove that computing $d_{\textrm{MP}}^t(T_1, T_2)$ is fixed-parameter
-    tractable for all~$t$. Specifically, we prove that this problem has a kernel of
-    size $O(k \lg k)$, where $k = d_{\textrm{MP}}^t(T_1, T_2)$. As the primary analysis
-    tool, we introduce the concept of leg-disjoint incompatible quartets, which may
-    be of independent interest.
 - title: Orienting undirected phylogenetic networks
   release-date:
   authors:
@@ -1591,7 +1534,9 @@
     last: Semple
   year: 2024
   type: journal
-  keywords: [fixed-parameter tractability, orientation]
+  keywords:
+  - fixed-parameter tractability
+  - orientation
   journal: Journal of Computer and System Sciences
   volume: '140'
   issue:
@@ -1605,10 +1550,10 @@
   preprint-url: https://arxiv.org/abs/1906.07430
   software-url:
   summary: Studies when an evolutionary network drawn without any indication of the
-    direction of time can be consistently assigned a direction, giving efficient
-    algorithms for this task both when some of the necessary information is already
-    known and, more generally, when it must be inferred from the network's shape
-    alone, for networks that are not too tangled.
+    direction of time can be consistently assigned a direction, giving efficient algorithms
+    for this task both when some of the necessary information is already known and,
+    more generally, when it must be inferred from the network's shape alone, for networks
+    that are not too tangled.
   bibtex: |
     @article{huber2024orienting,
       author = {Huber, Katharina T and van Iersel, Leo and Janssen, Remie and Jones, Mark and Moulton, Vincent and Murakami, Yukihiro and Semple, Charles},
@@ -1643,7 +1588,8 @@
     last: Weller
   year: 2024
   type: journal
-  keywords: [hybridization number]
+  keywords:
+  - hybridization number
   journal: Peer Community Journal
   volume: '4'
   issue:
@@ -1683,6 +1629,123 @@
     of methods for the Hybridization Number problem on more than two trees. This fundamental
     problem asks to construct a binary phylogenetic network with a minimum number
     of reticulations displaying a given set of phylogenetic trees
+- title: Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking
+    and Machine Learning
+  release-date:
+  authors:
+  - first: Giulia
+    last: Bernardini
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Esther
+    last: Julien
+  - first: Leen
+    last: Stougie
+  year: 2024
+  type: journal
+  keywords:
+  - hybridization number
+  - tree-based
+  - machine learning
+  journal: Molecular Phylogenetics and Evolution
+  volume: '199'
+  issue:
+  pages: '108137'
+  note: Molecular Phylogenetics and Evolution, 199:108137 (2024).
+  doi-identifier: 10.1016/j.ympev.2024.108137
+  doi-url: https://doi.org/10.1016/j.ympev.2024.108137
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  summary: Presents FHyNCH, software that combines a tree-simplification technique
+    with machine learning to reconstruct evolutionary networks from large collections
+    of trees, even when those trees are only partially resolved and cover different,
+    overlapping sets of species — a scale and flexibility beyond what earlier methods
+    could handle.
+  bibtex: |
+    @article{bernardini2024inferring,
+      author = {Bernardini, Giulia and van Iersel, Leo and Julien, Esther and Stougie, Leen},
+      title = {{Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning}},
+      journal = {Molecular Phylogenetics and Evolution},
+      year = {2024},
+      volume = {199},
+      pages = {108137},
+      doi = {10.1016/j.ympev.2024.108137},
+      url = {https://doi.org/10.1016/j.ympev.2024.108137}
+    }
+  abstract: The Hybridization problem asks to reconcile a set of conflicting phylogenetic
+    trees into a single phylogenetic network with the smallest possible number of
+    reticulation nodes. This problem is computationally hard and previous solutions
+    are restricted to small and/or severely restricted data sets, for example, a set
+    of binary trees with the same taxon set or only two non-binary trees with non-equal
+    taxon sets. Building on our previous work on binary trees, we present FHyNCH,
+    the first algorithmic framework to heuristically solve the Hybridization problem
+    for large sets of multifurcating trees whose sets of taxa may differ. Our heuristics
+    combine the cherry-picking technique, recently proposed to solve the same problem
+    for binary trees, with two carefully designed machine-learning models. We demonstrate
+    that our methods are practical and produce qualitatively good solutions through
+    experiments on both synthetic and real data sets.
+- title: A near-linear kernel for bounded-state parsimony distance
+  release-date:
+  authors:
+  - first: Elise
+    last: Deen
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2024
+  type: journal
+  keywords:
+  - fixed-parameter tractability
+  - metrics
+  - parsimony
+  journal: Journal of Computer and System Sciences
+  volume: '140'
+  issue:
+  pages: '103477'
+  note: Journal of Computer and System Sciences, 140:103477 (2024). arXiv.
+  doi-identifier: 10.1016/j.jcss.2023.103477
+  doi-url: https://doi.org/10.1016/j.jcss.2023.103477
+  preprint-server: arXiv
+  preprint-identifier: '2211.00378'
+  preprint-url: https://arxiv.org/abs/2211.00378
+  software-url:
+  summary: Proves that a natural measure of how much two evolutionary trees disagree,
+    based on a limited number of possible character states, can always be efficiently
+    simplified to a near-minimal instance before solving, extending an efficiency
+    guarantee that was previously known only for a related, less restrictive version
+    of the measure.
+  bibtex: |
+    @article{deen2024nearlinear,
+      author = {Deen, Elise and van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
+      title = {{A near-linear kernel for bounded-state parsimony distance}},
+      journal = {Journal of Computer and System Sciences},
+      year = {2024},
+      volume = {140},
+      pages = {103477}
+    }
+  abstract: The maximum parsimony distance $d_{\textrm{MP}}(T_1,T_2)$ and the bounded-state
+    maximum parsimony distance $d_{\textrm{MP}}^t(T_1,T_2)$ measure the difference
+    between two phylogenetic trees $T_1,T_2$ in terms of the maximum difference between
+    their parsimony scores for any character (with $t$ a bound on the number of states
+    in the character, in the case of $d_{\textrm{MP}}^t(T_1,T_2)$). While computing
+    $d_{\textrm{MP}}(T_1, T_2)$ was previously shown to be fixed-parameter tractable
+    with a linear kernel, no such result was known for $d_{\textrm{MP}}^t(T_1,T_2)$.
+    In this paper, we prove that computing $d_{\textrm{MP}}^t(T_1, T_2)$ is fixed-parameter
+    tractable for all~$t$. Specifically, we prove that this problem has a kernel of
+    size $O(k \lg k)$, where $k = d_{\textrm{MP}}^t(T_1, T_2)$. As the primary analysis
+    tool, we introduce the concept of leg-disjoint incompatible quartets, which may
+    be of independent interest.
 - title: Making a Network Orchard by Adding Leaves
   release-date:
   authors:
@@ -1697,7 +1760,8 @@
     last: Murakami
   year: 2023
   type: conference
-  keywords: [metrics]
+  keywords:
+  - metrics
   journal: WABI 2023
   volume: '273'
   issue:
@@ -1744,6 +1808,70 @@
     give an equivalent measure based on vertex labellings to construct a mixed integer
     linear programming formulation. Our experimental results, which include both real-world
     and synthetic data, illustrate the effectiveness of our implementation.
+- title: Constructing Phylogenetic Networks via Cherry Picking and Machine Learning
+  release-date:
+  authors:
+  - first: Giulia
+    last: Bernardini
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Esther
+    last: Julien
+  - first: Leen
+    last: Stougie
+  year: 2023
+  type: journal
+  keywords:
+  - machine learning
+  - hybridization number
+  journal: Algorithms for Molecular Biology
+  volume: '18'
+  issue:
+  pages: '13'
+  note: Algorithms for Molecular Biology, 18:13 (2023). Preliminary version in WABI
+    2022, 10.4230/LIPIcs.WABI.2022.16. arXiv.
+  doi-identifier: 10.1186/s13015-023-00233-3
+  doi-url: https://doi.org/10.1186/s13015-023-00233-3
+  preprint-server: arXiv
+  preprint-identifier: '2304.02729'
+  preprint-url: https://arxiv.org/abs/2304.02729
+  conference-note: WABI 2022, LIPIcs 242:16
+  conference-doi-url: https://doi.org/10.4230/LIPIcs.WABI.2022.16
+  software-url:
+  summary: Introduces fast heuristic methods, including some guided by a trained machine-learning
+    model, for combining many evolutionary trees into a single explanatory network
+    — a problem existing exact methods could only handle for a handful of trees —
+    and shows the results are reliably close to the best possible solution on both
+    simulated and real data.
+  bibtex: |
+    @article{bernardini2023constructing,
+      author = {Bernardini, Giulia and van Iersel, Leo and Julien, Esther and Stougie, Leen},
+      title = {{Constructing Phylogenetic Networks via Cherry Picking and Machine Learning}},
+      journal = {Algorithms for Molecular Biology},
+      year = {2023},
+      volume = {18},
+      pages = {13},
+      doi = {10.1186/s13015-023-00233-3},
+      url = {https://doi.org/10.1186/s13015-023-00233-3}
+    }
+  abstract: Combining a set of phylogenetic trees into a single phylogenetic network
+    that explains all of them is a fundamental challenge in evolutionary studies.
+    Existing methods are computationally expensive and can either handle only small
+    numbers of phylogenetic trees or are limited to severely restricted classes of
+    networks. In this paper, we apply the recently-introduced theoretical framework
+    of cherry picking to design a class of efficient heuristics that are guaranteed
+    to produce a network containing each of the input trees, for datasets consisting
+    of binary trees. Some of the heuristics in this framework are based on the design
+    and training of a machine learning model that captures essential information on
+    the structure of the input trees and guides the algorithms towards better solutions.
+    We also propose simple and fast randomised heuristics that prove to be very effective
+    when run multiple times. Unlike the existing exact methods, our heuristics are
+    applicable to datasets of practical size, and the experimental study we conducted
+    on both simulated and real data shows that these solutions are qualitatively good,
+    always within some small constant factor from the optimum. Moreover, our machine-learned
+    heuristics are one of the first applications of machine learning to phylogenetics
+    and show its promise.
 - title: Polynomial invariants for cactuses
   release-date:
   authors:
@@ -1756,7 +1884,9 @@
     last: Murakami
   year: 2023
   type: journal
-  keywords: [encoding, metrics]
+  keywords:
+  - encoding
+  - metrics
   journal: Information Processing Letters
   volume: '182'
   issue:
@@ -1770,8 +1900,8 @@
   software-url:
   summary: Develops a more compact and practical mathematical fingerprint for telling
     different evolutionary networks apart, focusing on a common category of network
-    that includes ordinary trees and simple hybridization networks, improving on
-    earlier such fingerprints that were unwieldy to compute or use.
+    that includes ordinary trees and simple hybridization networks, improving on earlier
+    such fingerprints that were unwieldy to compute or use.
   bibtex: |
     @article{iersel2023polynomial,
       author = {van Iersel, Leo and Moulton, Vincent and Murakami, Yukihiro},
@@ -1817,7 +1947,9 @@
     last: Iersel
   year: 2023
   type: journal
-  keywords: [fixed-parameter tractability, tree-containment]
+  keywords:
+  - fixed-parameter tractability
+  - tree-containment
   journal: Discrete Mathematics & Theoretical Computer Science
   volume: '25'
   issue: '2'
@@ -1832,10 +1964,10 @@
   conference-note: ESA 2022, LIPIcs 244:69
   conference-doi-url: https://doi.org/10.4230/LIPIcs.ESA.2022.69
   software-url:
-  summary: Describes an algorithm for checking whether a proposed evolutionary
-    tree is consistent with a network, based on a general measure of how tree-like
-    the network's underlying structure is, extending fast verification to a broader
-    range of networks than earlier specialized methods could handle.
+  summary: Describes an algorithm for checking whether a proposed evolutionary tree
+    is consistent with a network, based on a general measure of how tree-like the
+    network's underlying structure is, extending fast verification to a broader range
+    of networks than earlier specialized methods could handle.
   bibtex: |
     @article{jones2023embedding,
       author = {Jones, Mark and Weller, Mathias and van Iersel, Leo},
@@ -1855,68 +1987,6 @@
     methods.We present the first algorithm for (rooted) \textsc{Tree Containment}
     using the treewidth $t$ of the input network $N$ as parameter, showing that the
     problem can be solved in $2^{O(t^2)}\cdot|N|$ time and space.
-- title: Constructing Phylogenetic Networks via Cherry Picking and Machine Learning
-  release-date:
-  authors:
-  - first: Giulia
-    last: Bernardini
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Esther
-    last: Julien
-  - first: Leen
-    last: Stougie
-  year: 2023
-  type: journal
-  keywords: [machine learning, hybridization number]
-  journal: Algorithms for Molecular Biology
-  volume: '18'
-  issue:
-  pages: '13'
-  note: Algorithms for Molecular Biology, 18:13 (2023). Preliminary version in WABI
-    2022, 10.4230/LIPIcs.WABI.2022.16. arXiv.
-  doi-identifier: 10.1186/s13015-023-00233-3
-  doi-url: https://doi.org/10.1186/s13015-023-00233-3
-  preprint-server: arXiv
-  preprint-identifier: '2304.02729'
-  preprint-url: https://arxiv.org/abs/2304.02729
-  conference-note: WABI 2022, LIPIcs 242:16
-  conference-doi-url: https://doi.org/10.4230/LIPIcs.WABI.2022.16
-  software-url:
-  summary: Introduces fast heuristic methods, including some guided by a trained
-    machine-learning model, for combining many evolutionary trees into a single explanatory
-    network — a problem existing exact methods could only handle for a handful of
-    trees — and shows the results are reliably close to the best possible solution
-    on both simulated and real data.
-  bibtex: |
-    @article{bernardini2023constructing,
-      author = {Bernardini, Giulia and van Iersel, Leo and Julien, Esther and Stougie, Leen},
-      title = {{Constructing Phylogenetic Networks via Cherry Picking and Machine Learning}},
-      journal = {Algorithms for Molecular Biology},
-      year = {2023},
-      volume = {18},
-      pages = {13},
-      doi = {10.1186/s13015-023-00233-3},
-      url = {https://doi.org/10.1186/s13015-023-00233-3}
-    }
-  abstract: Combining a set of phylogenetic trees into a single phylogenetic network
-    that explains all of them is a fundamental challenge in evolutionary studies.
-    Existing methods are computationally expensive and can either handle only small
-    numbers of phylogenetic trees or are limited to severely restricted classes of
-    networks. In this paper, we apply the recently-introduced theoretical framework
-    of cherry picking to design a class of efficient heuristics that are guaranteed
-    to produce a network containing each of the input trees, for datasets consisting
-    of binary trees. Some of the heuristics in this framework are based on the design
-    and training of a machine learning model that captures essential information on
-    the structure of the input trees and guides the algorithms towards better solutions.
-    We also propose simple and fast randomised heuristics that prove to be very effective
-    when run multiple times. Unlike the existing exact methods, our heuristics are
-    applicable to datasets of practical size, and the experimental study we conducted
-    on both simulated and real data shows that these solutions are qualitatively good,
-    always within some small constant factor from the optimum. Moreover, our machine-learned
-    heuristics are one of the first applications of machine learning to phylogenetics
-    and show its promise.
 - title: Orchard Networks are Trees with Additional Horizontal Arcs
   release-date:
   authors:
@@ -1931,7 +2001,8 @@
     last: Murakami
   year: 2022
   type: journal
-  keywords: [rearrangement moves]
+  keywords:
+  - rearrangement moves
   journal: Bulletin of Mathematical Biology
   volume: '84'
   issue:
@@ -1943,11 +2014,11 @@
   preprint-identifier: '2110.11065'
   preprint-url: https://arxiv.org/abs/2110.11065
   software-url:
-  summary: Shows that a class of evolutionary networks introduced purely for its
-    computational advantages actually corresponds to a natural and biologically meaningful
-    picture — an ordinary tree with extra sideways connections representing horizontal
-    gene transfer — and proves that one can always move between any two such networks
-    via a bounded number of small rearrangement steps.
+  summary: Shows that a class of evolutionary networks introduced purely for its computational
+    advantages actually corresponds to a natural and biologically meaningful picture
+    — an ordinary tree with extra sideways connections representing horizontal gene
+    transfer — and proves that one can always move between any two such networks via
+    a bounded number of small rearrangement steps.
   bibtex: |
     @article{iersel2022orchard,
       author = {van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro},
@@ -1986,7 +2057,9 @@
     last: Murakami
   year: 2022
   type: journal
-  keywords: [encoding, distance-based]
+  keywords:
+  - encoding
+  - distance-based
   journal: Discrete Applied Mathematics
   volume: '306'
   issue:
@@ -2038,7 +2111,9 @@
     last: Kelk
   year: 2022
   type: journal
-  keywords: [hybridization number, fixed-parameter tractability]
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
   journal: Algorithmica
   volume: '84'
   issue:
@@ -2050,11 +2125,11 @@
   preprint-identifier: '2007.13615'
   preprint-url: https://arxiv.org/abs/2007.13615
   software-url:
-  summary: Gives efficient algorithms for finding the smallest possible network,
-    consistent with a biologically motivated timing constraint, that reconciles a
-    set of conflicting evolutionary trees, including a new way to measure how close
-    an arbitrary network comes to satisfying that timing constraint, all backed by
-    a working implementation tested experimentally.
+  summary: Gives efficient algorithms for finding the smallest possible network, consistent
+    with a biologically motivated timing constraint, that reconciles a set of conflicting
+    evolutionary trees, including a new way to measure how close an arbitrary network
+    comes to satisfying that timing constraint, all backed by a working implementation
+    tested experimentally.
   bibtex: |
     @article{borst2022new,
       author = {Borst, Sander and van Iersel, Leo and Jones, Mark and Kelk, Steven},
@@ -2093,7 +2168,9 @@
     last: Zeh
   year: 2022
   type: journal
-  keywords: [hybridization number, fixed-parameter tractability]
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
   journal: Algorithmica
   volume: '84'
   issue:
@@ -2142,7 +2219,8 @@
     last: Nipius
   year: 2022
   type: journal
-  keywords: [triplet-based]
+  keywords:
+  - triplet-based
   journal: Information Processing Letters
   volume: '178'
   issue:
@@ -2202,7 +2280,9 @@
     last: Stougie
   year: 2021
   type: journal
-  keywords: [sequence-based, applications]
+  keywords:
+  - sequence-based
+  - applications
   journal: BMC Ecology and Evolution
   volume: '21'
   issue:
@@ -2276,7 +2356,9 @@
     last: Zeh
   year: 2021
   type: journal
-  keywords: [tree-based, subnet-based]
+  keywords:
+  - tree-based
+  - subnet-based
   journal: Advances in Applied Mathematics
   volume: '129'
   issue:
@@ -2334,7 +2416,10 @@
     last: Murakami
   year: 2021
   type: journal
-  keywords: [identifiability, sequence-based, orientation]
+  keywords:
+  - identifiability
+  - sequence-based
+  - orientation
   journal: Journal of Mathematical Biology
   volume: '83'
   issue:
@@ -2382,7 +2467,10 @@
     last: Murakami
   year: 2020
   type: journal
-  keywords: [identifiability, distance-based, orientation]
+  keywords:
+  - identifiability
+  - distance-based
+  - orientation
   journal: Advances in Applied Mathematics
   volume: '120'
   issue:
@@ -2420,6 +2508,73 @@
     we show that, in general, networks of level higher than~$1$ are not reconstructible
     from shortest distances and that networks of level higher than~$2$ are not reconstructible
     from their multisets of distances.
+- title: Polynomial-Time Algorithms for Phylogenetic Inference Problems involving
+    duplication and reticulation
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Remie
+    last: Janssen
+  - first: Mark
+    last: Jones
+  - first: Yukihiro
+    last: Murakami
+  - first: Norbert
+    last: Zeh
+  year: 2020
+  type: journal
+  keywords:
+  - hybridization number
+  - cluster-based
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume: '17'
+  issue: '1'
+  pages: 14--26
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 17(1):14–26
+    (2020). Preliminary version in AlCoB 2018, LNBI 10849:37–49 (2018). arXiv.
+  doi-identifier: 10.1109/tcbb.2019.2934957
+  doi-url: https://doi.org/10.1109/tcbb.2019.2934957
+  preprint-server: arXiv
+  preprint-identifier: '1802.00317'
+  preprint-url: https://arxiv.org/abs/1802.00317
+  conference-note: AlCoB 2018, LNBI 10849:37–49
+  conference-doi-url: https://doi.org/10.1007/978-3-319-91938-6_4
+  software-url:
+  summary: Shows that two seemingly different and previously hard-seeming problems
+    in reconstructing species histories from gene family trees — one involving gene
+    duplication, one involving hybridization — can both surprisingly be solved efficiently
+    using a shared underlying structure, while also cautioning that the optimal solutions
+    these methods produce can be artificially restricted in form, and proposing a
+    refined problem variant that avoids this pitfall while remaining efficiently solvable.
+  bibtex: |
+    @article{iersel2020polynomialtime,
+      author = {van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
+      title = {{Polynomial-Time Algorithms for Phylogenetic Inference Problems involving duplication and reticulation}},
+      journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+      year = {2020},
+      volume = {17},
+      number = {1},
+      pages = {14--26}
+    }
+  abstract: A common problem in phylogenetics is to try to infer a species phylogeny
+    from gene trees. We consider different variants of this problem. The first variant,
+    called Unrestricted Minimal Episodes Inference, aims at inferring a species tree
+    based on a model with speciation and duplication where duplications are clustered
+    in duplication episodes. The goal is to minimize the number of such episodes.
+    The second variant, Parental Hybridization, aims at inferring a species \emph{network}
+    based on a model with speciation and reticulation. The goal is to minimize the
+    number of reticulation events. It is a variant of the well-studied Hybridization
+    Number problem with a more generous view on which gene trees are consistent with
+    a given species network. We show that these seemingly different problems are in
+    fact closely related and can, surprisingly, both be solved in polynomial time,
+    using a structure we call "beaded trees". However, we also show that methods based
+    on these problems have to be used with care because the optimal species phylogenies
+    always have a restricted form. To mitigate this problem, we introduce a new variant
+    of Unrestricted Minimal Episodes Inference that minimizes the duplication episode
+    depth. We prove that this new variant of the problem can also be solved in polynomial
+    time
 - title: Cutting an alignment with Ockham’s razor
   release-date:
   authors:
@@ -2440,7 +2595,10 @@
     last: Scornavacca
   year: 2019
   type: preprint
-  keywords: [fixed-parameter tractability, sequence-based, parsimony]
+  keywords:
+  - fixed-parameter tractability
+  - sequence-based
+  - parsimony
   journal:
   volume:
   issue:
@@ -2484,6 +2642,67 @@
     problem is NP-hard when p >= 3, but polynomial-time solvable for p = 2. Furthermore,
     the problem is FPT with parameter h for binary characters when p = 2. A number
     of interesting problems remain open.
+- title: Finding a most parsimonious or likely tree in a network with respect to an
+    alignment
+  release-date:
+  authors:
+  - first: Steven
+    last: Kelk
+  - first: Fabio
+    last: Pardi
+  - first: Celine
+    last: Scornavacca
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2019
+  type: journal
+  keywords:
+  - fixed-parameter tractability
+  - sequence-based
+  - parsimony
+  journal: Journal of Mathematical Biology
+  volume: '78'
+  issue: 1-2
+  pages: 527--547
+  note: Journal of Mathematical Biology, 78(1-2):527–547 (2019). arXiv.
+  doi-identifier: 10.1007/s00285-018-1282-2
+  doi-url: https://doi.org/10.1007/s00285-018-1282-2
+  preprint-server: arXiv
+  preprint-identifier: '1707.03648'
+  preprint-url: https://arxiv.org/abs/1707.03648
+  software-url:
+  summary: Shows that, even in a fairly simple setting, finding which single evolutionary
+    tree embedded within a larger network best explains a given set of aligned DNA
+    sequences — whether by a parsimony or a likelihood criterion — is computationally
+    hard in general, though the paper also explains why both criteria can often still
+    be solved well in practice.
+  bibtex: |
+    @article{kelk2019finding,
+      author = {Kelk, Steven and Pardi, Fabio and Scornavacca, Celine and van Iersel, Leo},
+      title = {{Finding a most parsimonious or likely tree in a network with respect to an alignment}},
+      journal = {Journal of Mathematical Biology},
+      year = {2019},
+      volume = {78},
+      number = {1-2},
+      pages = {527--547}
+    }
+  abstract: Phylogenetic networks are often constructed by merging multiple conflicting
+    phylogenetic signals into a directed acyclic graph. It is interesting to explore
+    whether a network constructed in this way induces biologically-relevant phylogenetic
+    signals that were not present in the input. Here we show that, given a multiple
+    alignment A for a set of taxa X and a rooted phylogenetic network N whose leaves
+    are labelled by X, it is NP-hard to locate the most parsimonious phylogenetic
+    tree displayed by N (with respect to A) even when the level of N - the maximum
+    number of reticulation nodes within a biconnected component - is 1 and A contains
+    only 2 distinct states. (If, additionally, gaps are allowed the problem becomes
+    APX-hard.) We also show that under the same conditions, and assuming a simple
+    binary symmetric model of character evolution, finding the most likely tree displayed
+    by the network is NP-hard. These negative results contrast with earlier work on
+    parsimony in which it is shown that if A consists of a single column the problem
+    is fixed parameter tractable in the level. We conclude with a discussion of why,
+    despite the NP-hardness, both the parsimony and likelihood problem can likely
+    be well-solved in practice.
 - title: A third strike against perfect phylogeny
   release-date:
   authors:
@@ -2496,7 +2715,9 @@
     last: Kelk
   year: 2019
   type: journal
-  keywords: [perfect phylogeny, parsimony]
+  keywords:
+  - perfect phylogeny
+  - parsimony
   journal: Systematic Biology
   volume: '68'
   issue: '5'
@@ -2554,7 +2775,10 @@
     last: Linz
   year: 2019
   type: journal
-  keywords: [hybridization number, fixed-parameter tractability, approximation algorithms]
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
+  - approximation algorithms
   journal: Discrete Applied Mathematics
   volume: '260'
   issue:
@@ -2609,7 +2833,9 @@
     last: Moulton
   year: 2019
   type: journal
-  keywords: [encoding, subnet-based]
+  keywords:
+  - encoding
+  - subnet-based
   journal: Bulletin of Mathematical Biology
   volume: '81'
   issue: '10'
@@ -2621,10 +2847,10 @@
   preprint-identifier: '1811.06777'
   preprint-url: https://arxiv.org/abs/1811.06777
   software-url:
-  summary: Shows that a well-behaved class of evolutionary network can always be
-    uniquely and efficiently reconstructed just from the collection of simpler networks
-    obtained by removing one hybridization connection at a time, as long as the network
-    is not too simple to begin with.
+  summary: Shows that a well-behaved class of evolutionary network can always be uniquely
+    and efficiently reconstructed just from the collection of simpler networks obtained
+    by removing one hybridization connection at a time, as long as the network is
+    not too simple to begin with.
   bibtex: |
     @article{murakami2019reconstructing,
       author = {Murakami, Yukihiro and van Iersel, Leo and Janssen, Remie and Jones, Mark and Moulton, Vincent},
@@ -2660,7 +2886,10 @@
     last: Jones
   year: 2019
   type: journal
-  keywords: [identifiability, subnet-based, orientation]
+  keywords:
+  - identifiability
+  - subnet-based
+  - orientation
   journal: Journal of Mathematical Biology
   volume: '79'
   issue: '5'
@@ -2694,130 +2923,6 @@
     show that this conjecture is false, by presenting a counter example for each possible
     number of leaves that is at least~4. Moreover, we show that the conjecture is
     still false when restricted to binary networks.
-- title: Finding a most parsimonious or likely tree in a network with respect to an
-    alignment
-  release-date:
-  authors:
-  - first: Steven
-    last: Kelk
-  - first: Fabio
-    last: Pardi
-  - first: Celine
-    last: Scornavacca
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  year: 2019
-  type: journal
-  keywords: [fixed-parameter tractability, sequence-based, parsimony]
-  journal: Journal of Mathematical Biology
-  volume: '78'
-  issue: 1-2
-  pages: 527--547
-  note: Journal of Mathematical Biology, 78(1-2):527–547 (2019). arXiv.
-  doi-identifier: 10.1007/s00285-018-1282-2
-  doi-url: https://doi.org/10.1007/s00285-018-1282-2
-  preprint-server: arXiv
-  preprint-identifier: '1707.03648'
-  preprint-url: https://arxiv.org/abs/1707.03648
-  software-url:
-  summary: Shows that, even in a fairly simple setting, finding which single evolutionary
-    tree embedded within a larger network best explains a given set of aligned DNA
-    sequences — whether by a parsimony or a likelihood criterion — is computationally
-    hard in general, though the paper also explains why both criteria can often still
-    be solved well in practice.
-  bibtex: |
-    @article{kelk2019finding,
-      author = {Kelk, Steven and Pardi, Fabio and Scornavacca, Celine and van Iersel, Leo},
-      title = {{Finding a most parsimonious or likely tree in a network with respect to an alignment}},
-      journal = {Journal of Mathematical Biology},
-      year = {2019},
-      volume = {78},
-      number = {1-2},
-      pages = {527--547}
-    }
-  abstract: Phylogenetic networks are often constructed by merging multiple conflicting
-    phylogenetic signals into a directed acyclic graph. It is interesting to explore
-    whether a network constructed in this way induces biologically-relevant phylogenetic
-    signals that were not present in the input. Here we show that, given a multiple
-    alignment A for a set of taxa X and a rooted phylogenetic network N whose leaves
-    are labelled by X, it is NP-hard to locate the most parsimonious phylogenetic
-    tree displayed by N (with respect to A) even when the level of N - the maximum
-    number of reticulation nodes within a biconnected component - is 1 and A contains
-    only 2 distinct states. (If, additionally, gaps are allowed the problem becomes
-    APX-hard.) We also show that under the same conditions, and assuming a simple
-    binary symmetric model of character evolution, finding the most likely tree displayed
-    by the network is NP-hard. These negative results contrast with earlier work on
-    parsimony in which it is shown that if A consists of a single column the problem
-    is fixed parameter tractable in the level. We conclude with a discussion of why,
-    despite the NP-hardness, both the parsimony and likelihood problem can likely
-    be well-solved in practice.
-- title: Polynomial-Time Algorithms for Phylogenetic Inference Problems involving
-    duplication and reticulation
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Remie
-    last: Janssen
-  - first: Mark
-    last: Jones
-  - first: Yukihiro
-    last: Murakami
-  - first: Norbert
-    last: Zeh
-  year: 2020
-  type: journal
-  keywords: [hybridization number, cluster-based]
-  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
-  volume: '17'
-  issue: '1'
-  pages: 14--26
-  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 17(1):14–26
-    (2020). Preliminary version in AlCoB 2018, LNBI 10849:37–49 (2018). arXiv.
-  doi-identifier: 10.1109/tcbb.2019.2934957
-  doi-url: https://doi.org/10.1109/tcbb.2019.2934957
-  preprint-server: arXiv
-  preprint-identifier: '1802.00317'
-  preprint-url: https://arxiv.org/abs/1802.00317
-  conference-note: AlCoB 2018, LNBI 10849:37–49
-  conference-doi-url: https://doi.org/10.1007/978-3-319-91938-6_4
-  software-url:
-  summary: Shows that two seemingly different and previously hard-seeming problems
-    in reconstructing species histories from gene family trees — one involving gene
-    duplication, one involving hybridization — can both surprisingly be solved efficiently
-    using a shared underlying structure, while also cautioning that the optimal solutions
-    these methods produce can be artificially restricted in form, and proposing a
-    refined problem variant that avoids this pitfall while remaining efficiently
-    solvable.
-  bibtex: |
-    @article{iersel2020polynomialtime,
-      author = {van Iersel, Leo and Janssen, Remie and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
-      title = {{Polynomial-Time Algorithms for Phylogenetic Inference Problems involving duplication and reticulation}},
-      journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
-      year = {2020},
-      volume = {17},
-      number = {1},
-      pages = {14--26}
-    }
-  abstract: A common problem in phylogenetics is to try to infer a species phylogeny
-    from gene trees. We consider different variants of this problem. The first variant,
-    called Unrestricted Minimal Episodes Inference, aims at inferring a species tree
-    based on a model with speciation and duplication where duplications are clustered
-    in duplication episodes. The goal is to minimize the number of such episodes.
-    The second variant, Parental Hybridization, aims at inferring a species \emph{network}
-    based on a model with speciation and reticulation. The goal is to minimize the
-    number of reticulation events. It is a variant of the well-studied Hybridization
-    Number problem with a more generous view on which gene trees are consistent with
-    a given species network. We show that these seemingly different problems are in
-    fact closely related and can, surprisingly, both be solved in polynomial time,
-    using a structure we call "beaded trees". However, we also show that methods based
-    on these problems have to be used with care because the optimal species phylogenies
-    always have a restricted form. To mitigate this problem, we introduce a new variant
-    of Unrestricted Minimal Episodes Inference that minimizes the duplication episode
-    depth. We prove that this new variant of the problem can also be solved in polynomial
-    time
 - title: Parallel Machine Scheduling with a Single Resource per Job
   release-date:
   authors:
@@ -2840,7 +2945,9 @@
     last: Yugma
   year: 2018
   type: preprint
-  keywords: [approximation algorithms, routing & scheduling]
+  keywords:
+  - approximation algorithms
+  - routing & scheduling
   journal:
   volume:
   issue:
@@ -2852,11 +2959,11 @@
   preprint-identifier: '1809.05009'
   preprint-url: https://arxiv.org/abs/1809.05009
   software-url:
-  summary: Studies how to schedule jobs across multiple machines, where each job
-    also needs a shared resource, so that jobs finish as quickly as possible on average;
-    shows the basic case can be solved exactly and efficiently, gives a provably
-    near-optimal shortcut for a common special case, and shows that several natural
-    variations of the problem are computationally hard.
+  summary: Studies how to schedule jobs across multiple machines, where each job also
+    needs a shared resource, so that jobs finish as quickly as possible on average;
+    shows the basic case can be solved exactly and efficiently, gives a provably near-optimal
+    shortcut for a common special case, and shows that several natural variations
+    of the problem are computationally hard.
   bibtex: |
     @misc{janssen2018parallel,
       author = {Janssen, Teun and Swennenhuis, Céline and Bitar, Abdoul and Bosman, Thomas and Gijswijt, Dion and van Iersel, Leo and Dauzére-Pérès, Stèphane and Yugma, Claude},
@@ -2888,7 +2995,11 @@
     last: Moulton
   year: 2018
   type: journal
-  keywords: [identifiability, quartet-based, subnet-based, orientation]
+  keywords:
+  - identifiability
+  - quartet-based
+  - subnet-based
+  - orientation
   journal: SIAM Journal on Discrete Mathematics
   volume: '32'
   issue: '3'
@@ -2900,11 +3011,11 @@
   preprint-identifier: '1701.08982'
   preprint-url: https://arxiv.org/abs/1701.08982
   software-url:
-  summary: Investigates which evolutionary networks can be uniquely pieced back
-    together from the smaller networks obtained by removing just one species at
-    a time, showing that many practically important classes of networks — including
-    ordinary trees and most moderately complex networks — can always be reconstructed
-    this way, while leaving open whether this holds universally.
+  summary: Investigates which evolutionary networks can be uniquely pieced back together
+    from the smaller networks obtained by removing just one species at a time, showing
+    that many practically important classes of networks — including ordinary trees
+    and most moderately complex networks — can always be reconstructed this way, while
+    leaving open whether this holds universally.
   bibtex: |
     @article{iersel2018leafreconstructibility,
       author = {van Iersel, Leo and Moulton, Vincent},
@@ -2953,7 +3064,9 @@
     last: Scornavacca
   year: 2018
   type: journal
-  keywords: [orientation, rearrangement moves]
+  keywords:
+  - orientation
+  - rearrangement moves
   journal: Bulletin of Mathematical Biology
   volume: '80'
   issue: '8'
@@ -2966,10 +3079,10 @@
   preprint-url: https://arxiv.org/abs/1708.07656
   software-url:
   summary: Studies how to move between different possible shapes of an evolutionary
-    network by making small, local edits, showing that a particularly simple and
-    restricted type of edit already suffices to transform any network into any other
-    network of the same complexity, gives bounds on how many such edits are ever
-    needed, and shows that finding the shortest possible sequence of edits is computationally
+    network by making small, local edits, showing that a particularly simple and restricted
+    type of edit already suffices to transform any network into any other network
+    of the same complexity, gives bounds on how many such edits are ever needed, and
+    shows that finding the shortest possible sequence of edits is computationally
     hard.
   bibtex: |
     @article{janssen2018exploring,
@@ -3008,7 +3121,8 @@
     last: Scornavacca
   year: 2018
   type: journal
-  keywords: [parsimony]
+  keywords:
+  - parsimony
   journal: Systematic Biology
   volume: '67'
   issue: '3'
@@ -3023,8 +3137,7 @@
   summary: Proposes a more biologically realistic way of scoring how well an evolutionary
     network explains observed genetic data under the parsimony principle, capturing
     scenarios that earlier standard definitions could not represent, and lays algorithmic
-    groundwork for building reconstruction methods around this improved scoring
-    approach.
+    groundwork for building reconstruction methods around this improved scoring approach.
   bibtex: |
     @article{iersel2018improved,
       author = {van Iersel, Leo and Jones, Mark and Scornavacca, Celine},
@@ -3053,7 +3166,8 @@
     last: Iersel
   year: 2018
   type: journal
-  keywords: [tree-based]
+  keywords:
+  - tree-based
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '14'
   issue: '1'
@@ -3066,11 +3180,11 @@
   preprint-identifier:
   preprint-url:
   software-url:
-  summary: Extends the theory of evolutionary networks built from an underlying
-    tree plus extra connections to the more realistic case where species can split
-    into more than two descendants at once, giving simple criteria for recognizing
-    such networks that can be checked efficiently, and demonstrating the approach
-    on real biological examples.
+  summary: Extends the theory of evolutionary networks built from an underlying tree
+    plus extra connections to the more realistic case where species can split into
+    more than two descendants at once, giving simple criteria for recognizing such
+    networks that can be checked efficiently, and demonstrating the approach on real
+    biological examples.
   bibtex: |
     @article{jetten2018nonbinary,
       author = {Jetten, Laura and van Iersel, Leo},
@@ -3111,7 +3225,10 @@
     last: Boes
   year: 2018
   type: journal
-  keywords: [hybridization number, fixed-parameter tractability, orientation]
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
+  - orientation
   journal: Algorithmica
   volume: '80'
   issue: '11'
@@ -3124,11 +3241,11 @@
   preprint-url:
   software-url:
   summary: Addresses the practical difficulty that accurately determining the root
-    (the starting point in time) of an evolutionary tree is notoriously hard, by
-    studying versions of key network-reconstruction problems that don't require
-    knowing the root in advance — showing that some of these relaxed problems remain
-    efficiently solvable while others become considerably harder, but can still be
-    solved well even when the root is deliberately left flexible.
+    (the starting point in time) of an evolutionary tree is notoriously hard, by studying
+    versions of key network-reconstruction problems that don't require knowing the
+    root in advance — showing that some of these relaxed problems remain efficiently
+    solvable while others become considerably harder, but can still be solved well
+    even when the root is deliberately left flexible.
   bibtex: |
     @article{iersel2018unrooted,
       author = {van Iersel, Leo and Kelk, Steven and Stamoulis, Georgios and Stougie, Leen and Boes, Olivier},
@@ -3173,7 +3290,8 @@
     last: Sitters
   year: 2018
   type: journal
-  keywords: [routing & scheduling]
+  keywords:
+  - routing & scheduling
   journal: Discrete Applied Mathematics
   volume: '250'
   issue:
@@ -3189,9 +3307,9 @@
   conference-doi-url: https://doi.org/10.1007/978-3-319-51741-4_15
   software-url:
   summary: Studies a variant of the classic traveling-salesperson problem in which
-    the customers to be visited are not known in advance but instead come from a
-    limited menu of possible scenarios, analyzing how well one can pre-plan a route
-    that stays close to optimal no matter which scenario actually occurs.
+    the customers to be visited are not known in advance but instead come from a limited
+    menu of possible scenarios, analyzing how well one can pre-plan a route that stays
+    close to optimal no matter which scenario actually occurs.
   bibtex: |
     @article{ee2018priori,
       author = {van Ee, Martijn and van Iersel, Leo and Janssen, Teun and Sitters, Rene},
@@ -3219,7 +3337,12 @@
     last: Scornavacca
   year: 2017
   type: journal
-  keywords: [distance-based, tree-based, orientation, rearrangement moves, parsimony]
+  keywords:
+  - distance-based
+  - tree-based
+  - orientation
+  - rearrangement moves
+  - parsimony
   journal: PLoS Computational Biology
   volume: '13'
   issue: '8'
@@ -3233,9 +3356,9 @@
   software-url:
   summary: Introduces a set of basic edit operations for reshaping an evolutionary
     network step by step, proves that repeatedly applying them can turn any network
-    into any other network of comparable or different complexity, and shows that
-    these operations reduce to the well-known editing moves used for ordinary trees
-    when applied to a tree-like network — providing a practical foundation for network
+    into any other network of comparable or different complexity, and shows that these
+    operations reduce to the well-known editing moves used for ordinary trees when
+    applied to a tree-like network — providing a practical foundation for network
     search algorithms.
   bibtex: |
     @article{gambette2017rearrangement,
@@ -3345,7 +3468,10 @@
     last: Wu
   year: 2017
   type: journal
-  keywords: [approximation algorithms, triplet-based, subnet-based]
+  keywords:
+  - approximation algorithms
+  - triplet-based
+  - subnet-based
   journal: Bulletin of Mathematical Biology
   volume: '79'
   issue: '5'
@@ -3359,10 +3485,10 @@
   software-url:
   summary: Studies binets, the simplest possible building blocks into which an evolutionary
     network can be broken down, showing that although they cannot pin down a network's
-    exact branching pattern, they always reveal how many hybridization events it
-    contains, and that testing whether such building blocks can be assembled into
-    a single network ranges from efficiently solvable to as hard as one of the notoriously
-    difficult problems in graph theory, depending on the network's complexity.
+    exact branching pattern, they always reveal how many hybridization events it contains,
+    and that testing whether such building blocks can be assembled into a single network
+    ranges from efficiently solvable to as hard as one of the notoriously difficult
+    problems in graph theory, depending on the network's complexity.
   bibtex: |
     @article{iersel2017binets,
       author = {van Iersel, Leo and Moulton, Vincent and de Swart, Eveline and Wu, Taoyang},
@@ -3414,7 +3540,9 @@
     last: Wu
   year: 2017
   type: journal
-  keywords: [triplet-based, subnet-based]
+  keywords:
+  - triplet-based
+  - subnet-based
   journal: Algorithmica
   volume: '77'
   issue: '1'
@@ -3429,9 +3557,9 @@
   summary: Studies how to reconstruct a moderately complex evolutionary network when
     only partial information about its smallest building blocks is available, showing
     this remains efficiently solvable using only the very smallest building blocks
-    but becomes computationally hard once slightly larger ones are involved, and
-    providing some of the first general methods for assembling a network from an
-    incomplete collection of smaller networks.
+    but becomes computationally hard once slightly larger ones are involved, and providing
+    some of the first general methods for assembling a network from an incomplete
+    collection of smaller networks.
   bibtex: |
     @article{huber2017reconstructing,
       author = {Huber, Katharina and van Iersel, Leo and Moulton, Vincent and Scornavacca, Celine and Wu, Taoyang},
@@ -3470,7 +3598,9 @@
     last: Scornavacca
   year: 2016
   type: journal
-  keywords: [sequence-based, tree-containment]
+  keywords:
+  - sequence-based
+  - tree-containment
   journal: Bulletin of Mathematical Biology
   volume: '78'
   issue: '9'
@@ -3483,10 +3613,10 @@
   preprint-url: https://arxiv.org/abs/1607.06285
   software-url:
   summary: Investigates whether knowing how much evolutionary change occurred along
-    each branch — information usually available for trees but so far ignored in
-    this context — can help determine whether a given tree is consistent with a
-    larger evolutionary network; shows this remains computationally hard in general,
-    but gives efficient methods for practically important special cases.
+    each branch — information usually available for trees but so far ignored in this
+    context — can help determine whether a given tree is consistent with a larger
+    evolutionary network; shows this remains computationally hard in general, but
+    gives efficient methods for practically important special cases.
   bibtex: |
     @article{gambette2016do,
       author = {Gambette, Philippe and van Iersel, Leo and Kelk, Steven and Pardi, Fabio and Scornavacca, Celine},
@@ -3533,7 +3663,10 @@
     last: Zeh
   year: 2016
   type: journal
-  keywords: [hybridization number, agreement forests, fixed-parameter tractability]
+  keywords:
+  - hybridization number
+  - agreement forests
+  - fixed-parameter tractability
   journal: SIAM Journal on Discrete Mathematics
   volume: '30'
   issue: '3'
@@ -3545,11 +3678,11 @@
   preprint-identifier: '1402.2136'
   preprint-url: https://arxiv.org/abs/1402.2136
   software-url:
-  summary: Gives the first efficient algorithm, with a running time that scales
-    gracefully with the number of hybridization events, for finding the simplest
-    network explaining three conflicting evolutionary trees at once — extending
-    a previously known efficient method that only worked for two trees, by overcoming
-    fundamental extra difficulties that appear once a third tree is added.
+  summary: Gives the first efficient algorithm, with a running time that scales gracefully
+    with the number of hybridization events, for finding the simplest network explaining
+    three conflicting evolutionary trees at once — extending a previously known efficient
+    method that only worked for two trees, by overcoming fundamental extra difficulties
+    that appear once a third tree is added.
   bibtex: |
     @article{iersel2016hybridization,
       author = {van Iersel, Leo and Kelk, Steven and Lekic, Nela and Whidden, Chris and Zeh, Norbert},
@@ -3599,7 +3732,9 @@
     last: Moulton
   year: 2016
   type: journal
-  keywords: [triplet-based, sequence-based]
+  keywords:
+  - triplet-based
+  - sequence-based
   journal: Molecular Biology and Evolution
   volume: '33'
   issue: '8'
@@ -3612,10 +3747,10 @@
   preprint-url:
   software-url:
   summary: Presents TriLoNet, free software that reconstructs evolutionary networks
-    directly from DNA sequence data by combining information from every possible
-    group of three species, shown through simulations to avoid overestimating the
-    number of hybridization events compared to an earlier competing method, and
-    demonstrated on real recombining sequence data.
+    directly from DNA sequence data by combining information from every possible group
+    of three species, shown through simulations to avoid overestimating the number
+    of hybridization events compared to an earlier competing method, and demonstrated
+    on real recombining sequence data.
   bibtex: |
     @article{oldman2016trilonet,
       author = {Oldman, James and Wu, Taoyang and van Iersel, Leo and Moulton, Vincent},
@@ -3654,7 +3789,9 @@
     last: Scornavacca
   year: 2016
   type: journal
-  keywords: [hybridization number, fixed-parameter tractability]
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
   journal: Journal of Computer and System Sciences
   volume: '82'
   issue: '6'
@@ -3668,7 +3805,7 @@
   preprint-url: https://arxiv.org/abs/1311.4045
   conference-note: WG 2014, LNCS 8747:299–311
   conference-doi-url: https://doi.org/10.1007/978-3-319-12340-0_25
-  software-url: /software/#sw-treeduce
+  software-url: "/software/#sw-treeduce"
   summary: Shows that the problem of finding the simplest evolutionary network explaining
     several conflicting, not-necessarily-fully-resolved evolutionary trees can always
     be shrunk down to a much smaller instance before being solved exactly, and demonstrates
@@ -3707,7 +3844,9 @@
     last: Weller
   year: 2016
   type: journal
-  keywords: [agreement forests, fixed-parameter tractability]
+  keywords:
+  - agreement forests
+  - fixed-parameter tractability
   journal: Journal of Graph Algorithms and Applications
   volume: '20'
   issue: '2'
@@ -3719,10 +3858,10 @@
   preprint-identifier:
   preprint-url:
   software-url:
-  summary: Introduces a powerful logical tool from theoretical computer science,
-    not previously well known in this field, to give short and elegant proofs that
-    several notoriously hard-to-compute measures of disagreement between evolutionary
-    trees can nonetheless be computed efficiently whenever that disagreement is limited,
+  summary: Introduces a powerful logical tool from theoretical computer science, not
+    previously well known in this field, to give short and elegant proofs that several
+    notoriously hard-to-compute measures of disagreement between evolutionary trees
+    can nonetheless be computed efficiently whenever that disagreement is limited,
     demonstrating the broader potential of this tool for phylogenetics.
   bibtex: |
     @article{kelk2016phylogenetic,
@@ -3762,7 +3901,9 @@
     last: Linz
   year: 2016
   type: journal
-  keywords: [triplet-based, constraint satisfaction]
+  keywords:
+  - triplet-based
+  - constraint satisfaction
   journal: Theoretical Computer Science
   volume: '609'
   issue: '1'
@@ -3857,7 +3998,10 @@
     last: Scornavacca
   year: 2015
   type: journal
-  keywords: [fixed-parameter tractability, approximation algorithms, parsimony]
+  keywords:
+  - fixed-parameter tractability
+  - approximation algorithms
+  - parsimony
   journal: SIAM Journal on Discrete Mathematics
   volume: '29'
   issue: '1'
@@ -3918,7 +4062,10 @@
     last: Wu
   year: 2015
   type: journal
-  keywords: [encoding, tree-based, subnet-based]
+  keywords:
+  - encoding
+  - tree-based
+  - subnet-based
   journal: Systematic Biology
   volume: '64'
   issue: '1'
@@ -3932,10 +4079,10 @@
   software-url:
   summary: Identifies a fundamental obstacle facing an entire family of approaches
     to building evolutionary networks from smaller pieces, showing that even complete
-    information about every smaller sub-network obtained by removing any subset
-    of species is still not always enough to uniquely pin down the original network
-    — meaning such building-block methods can, in principle, produce an incorrect
-    history even from perfect input.
+    information about every smaller sub-network obtained by removing any subset of
+    species is still not always enough to uniquely pin down the original network —
+    meaning such building-block methods can, in principle, produce an incorrect history
+    even from perfect input.
   bibtex: |
     @article{huber2015how,
       author = {Huber, Katharina and van Iersel, Leo and Moulton, Vincent and Wu, Taoyang},
@@ -3985,7 +4132,11 @@
     last: Schoenhuth
   year: 2015
   type: journal
-  keywords: [sequence-based, haplotype assembly, strings, applications]
+  keywords:
+  - sequence-based
+  - haplotype assembly
+  - strings
+  - applications
   journal: Journal of Computational Biology
   volume: '22'
   issue: '6'
@@ -4000,11 +4151,11 @@
   conference-note: RECOMB 2014, LNCS 8394:237–249
   conference-doi-url: https://doi.org/10.1007/978-3-319-05269-4_19
   software-url:
-  summary: Introduces WhatsHap, the first method that can provably find the best
-    possible way to assign genetic variants to each of the two inherited copies
-    of a chromosome directly from long sequencing reads while properly accounting
-    for sequencing errors, something existing statistical approaches could not do,
-    and shows it works reliably even at realistic error rates and read depths.
+  summary: Introduces WhatsHap, the first method that can provably find the best possible
+    way to assign genetic variants to each of the two inherited copies of a chromosome
+    directly from long sequencing reads while properly accounting for sequencing errors,
+    something existing statistical approaches could not do, and shows it works reliably
+    even at realistic error rates and read depths.
   bibtex: |
     @article{patterson2015whatshap,
       author = {Patterson, Murray and Marschall, Tobias and Pisanti, Nadia and van Iersel, Leo and Stougie, Leen and Klau, Gunnar W and Schoenhuth, Alexander},
@@ -4060,9 +4211,9 @@
   software-url:
   summary: Introduces an exact optimization method for matching up a gene family's
     evolutionary tree with the species tree even without knowing exactly when past
-    speciation events occurred, searching efficiently over all plausible timings
-    to find the most parsimonious explanation — a proof-of-concept that opens the
-    door to more advanced dating methods for species trees.
+    speciation events occurred, searching efficiently over all plausible timings to
+    find the most parsimonious explanation — a proof-of-concept that opens the door
+    to more advanced dating methods for species trees.
   bibtex: |
     @misc{iersel2014exact,
       author = {van Iersel, Leo and Scornavacca, Celine and Kelk, Steven},
@@ -4086,46 +4237,6 @@
     believe that it is an important proof-of-concept which opens the door to the possibility
     of developing an exact, parsimony based approach to dating species trees. The
     software (ILPEACE) is freely available for download.
-- title: The agreement problem for unrooted phylogenetic trees is FPT
-  release-date:
-  authors:
-  - first: Celine
-    last: Scornavacca
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: David
-    last: Bryant
-  year: 2014
-  type: journal
-  keywords: [fixed-parameter tractability]
-  journal: Journal of Graph Algorithms and Applications
-  volume: '18'
-  issue: '3'
-  pages: 385--392
-  note: Journal of Graph Algorithms and Applications, 18(3):385-392 (2014).
-  doi-identifier: 10.7155/jgaa.00327
-  doi-url: https://doi.org/10.7155/jgaa.00327
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  software-url:
-  summary: Shows that a natural way of measuring how much two evolutionary trees,
-    considered without a direction of time, disagree with each other can always
-    be computed efficiently once that disagreement is small, extending a similar
-    earlier result from rooted to unrooted trees.
-  bibtex: |
-    @article{scornavacca2014agreement,
-      author = {Scornavacca, Celine and van Iersel, Leo and Kelk, Steven and Bryant, David},
-      title = {{The agreement problem for unrooted phylogenetic trees is FPT}},
-      journal = {Journal of Graph Algorithms and Applications},
-      year = {2014},
-      volume = {18},
-      number = {3},
-      pages = {385--392}
-    }
 - title: Trinets encode tree-child and level-2 phylogenetic networks
   release-date:
   authors:
@@ -4136,7 +4247,9 @@
     last: Moulton
   year: 2014
   type: journal
-  keywords: [encoding, subnet-based]
+  keywords:
+  - encoding
+  - subnet-based
   journal: Journal of Mathematical Biology
   volume: '68'
   issue: '7'
@@ -4180,6 +4293,47 @@
     Our results provide some additional evidence in support of the conjecture that
     trinets encode all recoverable rooted phylogenetic networks, and could also lead
     to new approaches to construct phylogenetic networks from trinets.
+- title: The agreement problem for unrooted phylogenetic trees is FPT
+  release-date:
+  authors:
+  - first: Celine
+    last: Scornavacca
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: David
+    last: Bryant
+  year: 2014
+  type: journal
+  keywords:
+  - fixed-parameter tractability
+  journal: Journal of Graph Algorithms and Applications
+  volume: '18'
+  issue: '3'
+  pages: 385--392
+  note: Journal of Graph Algorithms and Applications, 18(3):385-392 (2014).
+  doi-identifier: 10.7155/jgaa.00327
+  doi-url: https://doi.org/10.7155/jgaa.00327
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  summary: Shows that a natural way of measuring how much two evolutionary trees,
+    considered without a direction of time, disagree with each other can always be
+    computed efficiently once that disagreement is small, extending a similar earlier
+    result from rooted to unrooted trees.
+  bibtex: |
+    @article{scornavacca2014agreement,
+      author = {Scornavacca, Celine and van Iersel, Leo and Kelk, Steven and Bryant, David},
+      title = {{The agreement problem for unrooted phylogenetic trees is FPT}},
+      journal = {Journal of Graph Algorithms and Applications},
+      year = {2014},
+      volume = {18},
+      number = {3},
+      pages = {385--392}
+    }
 - title: A practical approximation algorithm for solving massive instances of hybridization
     number for binary and nonbinary trees
   release-date:
@@ -4195,7 +4349,11 @@
     last: Scornavacca
   year: 2014
   type: journal
-  keywords: [hybridization number, agreement forests, fixed-parameter tractability, approximation algorithms]
+  keywords:
+  - hybridization number
+  - agreement forests
+  - fixed-parameter tractability
+  - approximation algorithms
   journal: BMC Bioinformatics
   volume: '15'
   issue:
@@ -4210,11 +4368,11 @@
   conference-note: WABI 2012, LNCS 7534:430–440
   conference-doi-url: https://doi.org/10.1007/978-3-642-33122-0_34
   software-url:
-  summary: Extends fast approximate and exact algorithms for measuring how much
-    two evolutionary trees disagree from the idealized case of fully resolved trees
-    to the more realistic case where trees can be only partially resolved, providing
-    a practical, freely available implementation capable of handling much larger
-    datasets than previous exact methods.
+  summary: Extends fast approximate and exact algorithms for measuring how much two
+    evolutionary trees disagree from the idealized case of fully resolved trees to
+    the more realistic case where trees can be only partially resolved, providing
+    a practical, freely available implementation capable of handling much larger datasets
+    than previous exact methods.
   bibtex: |
     @article{iersel2014practical,
       author = {van Iersel, Leo and Kelk, Steven and Lekic, Nela and Scornavacca, Celine},
@@ -4253,7 +4411,10 @@
     last: Stougie
   year: 2014
   type: journal
-  keywords: [agreement forests, fixed-parameter tractability, approximation algorithms]
+  keywords:
+  - agreement forests
+  - fixed-parameter tractability
+  - approximation algorithms
   journal: SIAM Journal on Discrete Mathematics
   volume: '28'
   issue: '1'
@@ -4268,8 +4429,7 @@
   summary: Proves that the key computational technique for measuring disagreement
     between two evolutionary trees, previously understood mainly for fully resolved
     binary trees, extends with the same efficient approximation and exact guarantees
-    to the more general and biologically realistic case of trees with unresolved
-    branching.
+    to the more general and biologically realistic case of trees with unresolved branching.
   bibtex: |
     @article{iersel2014approximation,
       author = {van Iersel, Leo and Kelk, Steven and Lekic, Nela and Stougie, Leen},
@@ -4293,6 +4453,52 @@
     $O(4^k {\rm poly}(n))$ time, where $n=|X|$ and $k$ is the number of components
     of the agreement forest minus one. Moreover, we show that a $c$-approximation
     algorithm for nonbinary maf and a $d$-approximation...
+- title: A short note on exponential-time algorithms for hybridization number
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Nela
+    last: Lekic
+  - first: Leen
+    last: Stougie
+  year: 2013
+  type: preprint
+  keywords:
+  - hybridization number
+  - agreement forests
+  journal:
+  volume:
+  issue:
+  pages:
+  note: arXiv:1312.1255 [q-bio.PE] (2013).
+  doi-identifier: 10.7554/elife.21589.007
+  doi-url: https://doi.org/10.7554/elife.21589.007
+  preprint-server: arXiv
+  preprint-identifier: '1312.1255'
+  preprint-url: https://arxiv.org/abs/1312.1255
+  software-url:
+  summary: Gives a faster brute-force-beating algorithm for exactly computing the
+    minimum number of hybridization events needed to reconcile two conflicting evolutionary
+    trees, guaranteed to finish in a time that scales predictably with the number
+    of species even in the worst case.
+  bibtex: |
+    @misc{iersel2013short,
+      author = {van Iersel, Leo and Kelk, Steven and Lekic, Nela and Stougie, Leen},
+      title = {{A short note on exponential-time algorithms for hybridization number}},
+      year = {2013},
+      archivePrefix = {arXiv},
+      eprint = {1312.1255},
+      url = {https://arxiv.org/abs/1312.1255}
+    }
+  abstract: In this short note we prove that, given two (not necessarily binary) rooted
+    phylogenetic trees T_1, T_2 on the same set of taxa X, where |X|=n, the hybridization
+    number of T_1 and T_2 can be computed in time O^{*}(2^n) i.e. O(2^{n} poly(n)).
+    The result also means that a Maximum Acyclic Agreement Forest (MAAF) can be computed
+    within the same time bound.
 - title: 'Networks: expanding evolutionary thinking'
   release-date:
   authors:
@@ -4325,7 +4531,8 @@
     last: Whitfield
   year: 2013
   type: journal
-  keywords: [applications]
+  keywords:
+  - applications
   journal: Trends in Genetics
   volume: '29'
   issue: '8'
@@ -4353,6 +4560,86 @@
   abstract: Networks allow the investigation of evolutionary relationships that do
     not fit a tree model. They are becoming a leading tool for describing the evolutionary
     relationships between organisms, given the comparative complexities among genomes.
+- title: A quadratic kernel for computing the hybridization number of multiple trees
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Simone
+    last: Linz
+  year: 2013
+  type: journal
+  keywords:
+  - hybridization number
+  - fixed-parameter tractability
+  journal: Information Processing Letters
+  volume: '113'
+  issue: '9'
+  pages: 318--323
+  note: Information Processing Letters, 113(9):318–323 (2013). arXiv.
+  doi-identifier: 10.1016/j.ipl.2013.02.010
+  doi-url: https://doi.org/10.1016/j.ipl.2013.02.010
+  preprint-server: arXiv
+  preprint-identifier: '1203.4067'
+  preprint-url: https://arxiv.org/abs/1203.4067
+  software-url:
+  summary: Extends a known efficient method for finding the smallest network that
+    reconciles two conflicting evolutionary trees to work for any number of trees
+    at once, by showing that such problems can always be shrunk down to an instance
+    whose size grows only quadratically with the answer.
+  bibtex: |
+    @article{iersel2013quadratic,
+      author = {van Iersel, Leo and Linz, Simone},
+      title = {{A quadratic kernel for computing the hybridization number of multiple trees}},
+      journal = {Information Processing Letters},
+      year = {2013},
+      volume = {113},
+      number = {9},
+      pages = {318--323}
+    }
+  abstract: It has recently been shown that the NP-hard problem of calculating the
+    minimum number of hybridization events that is needed to explain a set of rooted
+    binary phylogenetic trees by means of a hybridization network is fixed-parameter
+    tractable if an instance of the problem consists of precisely two such trees.
+    In this paper, we show that this problem remains fixed-parameter tractable for
+    an arbitrarily large set of rooted binary phylogenetic trees. In particular, we
+    present a quadratic kernel.
+- title: 'Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina
+    T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  year: 2013
+  type: journal
+  keywords: []
+  journal: Systematic Biology
+  volume: '62'
+  issue: '2'
+  pages: 346--348
+  note: Systematic Biology, 62(2):346–348 (2013).
+  doi-identifier: 10.1093/sysbio/sys082
+  doi-url: https://doi.org/10.1093/sysbio/sys082
+  preprint-server: free-access link
+  preprint-identifier:
+  preprint-url: http://sysbio.oxfordjournals.org/cgi/reprint/sys082?ijkey=SdEpFGYZCSpsUvz&keytype=ref
+  software-url:
+  summary: Reviews the book Basic Phylogenetic Combinatorics by Dress, Huber, Koolen,
+    Moulton, and Spillner. The review discusses the book's treatment of combinatorial
+    foundations for phylogenetics.
+  bibtex: |
+    @article{iersel2013book,
+      author = {van Iersel, Leo},
+      title = {{Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner}},
+      journal = {Systematic Biology},
+      year = {2013},
+      volume = {62},
+      number = {2},
+      pages = {346--348},
+      note = {Book review}
+    }
 - title: Geographically Structured Populations of Cryptococcus neoformans Variety
     grubii in Asia Correlate with HIV Status and Show a Clonal Population Structure
   release-date:
@@ -4417,7 +4704,8 @@
     last: Boekhout
   year: 2013
   type: journal
-  keywords: [applications]
+  keywords:
+  - applications
   journal: PLoS ONE
   volume: '8'
   issue: '9'
@@ -4432,8 +4720,8 @@
   summary: Analyzes genetic data from Cryptococcus neoformans, a fungus that causes
     life-threatening infections in people with HIV/AIDS, across many Asian countries,
     finding that most circulating strains descend from a limited number of closely
-    related genetic lineages that vary by geography and are linked to patients'
-    HIV status.
+    related genetic lineages that vary by geography and are linked to patients' HIV
+    status.
   bibtex: |
     @article{khayhan2013geographically,
       author = {Khayhan, Kantarawee and Hagen, Ferry and Pan, Weihua and Simwami, Sitali and Fisher, Matthew C. and Wahyuningsih, Retno and Chakrabarti, Arunaloke and Chowdhary, Anuradha and Ikeda, Reiko and Taj-Aldeen, Saad J. and Khan, Ziauddin and Ip, Margaret and Imran, Darma and Sjam, Ridhawati and Sriburee, Pojana and Liao, Wanqing and Chaicumpar, Kunyaluk and Vuddhakul, Varaporn and Meyer, Wieland and Trilles, Luciana and van Iersel, Leo and Meis, Jacques F. and Klaassen, Corné H. W. and Boekhout, Teun},
@@ -4534,7 +4822,8 @@
     last: Boekhout
   year: 2013
   type: journal
-  keywords: [applications]
+  keywords:
+  - applications
   journal: PLoS ONE
   volume: '8'
   issue: '8'
@@ -4576,145 +4865,6 @@
     C. gattii AFLP6/VGII outbreak lineages derived from mating events in South America
     and then dispersed to temperate regions where they cause serious infections in
     humans and animals.
-- title: A quadratic kernel for computing the hybridization number of multiple trees
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Simone
-    last: Linz
-  year: 2013
-  type: journal
-  keywords: [hybridization number, fixed-parameter tractability]
-  journal: Information Processing Letters
-  volume: '113'
-  issue: '9'
-  pages: 318--323
-  note: Information Processing Letters, 113(9):318–323 (2013). arXiv.
-  doi-identifier: 10.1016/j.ipl.2013.02.010
-  doi-url: https://doi.org/10.1016/j.ipl.2013.02.010
-  preprint-server: arXiv
-  preprint-identifier: '1203.4067'
-  preprint-url: https://arxiv.org/abs/1203.4067
-  software-url:
-  summary: Extends a known efficient method for finding the smallest network that
-    reconciles two conflicting evolutionary trees to work for any number of trees
-    at once, by showing that such problems can always be shrunk down to an instance
-    whose size grows only quadratically with the answer.
-  bibtex: |
-    @article{iersel2013quadratic,
-      author = {van Iersel, Leo and Linz, Simone},
-      title = {{A quadratic kernel for computing the hybridization number of multiple trees}},
-      journal = {Information Processing Letters},
-      year = {2013},
-      volume = {113},
-      number = {9},
-      pages = {318--323}
-    }
-  abstract: It has recently been shown that the NP-hard problem of calculating the
-    minimum number of hybridization events that is needed to explain a set of rooted
-    binary phylogenetic trees by means of a hybridization network is fixed-parameter
-    tractable if an instance of the problem consists of precisely two such trees.
-    In this paper, we show that this problem remains fixed-parameter tractable for
-    an arbitrarily large set of rooted binary phylogenetic trees. In particular, we
-    present a quadratic kernel.
-- title: 'Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina
-    T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner'
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  year: 2013
-  type: journal
-  keywords: []
-  journal: Systematic Biology
-  volume: '62'
-  issue: '2'
-  pages: 346--348
-  note: Systematic Biology, 62(2):346–348 (2013).
-  doi-identifier: 10.1093/sysbio/sys082
-  doi-url: https://doi.org/10.1093/sysbio/sys082
-  preprint-server: free-access link
-  preprint-identifier:
-  preprint-url: http://sysbio.oxfordjournals.org/cgi/reprint/sys082?ijkey=SdEpFGYZCSpsUvz&keytype=ref
-  software-url:
-  summary: Reviews the book Basic Phylogenetic Combinatorics by Dress, Huber, Koolen,
-    Moulton, and Spillner. The review discusses the book's treatment of combinatorial
-    foundations for phylogenetics.
-  bibtex: |
-    @article{iersel2013book,
-      author = {van Iersel, Leo},
-      title = {{Book Review: Basic Phylogenetic Combinatorics. — Andreas Dress, Katharina T. Huber, Jacobus Koolen, Vincent Moulton and Andreas Spillner}},
-      journal = {Systematic Biology},
-      year = {2013},
-      volume = {62},
-      number = {2},
-      pages = {346--348},
-      note = {Book review}
-    }
-- title: Cycle killer… qu’est-ce que c’est? On the comparative approximability of
-    hybridization number and directed feedback vertex set
-  release-date:
-  authors:
-  - first: Steven
-    last: Kelk
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Nela
-    last: Lekic
-  - first: Simone
-    last: Linz
-  - first: Celine
-    last: Scornavacca
-  - first: Leen
-    last: Stougie
-  year: 2012
-  type: journal
-  keywords: [hybridization number, approximation algorithms]
-  journal: SIAM Journal on Discrete Mathematics
-  volume: '26'
-  issue: '4'
-  pages: 1635--1656
-  note: SIAM Journal on Discrete Mathematics, 26(4):1635–1656 (2012). arXiv.
-  doi-identifier: 10.1137/120864350
-  doi-url: https://doi.org/10.1137/120864350
-  preprint-server: arXiv
-  preprint-identifier: '1112.5359'
-  preprint-url: https://arxiv.org/abs/1112.5359
-  software-url:
-  summary: Shows that finding a good approximate solution for reconciling two conflicting
-    evolutionary trees is exactly as hard, in a precise technical sense, as a famous
-    long-open problem in graph theory about removing the fewest possible connections
-    to eliminate all cycles in a one-way network, and uses this connection to give
-    the first algorithm that reliably gets close to the optimal answer.
-  bibtex: |
-    @article{kelk2012cycle,
-      author = {Kelk, Steven and van Iersel, Leo and Lekic, Nela and Linz, Simone and Scornavacca, Celine and Stougie, Leen},
-      title = {{Cycle killer… qu’est-ce que c’est? On the comparative approximability of hybridization number and directed feedback vertex set}},
-      journal = {SIAM Journal on Discrete Mathematics},
-      year = {2012},
-      volume = {26},
-      number = {4},
-      pages = {1635--1656}
-    }
-  abstract: We show that the problem of computing the hybridization number of two
-    rooted binary phylogenetic trees on the same set of taxa X has a constant factor
-    polynomial-time approximation if and only if the problem of computing a minimum-size
-    feedback vertex set in a directed graph (DFVS) has a constant factor polynomial-time
-    approximation. The latter problem, which asks for a minimum number of vertices
-    to be removed from a directed graph to transform it into a directed acyclic graph,
-    is one of the problems in Karp's seminal 1972 list of 21 NP-complete problems.
-    However, despite considerable attention from the combinatorial optimization community
-    it remains to this day unknown whether a constant factor polynomial-time approximation
-    exists for DFVS. Our result thus places the (in)approximability of hybridization
-    number in a much broader complexity context, and as a consequence we obtain that
-    hybridization number inherits inapproximability results from the problem Vertex
-    Cover. On the positive side, we use results from the DFVS literature to give an
-    O(log r log log r) approximation for hybridization number, where r is the value
-    of an optimal solution to the hybridization number problem.
 - title: On the elusiveness of clusters
   release-date:
   authors:
@@ -4727,7 +4877,8 @@
     last: Iersel
   year: 2012
   type: journal
-  keywords: [cluster-based]
+  keywords:
+  - cluster-based
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '9'
   issue: '2'
@@ -4743,9 +4894,8 @@
   summary: Studies the limits of using a simplified summary of evolutionary relationships,
     called clusters, to build an evolutionary network, showing that although finding
     the simplest such network is generally computationally hard, it becomes efficiently
-    solvable once a bound is placed on how tangled the network is allowed to be,
-    and pins down exactly when a widely used practical algorithm succeeds or falls
-    short.
+    solvable once a bound is placed on how tangled the network is allowed to be, and
+    pins down exactly when a widely used practical algorithm succeeds or falls short.
   bibtex: |
     @article{kelk2012elusiveness,
       author = {Kelk, Steven and Scornavacca, Celine and van Iersel, Leo},
@@ -4788,7 +4938,9 @@
     last: Yeo
   year: 2012
   type: journal
-  keywords: [fixed-parameter tractability, constraint satisfaction]
+  keywords:
+  - fixed-parameter tractability
+  - constraint satisfaction
   journal: Journal of Computer and System Sciences
   volume: '78'
   issue:
@@ -4804,10 +4956,10 @@
   conference-doi-url: https://doi.org/10.1007/978-3-642-15775-2_28
   software-url:
   summary: Proves a general result about a broad family of problems asking for the
-    best possible ordering of a set of items subject to triple-wise preferences,
-    including one relevant to combining conflicting evolutionary trees — whenever
-    a solution is required to beat the average by some margin, the problem can always
-    be reduced to an instance whose size grows only quadratically with that margin.
+    best possible ordering of a set of items subject to triple-wise preferences, including
+    one relevant to combining conflicting evolutionary trees — whenever a solution
+    is required to beat the average by some margin, the problem can always be reduced
+    to an instance whose size grows only quadratically with that margin.
   bibtex: |
     @article{gutin2012every,
       author = {Gutin, Gregory and van Iersel, Leo and Mnich, Matthias and Yeo, Anders},
@@ -4824,114 +4976,69 @@
     number of triples whose ordering (under $α$) follows a permutation in $Π$. We
     prove that all ternary Permutation-CSPs parameterized above average have kernels
     with quadratic numbers of variables.
-- title: When Two Trees Go to War
+- title: Cycle killer… qu’est-ce que c’est? On the comparative approximability of
+    hybridization number and directed feedback vertex set
   release-date:
   authors:
+  - first: Steven
+    last: Kelk
   - first: Leo
     tussenvoegsel: van
     last: Iersel
-  - first: Steven
-    last: Kelk
-  year: 2011
+  - first: Nela
+    last: Lekic
+  - first: Simone
+    last: Linz
+  - first: Celine
+    last: Scornavacca
+  - first: Leen
+    last: Stougie
+  year: 2012
   type: journal
-  keywords: [hybridization number, triplet-based, cluster-based, tree-based]
-  journal: Journal of Theoretical Biology
-  volume: '269'
-  issue:
-  pages: 245--255
-  note: Journal of Theoretical Biology, 269:245-255 (2011). arXiv.
-  doi-identifier: 10.1016/j.jtbi.2010.10.032
-  doi-url: https://doi.org/10.1016/j.jtbi.2010.10.032
+  keywords:
+  - hybridization number
+  - approximation algorithms
+  journal: SIAM Journal on Discrete Mathematics
+  volume: '26'
+  issue: '4'
+  pages: 1635--1656
+  note: SIAM Journal on Discrete Mathematics, 26(4):1635–1656 (2012). arXiv.
+  doi-identifier: 10.1137/120864350
+  doi-url: https://doi.org/10.1137/120864350
   preprint-server: arXiv
-  preprint-identifier: '1004.5332'
-  preprint-url: https://arxiv.org/abs/1004.5332
+  preprint-identifier: '1112.5359'
+  preprint-url: https://arxiv.org/abs/1112.5359
   software-url:
-  summary: Shows that four seemingly different ways of measuring the minimum complexity
-    of an evolutionary network needed to reconcile two conflicting evolutionary trees
-    actually always give exactly the same answer, a surprising unification that
-    resolves several previously open questions in the field, while also showing
-    that this neat correspondence breaks down once a third tree is added.
+  summary: Shows that finding a good approximate solution for reconciling two conflicting
+    evolutionary trees is exactly as hard, in a precise technical sense, as a famous
+    long-open problem in graph theory about removing the fewest possible connections
+    to eliminate all cycles in a one-way network, and uses this connection to give
+    the first algorithm that reliably gets close to the optimal answer.
   bibtex: |
-    @article{iersel2011when,
-      author = {van Iersel, Leo and Kelk, Steven},
-      title = {{When Two Trees Go to War}},
-      journal = {Journal of Theoretical Biology},
-      year = {2011},
-      volume = {269},
-      pages = {245--255}
+    @article{kelk2012cycle,
+      author = {Kelk, Steven and van Iersel, Leo and Lekic, Nela and Linz, Simone and Scornavacca, Celine and Stougie, Leen},
+      title = {{Cycle killer… qu’est-ce que c’est? On the comparative approximability of hybridization number and directed feedback vertex set}},
+      journal = {SIAM Journal on Discrete Mathematics},
+      year = {2012},
+      volume = {26},
+      number = {4},
+      pages = {1635--1656}
     }
-  abstract: Rooted phylogenetic networks are often constructed by combining trees,
-    clusters, triplets or characters into a single network that in some well-defined
-    sense simultaneously represents them all. We review these four models and investigate
-    how they are related. In general, the model chosen influences the minimum number
-    of reticulation events required. However, when one obtains the input data from
-    two binary trees, we show that the minimum number of reticulations is independent
-    of the model. The number of reticulations necessary to represent the trees, triplets,
-    clusters (in the softwired sense) and characters (with unrestricted multiple crossover
-    recombination) are all equal. Furthermore, we show that these results also hold
-    when not the number of reticulations but the level of the constructed network
-    is minimised. We use these unification results to settle several complexity questions
-    that have been open in the field for some time. We also give explicit examples
-    to show that already for data obtained from three binary trees the models begin
-    to diverge.
-- title: A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks
-  release-date:
-  authors:
-  - first: Katharina
-    last: Huber
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: Radoslaw
-    last: Suchecki
-  year: 2011
-  type: journal
-  keywords: [triplet-based, applications]
-  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
-  volume: '8'
-  issue: '3'
-  pages: 635--649
-  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8(3):635-649
-    (2011).
-  doi-identifier: 10.1109/tcbb.2010.17
-  doi-url: https://doi.org/10.1109/tcbb.2010.17
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  software-url:
-  summary: Presents Lev1athan, freely available software that efficiently reconstructs
-    a moderately complex evolutionary network from information about every possible
-    group of three species, always running quickly and falling back to a simple
-    tree when the data supports one, shown through extensive simulations and real
-    biological data to perform well even when the input is noisy.
-  bibtex: |
-    @article{huber2011practical,
-      author = {Huber, Katharina and van Iersel, Leo and Kelk, Steven and Suchecki, Radoslaw},
-      title = {{A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks}},
-      journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
-      year = {2011},
-      volume = {8},
-      number = {3},
-      pages = {635--649}
-    }
-  abstract: Recently, much attention has been devoted to the construction of phylogenetic
-    networks which generalize phylogenetic trees in order to accommodate complex evolutionary
-    processes. Here, we present an efficient, practical algorithm for reconstructing
-    level-1 phylogenetic networks-a type of network slightly more general than a phylogenetic
-    tree-from triplets. Our algorithm has been made publicly available as the program
-    Lev1athan. It combines ideas from several known theoretical algorithms for phylogenetic
-    tree and network reconstruction with two novel subroutines. Namely, an exponential-time
-    exact and a greedy algorithm both of which are of independent theoretical interest.
-    Most importantly, Lev1athan runs in polynomial time and always constructs a level-1
-    network. If the data are consistent with a phylogenetic tree, then the algorithm
-    constructs such a tree. Moreover, if the input triplet set is dense and, in addition,
-    is fully consistent with some level-1 network, it will find such a network. The
-    potential of Lev1athan is explored by means of an extensive simulation study and
-    a biological data set. One of our conclusions is that Lev1athan is able to construct
-    networks consistent with a high percentage of input triplets, even when these
-    input triplets are affected by a low to moderate level of noise.
+  abstract: We show that the problem of computing the hybridization number of two
+    rooted binary phylogenetic trees on the same set of taxa X has a constant factor
+    polynomial-time approximation if and only if the problem of computing a minimum-size
+    feedback vertex set in a directed graph (DFVS) has a constant factor polynomial-time
+    approximation. The latter problem, which asks for a minimum number of vertices
+    to be removed from a directed graph to transform it into a directed acyclic graph,
+    is one of the problems in Karp's seminal 1972 list of 21 NP-complete problems.
+    However, despite considerable attention from the combinatorial optimization community
+    it remains to this day unknown whether a constant factor polynomial-time approximation
+    exists for DFVS. Our result thus places the (in)approximability of hybridization
+    number in a much broader complexity context, and as a consequence we obtain that
+    hybridization number inherits inapproximability results from the problem Vertex
+    Cover. On the positive side, we use results from the DFVS literature to give an
+    O(log r log log r) approximation for hybridization number, where r is the value
+    of an optimal solution to the hybridization number problem.
 - title: Constructing the Simplest Possible Phylogenetic Network from Triplets
   release-date:
   authors:
@@ -4942,7 +5049,9 @@
     last: Kelk
   year: 2011
   type: journal
-  keywords: [fixed-parameter tractability, triplet-based]
+  keywords:
+  - fixed-parameter tractability
+  - triplet-based
   journal: Algorithmica
   volume: '60'
   issue:
@@ -4984,6 +5093,120 @@
     case for the use of triplet-based methods in the construction of phylogenetic
     networks. We also show that, in the non-dense case, the level-2 problem remains
     NP-hard.
+- title: When Two Trees Go to War
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  year: 2011
+  type: journal
+  keywords:
+  - hybridization number
+  - triplet-based
+  - cluster-based
+  - tree-based
+  journal: Journal of Theoretical Biology
+  volume: '269'
+  issue:
+  pages: 245--255
+  note: Journal of Theoretical Biology, 269:245-255 (2011). arXiv.
+  doi-identifier: 10.1016/j.jtbi.2010.10.032
+  doi-url: https://doi.org/10.1016/j.jtbi.2010.10.032
+  preprint-server: arXiv
+  preprint-identifier: '1004.5332'
+  preprint-url: https://arxiv.org/abs/1004.5332
+  software-url:
+  summary: Shows that four seemingly different ways of measuring the minimum complexity
+    of an evolutionary network needed to reconcile two conflicting evolutionary trees
+    actually always give exactly the same answer, a surprising unification that resolves
+    several previously open questions in the field, while also showing that this neat
+    correspondence breaks down once a third tree is added.
+  bibtex: |
+    @article{iersel2011when,
+      author = {van Iersel, Leo and Kelk, Steven},
+      title = {{When Two Trees Go to War}},
+      journal = {Journal of Theoretical Biology},
+      year = {2011},
+      volume = {269},
+      pages = {245--255}
+    }
+  abstract: Rooted phylogenetic networks are often constructed by combining trees,
+    clusters, triplets or characters into a single network that in some well-defined
+    sense simultaneously represents them all. We review these four models and investigate
+    how they are related. In general, the model chosen influences the minimum number
+    of reticulation events required. However, when one obtains the input data from
+    two binary trees, we show that the minimum number of reticulations is independent
+    of the model. The number of reticulations necessary to represent the trees, triplets,
+    clusters (in the softwired sense) and characters (with unrestricted multiple crossover
+    recombination) are all equal. Furthermore, we show that these results also hold
+    when not the number of reticulations but the level of the constructed network
+    is minimised. We use these unification results to settle several complexity questions
+    that have been open in the field for some time. We also give explicit examples
+    to show that already for data obtained from three binary trees the models begin
+    to diverge.
+- title: A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks
+  release-date:
+  authors:
+  - first: Katharina
+    last: Huber
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Radoslaw
+    last: Suchecki
+  year: 2011
+  type: journal
+  keywords:
+  - triplet-based
+  - applications
+  journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
+  volume: '8'
+  issue: '3'
+  pages: 635--649
+  note: IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8(3):635-649
+    (2011).
+  doi-identifier: 10.1109/tcbb.2010.17
+  doi-url: https://doi.org/10.1109/tcbb.2010.17
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  summary: Presents Lev1athan, freely available software that efficiently reconstructs
+    a moderately complex evolutionary network from information about every possible
+    group of three species, always running quickly and falling back to a simple tree
+    when the data supports one, shown through extensive simulations and real biological
+    data to perform well even when the input is noisy.
+  bibtex: |
+    @article{huber2011practical,
+      author = {Huber, Katharina and van Iersel, Leo and Kelk, Steven and Suchecki, Radoslaw},
+      title = {{A Practical Algorithm for Reconstructing Level-1 Phylogenetic Networks}},
+      journal = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+      year = {2011},
+      volume = {8},
+      number = {3},
+      pages = {635--649}
+    }
+  abstract: Recently, much attention has been devoted to the construction of phylogenetic
+    networks which generalize phylogenetic trees in order to accommodate complex evolutionary
+    processes. Here, we present an efficient, practical algorithm for reconstructing
+    level-1 phylogenetic networks-a type of network slightly more general than a phylogenetic
+    tree-from triplets. Our algorithm has been made publicly available as the program
+    Lev1athan. It combines ideas from several known theoretical algorithms for phylogenetic
+    tree and network reconstruction with two novel subroutines. Namely, an exponential-time
+    exact and a greedy algorithm both of which are of independent theoretical interest.
+    Most importantly, Lev1athan runs in polynomial time and always constructs a level-1
+    network. If the data are consistent with a phylogenetic tree, then the algorithm
+    constructs such a tree. Moreover, if the input triplet set is dense and, in addition,
+    is fully consistent with some level-1 network, it will find such a network. The
+    potential of Lev1athan is explored by means of an extensive simulation study and
+    a biological data set. One of our conclusions is that Lev1athan is able to construct
+    networks consistent with a high percentage of input triplets, even when these
+    input triplets are affected by a low to moderate level of noise.
 - title: Locating a Tree in a Phylogenetic Network
   release-date:
   authors:
@@ -4996,7 +5219,8 @@
     last: Steel
   year: 2010
   type: journal
-  keywords: [tree-containment]
+  keywords:
+  - tree-containment
   journal: Information Processing Letters
   volume: '110'
   issue: '23'
@@ -5034,6 +5258,64 @@
     solvable for normal networks, for binary tree-child networks, and for level-$k$
     networks. On the other hand, we show that, even for tree-sibling, time-consistent,
     regular networks, both Tree Containment and Cluster Containment remain NP-complete.
+- title: 'Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations
+    to Represent Conflicting Clusters'
+  release-date:
+  authors:
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: Regula
+    last: Rupp
+  - first: Daniel
+    last: Huson
+  year: 2010
+  type: journal
+  keywords:
+  - cluster-based
+  - applications
+  journal: Bioinformatics
+  volume: '26'
+  issue:
+  pages: i124--i131
+  note: Bioinformatics, 26:i124-i131 (2010). Proceedings of ISMB 2010.
+  doi-identifier: 10.1093/bioinformatics/btq202
+  doi-url: https://doi.org/10.1093/bioinformatics/btq202
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  software-url:
+  summary: Presents Cass, freely available software (integrated into the popular Dendroscope
+    program) that combines conflicting groupings of species from different gene trees
+    into a single evolutionary network, and shows that it reliably produces simpler
+    networks, using fewer hybridization events, than previously available methods.
+  bibtex: |
+    @article{iersel2010phylogenetic,
+      author = {van Iersel, Leo and Kelk, Steven and Rupp, Regula and Huson, Daniel},
+      title = {{Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations to Represent Conflicting Clusters}},
+      journal = {Bioinformatics},
+      year = {2010},
+      volume = {26},
+      pages = {i124--i131}
+    }
+  abstract: 'Phylogenetic trees are widely used to display estimates of how groups
+    of species are evolved. Each phylogenetic tree can be seen as a collection of
+    clusters, subgroups of the species that evolved from a common ancestor. When phylogenetic
+    trees are obtained for several datasets (e.g. for different genes), then their
+    clusters are often contradicting. Consequently, the set of all clusters of such
+    a dataset cannot be combined into a single phylogenetic tree. Phylogenetic networks
+    are a generalization of phylogenetic trees that can be used to display more complex
+    evolutionary histories, including reticulate events, such as hybridizations, recombinations
+    and horizontal gene transfers. Here, we present the new Cass algorithm that can
+    combine any set of clusters into a phylogenetic network. We show that the networks
+    constructed by Cass are usually simpler than networks constructed by other available
+    methods. Moreover, we show that Cass is guaranteed to produce a network with at
+    most two reticulations per biconnected component, whenever such a network exists.
+    We have implemented Cass and integrated it into the freely available Dendroscope
+    software. Contact: l.j.j.v.iersel@gmail.com Supplementary information: Supplementary
+    data are available at Bioinformatics online.'
 - title: Quantifying the Extent of Lateral Gene Transfer Required to Avert a ‘Genome
     of Eden’
   release-date:
@@ -5060,10 +5342,10 @@
   preprint-url:
   software-url:
   summary: Develops a rigorous mathematical way to measure how much horizontal gene
-    transfer between species is really needed to explain the patchy presence and
-    absence of genes across genomes — a question at the heart of the debate over
-    whether evolution is better described as a tree or a tangled network — and connects
-    this measurement problem to well-studied concepts in graph theory.
+    transfer between species is really needed to explain the patchy presence and absence
+    of genes across genomes — a question at the heart of the debate over whether evolution
+    is better described as a tree or a tangled network — and connects this measurement
+    problem to well-studied concepts in graph theory.
   bibtex: |
     @article{iersel2010quantifying,
       author = {van Iersel, Leo and Semple, Charles and Steel, Mike},
@@ -5085,63 +5367,40 @@
     and transfer on which a recent heuristic analysis of biological data relied. Our
     approach takes advantage of a relationship between LGT optimization and graph-theoretical
     concepts such as tree width and network flow.
-- title: 'Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations
-    to Represent Conflicting Clusters'
+- title: Algorithms, Haplotypes and Phylogenetic Networks
   release-date:
   authors:
   - first: Leo
     tussenvoegsel: van
     last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: Regula
-    last: Rupp
-  - first: Daniel
-    last: Huson
-  year: 2010
-  type: journal
-  keywords: [cluster-based, applications]
-  journal: Bioinformatics
-  volume: '26'
+  year: 2009
+  type: thesis
+  keywords:
+  - haplotype assembly
+  - strings
+  - triplet-based
+  journal: Eindhoven University of Technology
+  volume:
   issue:
-  pages: i124--i131
-  note: Bioinformatics, 26:i124-i131 (2010). Proceedings of ISMB 2010.
-  doi-identifier: 10.1093/bioinformatics/btq202
-  doi-url: https://doi.org/10.1093/bioinformatics/btq202
+  pages:
+  note: Ph.D. Thesis, Eindhoven University of Technology, 2009.
+  doi-identifier:
+  doi-url: "/assets/pdf/thesis_van_iersel.pdf"
   preprint-server:
   preprint-identifier:
   preprint-url:
   software-url:
-  summary: Presents Cass, freely available software (integrated into the popular
-    Dendroscope program) that combines conflicting groupings of species from different
-    gene trees into a single evolutionary network, and shows that it reliably produces
-    simpler networks, using fewer hybridization events, than previously available
-    methods.
+  summary: Doctoral thesis presenting algorithmic and computational-complexity results
+    across two related areas — reconstructing an individual's genetic haplotypes from
+    sequencing data, and reconstructing and analyzing evolutionary networks that capture
+    hybridization and other non-tree-like evolutionary events.
   bibtex: |
-    @article{iersel2010phylogenetic,
-      author = {van Iersel, Leo and Kelk, Steven and Rupp, Regula and Huson, Daniel},
-      title = {{Phylogenetic Networks Do not Need to Be Complex: Using Fewer Reticulations to Represent Conflicting Clusters}},
-      journal = {Bioinformatics},
-      year = {2010},
-      volume = {26},
-      pages = {i124--i131}
+    @phdthesis{iersel2009algorithms,
+      author = {van Iersel, Leo},
+      title = {{Algorithms, Haplotypes and Phylogenetic Networks}},
+      school = {Eindhoven University of Technology},
+      year = {2009}
     }
-  abstract: 'Phylogenetic trees are widely used to display estimates of how groups
-    of species are evolved. Each phylogenetic tree can be seen as a collection of
-    clusters, subgroups of the species that evolved from a common ancestor. When phylogenetic
-    trees are obtained for several datasets (e.g. for different genes), then their
-    clusters are often contradicting. Consequently, the set of all clusters of such
-    a dataset cannot be combined into a single phylogenetic tree. Phylogenetic networks
-    are a generalization of phylogenetic trees that can be used to display more complex
-    evolutionary histories, including reticulate events, such as hybridizations, recombinations
-    and horizontal gene transfers. Here, we present the new Cass algorithm that can
-    combine any set of clusters into a phylogenetic network. We show that the networks
-    constructed by Cass are usually simpler than networks constructed by other available
-    methods. Moreover, we show that Cass is guaranteed to produce a network with at
-    most two reticulations per biconnected component, whenever such a network exists.
-    We have implemented Cass and integrated it into the freely available Dendroscope
-    software. Contact: l.j.j.v.iersel@gmail.com Supplementary information: Supplementary
-    data are available at Bioinformatics online.'
 - title: 'Uniqueness, Intractability and Exact Algorithms: Reflections on Level-k
     Phylogenetic Networks'
   release-date:
@@ -5155,7 +5414,8 @@
     last: Mnich
   year: 2009
   type: journal
-  keywords: [triplet-based]
+  keywords:
+  - triplet-based
   journal: Journal of Bioinformatics and Computational Biology
   volume: '7'
   issue: '4'
@@ -5169,8 +5429,8 @@
   software-url:
   summary: Reflects on a family of evolutionary networks graded by how far they deviate
     from being a simple tree, showing that increasingly tangled networks are still
-    uniquely determined by their smallest three-species building blocks, proving
-    that constructing such networks from this information is nevertheless computationally
+    uniquely determined by their smallest three-species building blocks, proving that
+    constructing such networks from this information is nevertheless computationally
     hard in general, and offering an exact algorithm that copes with this hardness
     for the simplest non-tree case.
   bibtex: |
@@ -5214,7 +5474,10 @@
     last: Boekhout
   year: 2009
   type: journal
-  keywords: [fixed-parameter tractability, triplet-based, applications]
+  keywords:
+  - fixed-parameter tractability
+  - triplet-based
+  - applications
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '6'
   issue: '4'
@@ -5229,11 +5492,11 @@
   conference-note: RECOMB 2008, LNBI 4955:450–462
   conference-doi-url: https://doi.org/10.1007/978-3-540-78839-3_40
   software-url:
-  summary: Shows that even a fairly tangled type of evolutionary network can be
-    efficiently and exactly reconstructed from a sufficiently complete set of three-species
-    relationship hypotheses, extending earlier tractability results to a broader
-    and more complex class of networks, while confirming the reconstruction problem
-    remains computationally hard whenever that information is incomplete.
+  summary: Shows that even a fairly tangled type of evolutionary network can be efficiently
+    and exactly reconstructed from a sufficiently complete set of three-species relationship
+    hypotheses, extending earlier tractability results to a broader and more complex
+    class of networks, while confirming the reconstruction problem remains computationally
+    hard whenever that information is incomplete.
   bibtex: |
     @article{iersel2009constructing,
       author = {van Iersel, Leo and Keijsper, Judith and Kelk, Steven and Stougie, Leen and Hagen, Ferry and Boekhout, Teun},
@@ -5275,7 +5538,10 @@
     last: Stougie
   year: 2008
   type: journal
-  keywords: [strings, perfect phylogeny, parsimony]
+  keywords:
+  - strings
+  - perfect phylogeny
+  - parsimony
   journal: IEEE/ACM Transactions on Computational Biology and Bioinformatics
   volume: '5'
   issue: '2'
@@ -5291,10 +5557,10 @@
   conference-doi-url: https://doi.org/10.1007/11851561_8
   software-url:
   summary: Maps out the precise boundary between which versions of two classic genetic-data
-    reconstruction problems — inferring parsimonious explanations and inferring
-    perfect phylogenies from genetic marker data — can be solved efficiently and
-    which cannot, clarifying exactly how far a problem's assumptions can be relaxed
-    before it becomes computationally intractable.
+    reconstruction problems — inferring parsimonious explanations and inferring perfect
+    phylogenies from genetic marker data — can be solved efficiently and which cannot,
+    clarifying exactly how far a problem's assumptions can be relaxed before it becomes
+    computationally intractable.
   bibtex: |
     @article{iersel2008shorelines,
       author = {van Iersel, Leo and Keijsper, Judith and Kelk, Steven and Stougie, Leen},
@@ -5305,6 +5571,64 @@
       number = {2},
       pages = {301--312}
     }
+- title: The Complexity of the Single Individual SNP Haplotyping Problem
+  release-date:
+  authors:
+  - first: Rudi
+    last: Cilibrasi
+  - first: Leo
+    tussenvoegsel: van
+    last: Iersel
+  - first: Steven
+    last: Kelk
+  - first: John
+    last: Tromp
+  year: 2007
+  type: journal
+  keywords:
+  - sequence-based
+  - haplotype assembly
+  - strings
+  journal: Algorithmica
+  volume: '49'
+  issue: '1'
+  pages: 13--36
+  note: Algorithmica, 49(1):13-36 (2007). Preliminary version in WABI 2005, LNCS 3692:128-139.
+  doi-identifier: 10.1007/s00453-007-0029-z
+  doi-url: https://doi.org/10.1007/s00453-007-0029-z
+  preprint-server:
+  preprint-identifier:
+  preprint-url:
+  conference-note: WABI 2005, LNCS 3692:128–139
+  conference-doi-url: https://doi.org/10.1007/11557067_11
+  software-url:
+  summary: Pins down exactly how the computational difficulty of reconstructing an
+    individual's two inherited chromosome copies from imperfect, incomplete DNA sequencing
+    fragments depends on how fragmented that data is, showing some natural versions
+    of the problem are efficiently solvable while closely related versions are provably
+    hard, and correcting an earlier claim in the literature about one such version.
+  bibtex: |
+    @article{cilibrasi2007complexity,
+      author = {Cilibrasi, Rudi and van Iersel, Leo and Kelk, Steven and Tromp, John},
+      title = {{The Complexity of the Single Individual SNP Haplotyping Problem}},
+      journal = {Algorithmica},
+      year = {2007},
+      volume = {49},
+      number = {1},
+      pages = {13--36}
+    }
+  abstract: We present several new results pertaining to haplotyping. These results
+    concern the combinatorial problem of reconstructing haplotypes from incomplete
+    and/or imperfectly sequenced haplotype fragments. We consider the complexity of
+    the problems Minimum Error Correction (MEC) and Longest Haplotype Reconstruction
+    (LHR) for different restrictions on the input data. Specifically, we look at the
+    gapless case, where every row of the input corresponds to a gapless haplotype-fragment,
+    and the 1-gap case, where at most one gap per fragment is allowed. We prove that
+    MEC is APX-hard in the 1-gap case and still NP-hard in the gapless case. In addition,
+    we question earlier claims that MEC is NP-hard even when the input matrix is restricted
+    to being completely binary. Concerning LHR, we show that this problem is NP-hard
+    and APX-hard in the 1-gap case (and thus also in the general case), but is polynomial
+    time solvable in the gapless case.
 - title: Prefix reversals on binary and ternary strings
   release-date:
   authors:
@@ -5323,7 +5647,8 @@
     last: Tromp
   year: 2007
   type: journal
-  keywords: [strings]
+  keywords:
+  - strings
   journal: SIAM Journal on Discrete Mathematics
   volume: '21'
   issue: '3'
@@ -5339,8 +5664,8 @@
   conference-doi-url: https://doi.org/10.1007/978-3-540-73433-8_21
   software-url:
   summary: Studies a variant of the classic "pancake sorting" puzzle — repeatedly
-    flipping over the front part of a stack to put it in order — for stacks made
-    of only two or three types of item, giving efficient methods to sort such stacks
+    flipping over the front part of a stack to put it in order — for stacks made of
+    only two or three types of item, giving efficient methods to sort such stacks
     optimally, proving that measuring the distance between two specific arrangements
     is nevertheless computationally hard, and working out how many flips are ever
     needed in the worst case.
@@ -5369,134 +5694,3 @@
     ternary strings. We also consider a weaker form of sorting called grouping (of
     identical symbols) and give polynomial-time algorithms for optimally grouping
     binary and ternary strings. A number of intriguing open problems are also discussed.
-- title: The Complexity of the Single Individual SNP Haplotyping Problem
-  release-date:
-  authors:
-  - first: Rudi
-    last: Cilibrasi
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: John
-    last: Tromp
-  year: 2007
-  type: journal
-  keywords: [sequence-based, haplotype assembly, strings]
-  journal: Algorithmica
-  volume: '49'
-  issue: '1'
-  pages: 13--36
-  note: Algorithmica, 49(1):13-36 (2007). Preliminary version in WABI 2005, LNCS 3692:128-139.
-  doi-identifier: 10.1007/s00453-007-0029-z
-  doi-url: https://doi.org/10.1007/s00453-007-0029-z
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  conference-note: WABI 2005, LNCS 3692:128–139
-  conference-doi-url: https://doi.org/10.1007/11557067_11
-  software-url:
-  summary: Pins down exactly how the computational difficulty of reconstructing
-    an individual's two inherited chromosome copies from imperfect, incomplete DNA
-    sequencing fragments depends on how fragmented that data is, showing some natural
-    versions of the problem are efficiently solvable while closely related versions
-    are provably hard, and correcting an earlier claim in the literature about one
-    such version.
-  bibtex: |
-    @article{cilibrasi2007complexity,
-      author = {Cilibrasi, Rudi and van Iersel, Leo and Kelk, Steven and Tromp, John},
-      title = {{The Complexity of the Single Individual SNP Haplotyping Problem}},
-      journal = {Algorithmica},
-      year = {2007},
-      volume = {49},
-      number = {1},
-      pages = {13--36}
-    }
-  abstract: We present several new results pertaining to haplotyping. These results
-    concern the combinatorial problem of reconstructing haplotypes from incomplete
-    and/or imperfectly sequenced haplotype fragments. We consider the complexity of
-    the problems Minimum Error Correction (MEC) and Longest Haplotype Reconstruction
-    (LHR) for different restrictions on the input data. Specifically, we look at the
-    gapless case, where every row of the input corresponds to a gapless haplotype-fragment,
-    and the 1-gap case, where at most one gap per fragment is allowed. We prove that
-    MEC is APX-hard in the 1-gap case and still NP-hard in the gapless case. In addition,
-    we question earlier claims that MEC is NP-hard even when the input matrix is restricted
-    to being completely binary. Concerning LHR, we show that this problem is NP-hard
-    and APX-hard in the 1-gap case (and thus also in the general case), but is polynomial
-    time solvable in the gapless case.
-- title: A short note on exponential-time algorithms for hybridization number
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  - first: Steven
-    last: Kelk
-  - first: Nela
-    last: Lekic
-  - first: Leen
-    last: Stougie
-  year: 2013
-  type: preprint
-  keywords: [hybridization number, agreement forests]
-  journal:
-  volume:
-  issue:
-  pages:
-  note: arXiv:1312.1255 [q-bio.PE] (2013).
-  doi-identifier: 10.7554/elife.21589.007
-  doi-url: https://doi.org/10.7554/elife.21589.007
-  preprint-server: arXiv
-  preprint-identifier: '1312.1255'
-  preprint-url: https://arxiv.org/abs/1312.1255
-  software-url:
-  summary: Gives a faster brute-force-beating algorithm for exactly computing the
-    minimum number of hybridization events needed to reconcile two conflicting evolutionary
-    trees, guaranteed to finish in a time that scales predictably with the number
-    of species even in the worst case.
-  bibtex: |
-    @misc{iersel2013short,
-      author = {van Iersel, Leo and Kelk, Steven and Lekic, Nela and Stougie, Leen},
-      title = {{A short note on exponential-time algorithms for hybridization number}},
-      year = {2013},
-      archivePrefix = {arXiv},
-      eprint = {1312.1255},
-      url = {https://arxiv.org/abs/1312.1255}
-    }
-  abstract: In this short note we prove that, given two (not necessarily binary) rooted
-    phylogenetic trees T_1, T_2 on the same set of taxa X, where |X|=n, the hybridization
-    number of T_1 and T_2 can be computed in time O^{*}(2^n) i.e. O(2^{n} poly(n)).
-    The result also means that a Maximum Acyclic Agreement Forest (MAAF) can be computed
-    within the same time bound.
-- title: Algorithms, Haplotypes and Phylogenetic Networks
-  release-date:
-  authors:
-  - first: Leo
-    tussenvoegsel: van
-    last: Iersel
-  year: 2009
-  type: thesis
-  keywords: [haplotype assembly, strings, triplet-based]
-  journal: Eindhoven University of Technology
-  volume:
-  issue:
-  pages:
-  note: Ph.D. Thesis, Eindhoven University of Technology, 2009.
-  doi-identifier:
-  doi-url: /assets/pdf/thesis_van_iersel.pdf
-  preprint-server:
-  preprint-identifier:
-  preprint-url:
-  software-url:
-  summary: Doctoral thesis presenting algorithmic and computational-complexity results
-    across two related areas — reconstructing an individual's genetic haplotypes
-    from sequencing data, and reconstructing and analyzing evolutionary networks
-    that capture hybridization and other non-tree-like evolutionary events.
-  bibtex: |
-    @phdthesis{iersel2009algorithms,
-      author = {van Iersel, Leo},
-      title = {{Algorithms, Haplotypes and Phylogenetic Networks}},
-      school = {Eindhoven University of Technology},
-      year = {2009}
-    }
