@@ -11,19 +11,21 @@
     first: Chai
     last: Fillerup
   role: msc
-  thesis:
-  thesis-url:
-  website: 
-  scholar: 
+  year: 2026
+  thesis: "A Polynomial Time Test for when Optimal Traffic Flow is Achievable with Semi-Selfish Planners in Parallel Edge Networks"
+  thesis-url: https://resolver.tudelft.nl/uuid:800f3adb-523f-464c-80c2-e81d3aad753e
+  website:
+  scholar:
 
 - name:
     first: Ida
     last: Pelupessy
   role: msc
-  thesis:
-  thesis-url:
-  website: 
-  scholar: 
+  year: 2026
+  thesis: "Phylogenetic Networks with Gene Flow"
+  thesis-url: https://resolver.tudelft.nl/uuid:4c3f8142-e05d-4d9d-bee6-9cf1783d4403
+  website:
+  scholar:
 
 - name:
     first: Niels
