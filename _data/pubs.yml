@@ -5715,7 +5715,11 @@
   preprint-identifier:
   preprint-url:
   software-url:
-  summary:
+  summary: Studies a traffic-routing game in which semi-selfish planners (such as
+    autonomous-vehicle coordinators) can suggest routes to their vehicles while still
+    acting in their own interest. Characterizes exactly when this setting admits equilibria
+    that achieve optimal overall traffic flow, and gives a polynomial-time algorithm
+    to decide this for parallel-edge networks with convex cost functions.
   abstract:
   bibtex:
 - title: Phylogenetic Networks with Gene Flow
@@ -5737,6 +5741,10 @@
   preprint-identifier:
   preprint-url:
   software-url:
-  summary:
+  summary: Introduces and studies gene-flow networks, an extension of phylogenetic
+    networks that can represent bidirectional gene exchange between contemporary lineages
+    alongside the unidirectional reticulate events (such as hybridization) captured
+    by standard hybrid networks. Investigates which mathematical tools developed for
+    hybrid networks carry over to this richer model.
   abstract:
   bibtex:
