@@ -29,15 +29,27 @@
         {%- endif -%}
       </div>
     {%- endif -%}
+  </div>
+  {%- if stud.summary or stud.abstract -%}
+    {%- assign stud_id = stud.name.first | append: "-" | append: stud.name.last | slugify -%}
+    <div class="lowkey-button-group" style="position:absolute;bottom:-0.6em;left:0.6em;z-index:2;">
+      {%- if stud.summary -%}
+        <button class="toggle-button lowkey" onclick="toggleBox('sum_{{ stud_id }}')">summary</button>
+      {%- endif -%}
+      {%- if stud.abstract -%}
+        <button class="toggle-button lowkey" onclick="toggleBox('abs_{{ stud_id }}')">abstract</button>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</article>
+{%- if stud.summary or stud.abstract -%}
+  {%- assign stud_id = stud.name.first | append: "-" | append: stud.name.last | slugify -%}
+  <div class="pub-toggles">
     {%- if stud.summary -%}
-      {%- assign sum_id = stud.name.first | append: "-" | append: stud.name.last | slugify -%}
-      <div class="lowkey-button-group" style="margin-top:0.5em;">
-        <button class="toggle-button lowkey" onclick="toggleBox('sum_{{ sum_id }}')">summary</button>
-      </div>
+      <div id="sum_{{ stud_id }}" class="abstract-box noshow" style="font-family:inherit;border:1px solid #ddd;border-radius:5px;padding:0.4em 0.6em 0.6em 0.6em;font-size:0.9em;line-height:1.3em;white-space:normal;margin-bottom:0.8em;">{{ stud.summary }}</div>
+    {%- endif -%}
+    {%- if stud.abstract -%}
+      <div id="abs_{{ stud_id }}" class="abstract-box noshow" style="font-family:inherit;border:1px solid #ddd;border-radius:5px;padding:0.4em 0.6em 0.6em 0.6em;font-size:0.9em;line-height:1.3em;white-space:normal;margin-bottom:0.8em;">{{ stud.abstract }}</div>
     {%- endif -%}
   </div>
-</article>
-{%- if stud.summary -%}
-  {%- assign sum_id = stud.name.first | append: "-" | append: stud.name.last | slugify -%}
-  <div id="sum_{{ sum_id }}" class="abstract-box noshow" style="font-family:inherit;border:1px solid #ddd;border-radius:5px;padding:0.4em 0.6em 0.6em 0.6em;font-size:0.9em;line-height:1.3em;white-space:normal;margin-bottom:0.8em;">{{ stud.summary }}</div>
 {%- endif -%}
