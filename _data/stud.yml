@@ -1,34 +1,41 @@
+---
 - name:
     first: Max
     last: Verton
   role: msc
   thesis:
   thesis-url:
-  website: 
-  scholar: 
-
+  website:
+  scholar:
 - name:
     first: Chai
     last: Fillerup
   role: msc
   year: 2026
-  thesis: "A Polynomial Time Test for when Optimal Traffic Flow is Achievable with Semi-Selfish Planners in Parallel Edge Networks"
+  thesis: A Polynomial Time Test for when Optimal Traffic Flow is Achievable with
+    Semi-Selfish Planners in Parallel Edge Networks
   thesis-url: https://resolver.tudelft.nl/uuid:800f3adb-523f-464c-80c2-e81d3aad753e
-  summary: "Studies a traffic-routing game in which semi-selfish planners (such as autonomous-vehicle coordinators) can suggest routes to their vehicles while still acting in their own interest. Characterizes exactly when this setting admits equilibria that achieve optimal overall traffic flow, and gives a polynomial-time algorithm to decide this for parallel-edge networks with convex cost functions."
+  summary: Studies a traffic-routing game in which semi-selfish planners (such as
+    autonomous-vehicle coordinators) can suggest routes to their vehicles while still
+    acting in their own interest. Characterizes exactly when this setting admits equilibria
+    that achieve optimal overall traffic flow, and gives a polynomial-time algorithm
+    to decide this for parallel-edge networks with convex cost functions.
   website:
   scholar:
-
 - name:
     first: Ida
     last: Pelupessy
   role: msc
   year: 2026
-  thesis: "Phylogenetic Networks with Gene Flow"
+  thesis: Phylogenetic Networks with Gene Flow
   thesis-url: https://resolver.tudelft.nl/uuid:4c3f8142-e05d-4d9d-bee6-9cf1783d4403
-  summary: "Introduces and studies gene-flow networks, an extension of phylogenetic networks that can represent bidirectional gene exchange between contemporary lineages alongside the unidirectional reticulate events (such as hybridization) captured by standard hybrid networks. Investigates which mathematical tools developed for hybrid networks carry over to this richer model."
+  summary: Introduces and studies gene-flow networks, an extension of phylogenetic
+    networks that can represent bidirectional gene exchange between contemporary lineages
+    alongside the unidirectional reticulate events (such as hybridization) captured
+    by standard hybrid networks. Investigates which mathematical tools developed for
+    hybrid networks carry over to this richer model.
   website:
   scholar:
-
 - name:
     first: Niels
     last: Holtgrefe
@@ -37,483 +44,676 @@
   thesis-url:
   website: https://www.nielsholtgrefe.nl/
   scholar: https://scholar.google.com/citations?user=wJh7R3UAAAAJ
-
 - name:
     first: Esther
     last: Julien
   role: phd
   year: 2025
-  thesis: "Leveraging Data in Algorithm Design"
+  thesis: Leveraging Data in Algorithm Design
   thesis-url: https://doi.org/10.4233/uuid:3df57b28-1976-4d62-a483-2c513e062d89
   website:
   scholar: https://scholar.google.nl/citations?user=qyOapq8AAAAJ
-
+  summary: Investigates how machine learning can be integrated into algorithm design
+    for hard combinatorial optimization problems in bilevel optimization, two-stage
+    robust optimization, and phylogenetics. Proposes learning approaches based on
+    efficient training data schemes that exploit sub-problem solutions rather than
+    requiring optimal solutions to many similar instances.
 - name:
     first: Yukihiro
     last: Murakami
   role: phd
   year: 2021
-  thesis: "On Phylogenetic Encodings and Orchard Networks"
+  thesis: On Phylogenetic Encodings and Orchard Networks
   thesis-url: https://doi.org/10.4233/uuid:049932ab-4124-4639-a7e3-146ac4fd805d
   website: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/dr-y-yuki-murakami
   scholar: https://scholar.google.nl/citations?user=JCRspVQAAAAJ
-
+  summary: Studies encodings of phylogenetic networks — substructures such as displayed
+    trees, splits, or distance matrices that uniquely determine a network within a
+    given class. Proves encoding results for orchard networks and related classes,
+    and develops polynomial-time reconstruction algorithms based on these results.
 - name:
     first: Remie
     last: Janssen
   role: phd
   year: 2021
-  thesis: "Rearranging Phylogenetic Networks"
+  thesis: Rearranging Phylogenetic Networks
   thesis-url: https://doi.org/10.4233/uuid:1b713961-4e6d-4bb5-a7d0-37279084ee57
   website: https://remiejanssen.nl/
   scholar: https://scholar.google.nl/citations?user=RWz39u8AAAAJ
-
+  summary: Studies rearrangement operations on phylogenetic networks — local modifications
+    that transform one network into another — analyzing the structure of rearrangement
+    spaces and developing algorithms for comparing networks via rearrangement distances.
 - name:
     first: Teun
     last: Janssen
   role: phd
   year: 2019
-  thesis: "Optimization in the Photolithography Bay: Scheduling and the Traveling Salesman Problem"
+  thesis: 'Optimization in the Photolithography Bay: Scheduling and the Traveling
+    Salesman Problem'
   thesis-url: https://doi.org/10.4233/uuid:12961f87-eeff-41b5-8688-df28e0ad9860
   website: https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/applied-mathematics/people/drir-tml-teun-janssen
   scholar:
-
+  summary: Addresses scheduling in semiconductor photolithography, where the order
+    in which circuit patterns are exposed onto wafers determines total blade travel.
+    Formulates the ordering problem as equivalent to the a priori travelling salesman
+    problem, and uses integer linear programming to achieve roughly a 20% reduction
+    in blade movement.
 - name:
     first: Natalia
-    last: "Vázquez Purriños"
+    last: Vázquez Purriños
   role: msc
   year: 2026
-  thesis: "Phylogenetic Network Inference via Reinforcement Learning and Cherry Picking"
+  thesis: Phylogenetic Network Inference via Reinforcement Learning and Cherry Picking
   thesis-url: https://resolver.tudelft.nl/uuid:ed80a898-2d5b-45fa-b86b-51a86f9ef9c2
-
+  summary: Explores reinforcement learning for phylogenetic network reconstruction
+    under the maximum parsimony criterion, reformulating the hybridization problem
+    as a Markov Decision Process based on cherry-picking sequences. Combines Monte
+    Carlo Tree Search with a deep learning Value Network in an AlphaZero-style framework,
+    achieving high success rates within practical computational budgets.
 - name:
     first: Noud
     last: Riemens
   role: msc
   year: 2025
-  thesis: "Exploiting Asset Similarities in Sample Efficient Portfolio Optimization"
+  thesis: Exploiting Asset Similarities in Sample Efficient Portfolio Optimization
   thesis-url: https://resolver.tudelft.nl/uuid:5c182d18-25f6-4548-98c8-84285753d500
-
+  summary: Addresses sample-efficient multi-objective portfolio optimization using
+    Bayesian optimization, introducing a Mahalanobis kernel that learns and exploits
+    structural similarities between financial assets. Shows improved surrogate model
+    performance and better uncertainty quantification compared to standard ARD Gaussian
+    processes, with model averaging over multiple similarity structures giving the
+    best results.
 - name:
     first: Floor
     last: Laseur
   role: msc
   year: 2025
-  thesis: "Initialization Strategies for Energy Management System Optimization"
+  thesis: Initialization Strategies for Energy Management System Optimization
   thesis-url: https://resolver.tudelft.nl/uuid:7b71d703-3f98-4c8d-abdf-08f3203ec6ab
-
+  summary: Investigates warm-start initialization strategies that reuse previously
+    computed solutions to reduce solve time in rolling-horizon Mixed Integer Linear
+    Programming for energy management systems. Evaluates variable selection, problem
+    reformulation, and Benders decomposition across a range of modeling horizons,
+    price profiles, and market strategies.
 - name:
     first: Sebastiaan
     tussenvoegsel: van
     last: Krieken
   role: msc
   year: 2025
-  thesis: "Dense Reachable Subgraphs: Hardness, Algorithms and Experiments"
+  thesis: 'Dense Reachable Subgraphs: Hardness, Algorithms and Experiments'
   thesis-url: https://resolver.tudelft.nl/uuid:bb772d2a-f919-498d-98ad-6fc41456ef4d
-
+  summary: 'Introduces two optimization problems on vertex-weighted multilayer graphs
+    motivated by money laundering detection: finding dense reachable subgraphs that
+    maximize the ratio of total vertex weight to neighborhood size. Proves NP-hardness
+    via reduction from Vertex Cover, provides MILP exact formulations, and develops
+    greedy heuristics.'
 - name:
     first: Tim
     last: Levert
   role: msc
   year: 2025
-  thesis: "Triplet Encoding of Stemmata"
+  thesis: Triplet Encoding of Stemmata
   thesis-url: https://resolver.tudelft.nl/uuid:a590255b-06dd-4f56-a905-c2f41705f525
-
+  summary: Extends triplet-based encoding and reconstruction from phylogenetics to
+    internally labelled trees and networks, motivated by stemmatology (the study of
+    manuscript genealogy). Proves that complete sets of rooted triplets uniquely determine
+    multifurcating trees, general rooted trees, and level-1 networks with internal
+    labels, and provides polynomial-time reconstruction algorithms for each class.
 - name:
     first: Timo
     tussenvoegsel: den
     last: Dulk
   role: msc
   year: 2024
-  thesis: "Heuristics for strategic passenger-oriented train timetabling"
+  thesis: Heuristics for strategic passenger-oriented train timetabling
   thesis-url: https://resolver.tudelft.nl/uuid:260d0726-28eb-4506-b2db-dabf2b31b7e7
-
+  summary: Studies Strategic Passenger-Oriented Timetabling (SPOT), which assigns
+    departure and arrival times to train services to minimize total perceived passenger
+    travel time rather than maximize infrastructure feasibility. Develops local search
+    and simulated annealing heuristics as fast alternatives to MILP, and derives lower
+    bounds to evaluate solution quality.
 - name:
     first: Theo
     last: Broeders
   role: msc
   year: 2024
-  thesis: "A Graph-Neural-Network Approach for Reconstructing Temporal Networks"
+  thesis: A Graph-Neural-Network Approach for Reconstructing Temporal Networks
   thesis-url: https://resolver.tudelft.nl/uuid:35a897a9-b80a-471e-aaf5-5f9294212955
-
+  summary: Develops exact and heuristic algorithms for reconstructing minimum-reticulation
+    temporal phylogenetic networks from sets of trees, including an exponential-time
+    exact algorithm and a cherry-growing technique for feasibility testing. Applies
+    Graph Neural Networks to guide cherry-picking heuristics, achieving high accuracy
+    even on instances larger than the training data.
 - name:
     first: Christopher
     last: Reichling
   role: msc
   year: 2023
-  thesis: "Classes of Semi-binary Phylogenetic Networks encoded by μ-representations"
+  thesis: Classes of Semi-binary Phylogenetic Networks encoded by μ-representations
   thesis-url: https://resolver.tudelft.nl/uuid:3fca1fca-b7d6-4abc-ad2f-960395ce451d
-
+  summary: Studies which classes of semi-binary phylogenetic networks are uniquely
+    determined by their μ-representations, enabling polynomial-time network comparison
+    and metric computation. Shows that the results do not extend to all network types,
+    and demonstrates that μ-representations can identify structural properties such
+    as bridges and node in-degrees.
 - name:
     first: Niels
     last: Holtgrefe
   role: msc
   year: 2023
-  thesis: "Computing the Scanwidth of Directed Acyclic Graphs"
+  thesis: Computing the Scanwidth of Directed Acyclic Graphs
   thesis-url: https://resolver.tudelft.nl/uuid:9c82fd2a-5841-4aac-8e40-d4d22542cdf5
-
+  summary: Studies scanwidth — a tree-likeness parameter for directed acyclic graphs
+    that generalizes treewidth to directed structures — developing an exact dynamic
+    programming algorithm that is XP in scanwidth and FPT for level-l phylogenetic
+    networks. Proposes a simulated-annealing heuristic and shows experimentally that
+    scanwidth and treewidth are close in practice, motivating scanwidth as a parameter
+    in phylogenetic algorithms.
 - name:
     first: Hans
     last: Keur
   role: msc
   year: 2023
-  thesis: "Creating phylogenetic networks from clusters"
+  thesis: Creating phylogenetic networks from clusters
   thesis-url: https://resolver.tudelft.nl/uuid:4dd0bbf1-a734-4e72-af8f-de3c3651c760
-
+  summary: Addresses the construction of phylogenetic networks from tree clusters
+    while minimizing the number of reticulations per biconnected component. Presents
+    the STCass algorithm (extending the existing Cass algorithm) and an improved variant
+    MSTCass, proving optimality and establishing lower and upper bounds on reticulation
+    numbers to improve efficiency.
 - name:
     first: Robbert
     last: Huijsman
   role: msc
   year: 2023
-  thesis: "Treewidth based algorithms for Tree Containment in phylogenetics"
+  thesis: Treewidth based algorithms for Tree Containment in phylogenetics
   thesis-url: https://resolver.tudelft.nl/uuid:3906ebda-d667-4d3e-8bee-3f1f4df78387
-
+  summary: Develops explicit dynamic programming algorithms (TWITCH and PITCH) for
+    the Tree Containment problem parameterized by treewidth, making two crucial implicit
+    steps in an earlier theoretical algorithm computationally practical. Also introduces
+    BOTCH, a branching cherry-picking algorithm with FPT runtime, which proves fastest
+    in practice.
 - name:
     first: Susan
     last: Veldkamp
   role: msc
   year: 2022
-  thesis: "A MaxSAT Approach to Solving Frequency Conflicts within Cyclic Train Timetables"
+  thesis: A MaxSAT Approach to Solving Frequency Conflicts within Cyclic Train Timetables
   thesis-url: https://resolver.tudelft.nl/uuid:0ca4b6d3-2194-41d1-8a9a-64dd4be9a87a
-
+  summary: Applies MaxSAT solving to overconstrained cyclic train timetabling problems,
+    distinguishing hard and soft frequency constraints with weights so that a best-possible
+    timetable is always returned even when no fully feasible solution exists. Consistently
+    matches or improves on prior ILP-based models while allowing flexible weighting
+    of soft constraints.
 - name:
     first: Frank
     tussenvoegsel: van der
     last: Made
   role: msc
   year: 2022
-  thesis: "Box set optimization for e-commerce warehouses: Applied to bol.com"
+  thesis: 'Box set optimization for e-commerce warehouses: Applied to bol.com'
   thesis-url: https://resolver.tudelft.nl/uuid:88c93d07-1614-4aaf-ae2c-86e548c6264c
-
+  summary: Optimizes the dimensions of a small set of shipping boxes for e-commerce
+    warehouses using simulated annealing, motivated by a case study at bol.com. Introduces
+    an efficient pre-calculation table for fast objective evaluation, and demonstrates
+    substantial reductions in total carton used and shipment volume compared to the
+    existing box set.
 - name:
     first: Leonie
     last: Nipius
   role: msc
   year: 2022
-  thesis: "Encoding undirected and semi-directed binary phylogenetic networks by quarnets"
+  thesis: Encoding undirected and semi-directed binary phylogenetic networks by quarnets
   thesis-url: https://resolver.tudelft.nl/uuid:eaeb4293-6349-4d6e-ab53-94b781fc65e1
-
+  summary: Proves that recoverable undirected and semi-directed binary level-2 phylogenetic
+    networks are uniquely determined by their quarnets (four-leaf subnetworks). Also
+    establishes decomposition theorems for undirected networks of all levels and semi-directed
+    networks up to level-2.
 - name:
     first: Teun
     last: Druijf
   role: msc
   year: 2022
-  thesis: "Optimizing Shunting Operations: A case-study at Kijfhoek shunting yard"
+  thesis: 'Optimizing Shunting Operations: A case-study at Kijfhoek shunting yard'
   thesis-url: https://resolver.tudelft.nl/uuid:e20191aa-4782-4686-85ae-5ff85adbf935
-
+  summary: Optimizes shunting operations at Kijfhoek marshalling yard, the central
+    hub for DB Cargo Nederland where roughly 2000 rail cars are sorted each week.
+    Develops exact and heuristic algorithms that update plans as new information about
+    arriving cars becomes available, achieving comparable solution quality to methods
+    that assume full information from the start.
 - name:
     first: Myrte
     tussenvoegsel: van
     last: Belkom
   role: msc
   year: 2021
-  thesis: "Exploring deep learning to improve allelic peak calling in forensic DNA analysis"
+  thesis: Exploring deep learning to improve allelic peak calling in forensic DNA
+    analysis
   thesis-url: https://resolver.tudelft.nl/uuid:f0a4d8ec-0d95-441c-ba35-65b087447929
-
+  summary: Applies U-net neural networks to automate allelic peak identification in
+    STR electropherograms from forensic DNA trace samples. Achieves 95% pixel-level
+    accuracy and approaches analyst-level performance, demonstrating the potential
+    of deep learning to assist forensic DNA profiling.
 - name:
     first: Alexandre
     last: Simon
   role: msc
   year: 2021
-  thesis: "Algorithmic study of 2-interval graphs"
+  thesis: Algorithmic study of 2-interval graphs
   thesis-url: https://resolver.tudelft.nl/uuid:e899eff1-bd18-4007-bfbb-b57cdd893a81
-
+  summary: Studies generalizations of interval graphs where vertices are represented
+    by multiple intervals or intervals on multiple real lines (d-track graphs and
+    t-interval graphs). Proves that most polynomial-time problems on interval graphs
+    become NP-hard or APX-hard on these broader classes, and analyzes structural relationships
+    between the resulting graph classes.
 - name:
     first: Frank
     last: Janisse
   role: msc
   year: 2021
-  thesis: "Encoding level-k phylogenetic networks"
+  thesis: Encoding level-k phylogenetic networks
   thesis-url: https://resolver.tudelft.nl/uuid:11939b58-b834-4073-8de8-b61d9a5f9a81
-
+  summary: Advances encoding theory for phylogenetic networks, proving that level-k
+    networks without symmetry are uniquely determined by their (k+1)-nets, and extending
+    the result to symmetric networks under certain conditions. Presents an algorithm
+    to verify encoding properties, supporting the conjecture that all level-k networks
+    are encoded by their (k+1)-nets.
 - name:
     first: Simon
     tussenvoegsel: van
     last: Oosterom
   role: msc
   year: 2021
-  thesis: "Investment Optimized Airport Infrastructure for Battery and Hydrogen Canister Swaps"
+  thesis: Investment Optimized Airport Infrastructure for Battery and Hydrogen Canister
+    Swaps
   thesis-url: https://resolver.tudelft.nl/uuid:237762d9-6feb-42e9-b513-23bcba5055d7
-
+  summary: Optimizes airport infrastructure investment for next-generation electric
+    and hydrogen aircraft, determining cost-effective numbers of batteries, chargers,
+    hydrogen canisters, and fueling points via mixed integer linear programming. Includes
+    extensions for slot allocation, multiple battery types, time-dependent electricity
+    pricing, and energy storage, with case studies at Schiphol and Rotterdam-The Hague
+    airports.
 - name:
     first: Rosanne
     last: Wallin
   role: msc
   year: 2020
-  thesis: "Applicability of phylogenetic network algorithms for representing the evolutionary history of SARS-CoV-2"
+  thesis: Applicability of phylogenetic network algorithms for representing the evolutionary
+    history of SARS-CoV-2
   thesis-url: https://github.com/rosanneandrea/corona-networks
-
+  summary: Develops a workflow for constructing phylogenetic networks representing
+    the evolutionary history of SARS-CoV-2, applying multiple algorithms (TriLoNet,
+    TriL2Net, Tree-Child, Semi-Temporal) to filtered sets of phylogenetic trees. Finds
+    no evidence that SARS-CoV-2 is itself a recombinant virus, while confirming a
+    previously described recombination event in an ancestor of the SARS-CoV-2/RaTG13
+    lineage.
 - name:
     first: Jasper
     tussenvoegsel: van
     last: Bemmelen
   role: msc
   year: 2020
-  thesis: "Reconstructing tree-child networks from their exhibited trinets"
+  thesis: Reconstructing tree-child networks from their exhibited trinets
   thesis-url: https://www.ubvu.vu.nl/scripties/getpdf.cfm?facid=27&id=21599
-
+  summary: Studies the reconstruction of tree-child phylogenetic networks from the
+    trinets (three-leaf subnetworks) they display, characterizing which tree-child
+    networks can be uniquely recovered from their trinets and developing reconstruction
+    algorithms.
 - name:
     first: Bryan
     last: Versendaal
   role: msc
   year: 2020
-  thesis: "Improving algorithms in phylogenetics using machine learning"
+  thesis: Improving algorithms in phylogenetics using machine learning
   thesis-url: https://resolver.tudelft.nl/uuid:83690896-2783-4340-8b02-11a23d82e9f9
-
+  summary: 'Applies machine learning to improve three phylogenetic algorithms: the
+    maximum agreement forest problem, the hybridization number problem, and the tail
+    move problem. Demonstrates that learning-guided approaches benefit the MAF and
+    tail move algorithms, and provides a faster implementation for the hybridization
+    number problem.'
 - name:
     first: Sjors
     last: Kole
   role: msc
   year: 2020
-  thesis: "Constructing level-2 phylogenetic networks from trinets"
+  thesis: Constructing level-2 phylogenetic networks from trinets
   thesis-url: https://resolver.tudelft.nl/uuid:c699ea63-f8c8-40f7-8f07-11ac055c42e0
-
+  summary: Extends the TriLoNet algorithm to level-2 phylogenetic networks by developing
+    TriL2Net, which assembles level-2 trinets into complete networks. Shows improved
+    performance over TriLoNet on level-1 data, and produces networks at least as consistent
+    with real sequence data when applied to datasets with recombination.
 - name:
     first: Sander
     last: Borst
   role: msc
   year: 2020
-  thesis: "New FPT algorithms for finding the temporal hybridization number for sets of phylogenetic trees"
+  thesis: New FPT algorithms for finding the temporal hybridization number for sets
+    of phylogenetic trees
   thesis-url: https://resolver.tudelft.nl/uuid:2697da91-c596-48d1-9f09-f21da02ddb54
-
+  summary: Develops new fixed-parameter tractable algorithms for computing the temporal
+    hybridization number of a set of phylogenetic trees — the minimum number of reticulations
+    in a temporal network that simultaneously displays all input trees — achieving
+    improved running times over earlier approaches.
 - name:
     first: Mick
     tussenvoegsel: van
     last: Dijk
   role: msc
   year: 2019
-  thesis: "Classifying Candida species using Mixed Integer Optimization based optimal classification trees"
+  thesis: Classifying Candida species using Mixed Integer Optimization based optimal
+    classification trees
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A068ff836-099b-4abe-8d9e-cf96706169df?collection=education
-
+  summary: Applies Mixed Integer Optimization to construct optimal classification
+    trees for identifying Candida species from genomic data, with a focus on mitigating
+    overfitting and improving interpretability compared to standard classification
+    methods.
 - name:
-    first: "Céline"
+    first: Céline
     last: Swennenhuis
   role: msc
   year: 2018
-  thesis: "Parallel Machine Scheduling: with Partition Constraints"
+  thesis: 'Parallel Machine Scheduling: with Partition Constraints'
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Ad8f71f9a-6b59-4b51-9fe5-b0a4358a0d7f?collection=education
-
+  summary: Studies parallel machine scheduling problems with partition constraints,
+    where jobs must be assigned to machines subject to feasibility restrictions, and
+    develops algorithms for finding optimal or near-optimal schedules.
 - name:
     first: Erica
     tussenvoegsel: van der
     last: Sar
   role: msc
   year: 2018
-  thesis: "Multi-attribute vehicle routing problems: Exploring the limits of exact methods in practice"
+  thesis: 'Multi-attribute vehicle routing problems: Exploring the limits of exact
+    methods in practice'
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Aec15c141-289b-4a8d-ae76-652bae893ab4?collection=education
-
+  summary: Investigates vehicle routing problems with multiple attributes (such as
+    time windows, capacities, or multiple depots) and empirically evaluates the practical
+    limits of exact solution methods, identifying problem scales and configurations
+    where exact approaches remain tractable.
 - name:
     first: Youri
     tussenvoegsel: van der
     last: Kuij
   role: bsc
   year: 2026
-  thesis: "Maximizing Quartet Profile Consistency for Level-1 Phylogenetic Networks"
+  thesis: Maximizing Quartet Profile Consistency for Level-1 Phylogenetic Networks
   thesis-url: https://resolver.tudelft.nl/uuid:57bf7fcb-1e6b-45a6-962c-0f7246cb99a8
-
+  summary: Studies the problem of finding a level-1 phylogenetic network whose quartet
+    profile is maximally consistent with an observed set of quartet profiles. Introduces
+    an integer linear programming framework and proves structural constraints that
+    valid level-1 networks must satisfy.
 - name:
     first: Jari
     last: Brits
   role: bsc
   year: 2026
-  thesis: "Distinguishing phylogenetic trees from networks"
+  thesis: Distinguishing phylogenetic trees from networks
   thesis-url: https://resolver.tudelft.nl/uuid:b515be05-f539-41d6-b57b-d23a0b4156e8
-
+  summary: Investigates whether phylogenetic trinets (three-leaf subnetworks) can
+    be distinguished from simpler tree structures using phylogenetic invariants —
+    algebraic expressions relating DNA pattern probabilities. Shows that a specific
+    trinet type can be distinguished from a tree using an invariant, contributing
+    to the identifiability theory of phylogenetic networks.
 - name:
     first: Guuske
     last: Kouwenhoven
   role: bsc
   year: 2025
-  thesis: "Identifiability of Phylogenetic Trinets"
+  thesis: Identifiability of Phylogenetic Trinets
   thesis-url: https://resolver.tudelft.nl/uuid:5aa152f2-e99c-4bb8-bb27-c112ab50b5f4
-
+  summary: Studies the identifiability of phylogenetic trinets under substitution
+    models, investigating when these three-leaf subnetworks can be uniquely distinguished
+    from one another and from phylogenetic trees on the basis of the data they generate.
 - name:
     first: Simon
     last: Deuten
   role: bsc
   year: 2025
-  thesis: "Reconstructing Phylogenetic Networks Using Quarnet-Puzzling"
+  thesis: Reconstructing Phylogenetic Networks Using Quarnet-Puzzling
   thesis-url: https://resolver.tudelft.nl/uuid:4b30854e-73c6-4cc4-beab-80299fc7f26e
-
+  summary: Develops algorithms that reconstruct ranked phylogenetic networks from
+    quarnets (four-leaf subnetworks) using a quarnet-puzzling approach, assembling
+    local subnetwork information into a globally consistent network.
 - name:
     first: Joachim
     tussenvoegsel: de
-    last: "Bosch Kemper"
+    last: Bosch Kemper
   role: bsc
   year: 2024
-  thesis: "Establishing Existence of Paths between Ranked Phylogenetic Networks"
+  thesis: Establishing Existence of Paths between Ranked Phylogenetic Networks
   thesis-url: https://resolver.tudelft.nl/uuid:ed1bfa42-2db3-4d1b-bddf-021fb84c4d95
-
+  summary: Studies the existence of rearrangement paths between ranked phylogenetic
+    networks — sequences of local moves that transform one network into another —
+    establishing conditions under which two networks are connected in the rearrangement
+    space.
 - name:
     first: Tyren
     last: Koning
   role: bsc
   year: 2024
-  thesis: "At a crossroads – Optimizing Markovian patrol strategies for perimeter defense"
+  thesis: At a crossroads – Optimizing Markovian patrol strategies for perimeter defense
   thesis-url: https://resolver.tudelft.nl/uuid:84b31581-36d8-4665-9310-28e633c47c3e
-
+  summary: Investigates the effect of an initial suboptimal cherry choice in the cherry-picking
+    algorithm for phylogenetic network construction, measuring how such early mistakes
+    propagate and affect the quality of the resulting network across networks of varying
+    sizes.
 - name:
     first: Bouke
     last: Hoekstra
   role: bsc
   year: 2024
-  thesis: "Reconstructing Phylogenetic Networks Using Cherry Picking"
+  thesis: Reconstructing Phylogenetic Networks Using Cherry Picking
   thesis-url: https://resolver.tudelft.nl/uuid:28a81f86-ce16-4262-b81e-779c26bd1e95
-
+  summary: Applies the cherry-picking algorithm to reconstruct phylogenetic networks
+    from sets of phylogenetic trees, studying how the algorithm performs and what
+    properties the resulting networks have.
 - name:
     first: Merel
     tussenvoegsel: van
     last: Gruijthuijsen
   role: bsc
   year: 2023
-  thesis: "Forest-Based Binary Phylogenetic Networks: Finding Optimal Base Forests with Integer Linear Programming"
+  thesis: 'Forest-Based Binary Phylogenetic Networks: Finding Optimal Base Forests
+    with Integer Linear Programming'
   thesis-url: https://resolver.tudelft.nl/uuid:ace16f6a-c08f-454d-8732-1e627dd89b32
-
+  summary: Introduces a new polynomial for describing rooted binary internally labelled
+    phylogenetic networks and trees, studying its properties including uniqueness,
+    and provides an algorithm for determining when a monomial corresponds to a tree
+    that can be folded into a network.
 - name:
     first: Margot
     tussenvoegsel: van de
     last: Klok
   role: bsc
   year: 2022
-  thesis: "A new polynomial for describing Phylogenetic Networks"
+  thesis: A new polynomial for describing Phylogenetic Networks
   thesis-url: https://resolver.tudelft.nl/uuid:c4ef44cf-cb0f-4912-8da1-1ba16f59f81e
-
+  summary: Studies orchard phylogenetic networks using time-labelling of vertices,
+    presents algorithms to recognize orchard networks and to transform non-orchard
+    networks into orchard networks by performing local modifications.
 - name:
     first: Merel
     last: Susanna
   role: bsc
   year: 2022
-  thesis: "Making phylogenetic networks orchard: Algorithms to determine if a phylogenetic network is orchard and to transform non-orchard to orchard networks"
+  thesis: 'Making phylogenetic networks orchard: Algorithms to determine if a phylogenetic
+    network is orchard and to transform non-orchard to orchard networks'
   thesis-url: https://resolver.tudelft.nl/uuid:724ac2af-e569-4586-b367-288fef890252
-
+  summary: Examines whether three reduction rules (chain reduction, generalized subtree
+    reduction, and the (2,1,2)-reduction) preserve the bounded Maximum Parsimony distance
+    on phylogenetic trees, proving two of them valid and providing a counterexample
+    for the third.
 - name:
     first: Elise
     last: Deen
   role: bsc
   year: 2021
-  thesis: "Different reduction rules for the Maximum Parsimony distance on phylogenetic trees"
+  thesis: Different reduction rules for the Maximum Parsimony distance on phylogenetic
+    trees
   thesis-url: https://resolver.tudelft.nl/uuid:0deb0697-bc1d-4cd9-96ed-f516872f24b0
-
+  summary: Develops and implements an algorithm for reconstructing level-2 binary
+    phylogenetic networks from their leaf distance matrices, based on theoretical
+    results showing such networks are uniquely determined by these matrices. Tests
+    the algorithm on over 35000 networks without errors.
 - name:
     first: Riche
     last: Mol
   role: bsc
   year: 2020
-  thesis: "Reconstruction of Phylogenetic Networks: An algorithm for deconstructing and reconstructing Level-2 Binary Networks based on their distances"
+  thesis: 'Reconstruction of Phylogenetic Networks: An algorithm for deconstructing
+    and reconstructing Level-2 Binary Networks based on their distances'
   thesis-url: https://resolver.tudelft.nl/uuid:7b0f3919-0e78-4264-9e8f-028cf3fcde31
-
+  summary: Translates rearrangement move theory into a practical algorithm that computes
+    a sequence of tail moves converting one phylogenetic network into another, and
+    evaluates the algorithm by comparing computed upper bounds against actual distances
+    across 385 small network pairs.
 - name:
     first: Selma
-    last: "Husanović"
+    last: Husanović
   role: bsc
   year: 2020
-  thesis: "Tail move rearrangement algorithm for rooted binary phylogenetic networks"
+  thesis: Tail move rearrangement algorithm for rooted binary phylogenetic networks
   thesis-url: https://resolver.tudelft.nl/uuid:5adc7ba5-c068-493c-b1de-c4ef8f74c0a1
-
+  summary: Proves that all recoverable rooted binary level-3 phylogenetic networks
+    are uniquely encoded by their quarnets (four-leaf subnetworks), extending previous
+    encoding results from level-2 to level-3 networks.
 - name:
     first: Leonie
     last: Nipius
   role: bsc
   year: 2020
-  thesis: "Rooted binary level-3 phylogenetic networks are encoded by quarnets"
+  thesis: Rooted binary level-3 phylogenetic networks are encoded by quarnets
   thesis-url: https://resolver.tudelft.nl/uuid:a9c5a8d4-bc8b-4d15-bdbb-3ed35a9fb75d
-
+  summary: Improves Mixed Integer Optimization models for constructing optimal classification
+    trees for identifying Candida species, adding feature sampling to reduce runtime
+    and minimum leaf-size constraints to mitigate overfitting in deeper trees.
 - name:
     first: Maaike
     last: Elgersma
   role: bsc
   year: 2019
-  thesis: "Preventing overfitting in Mixed Integer Optimization based classification tree construction"
+  thesis: Preventing overfitting in Mixed Integer Optimization based classification
+    tree construction
   thesis-url: https://resolver.tudelft.nl/uuid:542b608f-0e48-474b-b1e1-bf1096ae7fe3
-
+  summary: Implements the NetworkContainment algorithm of Janssen and Murakami for
+    tree-child phylogenetic networks, introducing a modification that makes the algorithm
+    linear-time without requiring a bounded maximum in-degree and proving correctness
+    of the modification.
 - name:
     first: Robbert
     last: Huijsman
   role: bsc
   year: 2019
-  thesis: "Tree-child Network Containment"
+  thesis: Tree-child Network Containment
   thesis-url: https://resolver.tudelft.nl/uuid:0fc3b746-0d3f-459d-8fc2-c9e6aea821df
-
+  summary: Provides foundational results on orienting phylogenetic networks, presenting
+    algorithms that given a root location and reticulation information produce directed
+    networks in the tree-child, stack-free, or valid classes, as well as algorithms
+    that find all valid orientations without prior root or reticulation information.
 - name:
     first: Esmay
     last: Verzijlbergen
   role: bsc
   year: 2019
-  thesis: "Orienting phylogenetic networks"
+  thesis: Orienting phylogenetic networks
   thesis-url: https://resolver.tudelft.nl/uuid:6b890080-8a60-4189-89dc-b12f23a8677a
-
+  summary: Studies algorithms for orienting undirected phylogenetic networks, presenting
+    methods for binary and non-binary networks that, given a root location and vertex
+    in-degree information, produce directed networks satisfying properties such as
+    tree-child, stack-free, or valid orientation.
 - name:
     first: Bram
     tussenvoegsel: van den
     last: Heuvel
   role: bsc
   year: 2018
-  thesis: "Multi-robot parcel sorting systems: Allocation and path finding"
+  thesis: 'Multi-robot parcel sorting systems: Allocation and path finding'
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Ae129aa53-1cca-469e-bf09-80142d4b879c?collection=education
-
+  summary: Addresses allocation and path-finding for multi-robot parcel sorting systems,
+    developing algorithms that assign parcels to robots and compute collision-free
+    paths to maximize throughput.
 - name:
     first: Arthur
     last: Mooiman
   role: bsc
   year: 2018
-  thesis: "Computing Measures for Tree-Basedness of Phylogenetic Networks"
+  thesis: Computing Measures for Tree-Basedness of Phylogenetic Networks
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A7739fe8e-e2b2-493a-983d-d1a47603f2eb?collection=education
-
+  summary: Develops and compares measures for quantifying how far a phylogenetic network
+    is from being tree-based — i.e., from having a spanning tree that connects all
+    leaves — and studies properties of these measures.
 - name:
     first: Noortje
     last: Bonenkamp
   role: bsc
   year: 2017
-  thesis: "Resource-constrained Machine Scheduling"
+  thesis: Resource-constrained Machine Scheduling
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Afa52773a-4362-4299-b7b2-eca491b6e4f2?collection=education
-
+  summary: Studies resource-constrained machine scheduling problems, where jobs require
+    scarce resources in addition to machine time, and develops algorithms for finding
+    feasible or optimal schedules under these combined constraints.
 - name:
     first: Frank
     last: Janisse
   role: bsc
   year: 2018
-  thesis: "Measuring how far a nonbinary phylogenetic network is from being tree-based"
+  thesis: Measuring how far a nonbinary phylogenetic network is from being tree-based
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A961c6a92-1d6e-4bfd-b8db-7ff4fa3694fa?collection=education
-
+  summary: Studies how far a nonbinary phylogenetic network is from being tree-based
+    by developing measures and algorithms that quantify the minimum modifications
+    needed to make the network tree-based.
 - name:
     first: Niels
     last: Jonkman
   role: bsc
   year: 2017
-  thesis: "Parental Parsimony on Phylogenetic Networks: Computing the Maximum Parsimony Scores of Phylogenetic Networks"
+  thesis: 'Parental Parsimony on Phylogenetic Networks: Computing the Maximum Parsimony
+    Scores of Phylogenetic Networks'
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A3ff117b3-4c22-4530-8704-cc598a830ac2?collection=education
-
+  summary: Investigates the maximum parsimony score of phylogenetic networks under
+    parental parsimony, developing algorithms that compute the minimum number of substitutions
+    needed to explain observed data on a phylogenetic network.
 - name:
     first: Margot
     tussenvoegsel: van
     last: Aken
   role: bsc
   year: 2016
-  thesis: "De afstand tussen ongewortelde fylogenetische bomen"
+  thesis: De afstand tussen ongewortelde fylogenetische bomen
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Aa93653f7-584e-4d0b-ba4f-661d89f2101d?collection=education
-
+  summary: Studies distance measures between unrooted phylogenetic trees, investigating
+    how well various distance metrics capture structural differences between trees
+    and how efficiently they can be computed.
 - name:
     first: Eveline
     tussenvoegsel: de
     last: Swart
   role: bsc
   year: 2016
-  thesis: "Resolving contradicting binets and finding similarities in networks"
+  thesis: Resolving contradicting binets and finding similarities in networks
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A2defcd3f-02be-4e7d-acd2-bb9261d1b533?collection=education
-
+  summary: Studies the problem of resolving contradictions in sets of binets (two-leaf
+    subnetworks), developing methods to find maximal consistent subsets and to identify
+    structural similarities between phylogenetic networks.
 - name:
     first: Erica
     tussenvoegsel: van der
     last: Sar
   role: bsc
   year: 2015
-  thesis: "Constructing Evolutionary Supernetworks from Binets"
+  thesis: Constructing Evolutionary Supernetworks from Binets
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A766609a6-2857-42e0-a4fd-4ea1e4f5cc18?collection=education
-
+  summary: Addresses the construction of evolutionary supernetworks from binets (two-leaf
+    subnetworks), developing algorithms that combine local two-taxon information into
+    a consistent global phylogenetic network.
 - name:
     first: Laura
     last: Jetten
   role: bsc
   year: 2015
-  thesis: "Characterising tree-based phylogenetic networks"
+  thesis: Characterising tree-based phylogenetic networks
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Afda2636d-0ed5-4dd2-bacf-8abbbad8994e?collection=education
+  summary: Characterizes tree-based phylogenetic networks — networks that have a spanning
+    tree connecting all leaves — proving structural properties and developing algorithms
+    to recognize whether a given network is tree-based.
