@@ -14,6 +14,7 @@
   year: 2026
   thesis: "A Polynomial Time Test for when Optimal Traffic Flow is Achievable with Semi-Selfish Planners in Parallel Edge Networks"
   thesis-url: https://resolver.tudelft.nl/uuid:800f3adb-523f-464c-80c2-e81d3aad753e
+  summary: "Studies a traffic-routing game in which semi-selfish planners (such as autonomous-vehicle coordinators) can suggest routes to their vehicles while still acting in their own interest. Characterizes exactly when this setting admits equilibria that achieve optimal overall traffic flow, and gives a polynomial-time algorithm to decide this for parallel-edge networks with convex cost functions."
   website:
   scholar:
 
@@ -24,6 +25,7 @@
   year: 2026
   thesis: "Phylogenetic Networks with Gene Flow"
   thesis-url: https://resolver.tudelft.nl/uuid:4c3f8142-e05d-4d9d-bee6-9cf1783d4403
+  summary: "Introduces and studies gene-flow networks, an extension of phylogenetic networks that can represent bidirectional gene exchange between contemporary lineages alongside the unidirectional reticulate events (such as hybridization) captured by standard hybrid networks. Investigates which mathematical tools developed for hybrid networks carry over to this richer model."
   website:
   scholar:
 
