@@ -22,6 +22,24 @@
     to decide this for parallel-edge networks with convex cost functions.
   website:
   scholar:
+  abstract: 'Selfish routing in traffic networks often leads to inefficient outcomes
+    in terms of the aggregate congestion of the networks. With the introduction of
+    autonomous vehicles there is an opportunity to reduce this inefficiency, as car
+    manufacturers can coordinate their share of traffic to achieve more optimal outcomes.
+    To model this, we use a form of repeated weighted atomic splittable routing games
+    (RWASRG) where the players are mediators; they can only suggest routes to their
+    assigned flow. A further constraint we pose is that the planners are semi-selfish:
+    they cannot play strategies where both their own and the aggregate cost are dominated
+    by another strategy. In this model the central question is: given a game instance,
+    are there rational strategies for the planners which converge to the optimal traffic
+    flow such that no possible deviation is profitable for the deviants? So far, existence
+    results only show that both YES-instances and NO-instances exist. No general algorithms
+    exist to tell if a given instance is a YES-instance or a NO-instance. Only in
+    Pigou''s network was an explicit algorithm given to calculate the answer. We give
+    three results: necessary and sufficient conditions for a game instance to be a
+    YES-instance, an instance showing that the generalized algorithm does not work
+    on general networks, and a proof that the generalized algorithm works on parallel
+    networks with convex cost functions in polynomial time.'
 - name:
     first: Ida
     last: Pelupessy
@@ -36,6 +54,14 @@
     hybrid networks carry over to this richer model.
   website:
   scholar:
+  abstract: 'Phylogenetic networks generalise phylogenetic trees by allowing reticulate
+    evolutionary events such as hybridisation and horizontal gene transfer. Gene flow
+    is an additional type of reticulate event that allows genetic material to be exchanged
+    bidirectionally between contemporaneous lineages, rather than a unidirectional
+    merging of lineages. This thesis introduces gene-flow networks: a generalisation
+    of phylogenetic networks (hybrid networks) that represents such bidirectional
+    gene flow explicitly, alongside hybrid events, and explores to what extent existing
+    theory for hybrid networks carries over to this broader class.'
 - name:
     first: Niels
     last: Holtgrefe
@@ -58,6 +84,18 @@
     robust optimization, and phylogenetics. Proposes learning approaches based on
     efficient training data schemes that exploit sub-problem solutions rather than
     requiring optimal solutions to many similar instances.
+  abstract: This thesis explores the integration of machine learning (ML) into algorithm
+    design for solving complex combinatorial optimization problems. We focus on solving
+    problems that arise in bilevel optimization, two-stage robust optimization, and
+    phylogenetics. Although these problem classes seem vastly different, they share
+    the common characteristic of being extremely challenging to solve. Current solution
+    methods for these problems are computationally heavy and their solving duration
+    is often impractical for already small-sized instances. Adding a component of
+    machine learning also adds complexity. We primarily attempt to mitigate this effect
+    by proposing learning methods that utilize efficient training data generation
+    schemes that rely on solving sub-problems or are even based on a simple procedure,
+    instead of learning from optimal solutions of many instances similar to the target
+    problem.
 - name:
     first: Yukihiro
     last: Murakami
@@ -71,6 +109,21 @@
     trees, splits, or distance matrices that uniquely determine a network within a
     given class. Proves encoding results for orchard networks and related classes,
     and develops polynomial-time reconstruction algorithms based on these results.
+  abstract: Phylogenetic networks are a type of graph with vertices and edges, used
+    to elucidate the evolutionary history of species. The fundamental goal of phylogenetic
+    research is to infer the true phylogeny of species from raw data such as DNA sequences
+    and morphological data. Most network inference methods require one to solve an
+    NP-hard problem; furthermore, there is generally no guarantee of a unique network.
+    One way of resolving this is to restrict our scope to networks within a certain
+    class and to ask the following question. What input data guarantees a unique network
+    within this class? Such a question brings us to the idea of encodings. A network
+    class is encoded by a certain building block, such as displayed trees, splits,
+    or induced inter-taxa distance matrices, if the building block distinguishes one
+    network in the class from another. More precisely, no two networks in the same
+    class may have the same set of building blocks. Often, encoding results give inspiration
+    for polynomial-time algorithms for inferring networks within certain classes.
+    Assuming to have data that corresponds to a network in that class, one may plausibly
+    construct it as the unique network that is consistent with such information.
 - name:
     first: Remie
     last: Janssen
@@ -98,6 +151,27 @@
     Formulates the ordering problem as equivalent to the a priori travelling salesman
     problem, and uses integer linear programming to achieve roughly a 20% reduction
     in blade movement.
+  abstract: In a semiconductor factory, integrated circuits (or chips) are constructed
+    on top of slabs of silicon, called wafers. The construction of these wafers is
+    complicated and many different processing steps are needed to gradually build
+    the chip layer by layer. Of these steps, photolithography uses the most expensive
+    equipment. Therefore, the photolithography equipment is often the bottleneck of
+    the factory. Photolithography is used to transfer the geometric pattern of a chip
+    on a wafer. First a light-sensitive photoresist is put on the wafer. Then UV light
+    is sent through a photomask on the photoresist. The exposed parts of the photoresist
+    will chemically react, creating the pattern. After the exposure, chemical reactions
+    and metal depositions make a layer of circuits on the wafer. In this thesis, we
+    try to increase the production of the semiconductor factory by reducing the time
+    needed for the photolithography. The time to process a wafer on a lithography
+    stepper machine is determined by different elements of the process. It turns out
+    that the blade movement required in the exposure step has a significant impact
+    on total time required to process a wafer. The blade movement in turn depends
+    on the order in which the different images are processed. Hence we want to find
+    an ordering of the images, such that the blade movement is minimized. This problem
+    turns out to be equivalent to the a priori traveling salesman problem in the scenario
+    model. The practical problem instances found are solved using an integer linear
+    programming solver and the average blade movement is reduced by approximately
+    20%, which reduces the average exposure time by 1.6%.
 - name:
     first: Natalia
     last: Vázquez Purriños
@@ -110,6 +184,28 @@
     as a Markov Decision Process based on cherry-picking sequences. Combines Monte
     Carlo Tree Search with a deep learning Value Network in an AlphaZero-style framework,
     achieving high success rates within practical computational budgets.
+  abstract: Understanding evolutionary history is a cornerstone of biological research,
+    yet complex phenomena like hybridization and horizontal gene transfer require
+    structures more versatile than simple trees, known as phylogenetic networks. Reconstructing
+    these networks under the maximum parsimony principle leads to the Hybridization
+    Problem, a combinatorial optimization task that is NP-hard and poses significant
+    scalability challenges for existing exact and heuristic methods. This thesis investigates
+    whether learning-guided search can provide a scalable approximation framework
+    for the Hybridization Problem in temporal phylogenetic networks. The problem is
+    reformulated as a Markov Decision Process (MDP) based on the theory of cherry-picking
+    sequences (CPS), which establishes a fundamental equivalence between sequence
+    weight and the network's reticulation number. Inspired by the AlphaZero paradigm,
+    the proposed framework integrates Monte Carlo Tree Search (MCTS) with deep learning,
+    employing a modular architecture featuring a Value Network designed to provide
+    direct state evaluations in place of computationally expensive heuristic rollouts.
+    To handle the graph-theoretical nature of the problem, a hierarchical feature
+    engineering pipeline was developed to summarize local leaf-level and global structural
+    properties into a compact representation for neural guidance. The framework was
+    evaluated through a large-scale benchmark of 460 independent simulations, comparing
+    the novel Value-Guided MCTS (V-MCTS) against standard MCTS, randomized heuristics,
+    and exact solvers. The results demonstrate that the Standard MCTS achieved the
+    highest success rate at 91.74%, while the V-MCTS identified the optimum in 79.35%
+    of cases.
 - name:
     first: Noud
     last: Riemens
@@ -123,6 +219,27 @@
     performance and better uncertainty quantification compared to standard ARD Gaussian
     processes, with model averaging over multiple similarity structures giving the
     best results.
+  abstract: Multi-objective portfolio optimization problems with complex objectives
+    and expensive function evaluations can be solved through the sample efficient
+    solution method of Bayesian optimization. In realistic settings, inclusion of
+    many assets coupled with a limited evaluation budget negatively impacts the standard
+    ARD Gaussian process surrogate model, as in high-dimensional environments this
+    kernel no longer permits meaningful inference without a vast number of observations.
+    The ARD kernel overestimates problem complexity, as financial assets display significant
+    structure or dependence, for instance by belonging to the same asset class. This
+    work presents a methodology to learn and exploit these asset similarities through
+    a Mahalanobis kernel. Within this kernel, we treat the partitioning structure
+    as a latent variable, and learn this structure through a coordinate-wise greedy
+    optimization approach based on k-fold cross-validation using previously observed
+    data points. We examine our proposed methodology based on ability to retrieve
+    synthetic similarities, surrogate predictive and uncertainty quantification performance,
+    along with attained hypervolume during Bayesian optimization. Our results show
+    we successfully find similarities both in the synthetic and authentic settings,
+    leading to improved predictive performance of Gaussian processes equipped with
+    the learned Mahalanobis kernel. Furthermore, we showcase the importance of correct
+    uncertainty quantification for Bayesian optimization, and achieve improved results
+    for models averaged over multiple structures compared to the use of a single locally
+    optimal partitioning.
 - name:
     first: Floor
     last: Laseur
@@ -135,6 +252,21 @@
     Programming for energy management systems. Evaluates variable selection, problem
     reformulation, and Benders decomposition across a range of modeling horizons,
     price profiles, and market strategies.
+  abstract: The increasing integration of Renewable Energy Sources (RES), rising global
+    electricity demand, and ongoing developments in power market structures collectively
+    increase the complexity of Energy Management Systems (EMS). The tight scheduling
+    of interdependent decisions in a Rolling Horizon (RH) Mixed Integer Linear Programming
+    (MILP) environment requires efficient formulations to remain scalable and flexible
+    to future innovations. This thesis investigates initialization strategies (warm
+    starts) that leverage previous optimal system configurations to reduce computational
+    complexity and solution time. Iterative cycles of variable selection, warm start
+    execution, and problem reformulation are evaluated across multiple scenarios.
+    These scenarios vary in modeling horizon, day-ahead price profiles, market engagement
+    strategies, and environmental and system conditions. Problem reformulations include
+    adjustments in the treatment of violation decision variables, linear reformulations,
+    and the use of Benders decomposition. The results demonstrate that successful
+    warm start implementations can substantially reduce solution times and provide
+    valuable insights for further tightening problem formulations.
 - name:
     first: Sebastiaan
     tussenvoegsel: van
@@ -148,6 +280,23 @@
     maximize the ratio of total vertex weight to neighborhood size. Proves NP-hardness
     via reduction from Vertex Cover, provides MILP exact formulations, and develops
     greedy heuristics.'
+  abstract: 'We introduce two novel optimization problems on vertex-weighted multilayer
+    graphs: the Predecessor Dense Reachable Subgraph (PDRS) problem and the Neighborhood
+    Dense Reachable Subgraph (NDRS) problem. In PDRS, the aim is to find a subset
+    of vertices that maximizes the ratio of the total vertex weight to the size of
+    its predecessor neighborhood, under reachability constraints. A subset is considered
+    reachable when it is a union of paths from the first layer to the last. The NDRS
+    variant is equivalent to the PDRS problem, but the size of the entire neighborhood
+    is used for the denominator of the objective function. The motivation for these
+    problems comes from money laundering detection. We prove NP-hardness by reduction
+    from the Vertex Cover problem and formulate MILPs that give exact solutions to
+    the problems. Additionally, we show that the single path variant, where the solution
+    space is restricted to single paths from the first layer to the last, can be solved
+    in polynomial time using dynamic programming. We introduce a heuristic algorithm
+    called Greedy Single Paths, which starts with the empty graph and uses an exact
+    algorithm for the single path variant to iteratively grow the solution. We also
+    introduce a heuristic algorithm called Greedy Peeling, which starts with the whole
+    graph and iteratively peels vertices from the allowed neighbor set.'
 - name:
     first: Tim
     last: Levert
@@ -160,6 +309,24 @@
     manuscript genealogy). Proves that complete sets of rooted triplets uniquely determine
     multifurcating trees, general rooted trees, and level-1 networks with internal
     labels, and provides polynomial-time reconstruction algorithms for each class.
+  abstract: 'Stemmatology is the study and reconstruction of textual genealogy and
+    has several similarities to phylogenetics, the study of evolutionary histories
+    of species. Current methods in computational stemmatology often borrow tools from
+    phylogenetics, yet classical phylogenetic models are not well suited to the structural
+    and labelling requirements of manuscript traditions. In particular, phylogenetics
+    typically assumes leaf-labelled trees or networks and lacks the means to accommodate
+    internal labels — a feature which is crucial in stemmatology. This thesis addresses
+    that gap by studying the encoding and reconstruction of internally labelled trees
+    and networks from rooted triplets. Specifically, we consider three classes of
+    graphs: multifurcating rooted trees, general rooted trees (allowing nodes with
+    out-degree one), and level-1 networks, each with labels on a subset of vertices
+    including all leaves and some internal nodes. We prove that, under limited assumptions,
+    a complete set of rooted triplets uniquely determines the structure and labelling
+    of each of these graph classes up to isomorphism. Building on these encoding theorems,
+    we develop polynomial-time algorithms to reconstruct each graph class from its
+    full triplet set. All reconstruction algorithms are proven correct and theoretically
+    efficient under the given assumptions. We also introduce an extension of the classical
+    triplet distance as a metric for comparing internally labelled graphs.'
 - name:
     first: Timo
     tussenvoegsel: den
@@ -173,6 +340,23 @@
     travel time rather than maximize infrastructure feasibility. Develops local search
     and simulated annealing heuristics as fast alternatives to MILP, and derives lower
     bounds to evaluate solution quality.
+  abstract: This thesis addresses a timetabling problem known as Strategic Passenger-Oriented
+    Timetabling (SPOT). SPOT is a timetabling problem that involves assigning departure
+    and arrival times to train services. Unlike classical timetabling, which typically
+    emphasizes infrastructural feasibility, SPOT shifts the focus toward enhancing
+    the passenger experience without infrastructural constraints. SPOT evaluates a
+    timetable based on the perceived travel time consisting of drive, dwell and transfer
+    times, along with additional penalties for inconveniences by transfers and initial
+    waiting times of passengers. This thesis explores a heuristic approach to solving
+    SPOT using Local Search and Simulated Annealing. Both operate by exploring a neighborhood
+    of possible timetables around a current timetable to identify better alternatives.
+    The absence of infrastructural constraints in SPOT simplifies the creation of
+    these neighborhoods, as different train services do not influence each other.
+    Additionally, multiple lower bounds are calculated for the perceived travel time,
+    providing benchmarks to evaluate the quality of the solutions. Overall, these
+    heuristics are effective in finding good timetables within a short period, with
+    the lower bounds being reasonably close to the perceived travel time of the generated
+    timetables.
 - name:
     first: Theo
     last: Broeders
@@ -185,6 +369,23 @@
     exact algorithm and a cherry-growing technique for feasibility testing. Applies
     Graph Neural Networks to guide cherry-picking heuristics, achieving high accuracy
     even on instances larger than the training data.
+  abstract: Reconstructing a minimum reticulation network from phylogenetic trees
+    is used in evolutionary studies. In this thesis, we focus on finding temporal
+    networks using cherry-picking sequences for binary trees with all taxa. Finding
+    such a minimum reticulation temporal network is NP-hard. We introduce an algorithm
+    to find a minimum reticulation network with a running time of O(2^n poly(n,t)).
+    In addition, this study explores potential enhancements to the algorithm through
+    branch and bound. We also introduce an algorithm to determine the existence of
+    a temporal phylogenetic network, improved upon by integrating a new concept called
+    cherry growing, leading to a notable speed-up in performance. Furthermore, we
+    examine the application of Graph Neural Networks (GNN) in heuristics to find a
+    cherry-picking sequence which can be used to construct a network. This is done
+    by classifying leaves into good and bad leaves. The best-performing GNN model
+    has a 97.4% accuracy for evolution-based data and a 79.1% accuracy for random-based
+    data. The GNN models are implemented as predictors in two classes of heuristics.
+    The tree-search-based heuristic outperforms the cherry-picking-based heuristic,
+    and the GNN heuristics outperform their random variant, even for problems substantially
+    larger than the GNN was trained on.
 - name:
     first: Christopher
     last: Reichling
@@ -197,6 +398,20 @@
     and metric computation. Shows that the results do not extend to all network types,
     and demonstrates that μ-representations can identify structural properties such
     as bridges and node in-degrees.
+  abstract: This thesis is on the subject of phylogenetic networks. These are schematic
+    visualisations used mainly to investigate the evolutionary history of species,
+    but which can be used for any set of distinguishable elements which have diverged
+    from a common ancestor through some evolutionary process. The research specifically
+    focuses on a way to encode these phylogenetic networks, called μ-representation,
+    which enables researchers to efficiently compare networks in polynomial time.
+    The main contribution of this thesis lies in demonstrating that there are certain
+    classes of phylogenetic networks for which the μ-representation or a modified
+    version thereof serves as a unique encoding and can therefore be used to generate
+    a metric for comparison. Additionally, it is shown that these results do not extend
+    to some other classes of networks. Furthermore, this research shows that certain
+    other information can be gained from analysing the μ-representation of a network,
+    such as which nodes are adjacent to so-called bridges or cut-edges, and what the
+    in-degrees of the nodes in the network are.
 - name:
     first: Niels
     last: Holtgrefe
@@ -210,6 +425,25 @@
     networks. Proposes a simulated-annealing heuristic and shows experimentally that
     scanwidth and treewidth are close in practice, motivating scanwidth as a parameter
     in phylogenetic algorithms.
+  abstract: 'Phylogenetic networks are a specific type of directed acyclic graph (DAG),
+    used to depict evolutionary relationships among, for example, species or other
+    groups of organisms. To solve computationally hard problems, treewidth has been
+    used to parametrize algorithms in phylogenetics. In the hope of simplifying the
+    algorithmic design process, Berry, Scornavacca and Weller recently proposed a
+    new measure of tree-likeness that takes into account the directions of the arcs:
+    scanwidth. They showed that the corresponding decision problem of this parameter
+    is NP-complete. This thesis aims to widen the structural knowledge of scanwidth
+    and to find efficient ways of computing it on general DAGs, both by exact and
+    heuristic algorithms. With the help of reduction rules, we construct an explicit
+    dynamic programming algorithm that computes scanwidth exactly in O(k * n^k * m)
+    time for rooted DAGs of scanwidth k. This slicewise polynomial algorithm proves
+    that computing the scanwidth is in the complexity class XP, and also functions
+    as an FPT algorithm for networks of level-l, with complexity bounded by O(2^(4l-1)
+    * l * n + n^2). On the heuristic side, an algorithm enhanced with simulated annealing
+    shows promising results, obtaining an average approximation ratio of 1.5 for large
+    synthetic networks. Although we prove that scanwidth is always at least as large
+    as treewidth, experiments show that they are close to each other in practice,
+    motivating scanwidth as a parameter in algorithms.'
 - name:
     first: Hans
     last: Keur
@@ -222,6 +456,21 @@
     the STCass algorithm (extending the existing Cass algorithm) and an improved variant
     MSTCass, proving optimality and establishing lower and upper bounds on reticulation
     numbers to improve efficiency.
+  abstract: In biology, phylogenetics is the study of the evolutionary history of
+    and relations between species. Such data are often represented in trees. Remarkably,
+    trees lack the representation of reticulation events, such as hybridization. One
+    option is to construct a network from trees by creating a network which represents
+    all clusters from the trees. We are interested in finding a network having the
+    lowest level possible, i.e. the lowest number of reticulations per biconnected
+    component. The Cass algorithm is one of the best algorithms in this respect. However,
+    it does not always give optimal results. In this thesis, an optimal algorithm
+    is presented called STCass, inspired by Cass. We lay theoretical foundations on
+    how to build an optimal network. Furthermore, greedy steps are proposed which
+    seem to work very well in practice. Based on several optimizations, an improved
+    algorithm called MSTCass is presented, which runs faster than STCass in general.
+    In order to speed up any Cass-based algorithm or derivatives, several lower bounds
+    are presented on the reticulation number per biconnected component of an optimal
+    network, along with a new upper bound that can be evaluated in seconds.
 - name:
     first: Robbert
     last: Huijsman
@@ -234,6 +483,20 @@
     steps in an earlier theoretical algorithm computationally practical. Also introduces
     BOTCH, a branching cherry-picking algorithm with FPT runtime, which proves fastest
     in practice.
+  abstract: TreeContainment is a well-known problem within phylogenetics, which asks
+    whether a binary phylogenetic tree is embedded in a binary phylogenetic network.
+    For this problem, Jones, Weller and van Iersel (2022) created an algorithm that
+    uses dynamic programming on tree-decompositions to achieve a running time that
+    is exponential in the treewidth parameter instead of in the number of reticulations.
+    However, due to the implicit formulations of two crucial steps in this algorithm,
+    this running time cannot be achieved in practice. This thesis provides two new
+    sub-algorithms that generate the required structures explicitly. Additionally,
+    criteria and methods that reduce the number of structures generated are introduced.
+    These sub-algorithms and improvements are used by two new algorithms TWITCH and
+    PITCH, compared to a brute force algorithm and a new branching cherry-picking
+    algorithm named BOTCH. The latter has an FPT running time that is exponential
+    in the number of vertices that have only reticulations as children. The comparisons
+    show that BOTCH has the best test results and is shown to be fast in practice.
 - name:
     first: Susan
     last: Veldkamp
@@ -246,6 +509,20 @@
     timetable is always returned even when no fully feasible solution exists. Consistently
     matches or improves on prior ILP-based models while allowing flexible weighting
     of soft constraints.
+  abstract: ILP-based solvers that intake a line planning, an infrastructure and a
+    set of constraints and then output a cyclic train timetable have been researched
+    extensively in the world of trains. However, these types of solvers are not able
+    to automatically output a timetable when the problem gets overconstrained and
+    no feasible solution exists. This thesis focuses on overcoming the problem of
+    overconstraining due to frequency constraints and on consistently producing a
+    timetable by using a MaxSAT solver that can distinguish hard and soft constraints
+    and assign them weights accordingly. Its aim is to minimize the total weight of
+    violated soft constraints while maintaining all hard constraints. The resulting
+    model does not always reach a better objective value after an hour of optimizing
+    than the model it tries to improve. Nevertheless it is able to handle a set of
+    conflicting constraints and always delivers a timetable that is at least as good
+    as the one produced by the previous model. Additionally, it is capable of taking
+    into account user preference for specific constraints through the weights.
 - name:
     first: Frank
     tussenvoegsel: van der
@@ -259,6 +536,24 @@
     an efficient pre-calculation table for fast objective evaluation, and demonstrates
     substantial reductions in total carton used and shipment volume compared to the
     existing box set.
+  abstract: The problem considered in this thesis is the box set optimization problem.
+    In this problem the goal is to find the optimal dimensions of a number of shipping
+    boxes which have to provide an optimal fit on a set of items. The application
+    considered is e-commerce, and hence the number of items is relatively large compared
+    to other applications found in literature. The literature describes multiple problem
+    formulations where a small number of optimal shipping boxes are selected from
+    a large set containing candidate boxes. However, since the instances considered
+    in e-commerce applications are often too large to be solved in this way, we introduce
+    a simulated annealing heuristic solution method. In this way we are able to generate
+    box sets containing 10 to 20 boxes with centimeter accuracy for data sets containing
+    up to many single item orders. We pay special attention to an algorithm to very
+    efficiently calculate the objective value associated to the fit of a selection
+    of candidate boxes on a set of items. This is done by assigning items to shipping
+    boxes using a pre-calculation table. Finally we generate multiple box sets based
+    on the input data provided by the industry partner bol.com. We conclude that the
+    total amount of carton used can be substantially reduced in combination with a
+    reduction in total send volume in comparison with the box set that is currently
+    used.
 - name:
     first: Leonie
     last: Nipius
@@ -270,6 +565,17 @@
     networks are uniquely determined by their quarnets (four-leaf subnetworks). Also
     establishes decomposition theorems for undirected networks of all levels and semi-directed
     networks up to level-2.
+  abstract: Phylogenetic networks generalize evolutionary trees and are commonly used
+    to represent evolutionary relationships between species that undergo reticulate
+    evolutionary processes such as hybridization, recombination and lateral gene transfer.
+    In this thesis all quarnets, networks on four species, of a network are assumed
+    to be known. We prove that each recoverable undirected or semi-directed binary
+    level-2 phylogenetic network without redundant biconnected components is encoded
+    by its set of quarnets, meaning that the network is uniquely determined by its
+    quarnets. Furthermore, two decomposition theorems for undirected and semi-directed
+    binary phylogenetic networks are presented. These decomposition theorems are proved
+    for undirected binary phylogenetic networks for all levels and for semi-directed
+    binary phylogenetic networks that are at most level-2.
 - name:
     first: Teun
     last: Druijf
@@ -282,6 +588,20 @@
     Develops exact and heuristic algorithms that update plans as new information about
     arriving cars becomes available, achieving comparable solution quality to methods
     that assume full information from the start.
+  abstract: In the current economy, there is an increasing focus on sustainability.
+    Green transport solutions, like rail freight, are becoming more and more popular.
+    We will look into the shunting operations at Kijfhoek shunting yard. This yard
+    functions as the central hub for DB Cargo Nederland and connects the Port of Rotterdam
+    with the hinterland. About 2000 cars are sorted at this yard each week. At the
+    yard, there are 43 parallel classification tracks. Shunting problems come in many
+    shapes and sizes but are generally hard to solve. To that end, we will use both
+    exact algorithms and heuristics to solve the shunting problem at Kijfhoek within
+    reasonable time. In practice, it is not known at the beginning of the planning
+    horizon which cars will arrive. We create general solutions which will be updated
+    over time when new information becomes available. We find that our solution approaches
+    can generate solutions for instances with 28 classification tracks of similar
+    quality as solutions found for the same instances with 43 classification tracks
+    with complete information at the beginning of the planning horizon.
 - name:
     first: Myrte
     tussenvoegsel: van
@@ -295,6 +615,19 @@
     STR electropherograms from forensic DNA trace samples. Achieves 95% pixel-level
     accuracy and approaches analyst-level performance, demonstrating the potential
     of deep learning to assist forensic DNA profiling.
+  abstract: When processing a trace DNA sample at the Netherlands Forensic Institute,
+    an STR electropherogram can be created. An analyst uses this electropherogram
+    and analysis software to read out peaks signifying DNA. After analysis, the DNA
+    profile is used in the interpretation process, which can include the comparison
+    to a reference DNA profile of a person of interest. The software that is currently
+    being used for profile analysis is threshold-based and the process includes the
+    intervention of trained analysts. To further automate (allelic) peak identification
+    in STR electropherograms, as well as to increase efficiency and uniformity, neural
+    networks were studied and applied. Previous work provided a proof of concept using
+    a simple fully connected neural net. After reviewing literature, the U-net was
+    selected for this thesis. Training U-net on electropherograms proved successful
+    and achieved a 95% accuracy on the per-pixel labels. The upper bound on the score
+    got close to an analyst's performance and demonstrated the potential of this method.
 - name:
     first: Alexandre
     last: Simon
@@ -307,6 +640,21 @@
     t-interval graphs). Proves that most polynomial-time problems on interval graphs
     become NP-hard or APX-hard on these broader classes, and analyzes structural relationships
     between the resulting graph classes.
+  abstract: Interval graphs play an important role in graph theory and have intensively
+    been studied for over sixty years due to their wide range of applications and
+    because most NP-hard problems on general graphs become solvable in linear time
+    on interval graphs. However, the class of interval graphs is restricted and does
+    not even contain a cycle of length 4. To overcome this drawback, we study some
+    generalisations of interval graphs where instead of considering one interval on
+    one real line for each vertex we consider d intervals on d different real lines
+    and take the union of each line (d-track graphs) or t intervals on the same real
+    line (t-interval graphs). Most problems now become NP-hard, as shown for Vertex
+    Cover, Clique Cover, Biclique Cover, or even APX-hard in the case of Feedback
+    Vertex Set. This is even the case if we add some restrictions on the length of
+    the intervals. We also give a bound on the unit track number of any interval graph.
+    Furthermore, we study the relationship between the classes of d-track graphs and
+    t-interval graphs with and without length restrictions, and consider boxicity-d
+    graphs.
 - name:
     first: Frank
     last: Janisse
@@ -319,6 +667,21 @@
     the result to symmetric networks under certain conditions. Presents an algorithm
     to verify encoding properties, supporting the conjecture that all level-k networks
     are encoded by their (k+1)-nets.
+  abstract: Phylogenetic networks are used to describe evolutionary histories and
+    are a generalisation of evolutionary trees. They can contain so-called reticulations,
+    representing reticulate evolution, such as hybridization, lateral gene transfer
+    and recombination. Methods are being developed to construct certain rooted phylogenetic
+    networks from their subnetworks. A constructed network is encoded by their subnetworks
+    if it is uniquely determined by that set. It has been shown that phylogenetic
+    trees are encoded by their set of triplets, and that level-1 networks are encoded
+    by trinets (rooted networks on three species). Van Iersel and Moulton proved that
+    level-2 networks are encoded by their set of trinets. In this thesis we prove
+    that for all k>1, level-k networks without symmetry in their biconnected components
+    are encoded by their set of (k+1)-nets. This result provides evidence for the
+    conjecture that all level-k phylogenetic networks are encoded by their set of
+    (k+1)-nets. We further prove encoding results for networks with symmetry under
+    certain conditions, and prove that level-4 networks are encoded by 6-nets. We
+    also provide an algorithm to verify encoding properties, supporting the main conjecture.
 - name:
     first: Simon
     tussenvoegsel: van
@@ -334,6 +697,24 @@
     extensions for slot allocation, multiple battery types, time-dependent electricity
     pricing, and energy storage, with case studies at Schiphol and Rotterdam-The Hague
     airports.
+  abstract: In this thesis, we consider investment optimization for airport infrastructure
+    required to charge and refuel electric and hydrogen powered aircraft using battery
+    and hydrogen canister swaps respectively. The task at hand is to determine the
+    most cost-effective infrastructure, consisting of spare batteries and battery
+    chargers for electric aircraft, and spare hydrogen canisters and fueling points
+    for hydrogen aircraft. Previously developed models are expanded upon by introducing
+    the possibility of slot allocation, where flights that are not yet in possession
+    of landing and take-off rights are assigned to them in such a way that requires
+    the smallest extra infrastructure to be acquired. We derive several (mixed) integer
+    linear programming formulations to solve this problem and develop heuristics which
+    are able to approximate the optimal solution. Extensions include instances where
+    more than one battery type is allowed, electricity pricing becomes dependent on
+    the time-of-use, and storage of electricity at the airport is allowed. We found
+    that exact solutions can be found within reasonable time for cases with up to
+    200 batteries, and a first-in-first-out policy heuristic has shown to be capable
+    of generating promising results while being applicable to larger instances. The
+    models have been illustrated in a case study at the airports Schiphol (Amsterdam)
+    and Zestienhoven (Rotterdam-The Hague).
 - name:
     first: Rosanne
     last: Wallin
@@ -372,6 +753,15 @@
     move problem. Demonstrates that learning-guided approaches benefit the MAF and
     tail move algorithms, and provides a faster implementation for the hybridization
     number problem.'
+  abstract: In this thesis we look at three different algorithms within the field
+    of phylogenetics and create a proof of concept for using machine learning to improve
+    the algorithms. The problems are the maximum agreement forest problem, the hybridization
+    number problem and the tail move problem. A study of the problems shows that they
+    can all benefit from machine learning. For each of the problems we find a machine
+    learning implementation using basic decision trees. The results show that the
+    MAF problem and the tail move problem can both benefit from machine learning,
+    and for the hybridization number problem we give an implementation that is faster
+    than the studied algorithm.
 - name:
     first: Sjors
     last: Kole
@@ -383,6 +773,20 @@
     TriL2Net, which assembles level-2 trinets into complete networks. Shows improved
     performance over TriLoNet on level-1 data, and produces networks at least as consistent
     with real sequence data when applied to datasets with recombination.
+  abstract: Phylogenetic networks are a generalization of evolutionary trees that
+    can be used to represent reticulate events. Level-k phylogenetic networks are
+    such networks, but with at most k reticulations per biconnected component of the
+    network. For level-1 networks there exists an algorithm, called TriLoNet, that
+    constructs these networks directly from sequence alignments by piecing together
+    smaller level-1 networks on three taxa. Here, we introduce TriL2Net, an algorithm
+    similar to TriLoNet that works for the larger class of level-2 networks. More
+    specifically, TriL2Net constructs a level-2 phylogenetic network from a set of
+    level-2 trinets. We show that TriL2Net performs better on sampled level-2 networks
+    than TriLoNet performs on sampled level-1 networks. Moreover, we applied TriL2Net
+    to level-1 trinet sets derived from real sequence data involving recombination.
+    When comparing the networks generated by TriL2Net from these data sets to the
+    networks generated by TriLoNet, we found that TriL2Net's networks are at least
+    as consistent with the input as TriLoNet's networks.
 - name:
     first: Sander
     last: Borst
@@ -395,6 +799,16 @@
     hybridization number of a set of phylogenetic trees — the minimum number of reticulations
     in a temporal network that simultaneously displays all input trees — achieving
     improved running times over earlier approaches.
+  abstract: We study the problem of finding a temporal hybridization network for a
+    set of phylogenetic trees that minimizes the number of reticulations. First, we
+    introduce an FPT algorithm for this problem on an arbitrary set of t binary trees
+    with n leaves each, with a running time of O(5^k * n * m) where k is the minimum
+    temporal hybridization number. We also present the concept of temporal distance,
+    which is a measure for how close a tree-child network is to being temporal. We
+    then introduce an algorithm for computing a tree-child network with temporal distance
+    at most p and at most k reticulations in O((8k)^p * 5^k * n * m). Lastly, we introduce
+    a O(6^k * k! * n) algorithm for computing a minimum temporal hybridization network
+    for a set of two nonbinary trees.
 - name:
     first: Mick
     tussenvoegsel: van
@@ -431,6 +845,26 @@
     time windows, capacities, or multiple depots) and empirically evaluates the practical
     limits of exact solution methods, identifying problem scales and configurations
     where exact approaches remain tractable.
+  abstract: 'The companies CQM and EVO-it work together to help many different companies
+    with solving their vehicle routing problems. EVO-it provides the interface of
+    the software that the companies can use for route planning and CQM provides the
+    mathematical programming technology to solve the route planning problems. The
+    difficulty of solving these problems is that real-life problems usually deal with
+    multi-attribute vehicle routing problems, which are problems with multiple characteristics,
+    such as time windows and vehicle restrictions. These attributes can vary a lot
+    per company, making it a difficult task to provide the best solving method for
+    all problem types. The goal of this project was to investigate the improvement
+    possibilities of the current method used by CQM. In this thesis many different
+    solving methods for the vehicle routing problem are evaluated and their qualities
+    are discussed. Furthermore, information from the companies using the software
+    of EVO-it is collected, providing an overview of the problem types occurring at
+    these companies. This thesis also describes two exact methods for solving vehicle
+    routing problems similar to the real-life problems occurring at EVO-it''s clients:
+    one uses a three-index flow formulation and the other uses a set partitioning
+    formulation based on Baldacci and Mingozzi. The latter method can solve instances
+    with up to 40 orders and can deal with several complicated attributes, including
+    capacity constraints, distance constraints, different types of costs, and heterogeneous
+    vehicles.'
 - name:
     first: Youri
     tussenvoegsel: van der
