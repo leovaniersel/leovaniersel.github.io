@@ -43,6 +43,16 @@
   padding-bottom: 1.2em;
 }
 
+/* Cards with no summary/abstract have no toggle buttons to reserve
+   space for, so the extra bottom padding and gap just look like a gap. */
+.stud-card--compact {
+  margin-bottom: 0.5em;
+}
+
+.stud-card--compact .stud-body {
+  padding-bottom: 0;
+}
+
 .stud-name {
   font-weight: 600;
   font-size: 0.95rem;

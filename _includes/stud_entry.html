@@ -1,4 +1,4 @@
-<article class="stud-card">
+<article class="stud-card{% unless stud.summary or stud.abstract %} stud-card--compact{% endunless %}">
   <div class="stud-year">{{ stud.year | default: "current" }}</div>
   <div class="stud-role stud-role--{{ stud.role }}">{{ stud.role | upcase | replace: "PHD", "PhD" | replace: "MSC", "MSc" | replace: "BSC", "BSc" }}</div>
   <div class="stud-body">
