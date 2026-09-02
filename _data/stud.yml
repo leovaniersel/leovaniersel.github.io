@@ -8,6 +8,23 @@
   website:
   scholar:
 - name:
+    first: Sofia
+    last: Sarigiannidi
+  role: msc
+  thesis:
+  thesis-url:
+  website:
+  scholar:
+- name:
+    first: Joachim
+    tussenvoegsel: de
+    last: Bosch Kemper
+  role: msc
+  thesis:
+  thesis-url:
+  website:
+  scholar:
+- name:
     first: Chai
     last: Fillerup
   role: msc
