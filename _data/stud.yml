@@ -36,6 +36,7 @@
     first: Chai
     last: Fillerup
   role: msc
+  company: UU
   year: 2026
   thesis: A Polynomial Time Test for when Optimal Traffic Flow is Achievable with
     Semi-Selfish Planners in Parallel Edge Networks
@@ -299,6 +300,7 @@
     tussenvoegsel: van
     last: Krieken
   role: msc
+  company: CWI
   year: 2025
   thesis: 'Dense Reachable Subgraphs: Hardness, Algorithms and Experiments'
   thesis-url: https://resolver.tudelft.nl/uuid:bb772d2a-f919-498d-98ad-6fc41456ef4d
@@ -529,6 +531,7 @@
     first: Susan
     last: Veldkamp
   role: msc
+  company: NS
   year: 2022
   thesis: A MaxSAT Approach to Solving Frequency Conflicts within Cyclic Train Timetables
   thesis-url: https://resolver.tudelft.nl/uuid:0ca4b6d3-2194-41d1-8a9a-64dd4be9a87a
@@ -715,6 +718,7 @@
     tussenvoegsel: van
     last: Oosterom
   role: msc
+  company: Royal Netherlands Aerospace Centre
   year: 2021
   thesis: Investment Optimized Airport Infrastructure for Battery and Hydrogen Canister
     Swaps
@@ -747,6 +751,7 @@
     first: Rosanne
     last: Wallin
   role: msc
+  company: VU
   year: 2020
   thesis: Applicability of phylogenetic network algorithms for representing the evolutionary
     history of SARS-CoV-2
@@ -842,6 +847,7 @@
     tussenvoegsel: van
     last: Dijk
   role: msc
+  company: Westerdijk Fungal Biodiversity Institute
   year: 2019
   thesis: Classifying Candida species using Mixed Integer Optimization based optimal
     classification trees

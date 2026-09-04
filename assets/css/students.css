@@ -172,11 +172,14 @@
 
 .stud-company {
   min-width: 2.9em;
+  max-width: 6.5em;
   padding: 0.05em 0.45em;
   border-radius: 3px;
   font-size: 0.62rem;
   font-weight: 600;
+  line-height: 1.25;
   text-align: center;
+  white-space: normal;
   background: #f6f0e6;
   color: #92702e;
 }
