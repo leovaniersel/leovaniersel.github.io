@@ -595,6 +595,7 @@
   role: msc
   year: 2022
   thesis: Encoding undirected and semi-directed binary phylogenetic networks by quarnets
+  pub: When are quarnets sufficient to reconstruct semi-directed phylogenetic networks?
   thesis-url: https://resolver.tudelft.nl/uuid:eaeb4293-6349-4d6e-ab53-94b781fc65e1
   summary: Proves that recoverable undirected and semi-directed binary level-2 phylogenetic
     networks are uniquely determined by their quarnets (four-leaf subnetworks). Also
@@ -979,10 +980,10 @@
   company: TNO
   thesis: At a crossroads – Optimizing Markovian patrol strategies for perimeter defense
   thesis-url: https://resolver.tudelft.nl/uuid:84b31581-36d8-4665-9310-28e633c47c3e
-  summary: Investigates the effect of an initial suboptimal cherry choice in the cherry-picking
-    algorithm for phylogenetic network construction, measuring how such early mistakes
-    propagate and affect the quality of the resulting network across networks of varying
-    sizes.
+  summary: Studies adversarial patrolling on graph models of a perimeter, where a
+    defender follows a Markovian patrol strategy and an intruder attempts to cross
+    undetected. Derives analytical methods for computing interception probabilities
+    and uses them to optimize the patrol strategy.
 - name:
     first: Bouke
     last: Hoekstra
@@ -990,9 +991,10 @@
   year: 2024
   thesis: Reconstructing Phylogenetic Networks Using Cherry Picking
   thesis-url: https://resolver.tudelft.nl/uuid:28a81f86-ce16-4262-b81e-779c26bd1e95
-  summary: Applies the cherry-picking algorithm to reconstruct phylogenetic networks
-    from sets of phylogenetic trees, studying how the algorithm performs and what
-    properties the resulting networks have.
+  summary: Investigates the effect of an initial suboptimal cherry choice in the cherry-picking
+    algorithm for phylogenetic network construction, measuring how such early mistakes
+    propagate and affect the quality of the resulting network across networks of varying
+    sizes.
 - name:
     first: Merel
     tussenvoegsel: van
@@ -1002,10 +1004,10 @@
   thesis: 'Forest-Based Binary Phylogenetic Networks: Finding Optimal Base Forests
     with Integer Linear Programming'
   thesis-url: https://resolver.tudelft.nl/uuid:ace16f6a-c08f-454d-8732-1e627dd89b32
-  summary: Introduces a new polynomial for describing rooted binary internally labelled
-    phylogenetic networks and trees, studying its properties including uniqueness,
-    and provides an algorithm for determining when a monomial corresponds to a tree
-    that can be folded into a network.
+  summary: Studies forest-based binary phylogenetic networks — networks built from
+    a forest of trees connected by additional arcs representing gene transfer between
+    lineages — and develops an integer linear programming model that decides whether
+    a given network is forest-based by finding an optimal base forest.
 - name:
     first: Margot
     tussenvoegsel: van de
@@ -1014,9 +1016,10 @@
   year: 2022
   thesis: A new polynomial for describing Phylogenetic Networks
   thesis-url: https://resolver.tudelft.nl/uuid:c4ef44cf-cb0f-4912-8da1-1ba16f59f81e
-  summary: Studies orchard phylogenetic networks using time-labelling of vertices,
-    presents algorithms to recognize orchard networks and to transform non-orchard
-    networks into orchard networks by performing local modifications.
+  summary: Introduces a new polynomial for describing rooted binary internally labelled
+    phylogenetic networks and trees, studying its properties including uniqueness,
+    and provides an algorithm for determining when a monomial corresponds to a tree
+    that can be folded into a network.
 - name:
     first: Merel
     last: Susanna
@@ -1025,10 +1028,9 @@
   thesis: 'Making phylogenetic networks orchard: Algorithms to determine if a phylogenetic
     network is orchard and to transform non-orchard to orchard networks'
   thesis-url: https://resolver.tudelft.nl/uuid:724ac2af-e569-4586-b367-288fef890252
-  summary: Examines whether three reduction rules (chain reduction, generalized subtree
-    reduction, and the (2,1,2)-reduction) preserve the bounded Maximum Parsimony distance
-    on phylogenetic trees, proving two of them valid and providing a counterexample
-    for the third.
+  summary: Studies orchard phylogenetic networks using time-labelling of vertices,
+    presents algorithms to recognize orchard networks and to transform non-orchard
+    networks into orchard networks by performing local modifications.
 - name:
     first: Elise
     last: Deen
@@ -1038,10 +1040,10 @@
     trees
   pub: A near-linear kernel for bounded-state parsimony distance
   thesis-url: https://resolver.tudelft.nl/uuid:0deb0697-bc1d-4cd9-96ed-f516872f24b0
-  summary: Develops and implements an algorithm for reconstructing level-2 binary
-    phylogenetic networks from their leaf distance matrices, based on theoretical
-    results showing such networks are uniquely determined by these matrices. Tests
-    the algorithm on over 35000 networks without errors.
+  summary: Examines whether three reduction rules (chain reduction, generalized subtree
+    reduction, and the (2,1,2)-reduction) preserve the bounded Maximum Parsimony distance
+    on phylogenetic trees, proving two of them valid and providing a counterexample
+    for the third.
 - name:
     first: Riche
     last: Mol
@@ -1050,10 +1052,10 @@
   thesis: 'Reconstruction of Phylogenetic Networks: An algorithm for deconstructing
     and reconstructing Level-2 Binary Networks based on their distances'
   thesis-url: https://resolver.tudelft.nl/uuid:7b0f3919-0e78-4264-9e8f-028cf3fcde31
-  summary: Translates rearrangement move theory into a practical algorithm that computes
-    a sequence of tail moves converting one phylogenetic network into another, and
-    evaluates the algorithm by comparing computed upper bounds against actual distances
-    across 385 small network pairs.
+  summary: Develops and implements an algorithm for reconstructing level-2 binary
+    phylogenetic networks from their leaf distance matrices, based on theoretical
+    results showing such networks are uniquely determined by these matrices. Tests
+    the algorithm on over 35000 networks without errors.
 - name:
     first: Selma
     last: Husanović
@@ -1061,19 +1063,21 @@
   year: 2020
   thesis: Tail move rearrangement algorithm for rooted binary phylogenetic networks
   thesis-url: https://resolver.tudelft.nl/uuid:5adc7ba5-c068-493c-b1de-c4ef8f74c0a1
-  summary: Proves that all recoverable rooted binary level-3 phylogenetic networks
-    are uniquely encoded by their quarnets (four-leaf subnetworks), extending previous
-    encoding results from level-2 to level-3 networks.
+  summary: Translates rearrangement move theory into a practical algorithm that computes
+    a sequence of tail moves converting one phylogenetic network into another, and
+    evaluates the algorithm by comparing computed upper bounds against actual distances
+    across 385 small network pairs.
 - name:
     first: Leonie
     last: Nipius
   role: bsc
   year: 2020
   thesis: Rooted binary level-3 phylogenetic networks are encoded by quarnets
+  pub: An algorithm for reconstructing level-2 phylogenetic networks from trinets
   thesis-url: https://resolver.tudelft.nl/uuid:a9c5a8d4-bc8b-4d15-bdbb-3ed35a9fb75d
-  summary: Improves Mixed Integer Optimization models for constructing optimal classification
-    trees for identifying Candida species, adding feature sampling to reduce runtime
-    and minimum leaf-size constraints to mitigate overfitting in deeper trees.
+  summary: Proves that all recoverable rooted binary level-3 phylogenetic networks
+    are uniquely encoded by their quarnets (four-leaf subnetworks), extending previous
+    encoding results from level-2 to level-3 networks.
 - name:
     first: Maaike
     last: Elgersma
@@ -1082,10 +1086,9 @@
   thesis: Preventing overfitting in Mixed Integer Optimization based classification
     tree construction
   thesis-url: https://resolver.tudelft.nl/uuid:542b608f-0e48-474b-b1e1-bf1096ae7fe3
-  summary: Implements the NetworkContainment algorithm of Janssen and Murakami for
-    tree-child phylogenetic networks, introducing a modification that makes the algorithm
-    linear-time without requiring a bounded maximum in-degree and proving correctness
-    of the modification.
+  summary: Improves Mixed Integer Optimization models for constructing optimal classification
+    trees for identifying Candida species, adding feature sampling to reduce runtime
+    and minimum leaf-size constraints to mitigate overfitting in deeper trees.
 - name:
     first: Robbert
     last: Huijsman
@@ -1093,10 +1096,10 @@
   year: 2019
   thesis: Tree-child Network Containment
   thesis-url: https://resolver.tudelft.nl/uuid:0fc3b746-0d3f-459d-8fc2-c9e6aea821df
-  summary: Provides foundational results on orienting phylogenetic networks, presenting
-    algorithms that given a root location and reticulation information produce directed
-    networks in the tree-child, stack-free, or valid classes, as well as algorithms
-    that find all valid orientations without prior root or reticulation information.
+  summary: Implements the NetworkContainment algorithm of Janssen and Murakami for
+    tree-child phylogenetic networks, introducing a modification that makes the algorithm
+    linear-time without requiring a bounded maximum in-degree and proving correctness
+    of the modification.
 - name:
     first: Esmay
     last: Verzijlbergen
@@ -1104,10 +1107,11 @@
   year: 2019
   thesis: Orienting phylogenetic networks
   thesis-url: https://resolver.tudelft.nl/uuid:6b890080-8a60-4189-89dc-b12f23a8677a
-  summary: Studies algorithms for orienting undirected phylogenetic networks, presenting
-    methods for binary and non-binary networks that, given a root location and vertex
-    in-degree information, produce directed networks satisfying properties such as
-    tree-child, stack-free, or valid orientation.
+  summary: Studies the orientation of undirected phylogenetic networks, presenting
+    algorithms that turn binary and non-binary networks into directed ones given a
+    root location and reticulation or in-degree information, as well as algorithms
+    that find all valid orientations without such information, for the tree-child,
+    stack-free, and valid network classes.
 - name:
     first: Bram
     tussenvoegsel: van den

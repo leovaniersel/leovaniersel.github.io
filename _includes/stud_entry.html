@@ -29,6 +29,14 @@
         resulting publication:
         <a href="{{ '/publications/' | relative_url }}#pub-{{ stud.pub | slugify }}">{{ stud.pub }}</a>
       </div>
+    {%- elsif stud.role == "phd" -%}
+      {%- comment -%}
+      A PhD thesis rests on a whole series of joint papers rather than one, so
+      link to the Publications page filtered on this co-author instead.
+      {%- endcomment -%}
+      <div class="stud-pub">
+        <a href="{{ '/publications/' | relative_url }}?author={{ fullname | url_encode }}">joint publications</a>
+      </div>
     {%- endif -%}
     {%- if stud.website or stud.scholar -%}
       <div class="stud-links">

@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 
   const authorOptions = document.getElementById("pub-author-options");
-  authors.forEach(([name, n]) => {
+  function addAuthorOption(name, n) {
     const label = document.createElement("label");
     label.className = "pub-filter__option";
     const box = document.createElement("input");
@@ -83,7 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
     countEl.textContent = n;
     label.append(box, nameEl, countEl);
     authorOptions.appendChild(label);
-  });
+    return box;
+  }
+  authors.forEach(([name, n]) => addAuthorOption(name, n));
 
   const groups = [
     {
@@ -108,6 +110,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   groups.forEach((g) => {
     g.boxes = Array.from(g.panel.querySelectorAll("input[type=checkbox]"));
+  });
+
+  // Allow linking straight to a filtered view, as the Students page does with
+  // /publications/?author=Remie+Janssen. A co-author with too few joint papers
+  // to be offered in the dropdown gets an option added here, so such a link
+  // still filters and can be cleared like any other selection.
+  const params = new URLSearchParams(window.location.search);
+  [["keyword", groups[0]], ["author", groups[1]]].forEach(([param, g]) => {
+    params.getAll(param).forEach((raw) => {
+      const wanted = raw.trim().toLowerCase();
+      if (!wanted) return;
+      let box = g.boxes.find((b) => b.value.toLowerCase() === wanted);
+      if (!box && g.field === "authors") {
+        let canonical = null;
+        items.forEach((item) => {
+          const hit = (item.dataset.authors || "")
+            .split("|")
+            .find((nm) => nm.toLowerCase() === wanted);
+          if (hit) canonical = hit;
+        });
+        if (canonical) {
+          const n = items.filter((item) =>
+            (item.dataset.authors || "").includes("|" + canonical + "|")
+          ).length;
+          box = addAuthorOption(canonical, n);
+          g.boxes.push(box);
+        }
+      }
+      if (box) box.checked = true;
+    });
   });
 
   const selectedOf = (g) => g.boxes.filter((b) => b.checked).map((b) => b.value);
