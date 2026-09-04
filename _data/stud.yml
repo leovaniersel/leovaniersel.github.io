@@ -423,6 +423,7 @@
   role: msc
   year: 2023
   thesis: Classes of Semi-binary Phylogenetic Networks encoded by μ-representations
+  pub: Metrics for classes of semi-binary phylogenetic networks using μ-representations
   thesis-url: https://resolver.tudelft.nl/uuid:3fca1fca-b7d6-4abc-ad2f-960395ce451d
   summary: Studies which classes of semi-binary phylogenetic networks are uniquely
     determined by their μ-representations, enabling polynomial-time network comparison
@@ -449,6 +450,7 @@
   role: msc
   year: 2023
   thesis: Computing the Scanwidth of Directed Acyclic Graphs
+  pub: Exact and Heuristic Computation of the Scanwidth of Directed Acyclic Graphs
   thesis-url: https://resolver.tudelft.nl/uuid:9c82fd2a-5841-4aac-8e40-d4d22542cdf5
   summary: Studies scanwidth — a tree-likeness parameter for directed acyclic graphs
     that generalizes treewidth to directed structures — developing an exact dynamic
@@ -759,6 +761,8 @@
   year: 2020
   thesis: Applicability of phylogenetic network algorithms for representing the evolutionary
     history of SARS-CoV-2
+  pub: Applicability of several rooted phylogenetic network algorithms for representing
+    the evolutionary history of SARS-CoV-2
   thesis-url: https://github.com/rosanneandrea/corona-networks
   summary: Develops a workflow for constructing phylogenetic networks representing
     the evolutionary history of SARS-CoV-2, applying multiple algorithms (TriLoNet,
@@ -806,6 +810,7 @@
   role: msc
   year: 2020
   thesis: Constructing level-2 phylogenetic networks from trinets
+  pub: An algorithm for reconstructing level-2 phylogenetic networks from trinets
   thesis-url: https://resolver.tudelft.nl/uuid:c699ea63-f8c8-40f7-8f07-11ac055c42e0
   summary: Extends the TriLoNet algorithm to level-2 phylogenetic networks by developing
     TriL2Net, which assembles level-2 trinets into complete networks. Shows improved
@@ -832,6 +837,8 @@
   year: 2020
   thesis: New FPT algorithms for finding the temporal hybridization number for sets
     of phylogenetic trees
+  pub: New FPT algorithms for finding the temporal hybridization number for sets of
+    phylogenetic trees
   thesis-url: https://resolver.tudelft.nl/uuid:2697da91-c596-48d1-9f09-f21da02ddb54
   summary: Develops new fixed-parameter tractable algorithms for computing the temporal
     hybridization number of a set of phylogenetic trees — the minimum number of reticulations
@@ -867,6 +874,7 @@
   role: msc
   year: 2018
   thesis: 'Parallel Machine Scheduling: with Partition Constraints'
+  pub: Parallel Machine Scheduling with a Single Resource per Job
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Ad8f71f9a-6b59-4b51-9fe5-b0a4358a0d7f?collection=education
   summary: Studies parallel machine scheduling problems with partition constraints,
     where jobs must be assigned to machines subject to feasibility restrictions, and
@@ -923,6 +931,8 @@
   role: bsc
   year: 2026
   thesis: Distinguishing phylogenetic trees from networks
+  pub: On Tree-Network Distinguishability and Full Identifiability of Phylogenetic
+    Networks
   thesis-url: https://resolver.tudelft.nl/uuid:b515be05-f539-41d6-b57b-d23a0b4156e8
   summary: Investigates whether phylogenetic trinets (three-leaf subnetworks) can
     be distinguished from simpler tree structures using phylogenetic invariants —
@@ -1026,6 +1036,7 @@
   year: 2021
   thesis: Different reduction rules for the Maximum Parsimony distance on phylogenetic
     trees
+  pub: A near-linear kernel for bounded-state parsimony distance
   thesis-url: https://resolver.tudelft.nl/uuid:0deb0697-bc1d-4cd9-96ed-f516872f24b0
   summary: Develops and implements an algorithm for reconstructing level-2 binary
     phylogenetic networks from their leaf distance matrices, based on theoretical
@@ -1167,6 +1178,7 @@
   role: bsc
   year: 2016
   thesis: Resolving contradicting binets and finding similarities in networks
+  pub: 'Binets: fundamental building blocks for phylogenetic networks'
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3A2defcd3f-02be-4e7d-acd2-bb9261d1b533?collection=education
   summary: Studies the problem of resolving contradictions in sets of binets (two-leaf
     subnetworks), developing methods to find maximal consistent subsets and to identify
@@ -1188,6 +1200,7 @@
   role: bsc
   year: 2015
   thesis: Characterising tree-based phylogenetic networks
+  pub: Nonbinary tree-based phylogenetic networks
   thesis-url: https://repository.tudelft.nl/islandora/object/uuid%3Afda2636d-0ed5-4dd2-bacf-8abbbad8994e?collection=education
   summary: Characterizes tree-based phylogenetic networks — networks that have a spanning
     tree connecting all leaves — proving structural properties and developing algorithms

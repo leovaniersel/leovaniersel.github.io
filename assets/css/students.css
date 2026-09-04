@@ -76,6 +76,21 @@
   text-decoration: underline;
 }
 
+.stud-pub {
+  font-size: 0.78rem;
+  color: #5f6b7a;
+  margin-top: 0.3rem;
+}
+
+.stud-pub a {
+  color: #2f6f9f;
+  text-decoration: none;
+}
+
+.stud-pub a:hover {
+  text-decoration: underline;
+}
+
 .stud-links {
   margin-top: 0.35rem;
   text-align: right;

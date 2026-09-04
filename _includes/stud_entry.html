@@ -24,6 +24,12 @@
         {%- endif -%}
       </div>
     {%- endif -%}
+    {%- if stud.pub -%}
+      <div class="stud-pub">
+        resulting publication:
+        <a href="{{ '/publications/' | relative_url }}#pub-{{ stud.pub | slugify }}">{{ stud.pub }}</a>
+      </div>
+    {%- endif -%}
     {%- if stud.website or stud.scholar -%}
       <div class="stud-links">
         {%- if stud.website -%}
