@@ -167,6 +167,7 @@
     last: Janssen
   role: phd
   year: 2019
+  company: Nexperia
   thesis: 'Optimization in the Photolithography Bay: Scheduling and the Traveling
     Salesman Problem'
   thesis-url: https://doi.org/10.4233/uuid:12961f87-eeff-41b5-8688-df28e0ad9860
@@ -718,7 +719,7 @@
     tussenvoegsel: van
     last: Oosterom
   role: msc
-  company: Royal Netherlands Aerospace Centre
+  company: NLR
   year: 2021
   thesis: Investment Optimized Airport Infrastructure for Battery and Hydrogen Canister
     Swaps
@@ -767,6 +768,7 @@
     tussenvoegsel: van
     last: Bemmelen
   role: msc
+  company: VU
   year: 2020
   thesis: Reconstructing tree-child networks from their exhibited trinets
   thesis-url: https://www.ubvu.vu.nl/scripties/getpdf.cfm?facid=27&id=21599
@@ -847,7 +849,7 @@
     tussenvoegsel: van
     last: Dijk
   role: msc
-  company: Westerdijk Fungal Biodiversity Institute
+  company: Westerdijk Institute
   year: 2019
   thesis: Classifying Candida species using Mixed Integer Optimization based optimal
     classification trees
