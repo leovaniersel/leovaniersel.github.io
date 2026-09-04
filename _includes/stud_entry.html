@@ -1,6 +1,11 @@
 <article class="stud-card{% unless stud.summary or stud.abstract %} stud-card--compact{% endunless %}">
   <div class="stud-year">{{ stud.year | default: "current" }}</div>
-  <div class="stud-role stud-role--{{ stud.role }}">{{ stud.role | upcase | replace: "PHD", "PhD" | replace: "MSC", "MSc" | replace: "BSC", "BSc" }}</div>
+  <div class="stud-badges">
+    <div class="stud-role stud-role--{{ stud.role }}">{{ stud.role | upcase | replace: "PHD", "PhD" | replace: "MSC", "MSc" | replace: "BSC", "BSc" }}</div>
+    {%- if stud.company -%}
+      <div class="stud-company">{{ stud.company }}</div>
+    {%- endif -%}
+  </div>
   <div class="stud-body">
     <div class="stud-name">
       {%- assign fullname = stud.name.first -%}

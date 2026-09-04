@@ -236,6 +236,7 @@
     last: Riemens
   role: msc
   year: 2025
+  company: ORTEC Finance
   thesis: Exploiting Asset Similarities in Sample Efficient Portfolio Optimization
   thesis-url: https://resolver.tudelft.nl/uuid:5c182d18-25f6-4548-98c8-84285753d500
   summary: Addresses sample-efficient multi-objective portfolio optimization using
@@ -270,6 +271,7 @@
     last: Laseur
   role: msc
   year: 2025
+  company: Energy Pool
   thesis: Initialization Strategies for Energy Management System Optimization
   thesis-url: https://resolver.tudelft.nl/uuid:7b71d703-3f98-4c8d-abdf-08f3203ec6ab
   summary: Investigates warm-start initialization strategies that reuse previously
@@ -358,6 +360,7 @@
     last: Dulk
   role: msc
   year: 2024
+  company: NS
   thesis: Heuristics for strategic passenger-oriented train timetabling
   thesis-url: https://resolver.tudelft.nl/uuid:260d0726-28eb-4506-b2db-dabf2b31b7e7
   summary: Studies Strategic Passenger-Oriented Timetabling (SPOT), which assigns
@@ -951,6 +954,7 @@
     last: Koning
   role: bsc
   year: 2024
+  company: TNO
   thesis: At a crossroads – Optimizing Markovian patrol strategies for perimeter defense
   thesis-url: https://resolver.tudelft.nl/uuid:84b31581-36d8-4665-9310-28e633c47c3e
   summary: Investigates the effect of an initial suboptimal cherry choice in the cherry-picking
