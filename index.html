@@ -18,6 +18,33 @@ classes: wide
   I joined <a href="https://www.tudelft.nl/">TU Delft</a> in 2014.
 </p>
 
+{%- comment -%}
+Upcoming workshops come from _data/events.yml (entries with `upcoming: true`),
+soonest first, in the same card style as the Organized workshops page.
+{%- endcomment -%}
+{% assign upcoming = site.data.events.workshops | where: "upcoming", true | sort: "year" %}
+{% if upcoming.size > 0 %}
+<h2>Upcoming workshops</h2>
+<div class="event-list">
+  {% for event in upcoming %}
+  <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
+    {% if event.image %}
+      <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
+        <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+      </a>
+    {% endif %}
+    <div class="event-card__body">
+      <h3><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a></h3>
+      <p class="event-meta">
+        {{ event.date }}<br>
+        {{ event.location }}
+      </p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}
+
 <div class="about-images">
   <a class="about-image-card" href="https://www.lorentzcenter.nl/uniting-phylogenetic-network-research.html" target="_blank" rel="noopener">
     <img src="{{ '/assets/images/sidebar/poster_lorentz_2026.jpeg' | relative_url }}" alt="Uniting Phylogenetic Network Research – Lorentz Center 2026">
