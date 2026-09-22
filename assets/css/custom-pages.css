@@ -108,6 +108,12 @@
   margin-top: 1.5em;
 }
 
+/* On the Research page the images open the page, so they need room below
+   rather than above. */
+.research-images {
+  margin: 0 0 2em;
+}
+
 .about-image-card {
   display: block;
   max-width: 100%;
@@ -205,6 +211,16 @@
   gap: 0.75rem;
   margin: 1rem 0 1.75rem;
   padding: 0;
+}
+
+/* About page: the theme gives every h2 a 2em top margin, which leaves a gap
+   after the opening paragraph; this heading follows it directly. */
+.page__content h2.upcoming-title {
+  margin-top: 0.5em;
+}
+
+.event-list--tight {
+  margin-top: 0.5rem;
 }
 
 .event-card {

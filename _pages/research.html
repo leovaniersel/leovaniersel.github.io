@@ -9,6 +9,21 @@ classes: wide
 <link rel="stylesheet" href="{{ '/assets/css/custom-pages.css' | relative_url }}">
 <script src="{{ '/assets/js/custom-pages.js' | relative_url }}"></script>
 
+<div class="about-images research-images">
+  <a class="about-image-card" href="https://www.lorentzcenter.nl/uniting-phylogenetic-network-research.html" target="_blank" rel="noopener">
+    <img src="{{ '/assets/images/sidebar/poster_lorentz_2026.jpeg' | relative_url }}" alt="Uniting Phylogenetic Network Research – Lorentz Center 2026">
+    <span class="about-image-caption">Lorentz Center Workshop<span class="about-image-year">2026</span></span>
+  </a>
+  <a class="about-image-card" href="https://icerm.brown.edu/programs/sp-f24/" target="_blank" rel="noopener">
+    <img src="{{ '/assets/images/sidebar/icerm_2024_cropped.jpg' | relative_url }}" alt="Theory, Methods, and Applications of Quantitative Phylogenomics – ICERM 2024">
+    <span class="about-image-caption">Research Semester Program<span class="about-image-year">2024</span></span>
+  </a>
+  <a class="about-image-card" href="http://www.cell.com/trends/genetics/issue?pii=S0168-9525%2813%29X0008-3" target="_blank" rel="noopener">
+    <img src="{{ '/assets/images/sidebar/trends_in_genetics.jpg' | relative_url }}" alt="Trends in Genetics cover">
+    <span class="about-image-caption">Trends in Genetics Cover<span class="about-image-year">2013</span></span>
+  </a>
+</div>
+
 {% assign hp1 = site.data.pubs | where_exp: "p", "p.title == 'Bounds on the sequence length sufficient to reconstruct binary level-1 phylogenetic networks under the CFN model'" | first %}
 {% assign hp2 = site.data.pubs | where_exp: "p", "p.title == 'Inferring Phylogenetic Networks from Multifurcating Trees via Cherry Picking and Machine Learning'" | first %}
 {% assign hp3 = site.data.pubs | where_exp: "p", "p.title == 'Embedding phylogenetic trees in networks of low treewidth'" | first %}
