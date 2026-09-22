@@ -9,6 +9,14 @@ workshops:
     url: "https://www.dagstuhl.de/27382"
     image: "https://www.dagstuhl.de/_Resources/Static/Packages/Dagstuhl.Site/Frontend/images/LZI-Logo.jpg?bust=b988b355"
 
+  - title: "Shaping the Future of Mathematics with AI"
+    category: ai-math
+    date: "December 3, 2026"
+    year: 2026
+    location: "CWI, Amsterdam"
+    url: "https://ai4math.nl/"
+    image: "/assets/images/sidebar/aim_logo.png"
+
   - title: "Uniting Phylogenetic Network Research"
     category: phylogenetics
     date: "June 29 – July 3, 2026"
