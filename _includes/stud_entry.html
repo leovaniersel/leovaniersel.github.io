@@ -32,11 +32,27 @@
     {%- elsif stud.role == "phd" -%}
       {%- comment -%}
       A PhD thesis rests on a whole series of joint papers rather than one, so
-      link to the Publications page filtered on this co-author instead.
+      link to the Publications page filtered on this co-author instead. Only
+      once there is something to filter: the link is skipped for a student with
+      no joint papers yet, which would otherwise land on the unfiltered list.
       {%- endcomment -%}
-      <div class="stud-pub">
-        <a href="{{ '/publications/' | relative_url }}?author={{ fullname | url_encode }}">joint publications</a>
-      </div>
+      {%- assign joint = 0 -%}
+      {%- for p in site.data.pubs -%}
+        {%- for a in p.authors -%}
+          {%- assign nm = a.first -%}
+          {%- if a.tussenvoegsel -%}{%- assign nm = nm | append: " " | append: a.tussenvoegsel -%}{%- endif -%}
+          {%- assign nm = nm | append: " " | append: a.last -%}
+          {%- if nm == fullname -%}
+            {%- assign joint = joint | plus: 1 -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {%- if joint > 0 -%}
+        <div class="stud-pub">
+          <a href="{{ '/publications/' | relative_url }}?author={{ fullname | url_encode }}">joint publications</a>
+        </div>
+      {%- endif -%}
     {%- endif -%}
     {%- if stud.website or stud.scholar -%}
       <div class="stud-links">
