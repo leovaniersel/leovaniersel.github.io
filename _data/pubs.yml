@@ -5351,18 +5351,18 @@
   - first: Norbert
     last: Zeh
   year: 2026
-  type: preprint
+  type: journal
   keywords:
   - fixed-parameter tractability
   - tree-containment
   - orientation
-  journal:
+  journal: Discrete Applied Mathematics
   volume:
   issue:
   pages:
-  note: "(2026). arXiv."
-  doi-identifier: 10.48550/arXiv.2603.07000
-  doi-url: https://doi.org/10.48550/arXiv.2603.07000
+  note: Discrete Applied Mathematics, to appear. arXiv.
+  doi-identifier:
+  doi-url:
   preprint-server: arXiv
   preprint-identifier: '2603.07000'
   preprint-url: https://arxiv.org/abs/2603.07000
@@ -5371,14 +5371,11 @@
     manageable even when the direction of evolutionary time is unknown, after showing
     that the most obvious such class is actually intractable to recognize.
   bibtex: |
-    @misc{iersel2026class,
+    @article{iersel2026class,
       author = {van Iersel, Leo and Jones, Mark and Linz, Simone and Zeh, Norbert},
-      title = {{A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks}},
-      year = {2026},
-      archivePrefix = {arXiv},
-      eprint = {2603.07000},
-      doi = {10.48550/arXiv.2603.07000},
-      url = {https://doi.org/10.48550/arXiv.2603.07000}
+      title = {A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks},
+      journal = {Discrete Applied Mathematics},
+      year = {2026}
     }
   abstract: A directed phylogenetic network is tree-child if every non-leaf vertex
     has a child that is not a reticulation. As a class of directed phylogenetic networks,
