@@ -4956,34 +4956,37 @@
     last: Murakami
   - first: Jannik
     last: Schestag
-  year: 2025
-  type: conference
+  year: 2026
+  type: journal
   keywords:
   - scanwidth
   - phylogenetic diversity
   - fixed-parameter tractability
-  journal: RECOMB 2026
+  journal: Journal of Computational Biology
   volume:
   issue:
   pages:
-  note: RECOMB 2026. bioRxiv. Software available.
-  doi-identifier:
-  doi-url:
+  note: Journal of Computational Biology (2026). Preliminary version in RECOMB 2026.
+    bioRxiv. Software available.
+  doi-identifier: 10.1177/15578666261481955
+  doi-url: https://doi.org/10.1177/15578666261481955
   preprint-server: bioRxiv
   preprint-identifier: 10.1101/2025.11.14.688467
   preprint-url: https://www.biorxiv.org/content/10.1101/2025.11.14.688467
+  conference-note: RECOMB 2026
   software-url: https://github.com/nholtgrefe/panda
   summary: Presents PaNDA, free software for selecting the most evolutionarily diverse
     subset of species from a phylogenetic network — useful for conservation prioritization
     — including a fast algorithm that scales to large real-world datasets and a graphical
     interface for non-specialists.
   bibtex: |
-    @misc{holtgrefe2025panda,
+    @article{holtgrefe2026panda,
       author = {Holtgrefe, Niels and van Iersel, Leo and Meuwese, Ruben and Murakami, Yukihiro and Schestag, Jannik},
       title = {{PaNDA}: Efficient Optimization of Phylogenetic Diversity in Networks},
-      year={2025},
-      archivePrefix={bioRxiv},
-      eprint={10.1101/2025.11.14.688467}
+      journal = {Journal of Computational Biology},
+      year = {2026},
+      doi = {10.1177/15578666261481955},
+      url = {https://doi.org/10.1177/15578666261481955}
     }
   abstract: Phylogenetic diversity plays an important role in biodiversity, conservation,
     and evolutionary studies by measuring the diversity of a set of taxa based on
