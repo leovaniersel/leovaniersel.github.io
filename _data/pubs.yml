@@ -5350,17 +5350,17 @@
     last: Linz
   - first: Norbert
     last: Zeh
-  year: 2026
+  year: 2027
   type: journal
   keywords:
   - fixed-parameter tractability
   - tree-containment
   - orientation
   journal: Discrete Applied Mathematics
-  volume:
+  volume: '398'
   issue:
-  pages:
-  note: Discrete Applied Mathematics (2026). arXiv.
+  pages: 76--96
+  note: Discrete Applied Mathematics, 398:76-96 (2027). arXiv.
   doi-identifier: 10.1016/j.dam.2026.10.022
   doi-url: https://doi.org/10.1016/j.dam.2026.10.022
   preprint-server: arXiv
@@ -5371,11 +5371,13 @@
     manageable even when the direction of evolutionary time is unknown, after showing
     that the most obvious such class is actually intractable to recognize.
   bibtex: |
-    @article{iersel2026class,
+    @article{iersel2027class,
       author = {van Iersel, Leo and Jones, Mark and Linz, Simone and Zeh, Norbert},
       title = {A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks},
       journal = {Discrete Applied Mathematics},
-      year = {2026},
+      year = {2027},
+      volume = {398},
+      pages = {76--96},
       doi = {10.1016/j.dam.2026.10.022},
       url = {https://doi.org/10.1016/j.dam.2026.10.022}
     }
