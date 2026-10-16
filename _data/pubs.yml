@@ -5360,9 +5360,9 @@
   volume:
   issue:
   pages:
-  note: Discrete Applied Mathematics, to appear. arXiv.
-  doi-identifier:
-  doi-url:
+  note: Discrete Applied Mathematics (2026). arXiv.
+  doi-identifier: 10.1016/j.dam.2026.10.022
+  doi-url: https://doi.org/10.1016/j.dam.2026.10.022
   preprint-server: arXiv
   preprint-identifier: '2603.07000'
   preprint-url: https://arxiv.org/abs/2603.07000
@@ -5375,7 +5375,9 @@
       author = {van Iersel, Leo and Jones, Mark and Linz, Simone and Zeh, Norbert},
       title = {A Class of Unrooted Phylogenetic Networks Inspired by the Properties of Rooted Tree-Child Networks},
       journal = {Discrete Applied Mathematics},
-      year = {2026}
+      year = {2026},
+      doi = {10.1016/j.dam.2026.10.022},
+      url = {https://doi.org/10.1016/j.dam.2026.10.022}
     }
   abstract: A directed phylogenetic network is tree-child if every non-leaf vertex
     has a child that is not a reticulation. As a class of directed phylogenetic networks,
