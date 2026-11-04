@@ -33,14 +33,6 @@
   website:
   scholar:
 - name:
-    first: Fleur
-    last: Maasland
-  role: bsc
-  thesis:
-  thesis-url:
-  website:
-  scholar:
-- name:
     first: Chai
     last: Fillerup
   role: msc
@@ -930,6 +922,19 @@
     with up to 40 orders and can deal with several complicated attributes, including
     capacity constraints, distance constraints, different types of costs, and heterogeneous
     vehicles.'
+- name:
+    first: Fleur
+    last: Maasland
+  role: bsc
+  year: 2026
+  thesis: Inference Rules for Semi-Directed Level-1 Phylogenetic Networks
+  thesis-url: https://resolver.tudelft.nl/uuid:c92f19bf-5067-4af5-adb7-5de3d8034c64
+  summary: Studies the quartet profiles of binary semi-directed level-1 phylogenetic
+    networks, showing that the existing characterisation for undirected networks does
+    not carry over, and adding leaf labels that correspond to the tf-quarnets used
+    by SQUIRREL. Proves six inference rules for these labelled profiles and gives
+    computational evidence, for five to eleven leaves, that the rules characterise
+    exactly which profiles are realisable.
 - name:
     first: Youri
     tussenvoegsel: van der
