@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="62 28 356 318" width="356" height="318" role="img" aria-label="IWPCAP 2027, Leiden">
+  <title>IWPCAP 2027 — International Workshop on Probabilistic, Combinatorial, and Algorithmic Phylogenetics, Leiden</title>
+
+  <rect x="0" y="0" width="480" height="360" fill="#ffffff"/>
+
+  <!-- Phylogenetic network: tree edges in the site blue, the two edges into the
+       reticulation (drawn as a diamond) in a lighter tone. -->
+  <g fill="none" stroke="#2f6f9f" stroke-width="7" stroke-linecap="round">
+    <path d="M240 50 L156 102"/>
+    <path d="M240 50 L324 102"/>
+    <path d="M156 102 L108 156"/>
+    <path d="M324 102 L372 156"/>
+    <path d="M108 156 L84 214"/>
+    <path d="M108 156 L156 214"/>
+    <path d="M372 156 L348 214"/>
+    <path d="M372 156 L396 214"/>
+    <path d="M240 168 L240 214"/>
+  </g>
+
+  <g fill="none" stroke="#5e9ac6" stroke-width="7" stroke-linecap="round">
+    <path d="M156 102 L228 146"/>
+    <path d="M324 102 L252 146"/>
+  </g>
+
+  <!-- Root -->
+  <circle cx="240" cy="50" r="9" fill="#2f6f9f"/>
+  <!-- Tree nodes -->
+  <g fill="#2f6f9f">
+    <circle cx="156" cy="102" r="8"/>
+    <circle cx="324" cy="102" r="8"/>
+    <circle cx="108" cy="156" r="8"/>
+    <circle cx="372" cy="156" r="8"/>
+  </g>
+  <!-- Reticulation -->
+  <rect x="226" y="142" width="28" height="28" rx="3" transform="rotate(45 240 156)" fill="#ffffff" stroke="#2f6f9f" stroke-width="7"/>
+  <!-- Leaves -->
+  <g fill="#2f6f9f">
+    <circle cx="84" cy="214" r="10"/>
+    <circle cx="156" cy="214" r="10"/>
+    <circle cx="240" cy="214" r="10"/>
+    <circle cx="348" cy="214" r="10"/>
+    <circle cx="396" cy="214" r="10"/>
+  </g>
+
+  <text x="240" y="296" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="2" fill="#1f2933">IWPCAP</text>
+  <text x="240" y="332" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="7" fill="#5f6b7a">2027 · LEIDEN</text>
+</svg>

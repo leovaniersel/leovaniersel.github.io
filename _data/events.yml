@@ -1,8 +1,18 @@
 # Workshops I organized, one list. `category` drives the filter on the
 # Organized workshops page: phylogenetics | ai-math.
-# `upcoming: true` also lists a workshop on the About page; drop it once the
-# workshop has taken place.
+# `upcoming: true` also lists a workshop on the About page, ordered by
+# `start` (the ISO start date, needed because several share a year); drop
+# both once the workshop has taken place.
 workshops:
+  - title: "International Workshop on Probabilistic, Combinatorial, and Algorithmic Phylogenetics"
+    category: phylogenetics
+    date: "June 28 – July 1, 2027"
+    year: 2027
+    location: "Leiden"
+    upcoming: true
+    start: "2027-06-28"
+    image: "/assets/images/sidebar/iwpcap_2027.svg"
+
   - title: "Algorithms and Statistics in Phylogenetics"
     category: phylogenetics
     date: "September 19 – September 24, 2027"
@@ -10,6 +20,7 @@ workshops:
     location: "Schloss Dagstuhl, Germany"
     url: "https://www.dagstuhl.de/27382"
     upcoming: true
+    start: "2027-09-19"
     image: "https://www.dagstuhl.de/_Resources/Static/Packages/Dagstuhl.Site/Frontend/images/LZI-Logo.jpg?bust=b988b355"
 
   - title: "Shaping the Future of Mathematics with AI"
@@ -19,6 +30,7 @@ workshops:
     location: "CWI, Amsterdam"
     url: "https://ai4math.nl/"
     upcoming: true
+    start: "2026-12-04"
     image: "/assets/images/sidebar/aim_logo.png"
 
   - title: "Uniting Phylogenetic Network Research"

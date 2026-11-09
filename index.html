@@ -20,21 +20,28 @@ classes: wide
 
 {%- comment -%}
 Upcoming workshops come from _data/events.yml (entries with `upcoming: true`),
-soonest first, in the same card style as the Organized workshops page.
+ordered by their `start` date, in the same card style as the Organized
+workshops page.
 {%- endcomment -%}
-{% assign upcoming = site.data.events.workshops | where: "upcoming", true | sort: "year" %}
+{% assign upcoming = site.data.events.workshops | where: "upcoming", true | sort: "start" %}
 {% if upcoming.size > 0 %}
 <h2 class="upcoming-title">Upcoming workshops</h2>
 <div class="event-list event-list--tight">
   {% for event in upcoming %}
   <article class="event-card{% if event.image %} event-card--with-image{% endif %}">
     {% if event.image %}
-      <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
-        <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
-      </a>
+      {% if event.url %}
+        <a class="event-card__image" href="{{ event.url }}" target="_blank" rel="noopener">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </a>
+      {% else %}
+        <span class="event-card__image">
+          <img src="{{ event.image | relative_url }}" alt="{{ event.title }}">
+        </span>
+      {% endif %}
     {% endif %}
     <div class="event-card__body">
-      <h3><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a></h3>
+      <h3>{% if event.url %}<a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
       <p class="event-meta">
         {{ event.date }}<br>
         {{ event.location }}
