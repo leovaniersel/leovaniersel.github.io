@@ -4306,17 +4306,17 @@
     last: Murakami
   - first: Norbert
     last: Zeh
-  year: 2026
+  year: 2027
   type: journal
   keywords:
   - orientation
   journal: Journal of Computer and System Sciences
-  volume:
+  volume: '165'
   issue:
-  pages:
-  note: Journal of Computer and System Sciences, to appear. arXiv.
-  doi-identifier:
-  doi-url:
+  pages: '103879'
+  note: Journal of Computer and System Sciences, 165:103879 (2027). arXiv.
+  doi-identifier: 10.1016/j.jcss.2026.103879
+  doi-url: https://doi.org/10.1016/j.jcss.2026.103879
   preprint-server: arXiv
   preprint-identifier: '2408.10769'
   preprint-url: https://arxiv.org/abs/2408.10769
@@ -4327,11 +4327,15 @@
     description of such networks that may help future research make progress despite
     this hardness.
   bibtex: |
-    @article{dempsey2026wild,
+    @article{dempsey2027wild,
       author = {Dempsey, Jordan and van Iersel, Leo and Jones, Mark and Murakami, Yukihiro and Zeh, Norbert},
       title = {A Wild Sheep Chase Through an Orchard},
       journal = {Journal of Computer and System Sciences},
-      year = {2026}
+      year = {2027},
+      volume = {165},
+      pages = {103879},
+      doi = {10.1016/j.jcss.2026.103879},
+      url = {https://doi.org/10.1016/j.jcss.2026.103879}
     }
   abstract: Orchards are a biologically relevant class of phylogenetic networks as
     they can describe treelike evolutionary histories augmented with horizontal transfer
